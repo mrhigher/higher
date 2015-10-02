@@ -4,11 +4,14 @@ $('document').ready(function() {
         controls: false
     });
 
-
     
  
     $('.design_1').matchHeight({
     });
+   
+
+    $('.flexnav').slicknav();
+
 
 
 
