@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "pt_sansregular";
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+    url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'pf_din_text_cond_proregular';
+    src: url('../fonts/pf_din_text_cond_pro_regular/pfdintextcondpro-regular-webfont.eot');
+    src: url('../fonts/pf_din_text_cond_pro_regular/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pf_din_text_cond_pro_regular/pfdintextcondpro-regular-webfont.woff') format('woff'),
+         url('../fonts/pf_din_text_cond_pro_regular/pfdintextcondpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pf_din_text_cond_pro_regular/pfdintextcondpro-regular-webfont.svg#pf_din_text_cond_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_din_text_cond_prolight';
+    src: url('../fonts/pf_din_text_cond_pro_light/pfdintextcondpro-light-webfont.eot');
+    src: url('../fonts/pf_din_text_cond_pro_light/pfdintextcondpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pf_din_text_cond_pro_light/pfdintextcondpro-light-webfont.woff') format('woff'),
+         url('../fonts/pf_din_text_cond_pro_light/pfdintextcondpro-light-webfont.ttf') format('truetype'),
+         url('../fonts/pf_din_text_cond_pro_light/pfdintextcondpro-light-webfont.svg#pf_din_text_cond_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
