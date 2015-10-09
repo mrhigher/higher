@@ -455,14 +455,15 @@ header {
 }
 
 .img_products {
+    text-align:center;
     height: 182px;
     margin: 0 0 4px 0;
-    width: 226px;
+/*    width: 226px;*/
 }
 
 .img_products > img {
-    max-height: 182px;
-    max-width: 223px;
+/*    max-height: 182px;
+    max-width: 223px;*/
 /*    left: 50%;*/
     position: relative;
     top: 50%;
