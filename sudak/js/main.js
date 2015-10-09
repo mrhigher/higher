@@ -51,9 +51,10 @@ jQuery(document).ready(function() {
         }
     }
     
-    var slider = $('.bxslider').bxSlider({
+    var slider = $('#wrap_for_bx_1 .bxslider').bxSlider({
         mode: 'fade',
-        pager: false
+        pager: false,
+        controls: false
     });
 
     $('.slider-next1').click(function(){
@@ -71,6 +72,13 @@ jQuery(document).ready(function() {
     $('.slider-next4').click(function(){
       slider.goToNextSlide(4);
       return false;
+    });
+    
+    $('#bx_2 .bxslider').bxSlider({
+        minSlides: 3,
+        maxSlides: 5,
+//        slideMargin: 60
+        pager: false
     });
     
 });
