@@ -348,6 +348,7 @@ header {
     left: 0;
     position: absolute;
     top: 46px;
+    z-index: 200;
 }
 
 .catalogmenu > li {
@@ -380,9 +381,7 @@ header {
 .catalogmenu > li > ul {
     background: #fff;
     position: absolute;
-    right: -52px;
-    top: 0;
-    z-index: 100;
+    z-index: 200;
 }
 
 /*========================== content ==========================*/
@@ -1050,3 +1049,98 @@ footer .center {
     line-height: 1.2;
     margin: 0 0 5px 0;
 }
+
+/*========================== test menu ==========================*/
+
+.catalogmenu:before,
+.catalogmenu:after {
+    content: " "; 
+    display: table; 
+}
+.catalogmenu:after {
+    clear: both;
+}
+.catalogmenu ul {
+    list-style: none;
+/*    width: 9em;*/
+}
+.catalogmenu li {
+    position: relative;
+}
+.catalogmenu > li {
+    float: left;
+}
+.catalogmenu > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.catalogmenu > li > a {
+    display: block;
+}
+.catalogmenu li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.catalogmenu > li.hover > ul {
+    left: 247px;
+    top: 0;
+}
+.catalogmenu li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.catalogmenu li li > a {
+    display: block;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+.catalogmenu li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+
+.catalogmenu .open_menu {
+    background: #fff;
+    border-bottom: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    border-top: 1px solid #c7c7c7;
+    padding: 15px 0 0 38px;
+    overflow: hidden;
+    width: 900px;
+}
+
+.block_menu_1 {
+    background: #fff;
+    float: left;
+    overflow: hidden;
+    width: 300px;
+}
+
+.open_menu h4 {
+    color: #009335;
+    float: left;
+    font-family: Arial;
+    font-size: 18px;
+    padding: 0 32px 0 0;
+}
+
+.open_menu h4 img {
+    display: block;
+}
+
+.open_menu p {
+    float: left;
+}
+
+.open_menu p a {
+    background: url(../img/arrows_menu.png) no-repeat left center;
+    color: #666666;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 0 0 0 11px;
+}
+

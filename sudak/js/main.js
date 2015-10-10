@@ -45,10 +45,10 @@ $(window).load(function() {
   $('#flexslider').flexslider({
     animation: "slide",
     animationLoop: false,
-    itemWidth: 110,
-    itemMargin: 5,
-      minItems: 3,
-    maxItems: 4
+    itemWidth: 210,
+    itemMargin: 10,
+//      minItems: 3,
+//    maxItems: 4
   });
 });
 
