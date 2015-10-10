@@ -80,13 +80,14 @@
     .irs-from, .irs-to, .irs-single {
         background: url(../img/pol_slider.png) no-repeat;
         position: absolute; display: block;
-        top: -6px; left: 0;
+        top: -15px; left: 0;
         cursor: default;
         white-space: nowrap;
         font-family: 'pt_sansbold';
         font-size: 14px;
         width: 16px; 
         height: 23px;
+        z-index: 900;
     }
 
 .irs-grid {
