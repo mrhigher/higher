@@ -41,12 +41,13 @@ jQuery(document).ready(function() {
     
     // slider
     $("#example_id").ionRangeSlider({
+        grid: false,
         min: 0,
         max: 24,
         from: 0,
         to: 24,
         type: 'double',
-        prefix: "$",
+        prefix: "",
         input_values_separator: ':',
         grid: false,
         grid_num: 10
