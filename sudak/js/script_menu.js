@@ -33,7 +33,10 @@ var adjustMenu = function() {
 		$(".catalogmenu li a.parent").unbind('click').bind('click', function(e) {
 			// Необходимоо привязать к элементу ссылки для предотвращения "всплывания"
 			e.preventDefault();
-			$(this).parent("li").toggleClass("hover");
+//			$(this).parent("li").toggleClass("hover"); //uncomment this _flag
+                        
+                       
+                        
 		});
 	} 
 	else if (ww >= 768) {
@@ -43,7 +46,14 @@ var adjustMenu = function() {
 		$(".catalogmenu li a").unbind('click');
 		$(".catalogmenu li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
 		 	// Необходимо привязать к элементу li для предотвращения запуска события mouseleave при перемещении курсора мыши над подменю
-		 	$(this).toggleClass('hover');
+                        
+                    $(this).toggleClass('hover');
+                    /*detect if ul exists*/
+                        if($(this).find('ul').length) {
+                            $(this).toggleClass('hasDD');
+                        }
+                         /*_flag detect if ul exists end*/
+                        
 		});
 	}
 }
