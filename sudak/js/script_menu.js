@@ -49,12 +49,22 @@ var adjustMenu = function() {
                         
                     $(this).toggleClass('hover');
                     /*detect if ul exists*/
-                        if($(this).find('ul').length) {
-                            $(this).toggleClass('hasDD');
-                        }
+//                        if($(this).find('ul').length) {
+//                            $(this).toggleClass('hasDD');
+//                        }
                          /*_flag detect if ul exists end*/
                         
 		});
+                
+                
+                                    $(".catalogmenu li").each(function() {
+                                          if($(this).find('ul').length) {
+                                        $(this).toggleClass('hasDD');
+                                        }
+                                    });
+                                    
+                
+                
 	}
 }
 
