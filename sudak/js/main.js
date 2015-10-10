@@ -39,6 +39,18 @@ jQuery(document).ready(function() {
 		$('.overlay, .order_btn').fadeOut(500);
 	});
     
+    // slider
+    $("#example_id").ionRangeSlider({
+        min: 0,
+        max: 10000,
+        from: 1000,
+        to: 9000,
+        type: 'double',
+        prefix: "$",
+        grid: true,
+        grid_num: 10
+    });
+    
 });
 
 $(window).load(function() {
