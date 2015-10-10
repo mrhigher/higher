@@ -357,17 +357,11 @@ header {
     height: 36px;
     line-height: 36px;
     padding: 0 0 0 14px;
-    width: 232px;
+    width: 234px;
 }
 
 .catalogmenu > li:last-child {
     border-bottom: none;
-}
-
-.catalogmenu > li.str_right {
-    background-image: url(../img/str_right.png);
-    background-position: 228px center;
-    background-repeat: no-repeat;
 }
 
 .catalogmenu > li a {
@@ -1082,6 +1076,15 @@ footer .center {
     position: absolute;
     left: -9999px;
 }
+
+.catalogmenu li ul li {
+    line-height: 1;
+}
+.catalogmenu > li.hover {
+    background-image: url(../img/str_right.png);
+    background-position: 228px center;
+    background-repeat: no-repeat;
+}
 .catalogmenu > li.hover > ul {
     left: 247px;
     top: 0;
@@ -1093,7 +1096,7 @@ footer .center {
 .catalogmenu li li > a {
     display: block;
     position: relative;
-    z-index:100;
+    z-index:200;
     border-top: 1px solid #175e4c;
 }
 .catalogmenu li li li a {
@@ -1115,6 +1118,7 @@ footer .center {
 .block_menu_1 {
     background: #fff;
     float: left;
+    margin: 0 0 40px 0;
     overflow: hidden;
     width: 300px;
 }
@@ -1141,6 +1145,11 @@ footer .center {
     display: block;
     font-family: Arial;
     font-size: 13px;
+    margin: 0 0 5px 0;
     padding: 0 0 0 11px;
+}
+
+.open_menu p a:first-child {
+    margin-top: 5px;
 }
 
