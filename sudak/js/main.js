@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
         type: 'double',
         prefix: "$",
         input_values_separator: ':',
-        grid: true,
+        grid: false,
         grid_num: 10
     });
     
