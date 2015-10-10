@@ -5,10 +5,12 @@
     <title></title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" /> 
-    <link rel="stylesheet" type="text/css"
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/jquery-1.8.3.min.js"></script> 
 </head>
@@ -48,7 +50,7 @@
 <div class="center block_1 clearfix">
     <a href="/" class="logo"><img src="img/logo.png" alt="" /></a>
     <img class="agro" src="img/agro.png" alt="" />
-    <a href="#" class="btn_1">Заказать обратный звонок</a>
+    <a href="#" class="btn_1 show_popup">Заказать обратный звонок</a>
 </div>
 <!-- centering -->
 <div class="centering">
@@ -57,8 +59,18 @@
         <!-- menu_left -->
         <nav class="menu_left">
             <h3 class="catalogmenucolumn"><span class="ico_h3"><span></span><span></span><span></span></span>Каталог товаров</h3>
+            <a href="#" class="toggleMenu">Меню</a>
             <ul class="catalogmenu">
-                <li class="str_right"><a href="">Семена</a></li>
+                <li class="str_right">
+                    <a href="">Семена</a>
+                    <ul>
+                        <li><a href="">Астры</a></li>
+                        <li><a href="">Люпин</a></li>
+                        <li><a href="">Петуния</a></li>
+                        <li><a href="">Розы</a></li>
+                        <li><a href="">Аронис</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Удобрения</a></li>
                 <li><a href="">Средства защиты растений</a></li>
                 <li><a href="">Грунты и торфосмеси</a></li>
@@ -515,18 +527,18 @@
                 </div><!-- END div -->
             </div><!-- END products_wrap -->
         </div><!-- END products_best -->
-        <div id="bx_2">
-            <div class="bxslider">
-                <div class="slide"><img src="img/slide_brand_1.png" /></div>
-                <div class="slide"><img src="img/slide_brand_2.png" /></div>
-                <div class="slide"><img src="img/slide_brand_3.png" /></div>
-                <div class="slide"><img src="img/slide_brand_4.png" /></div>
-                <div class="slide"><img src="img/slide_brand_5.png" /></div>
-            </div>
+        <div id="flexslider" class="flexslider">
+            <ul class="slides">
+                <li><img src="img/slide_brand_1.png" /></li>
+                <li><img src="img/slide_brand_2.png" /></li>
+                <li><img src="img/slide_brand_3.png" /></li>
+                <li><img src="img/slide_brand_4.png" /></li>
+                <li><img src="img/slide_brand_5.png" /></li>
+            </ul>
         </div>
     </div><!-- END content_right -->
 </div><!-- END content -->
-<!----------------------- footer ----------------------->
+<!------------------------ footer ------------------------>
 <footer>
     <div class="center">
         <ul class="footer_menu">
@@ -550,10 +562,30 @@
     <hr class="line_footer" />
         <p class="copyright">"Земледелец-Профи" 2015 &copy; Все права защищены. Информация сайта защищена законом об авторских правах.</p>
 </footer>
+<!-- popup -->
+<div class="overlay"></div>
+<div class="order_btn">
+    <img class="close_popup" src="img/close_popup.png" alt="" />
+    <p class="phone_number">
+        Для заказа просто позвоните:
+        <span>+7 978 777-47-27</span>
+    </p>
+    <form action="#" class="popup_form" method="post">
+        <input type="text" placeholder="Введите Ваше имя" />
+        <p class="descript_input">Для того, чтобы мы знали, как к Вам обращаться.</p>
+        <input type="text" placeholder="+7 (978) 61-12-654" />
+        <p class="descript_input">Введите свой номер телефона в указанном формате</p>
+        <hr class="line_gray_popup" />
+        <p class="descript_input your_time">В какое время с Вами связаться?</p>
+        <p class="green_descript">Звонок бесплатный, с вами свяжется наш менеджер<br /> в указанное время!</p>
+        <input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ" />
+    </form>
+</div>
+<!-- END popup -->
 <script src="js/jquery.bxslider.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/script_menu.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 </html>
