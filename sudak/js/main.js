@@ -55,14 +55,17 @@ jQuery(document).ready(function() {
 });
 
 $(window).load(function() {
-  $('#flexslider').flexslider({
+  $('.flexgall').flexslider({
     animation: "slide",
     animationLoop: false,
     itemWidth: 210,
     itemMargin: 10,
-//      minItems: 3,
-//    maxItems: 4
+    controlNav: false,
+    prevText: "",           
+    nextText: "", 
   });
+ 
+  
 });
 
 $(document).keydown(function(e) {

@@ -1157,4 +1157,57 @@ footer .center {
 .open_menu p a:first-child {
     margin-top: 5px;
 }
+.flexslider .slides img {
+    width:auto;
+}
+.brand {
+    width:60px;
+    height:60px;
+    
+}
 
+
+
+
+/*styling flexnav*/
+
+.flexslider.flexgall  { 
+    width: 90%;
+    margin: 0 auto; 
+    background-color:transparent;
+    border:0px;
+}
+.flexslider.flexgall .slides img {
+  height: auto;
+  margin:0 auto;
+}
+
+
+
+.flexslider.flexgall .flex-direction-nav a,
+.flexslider.flexgall .flex-direction-nav a {
+display: block; /* I added this line */
+}
+
+.flexslider.flexgall .flex-direction-nav .flex-next { right: 0 !important; margin-right: -40px; opacity: 1 !important; }
+.flexslider.flexgall .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -40px; }
+
+.flexslider.flexgall .flex-direction-nav a:before {
+    display:none;
+}
+.flexslider.flexgall .flex-direction-nav a {
+    background-image:url(../img/flex_controll.png);
+    width:21px;
+    height:74px;
+    background-repeat: no-repeat;
+    height:37px;
+}
+
+.flexslider.flexgall .flex-direction-nav .flex-prev {
+    background-position:0px -37px;
+}
+.flexslider.flexgall .flex-direction-nav .flex-next {
+  background-position:0px 0px;
+  text-align: right;
+}
+/*end styling flexnav*/
