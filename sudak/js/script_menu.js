@@ -2,6 +2,13 @@
 var ww = document.body.clientWidth;
 
 $(document).ready(function() {
+    
+           $(".catalogmenu li").each(function() {
+                        if($(this).find('ul').length) {
+                      $(this).toggleClass('hasDD');
+                      }
+             });
+    
 	$(".catalogmenu li a").each(function() {
 		if ($(this).next().length > 0) {
 			$(this).addClass("parent");
@@ -33,7 +40,7 @@ var adjustMenu = function() {
 		$(".catalogmenu li a.parent").unbind('click').bind('click', function(e) {
 			// Необходимоо привязать к элементу ссылки для предотвращения "всплывания"
 			e.preventDefault();
-//			$(this).parent("li").toggleClass("hover"); //uncomment this _flag
+			$(this).parent("li").toggleClass("hover"); 
                         
                        
                         
@@ -57,14 +64,12 @@ var adjustMenu = function() {
 		});
                 
                 
-                                    $(".catalogmenu li").each(function() {
-                                          if($(this).find('ul').length) {
-                                        $(this).toggleClass('hasDD');
-                                        }
-                                    });
+                                   
                                     
                 
                 
 	}
+        
+      
 }
 
