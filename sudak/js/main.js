@@ -42,11 +42,12 @@ jQuery(document).ready(function() {
     // slider
     $("#example_id").ionRangeSlider({
         min: 0,
-        max: 10000,
-        from: 1000,
-        to: 9000,
+        max: 24,
+        from: 0,
+        to: 24,
         type: 'double',
         prefix: "$",
+        input_values_separator: ':',
         grid: true,
         grid_num: 10
     });

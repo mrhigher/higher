@@ -78,31 +78,38 @@
     }
 
     .irs-from, .irs-to, .irs-single {
+        background: url(../img/pol_slider.png) no-repeat;
         position: absolute; display: block;
-        top: 0; left: 0;
+        top: -6px; left: 0;
         cursor: default;
         white-space: nowrap;
+        font-family: 'pt_sansbold';
+        font-size: 14px;
+        width: 16px; 
+        height: 23px;
     }
 
 .irs-grid {
     position: absolute; display: none;
     bottom: 0; left: 0;
-    width: 100%; height: 20px;
+    width: 100%; height: 7px;
 }
 .irs-with-grid .irs-grid {
-    background: url(../img/popup_slider.png) ;
+    background: url(../img/popup_slider.png) repeat-x;
     display: block;
 }
     .irs-grid-pol {
         position: absolute;
         top: 0; left: 0;
-        width: 1px; height: 8px;
-        background: #000;
+        width: 1px;
+        height: 8px;
+/*        background: #000;*/
     }
     .irs-grid-pol.small {
         height: 4px;
     }
     .irs-grid-text {
+        background: url(../img/popup_green_slider_bg.png) repeat-x;
         position: absolute;
         bottom: 0; left: 0;
         white-space: nowrap;
