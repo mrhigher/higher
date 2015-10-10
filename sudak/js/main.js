@@ -47,9 +47,9 @@ jQuery(document).ready(function() {
         from: 0,
         to: 24,
         type: 'double',
-        prefix: "$",
+        prefix: "",
         input_values_separator: ':',
-        grid: true,
+        grid: false,
         grid_num: 10
     });
     
