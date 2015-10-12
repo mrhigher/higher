@@ -756,6 +756,8 @@ header {
     padding: 0 13px 0 0;
 }
 
+
+
 .option a {
     border-bottom: 1px dashed #313131;
     color: #108442;
@@ -767,7 +769,7 @@ header {
     clear: both;
 }
 
-.products_wrap > div:hover .block_descripton, .products_wrap > div:hover .option {
+.products_wrap > div:hover .block_descripton, .products_wrap > div:hover .option, .products_wrap > div:hover .opt  {
     display: block;
 }
 
@@ -1216,3 +1218,31 @@ display: block; /* I added this line */
   text-align: right;
 }
 /*end styling flexnav*/
+
+
+
+/*cuselect start*/
+.opt {
+ float:none;
+ display:block; 
+ background:none;
+}
+.opt:before, .opt:after {
+    content:'';
+    display:table;
+}
+.opt:after  {
+    clear:both;
+}
+
+ .opt .key {
+    margin: 0 0 15px 5px;
+    float:left;
+    width:46px;
+    display:block; 
+}
+.opt {
+    color:#252525;
+    display:none;
+}
+/*cuselect end */

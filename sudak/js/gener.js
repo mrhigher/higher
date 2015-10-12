@@ -13,10 +13,10 @@
             $qta.val(currentVal - 1);
         }
     });
-    
- 
-    
-
-    
-    
       });
+      
+     	(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
