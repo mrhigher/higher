@@ -75,7 +75,7 @@
         cursor: pointer;
     }
     .menu_left h3:hover + ul {
-        display: block;
+/*        display: block;*/
     }
     .products {
         margin-left: auto;
