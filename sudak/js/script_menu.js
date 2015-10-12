@@ -3,11 +3,11 @@ var ww = document.body.clientWidth;
 
 $(document).ready(function() {
     
-           $(".catalogmenu li").each(function() {
-                        if($(this).find('ul').length) {
-                      $(this).toggleClass('hasDD');
-                      }
-             });
+    $(".catalogmenu li").each(function() {
+        if($(this).find('ul').length) {
+          $(this).toggleClass('hasDD');
+        }
+    });
     
 	$(".catalogmenu li a").each(function() {
 		if ($(this).next().length > 0) {
@@ -21,15 +21,27 @@ $(document).ready(function() {
 		$(".catalogmenu").toggle();
 	});
 	adjustMenu();
+    
+    /*******************************************************/
+    if(ww < 1022) {
+        $('.menu_left h3').mouseenter(function() {
+            $('.catalogmenu').css('display', 'block');
+        });
+        $('.catalogmenu').mouseleave(function() {
+            $(this).hide();
+        });
+    }
+    
 })
-
+/*
 $(window).bind('resize orientationchange', function() {
 	ww = document.body.clientWidth;
 	adjustMenu();
-});
+});*/
 
 var adjustMenu = function() {
-	if (ww < 768) {
+	/*
+    if (ww < 768) {
 		$(".toggleMenu").css("display", "inline-block");
 		if (!$(".toggleMenu").hasClass("active")) {
 			$(".catalogmenu").hide();
@@ -46,9 +58,9 @@ var adjustMenu = function() {
                         
 		});
 	} 
-	else if (ww >= 768) {
-		$(".toggleMenu").css("display", "none");
-		$(".catalogmenu").show();
+	else  */if (ww >= 1) {
+		//$(".toggleMenu").css("display", "none");
+		//$(".catalogmenu").show();
 		$(".catalogmenu li").removeClass("hover");
 		$(".catalogmenu li a").unbind('click');
 		$(".catalogmenu li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {

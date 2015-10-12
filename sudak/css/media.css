@@ -1,0 +1,111 @@
+@media only screen and (max-width: 1257px) {
+    img {
+        max-width: 100%;
+    }
+    .center {
+        width: 100%;
+    }
+    .content_right {
+        width: 75%;
+    }
+    .products {
+        display: table;
+    }
+    .products > div:nth-child(4) {
+        clear: both;
+    }
+    .more {
+        margin-left: 10px;
+    }
+    .ul_2 {
+        float: left;
+        margin-left: 1%;
+    }
+    .menu_slider a {
+        width: 100%;
+    }
+    .menu_slider a:hover {
+        border-bottom-width: inherit;
+    }
+    .menu_best li.active a {
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 1137px) {
+    .more .ico_6 {
+        display: none;
+    }
+    .more {
+        margin-right: 10px;
+        width: 210px;
+    }
+    .ul_2 > li {
+        width: 80px;
+    }
+    .flexslider.flexgall .flex-direction-nav .flex-next {
+        margin-right: -4%;
+    }
+    .products_best .products_wrap {
+        margin-bottom: -1px;
+    }
+    .content_right h2 {
+        text-align: center;
+    }
+/*
+    .catalogmenu > li > ul {
+        display: none;
+    }
+*/
+    
+}
+
+@media only screen and (max-width: 1022px) {
+    .content_left {
+        display: none;
+    }
+    .content_right {
+        padding: 0 2%;
+        width: 96%;
+    }
+    .menu_left > ul {
+        display: none;
+    }
+    .menu_left h3 {
+        cursor: pointer;
+    }
+    .menu_left h3:hover + ul {
+        display: block;
+    }
+    .products {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products_best {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ul_2 {
+        clear: both;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    .products_best .products_wrap {
+        float: none;
+    }
+    .products > div {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .menu_left {
+        float: none;
+        margin: 0 auto;
+    }
+    .more {
+        float: none;
+        margin: 20px auto 0;
+    }
+}
