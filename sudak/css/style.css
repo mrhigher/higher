@@ -1099,10 +1099,10 @@ footer .center {
     left: 248px;
     top: 0;
 }
-/*.catalogmenu > li:hover > ul {
+.catalogmenu > li:hover > ul {
     left: 248px;
     top: 0;
-}*/
+}
 .catalogmenu > li.hasDD {
     background-image: url(../img/str_right.png);
     background-position: 228px center;

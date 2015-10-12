@@ -76,7 +76,7 @@
     }
   
     .menu_left:hover  .catalogmenu {
-/*         display: block;*/
+         display: block;
     }
     .catalogmenu {
         z-index:2;

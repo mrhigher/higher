@@ -47,13 +47,12 @@ $(window).bind('orientationchange', function() {
             });
             
         }   else {
-                    
             $('.catalogmenu').show();
             $(".catalogmenu li").removeClass("hover");
-		$(".catalogmenu li a").unbind('click');
-		$(".catalogmenu li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
-                    $(this).toggleClass('hover');
-		});
+//		$(".catalogmenu li a").unbind('click');
+//		$(".catalogmenu li").unbind('mouseleave').bind('mouseenter mouseleave', function() {
+//                    $(this).toggleClass('hover');
+//		});
         
           
             }
