@@ -751,6 +751,8 @@ header {
     padding: 0 13px 0 0;
 }
 
+
+
 .option a {
     border-bottom: 1px dashed #313131;
     color: #108442;
@@ -762,7 +764,7 @@ header {
     clear: both;
 }
 
-.products_wrap > div:hover .block_descripton, .products_wrap > div:hover .option {
+.products_wrap > div:hover .block_descripton, .products_wrap > div:hover .option, .products_wrap > div:hover .out_cssel  {
     display: block;
 }
 
@@ -1211,3 +1213,10 @@ display: block; /* I added this line */
   text-align: right;
 }
 /*end styling flexnav*/
+
+/*cuselect start*/
+.out_cssel {
+    display:none;
+}
+
+/*cuselect end */
