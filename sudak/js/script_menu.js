@@ -41,24 +41,25 @@ $(window).bind('resize orientationchange', function() {
 
 var adjustMenu = function() {
 	
+    if (ww < 1022) {
+		//$(".toggleMenu").css("display", "inline-block");
+		/*if (!$(".toggleMenu").hasClass("active")) {
                 /*    if (ww < 768) {
 		$(".toggleMenu").css("display", "inline-block");
 		if (!$(".toggleMenu").hasClass("active")) {
 			$(".catalogmenu").hide();
 		} else {
 			$(".catalogmenu").show();
-		}
+		}*/
 		$(".catalogmenu li").unbind('mouseenter mouseleave');
 		$(".catalogmenu li a.parent").unbind('click').bind('click', function(e) {
 			// Необходимоо привязать к элементу ссылки для предотвращения "всплывания"
 			e.preventDefault();
 			$(this).parent("li").toggleClass("hover"); 
-                        
-                       
-                        
+                                       
 		});
 	} 
-	else  */ if (ww >= 1) {
+	else  if (ww >= 1) {
 		//$(".toggleMenu").css("display", "none");
 		//$(".catalogmenu").show();
 		$(".catalogmenu li").removeClass("hover");
