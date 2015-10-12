@@ -31,23 +31,56 @@ var adjustMenu = function() {
     
     
 $(window).bind('orientationchange', function() {
-     
-	location.reload();
+	ww = document.body.clientWidth;
+       
+	//location.reload();
 });
 
-        checkSize();
+    
+   
     
       $(window).resize(checkSize);
       function checkSize(){
         if ($(".catalogmenu").css("z-index") == "2" ){
+            
+           // $('.catalogmenu').hide();
             
             $(".catalogmenucolumn").unbind('click').bind('click', function(e) {
 			e.preventDefault();
                         $(".catalogmenu").toggle();
             });
             
+            
+            
+            $(document).mouseup(function (e)
+    {
+        var container = $('.catalogmenu, .catalogmenucolumn');
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $('.catalogmenu').hide();
+        }
+    });
+    
+    
+          function myHandler(e) {
+          if($('.catalogmenu').is(':visible')) {
+                if (e.keyCode == 27) {
+                     $('.catalogmenu').hide();
+                }
+            }
+               
+        }
+     $(document).keydown(myHandler);
+            
         }   else {
                     
+
+          
+//              if($('.catalogmenu').is(':visible')) {
+//                   $(document).unbind('keydown', myHandler);
+//              }
+       
             $('.catalogmenu').show();
             $(".catalogmenu li").removeClass("hover");
 		$(".catalogmenu li a").unbind('click');
@@ -59,6 +92,14 @@ $(window).bind('orientationchange', function() {
             }
         }
     
-          
+    
+	
+
+        
+        
+        
+        
+        
+      
 }
 
