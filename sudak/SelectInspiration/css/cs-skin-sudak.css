@@ -11,18 +11,18 @@
 
 div.cs-skin-sudak {
 	background: transparent;
-	font-size: 1.3em;
+	font-size: 1em;
 	font-weight: normal;
 	max-width: 600px;
+        width:160px;
 }
 
-/*@media screen and (max-width: 30em) {
-	div.cs-skin-sudak { font-size: 1em; }
-}*/
+
 
 .cs-skin-sudak > span {
-        padding:0.5em;
-/*	border: 1px solid #000;*/
+        display:inline-block;
+        padding:0.5em 1em 0.5em 0em;
+        border-bottom:1px dashed #313131;
 	border-color: inherit;
 	-webkit-transition: background 0.2s, border-color 0.2s;
 	transition: background 0.2s, border-color 0.2s;
@@ -39,22 +39,32 @@ div.cs-skin-sudak {
 }
 
 .cs-skin-sudak .cs-selected span::after {
-	content: '\e00e';
-	color: #ddd9c9;
-	font-size: 1em;
-	opacity: 1;
-	-webkit-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+    content:'';
+
 }
 .cs-skin-sudak > span::after, .cs-skin-sudak .cs-selected span::after {
-    font-size:1.08em;
+    font-size:1.55em;
+    color:#000;
+}
+.cs-skin-sudak.cs-select span.cs-placeholder {
+        padding:0em 0em 0.1em 0em;
+        position: static;
+
+}
+.cs-skin-sudak.cs-select span.cs-placeholder:after {
+    right:auto;
+    margin-left:2px;
+    margin-top:0em;
+}
+.cs-skin-sudak.cs-select span.cs-placeholder {
+    color: #108442;
 }
 
 .cs-skin-sudak.cs-active > span {
 	background: #fff;
 	border-color: #fff;
-	color: #2980b9;
-        border-bottom:1px solid red;
+	color: #108442;
+        border-bottom: 1px dashed #313131;
 }
 
 .cs-skin-sudak .cs-options {
@@ -65,15 +75,19 @@ div.cs-skin-sudak {
 	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
 	transition: opacity 0.2s, visibility 0s 0.2s;
 }
+.cs-skin-sudak.cs-select.cs-active > span::after {
+    margin-top:-0.22em;
+}
 
 .cs-skin-sudak.cs-active .cs-options {
 	opacity: 1;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
+        
 }
 
 .cs-skin-sudak ul span {
-	padding: 0.4em 2em;
+	padding: 0.4em 1em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
