@@ -32,7 +32,7 @@ var adjustMenu = function() {
     
 $(window).bind('orientationchange', function() {
 	ww = document.body.clientWidth;
-        alert(2)
+       
 	//location.reload();
 });
 
