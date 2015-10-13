@@ -993,7 +993,7 @@ header {
     display: inline-block;
     float: right;
     height: 29px;
-    line-height: 29px;
+    line-height: 29px;#f8f8f8;
     margin: 5px 7px 0 0;
     text-align: center;
     width: 112px;
@@ -1007,6 +1007,52 @@ header {
 .margin_2 {
     margin-top: 20px;
 }
+
+.catalogsorter {
+    background: #f8f8f8;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    margin: 0 0 7px 0;
+    padding: 0 15px;
+}
+
+.catalogsorter div.cs-skin-sudak {
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    margin: 4px 0;
+    width: 150px;
+}
+
+.catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder {
+    color: #262626;
+}
+
+.catalogsorter .cs-placeholder {
+    height: 31px;
+    line-height: 31px;
+    padding: 0 0 0 11px!important;
+}
+.catalogsorter .cs-skin-sudak.cs-active > span {
+    border-bottom: none;
+}
+
+.catalogsorter .cs-skin-sudak > span {
+    border-bottom: none;
+}
+
+.catalogsorter .cs-active {
+    border-bottom: none;
+}
+
+.catalogsorter .cs-skin-sudak .cs-options {
+    color: #262626;
+}
+
+.catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder:after {
+    margin-left: 24px;
+}
+
 /*========================== END katalog ==========================*/
 
 /*========================== footer ==========================*/
