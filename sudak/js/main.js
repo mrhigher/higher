@@ -52,7 +52,6 @@ jQuery(document).ready(function() {
     });
     
     $('#price_filtr').ionRangeSlider({
-        grid: false,
         min: 0,
         max: 24,
         from: 0,
