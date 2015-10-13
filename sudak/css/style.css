@@ -203,6 +203,10 @@ header {
     background: -o-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: -ms-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: linear-gradient(180deg, #7d7d7d 0%, #212121 99%);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
+    box-shadow:         inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
     color: #ffffff;
     display: block;
     float: right;
@@ -212,6 +216,14 @@ header {
     margin: 35px 49px 0 0;
     text-align: center;
     width: 183px;
+}
+
+.btn_1:hover {
+    background: -webkit-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: -moz-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: -o-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: -ms-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: linear-gradient(180deg, #7b7b7b 0%, #4b4b4b 99%);
 }
 
 .block_1 {
@@ -576,6 +588,9 @@ header {
     background: -o-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: -ms-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: linear-gradient(180deg, #7d7d7d 0%, #212121 99%);
+    -webkit-box-shadow: inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
+    box-shadow:         inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
     margin: 0 8px 0 0;
     text-align: center;
     width: 110px;
@@ -584,6 +599,14 @@ header {
 .btn_2 img {
     padding: 0 5px 0 0;
     vertical-align: middle;
+}
+
+.btn_2:hover {
+    background: -webkit-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: -moz-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: -o-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: -ms-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
+    background: linear-gradient(180deg, #7b7b7b 0%, #4b4b4b 99%);
 }
 
 .btn_3 {
@@ -842,7 +865,8 @@ header {
 }
 
 .margin_1 {
-    margin-top: 0;
+    margin-top: 20px;
+    width: 250px;
 }
 
 .filtr_wrap {
@@ -938,8 +962,10 @@ header {
     color: #fff;
     cursor: pointer;
     display: inline-block;
+    float: left;
     height: 29px;
     line-height: 29px;
+    margin: 5px 0 0 6px;
     text-align: center;
     width: 119px;
 }
@@ -961,7 +987,25 @@ header {
 }
 
 .btn_reset {
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    float: right;
+    height: 29px;
+    line-height: 29px;
+    margin: 5px 7px 0 0;
+    text-align: center;
+    width: 112px;
+}
+
+.filtr_wrap .btn_show_reset {
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.margin_2 {
+    margin-top: 20px;
 }
 /*========================== END katalog ==========================*/
 

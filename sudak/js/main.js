@@ -60,8 +60,7 @@ jQuery(document).ready(function() {
         type: 'double',
         prefix: "",
         input_values_separator: ':',
-        grid: false,
-        grid_num: 10
+        grid: false
     });
     
     // accordeon
