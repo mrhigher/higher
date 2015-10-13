@@ -53,6 +53,29 @@ jQuery(document).ready(function() {
         grid_num: 10
     });
     
+    $('#price_filtr').ionRangeSlider({
+        grid: false,
+        min: 0,
+        max: 24,
+        from: 0,
+        to: 24,
+        type: 'double',
+        prefix: "",
+        input_values_separator: ':',
+        grid: false,
+        grid_num: 10
+    });
+    
+    // accordeon
+    $('.setting_filtr').css({'display':'none'});
+			
+    $('.link_filtr').click(function(){
+        //$('.link_filtr').not($(this)).removeClass('open');
+        $('.setting_filtr').not($(this).next('.setting_filtr')).slideUp(500);
+        $(this).next('.setting_filtr').slideToggle(500);
+        //$(this).toggleClass('open');
+    });
+    
 });
 
 $(window).load(function() {

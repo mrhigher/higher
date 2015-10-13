@@ -30,6 +30,9 @@ $(document).ready(function() {
         $('.catalogmenu').mouseleave(function() {
             $(this).hide();
         });
+        $('.menu_left h3').click(function() {
+            $('.catalogmenu').css('display', 'block');
+        });
     }
     
 })
