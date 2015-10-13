@@ -47,10 +47,8 @@ jQuery(document).ready(function() {
         from: 0,
         to: 24,
         type: 'double',
-        prefix: "",
-        input_values_separator: ':',
-        grid: false,
-        grid_num: 10
+        hide_min_max: true
+        
     });
     
 });
