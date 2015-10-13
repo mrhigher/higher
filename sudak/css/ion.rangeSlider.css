@@ -7,7 +7,6 @@
 // RangeSlider */
 
 .irs {
-    margin: 0 0 15px 0;
     position: relative; display: block;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -17,9 +16,6 @@
             user-select: none;
 }
     .irs-line {
-        background: url(../img/popup_slider.png) repeat-x;
-        border-radius: 5px;
-        height: 7px;
         position: relative; display: block;
         overflow: hidden;
         outline: none !important;
@@ -32,8 +28,6 @@
             left: 0; width: 11%;
         }
         .irs-line-mid {
-            background: url(../img/popup_green_slider_bg.png) repeat-x;
-            height: 7px;
             left: 9%; width: 82%;
         }
         .irs-line-right {
@@ -88,12 +82,6 @@
         top: 0; left: 0;
         cursor: default;
         white-space: nowrap;
-    }
-    .irs-from, .irs-to {
-        background: url(../img/pol_slider.png) no-repeat;
-        height: 23px;
-        top: -7px;
-        width: 16px;
     }
 
 .irs-grid {

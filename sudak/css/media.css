@@ -52,11 +52,11 @@
     .content_right h2 {
         text-align: center;
     }
-/*
-    .catalogmenu > li > ul {
+
+/*    .catalogmenu > li > ul {
         display: none;
-    }
-*/
+    }*/
+
     
 }
 
@@ -74,9 +74,17 @@
     .menu_left h3 {
         cursor: pointer;
     }
-    .menu_left h3:hover + ul {
-        display: block;
+  
+    .menu_left:hover  .catalogmenu {
+         display: block;
     }
+    .catalogmenu {
+        z-index:2;
+    }
+    .catalogmenu > li:hover > ul {
+        left: -9999px;
+        
+        }
     .products {
         margin-left: auto;
         margin-right: auto;
