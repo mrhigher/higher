@@ -1194,6 +1194,9 @@ footer .center {
     margin: 0 0 15px 0;
     text-indent: 13px;
 }
+.descript_input.your_time {
+     margin: 0 0 12px 0;
+}
 
 .line_gray_popup {
     background: #e2e2e2;
