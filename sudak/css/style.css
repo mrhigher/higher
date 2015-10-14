@@ -106,6 +106,10 @@ header {
     font-size: 13px;
 }
 
+.authinheadinner li a:hover {
+    color: #108442;
+}
+
 .reg {
     width: 136px;
 }
@@ -168,6 +172,10 @@ header {
     display: block;
     margin: 0 0 5px 0;
     text-decoration: underline;
+}
+
+.ul_1 > li a:hover {
+    color: #ff8400;
 }
 
 .ul_1 .p_1 {
@@ -302,6 +310,10 @@ header {
     color: #303030;
     display: block;
     padding: 38px 0 8px 0;
+}
+
+.ul_2 > li a:hover {
+    color: #108442;
 }
 .ul_2 .ico_7 {
     background: url(../img/ico_7.png) no-repeat center 10px;
@@ -588,9 +600,9 @@ header {
     background: -o-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: -ms-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: linear-gradient(180deg, #7d7d7d 0%, #212121 99%);
-    -webkit-box-shadow: inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow:    inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
-    box-shadow:         inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 0px -2px 0px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    inset 0px -2px 0px 2px rgba(0, 0, 0, 1);
+    box-shadow:         inset 0px -2px 0px 2px rgba(0, 0, 0, 1);
     margin: 0 8px 0 0;
     text-align: center;
     width: 110px;
@@ -607,6 +619,9 @@ header {
     background: -o-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
     background: -ms-linear-gradient(-90deg, #7b7b7b 0%, #4b4b4b 99%);
     background: linear-gradient(180deg, #7b7b7b 0%, #4b4b4b 99%);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    inset 0px -2px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow:         inset 0px -2px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .btn_3 {
@@ -1142,7 +1157,7 @@ header {
 }
 
 .navigation a:hover {
-    text-decoration: underline;
+    color: #108442;
 }
 
 .navigation a.left {
@@ -1453,7 +1468,7 @@ footer .center {
     margin: 0 0 5px 0;
 }
 
-/*========================== test menu ==========================*/
+/*========================== menu ==========================*/
 
 .catalogmenu:before,
 .catalogmenu:after {
@@ -1482,6 +1497,9 @@ footer .center {
 .catalogmenu > li > a {
     display: block;
 }
+.catalogmenu a:hover {
+    color: #108442;
+}
 .catalogmenu li  ul {
     position: absolute;
     left: -9999px;
@@ -1489,11 +1507,6 @@ footer .center {
 
 .catalogmenu li ul li {
     line-height: 1;
-}
-.catalogmenu > li.hover {
-/*    background-image: url(../img/str_right.png);
-    background-position: 228px center;
-    background-repeat: no-repeat;*/
 }
 
 .catalogmenu {
