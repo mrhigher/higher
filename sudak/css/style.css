@@ -994,7 +994,6 @@ header {
     float: right;
     height: 29px;
     line-height: 29px;
-    background:#f8f8f8;
     margin: 5px 7px 0 0;
     text-align: center;
     width: 112px;
@@ -1007,6 +1006,10 @@ header {
 
 .margin_2 {
     margin-top: 20px;
+}
+
+.margin_2 .products > div {
+    border-bottom: 1px solid #c7c7c7;
 }
 
 .catalogsorter {
@@ -1120,12 +1123,12 @@ header {
 .navi {
     border: 1px solid #cfcfcf;
     border-radius: 3px;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .navigation {
     float: left;
-    margin: 0 0 0 10px;
+    margin: 4px 0 0 10px;
 }
 
 .navigation a {
