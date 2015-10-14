@@ -601,9 +601,9 @@ header {
     background: -o-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: -ms-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: linear-gradient(180deg, #7d7d7d 0%, #212121 99%);
-    -webkit-box-shadow: inset 0px -2px 0px 2px rgba(0, 0, 0, 1);
-    -moz-box-shadow:    inset 0px -2px 0px 2px rgba(0, 0, 0, 1);
-    box-shadow:         inset 0px -2px 0px 2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow:    inset 0px -2px 0px 0 rgba(0, 0, 0, 1);
+    box-shadow:         inset 0px -2px 0px 0 rgba(0, 0, 0, 1);
     margin: 0 8px 0 0;
     text-align: center;
     width: 110px;
@@ -760,7 +760,7 @@ header {
     padding: 0 7px 8px 7px;
     position: absolute;
     top: -3px;
-    z-index: 100;
+    z-index: 250;
 }
 
 .products_wrap  > .citm.active {
@@ -769,8 +769,6 @@ header {
 
 .block_descripton {
     display: none;
-    position: relative;
-    z-index: 250;
 }
 
 .block_descripton > p {
@@ -796,10 +794,6 @@ header {
     color: #ff8400;
 }
 
-.products_best .ul_4 {
-    
-}
-
 .option {
     background: url(../img/str_bottom.png) no-repeat right center;
     color: #252525;
@@ -822,10 +816,6 @@ header {
 
 .products_wrap > .citm:hover .block_descripton, .products_wrap > .citm:hover .option, .products_wrap > .citm:hover .opt  {
     display: block;
-}
-
-.products_wrap > .citm:hover {
-    z-index: 101;
 }
 
 .toggleMenu {
