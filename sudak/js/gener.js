@@ -13,6 +13,14 @@
             $qta.val(currentVal - 1);
         }
     });
+    
+    var closedropdown = function(){
+    $('.cs-options').css('opacity','0');
+        }
+    $('.out_cssel').on('mouseout', function(e){ //remove the #dropdown2
+     timeout = setTimeout(closedropdown, 1000);
+    });
+    
       });
       
      	(function() {
@@ -20,3 +28,7 @@
 					new SelectFx(el);
 				} );
 			})();
+                        
+                        
+                        
+                        
