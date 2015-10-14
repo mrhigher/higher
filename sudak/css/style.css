@@ -752,7 +752,7 @@ header {
     width: 241px;
 }
 
-.products_wrap  > div {
+.products_wrap  > .citm {
     background: #ffffff;
     border: 1px solid #c7c7c7;
     left: 0;
@@ -762,7 +762,7 @@ header {
     z-index: 100;
 }
 
-.products_wrap  > div.active {
+.products_wrap  > .citm.active {
     box-shadow: 0px 1px 3px 0.00px rgba(0, 0, 0, 0.21);
 }
 
@@ -814,11 +814,11 @@ header {
     clear: both;
 }
 
-.products_wrap > div:hover .block_descripton, .products_wrap > div:hover .option, .products_wrap > div:hover .opt  {
+.products_wrap > .citm:hover .block_descripton, .products_wrap > .citm:hover .option, .products_wrap > .citm:hover .opt  {
     display: block;
 }
 
-.products_wrap > div:hover {
+.products_wrap > .citm:hover {
     z-index: 101;
 }
 
