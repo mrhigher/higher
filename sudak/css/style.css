@@ -404,6 +404,15 @@ header {
     text-decoration: underline;
 }
 
+.catalogmenu > li h4 a {
+    color: #009335;
+}
+
+.catalogmenu > li h4 a:hover {
+    color: #ff8400;
+    text-decoration: none;
+}
+
 .catalogmenu > li > ul {
     background: #fff;
     position: absolute;
@@ -1554,8 +1563,7 @@ footer .center {
 .open_menu h4 {
     color: #009335;
     float: left;
-    font-family: Arial;
-    font-size: 18px;
+    font: bold 18px/1 Arial;
     padding: 0 32px 0 0;
 }
 
@@ -1588,9 +1596,6 @@ footer .center {
     height:60px;
     
 }
-
-
-
 
 /*styling flexnav*/
 

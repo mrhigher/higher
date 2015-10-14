@@ -5,6 +5,13 @@
     .center {
         width: 100%;
     }
+    .searchinhead input[type=text] {
+        width: 250px;
+    }
+    .ul_1 {
+        float: right;
+        margin-right: 10px;
+    }
     .content_right {
         width: 75%;
     }
@@ -52,12 +59,14 @@
     .content_right h2 {
         text-align: center;
     }
+ 
+}
 
-/*    .catalogmenu > li > ul {
-        display: none;
-    }*/
-
-    
+@media only screen and (max-width: 1059px) {
+    .ul_1 {
+        float: left;
+        margin: 10px 0;
+    }
 }
 
 @media only screen and (max-width: 1022px) {
