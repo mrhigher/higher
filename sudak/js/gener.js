@@ -1,5 +1,5 @@
      
-        var  mouse_is_outside = false;
+      
 
      $(function () {
       $('.ico_plus').on('click',function(){
@@ -16,44 +16,34 @@
             $qta.val(currentVal - 1);
         }
     });
-    
-  
-    var closedropdown = function(){
-    $('.cs-options').css('opacity','0');
-        }
-        
-    $('.products_wrap > div').on('hover', function(){ //remove the #dropdown2
-      mouse_is_outside = true; 
-    }, function() {
-         mouse_is_outside = false; 
-    });
-   
-   
-      $('.cs-select').on('click',function() {
-       // $(this).find('.cs-options').css('opacity','1')
-    });
-    
-    
-    $(document).on('mouseenter',function (e)
-    {
-    var container = $(".products_wrap > div");
+     
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
+  /*detect target and close cs_select*/
+    var $out = $("div.out");
+    $("body").on("hover", ".citm", function(e){
+    var $target = $(e.currentTarget);
+   // $out.html($target);
+    var container = $('.citm');
+    if (container.is($target) // if the target of the click isn't the container...
+        && container.has($target).length === 0) // ... nor a descendant of the container
     {
-        $('.cs-options').css('background','red');
         $('.cs-select').removeClass('cs-active');
     }
-});
+        })
+          /*detect target and close cs_select*/
+
+
+   
+
+
+
     
     
-     $('.form_content').hover(function(){ 
-        mouse_is_inside=true; 
-    }, function(){ 
-        mouse_is_inside=false; 
-    });
+
     
       });
+      
+    
       
      	(function() {
 				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
