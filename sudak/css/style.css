@@ -477,16 +477,16 @@ header {
 }
 
 .products {
-    border: 1px solid #c7c7c7;
+/*    border: 1px solid #c7c7c7;*/
     border-radius: 3px;
     margin: 0 0 40px 0;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 .products > div {
     background-color: #ffffff;
-    border-right: 1px solid #c7c7c7;
-    float: left;
+/*    border-right: 1px solid #c7c7c7;*/
+/*    float: left;*/
     padding: 0 7px 10px 7px;
     position: relative;
     width: 226px;
@@ -578,7 +578,8 @@ header {
 }
 
 .ul_4 {
-    margin: 0 0 0 2px;
+    margin: 0 0 8px 2px;
+    overflow: hidden;
 }
 
 .ul_4 > li {
@@ -745,7 +746,7 @@ header {
     margin-top: 0;
 }
 
-.products_best .products_wrap {
+.products_wrap {
     float: left;
     height: 326px;
     position: relative;
@@ -789,9 +790,12 @@ header {
     width: 221px;
 }
 
+.more_products:hover {
+    color: #ff8400;
+}
+
 .products_best .ul_4 {
-    margin: 0 0 8px 0;
-    overflow: hidden;
+    
 }
 
 .option {
