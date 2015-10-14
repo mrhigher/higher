@@ -769,6 +769,8 @@ header {
 
 .block_descripton {
     display: none;
+    position: relative;
+    z-index: 250;
 }
 
 .block_descripton > p {
@@ -829,22 +831,6 @@ header {
 .toggleMenu {
     display: none;
 }
-/*
-
-#bx_2 .bx-wrapper .bx-controls-direction a {
-    height: 37px;
-    margin-top: -14px;
-    width: 21px;
-}
-
-#bx_2 .bx-wrapper .bx-prev {
-    background: url(../img/bx_2_str.png) no-repeat 0 0;
-}
-
-#bx_2 .bx-wrapper .bx-next {
-    background: url(../img/bx_2_str.png) no-repeat -21px 0;
-}
-*/
 
 /*========================== END content ==========================*/
 
