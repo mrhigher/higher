@@ -31,6 +31,30 @@
     }
         })
           /*detect target and close cs_select*/
+          
+          
+    /*result search popup boxes*/          
+           $(document).mouseup(function (e)
+    {
+        var container = $(".searchinhead");
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $('.result_search').hide();
+        }
+    });
+    $(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+       $('.result_search').hide();
+    }
+        });
+                
+        $('.searchinhead').on('click',function() {
+         $('.result_search').show();   
+        });  
+        /*result search boxes end*/          
+
 
 
    
