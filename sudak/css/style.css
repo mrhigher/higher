@@ -159,7 +159,9 @@ header {
     border: 1px solid #d1d2d3;
     border-top: none;
     border-radius: 0 0 3px 3px;
+    height: 150px;
     position: absolute;
+    overflow: auto;
     width: 504px;
     top: 34px;
 }
