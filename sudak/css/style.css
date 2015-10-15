@@ -526,6 +526,14 @@ header {
     text-align: center;
 }
 
+.title_products a {
+    color: #252525;
+}
+
+.title_products a:hover {
+    color: #108442;
+}
+
 .price_line {
     color: #d1342f;
     font-size: 12px;
