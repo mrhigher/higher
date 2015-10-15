@@ -179,6 +179,33 @@
     }
 }
 
+@media only screen and (max-width: 633px) {
+    .authinheadinner {
+        float: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ul_1 {
+        clear: none;
+        float: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ul_1 > li {
+        background: none;
+    }
+    form.searchinhead {
+        clear: both;
+        display: table;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+}
+
 @media only screen and (max-width: 519px) {
     .products_best .products_wrap {
         float: none;
@@ -194,5 +221,22 @@
     .more {
         float: none;
         margin: 20px auto 0;
+    }
+}
+
+@media only screen and (max-width: 483px) { 
+    .btn_1 {
+        clear: both;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    .number_phone {
+        margin-left: 20px;
+    }
+    .agro {
+        float: left;
+        margin-bottom: 36px;
+        margin-left: 20px;
     }
 }

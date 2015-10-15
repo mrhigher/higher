@@ -143,11 +143,15 @@ header {
 }
 
 .searchinhead input[type=submit] {
-    background: url(../img/submit_ico.png) no-repeat;
+    background: url(../img/submit_ico.png) no-repeat 0 -33px;
     float: left;
     height: 33px;
     padding: 0;
     width: 55px;
+}
+
+.searchinhead input[type=submit]:hover {
+    background-position: 0 0;
 }
 
 .ul_1 {
@@ -198,6 +202,15 @@ header {
 .logo {
     float: left;
     margin: 19px 0 0 20px;
+}
+
+.number_phone {
+    background: url(../img/phone_ico.png) no-repeat left center;
+    float: left;
+    font-size: 26px;
+    line-height: 101px;
+    margin: 0 0 0 40px;
+    padding: 0 0 0 25px;
 }
 
 .agro {
