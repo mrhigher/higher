@@ -837,7 +837,7 @@ header {
     padding: 0 7px 8px 7px;
     position: absolute;
     top: -3px;
-    z-index: 250;
+/*    z-index: 250;*/
 }
 
 .products_wrap  > .citm.active {
@@ -845,12 +845,7 @@ header {
 }
 
 .block_descripton {
-/*    bottom: 0;*/
     display: none;
-/*
-    position: absolute;
-    z-index: 300;
-*/
 }
 
 .block_descripton > p {
@@ -1274,6 +1269,42 @@ header {
 
 .sortaou .cs-skin-sudak.cs-active span.cs-placeholder::after {
     margin-top: -2px;
+}
+
+№wrap_for_bx_2 li:nth-child(1) {
+    background: url(../img/slide_1.png) no-repeat;
+    height: 232px;
+    width: 100%;
+}
+
+.absolut_panel {
+    background: #fff;
+    border-top: 1px solid #d6d6d6;
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 800;
+}
+
+.absolut_panel li {
+    color: #16ab0f;
+    float: left;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.absolut_panel li a {
+    border-bottom: 1px dashed #16ab0f;
+    color: #16ab0f;
+    font-size: 13px;
+}
+
+.absolut_panel li a:hover {
+    color: #ff8400;
+    border-color: #ff8400;
 }
 
 /*========================== END katalog ==========================*/

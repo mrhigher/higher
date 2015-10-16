@@ -39,6 +39,11 @@ jQuery(document).ready(function() {
 		$('.overlay, .order_btn').fadeOut(500);
 	});
     
+    //wrap_for_bx_2
+    $('#wrap_for_bx_2').bxSlider({
+        controls: false
+    });
+    
     // slider
     $("#example_id").ionRangeSlider({
         grid: false,
