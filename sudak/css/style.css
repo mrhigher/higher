@@ -461,11 +461,14 @@ header {
     text-decoration: underline;
 }
 
-.catalogmenu > li h4 a {
+.catalogmenu > li .type a {
+    display:inline-block;
+    margin-bottom:5px;
     color: #009335;
 }
 
-.catalogmenu > li h4 a:hover {
+
+.catalogmenu > li .type a:hover {
     color: #ff8400;
     text-decoration: none;
 }
@@ -1630,14 +1633,14 @@ footer .center {
     width: 100%;
 }
 
-.open_menu h4 {
+.open_menu .type {
     color: #009335;
     float: left;
     font: bold 18px/1 Arial;
     padding: 0 32px 0 0;
 }
 
-.open_menu h4 img {
+.open_menu .type img {
     display: block;
 }
 
