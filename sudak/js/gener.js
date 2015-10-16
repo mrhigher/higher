@@ -53,7 +53,18 @@
         $('.searchinhead').on('click',function() {
          $('.result_search').show();   
         });  
-        /*result search boxes end*/          
+        /*result search boxes end*/ 
+        
+        var img = $("<img />").attr('src', 'http://somedomain.com/image.jpg')
+    .on('load', function() {
+        if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+            alert('broken image!');
+        } else {
+            $("#something").append(img);
+        }
+    });
+        
+        
 
 
 
