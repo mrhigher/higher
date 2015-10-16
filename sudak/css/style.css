@@ -463,7 +463,7 @@ header {
 
 .catalogmenu > li .type a {
     display:inline-block;
-    margin-bottom:5px;
+    margin-bottom:6px;
     color: #009335;
 }
 
@@ -1643,6 +1643,16 @@ footer .center {
 .open_menu .type img {
     display: block;
 }
+.open_menu .type .pct {
+    -webkit-transition: background-image 0.5s ease-in-out;
+    -moz-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+
+    width:63px;
+    height:63px;
+    display:block;
+}
+
 
 .open_menu p {
     float: left;
@@ -1900,5 +1910,6 @@ display: block; /* I added this line */
     text-align: center;
     width: 22px;
 }
+
 
 
