@@ -55,13 +55,20 @@
         });  
         /*result search boxes end*/ 
         
-        var img = $("<img />").attr('src', 'http://somedomain.com/image.jpg')
+        
+         $('.open_menu p').find('a').on('hover',function() {
+            
+             var data = $(this).data('ava');
+             var zpick = $(this).parent().prev().find('img');
+             var img = zpick.attr('src', data)
     .on('load', function() {
         if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            alert('broken image!');
+            alert('Что то не то');
         } else {
-            $("#something").append(img);
+            $(this).width('63').height('63');
+            //$("#something").append(img);
         }
+    }); 
     });
         
         
