@@ -240,3 +240,12 @@
         margin-left: 20px;
     }
 }
+
+@media only screen and (max-width: 449px) {
+    header {
+        display: none;
+    }
+    .mobile_menu {
+        display: block;
+    }
+}

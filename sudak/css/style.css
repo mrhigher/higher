@@ -1736,3 +1736,111 @@ display: block; /* I added this line */
     display:none;
 }
 /*cuselect end */
+
+/*========================== mobile_menu ==========================*/
+
+.mobile_menu {
+    background: #fdfdfd;
+    box-shadow: 5px 0px 41.58px 12.42px rgba(0, 0, 0, 0.75);
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 317px;
+    top: 0;
+    z-index: 600;
+}
+
+.close_form {
+    background: url(../img/close_form_ico.png) no-repeat center center;
+    display: block;
+    float: left;
+    height: 50px;
+    width: 57px;
+}
+
+.form_mobile {
+    border-left: 1px solid #d6d6d6;
+    float: left;
+}
+
+.form_mobile input[type=text] {
+    color: #a4a4a4;
+    font-size: 13.89px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0 0 21px;
+    width: 203px;
+}
+
+.form_mobile input[type=image] {
+    position: relative;
+    top: 5px;
+}
+
+.mobile_menu .ul_1 {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
+    clear: both;
+    float: none;
+    overflow: hidden;
+}
+
+.mobile_menu .ul_1 li {
+    border-right: 1px solid #d6d6d6;
+    padding: 10px 26px 10px 18px;
+}
+
+.mobile_menu .ul_1 li:last-child {
+    border-right: none;
+}
+
+.mobile_menu .ul_1 .p_1 {
+    padding-left: 35px;
+}
+
+.mobile_menu .ul_1 .p_2 {
+    padding-left: 38px;
+}
+
+.link_menu_mobile li {
+    border-bottom: 1px solid #d6d6d6;
+    height: 51px;
+    line-height: 51px;
+}
+
+.link_menu_mobile a {
+    color: #191818;
+    font-size: 13.89px;
+}
+
+.link_menu_mobile a:hover {
+    color: #20972a;
+}
+
+.link_menu_mobile span {
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    display: inline-block;
+    height: 25px;
+    margin: 0 18px 0 15px;
+    position: relative;
+    top: 10px;
+    width: 25px;
+}
+
+.mobile_menu.authinheadinner {
+    margin-right: 0;
+}
+
+.mobile_menu .authinheadinner li {
+    background: none;
+    line-height: 60px;
+}
+
+.mobile_menu .enter {
+    margin-left: 19px;
+    width: auto;
+}
+
+/*========================== END mobile_menu ==========================*/
