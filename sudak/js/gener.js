@@ -55,13 +55,25 @@
         });  
         /*result search boxes end*/ 
         
-        var img = $("<img />").attr('src', 'http://somedomain.com/image.jpg')
+        
+         $('.open_menu p').find('a').on('hover',function() {
+            
+             var data = $(this).data('ava');
+             var pct = $(this).parent().prev().find('.pct');
+             pct.css('background-image', 'url(' + data + ')');
+/*               var zpick = $(this).parent().prev().find('img'); 
+ *            var img = zpick.attr('src', data)
     .on('load', function() {
         if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            alert('broken image!');
+            alert('Что то не то');
+    
+          
         } else {
+            $(this).fadeIn(1000).width('63').height('63');
             $("#something").append(img);
+              $('.pct').css('background-image', 'url(' + data + ')');
         }
+    }); */
     });
         
         
