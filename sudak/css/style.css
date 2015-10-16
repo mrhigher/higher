@@ -156,6 +156,7 @@ header {
 }
 
 .result_search {
+    display:none;
     border: 1px solid #d1d2d3;
     border-top: none;
     border-radius: 0 0 3px 3px;
