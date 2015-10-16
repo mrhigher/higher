@@ -246,6 +246,13 @@
         display: none;
     }
     .mobile_menu {
+        display: none;
+    }
+    .agro, .number_phone, .btn_1, .more {
+        display: none;
+    }
+    .header_mobile {
         display: block;
     }
+    
 }
