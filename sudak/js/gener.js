@@ -59,6 +59,7 @@
         /*result search boxes end*/ 
         
         
+        /*preload avas on itm hover*/
          $('.open_menu p').find('a').on('hover',function() {
             
              var data = $(this).data('ava');
@@ -78,8 +79,9 @@
         }
     }); */
     });
+    /*preload avas on itm hover end*/
     
-
+    
     var mm_close = function() {
      var width = $('.mobile_menu').outerWidth();     
     $('.mobile_menu').animate({'left':- width +'px'}, function() {
@@ -95,6 +97,10 @@
     $('.close_form').on('click',function() {
          mm_close();
     });
+    
+    $('body').stPane(); //call stpane plugin
+    
+
         
         
 
