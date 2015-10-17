@@ -36,16 +36,19 @@
     /*result search popup boxes*/          
            $(document).mouseup(function (e)
     {
-        var container = $(".searchinhead");
+        var container = $(".searchinhead, .mobile_menu, .show_menu");
         if (!container.is(e.target) // if the target of the click isn't the container...
             && container.has(e.target).length === 0) // ... nor a descendant of the container
         {
             $('.result_search').hide();
+            mm_close();
+          
         }
     });
     $(document).keydown(function(e) {
     // ESCAPE key pressed
     if (e.keyCode == 27) {
+        mm_close(); //close mob menu
        $('.result_search').hide();
     }
         });
@@ -74,6 +77,23 @@
               $('.pct').css('background-image', 'url(' + data + ')');
         }
     }); */
+    });
+    
+
+    var mm_close = function() {
+     var width = $('.mobile_menu').outerWidth();     
+    $('.mobile_menu').animate({'left':- width +'px'}, function() {
+        $(this).removeClass('mini');
+        });
+    }
+    var mm_show = function() {
+     $('.mobile_menu').addClass('mini').animate({'left':'0px'});
+    }
+    $('.show_menu').on('click',function() {
+        mm_show();
+    });
+    $('.close_form').on('click',function() {
+         mm_close();
     });
         
         

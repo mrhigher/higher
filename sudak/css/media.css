@@ -35,6 +35,7 @@
         height: 28px;
     }
     #wrap_for_bx_1 {
+        margin-top:10px;
         margin-bottom: 30px;
     }
     footer .center {
@@ -135,6 +136,13 @@
         clear: both;
         margin-top: 20px;
     }
+    .ul_2 > li {
+        margin-bottom:15px;
+        border:1px solid #cfcfcf;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       border-radius: 3px;
+    }
 }
 
 @media only screen and (max-width: 984px) {
@@ -222,6 +230,10 @@
         float: none;
         margin: 20px auto 0;
     }
+    
+     #wrap_for_bx_1 li .inn {
+        height:190px;
+    }
 }
 
 @media only screen and (max-width: 483px) { 
@@ -239,14 +251,22 @@
         margin-bottom: 36px;
         margin-left: 20px;
     }
+        
 }
 
 @media only screen and (max-width: 449px) {
     header {
         display: none;
     }
+    .catalogmenu {
+        top:42px;
+       
+    }
     .mobile_menu {
         display: none;
+    }
+     .mobile_menu.mini {
+        display: block;
     }
     .agro, .number_phone, .btn_1, .more, .ul_2 {
         display: none;
