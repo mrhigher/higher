@@ -633,7 +633,7 @@ header {
     min-width: 100px;
 }
 
-.count span {
+.count span, .basket_count span {
     background-image: url(../img/plus_minus.png);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -652,7 +652,7 @@ header {
     margin: 0 0 0 2px;
 }
 
-.count input {
+.count input, .basket_count input {
     border: 1px solid #c7c7c7;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1312,44 +1312,81 @@ header {
     margin-top: -2px;
 }
 
-#wrap_for_bx_2 li:nth-child(1) {
-    background: url(../img/slide_1.png) no-repeat;
-     width: 100%;
-}
-#wrap_for_bx_2 li .inn, #wrap_for_bx_1 li .inn {
-    background-size:cover;
-    background-repeat: no-repeat;    
-    height: 232px; 
-}
-
-.absolut_panel {
+.basket_show {
     background: #fff;
-    border-top: 1px solid #d6d6d6;
-    bottom: 0;
-    height: 40px;
+    border: 1px solid #cfcfcf;
+    color: #252525;
+/*    bottom: 0;*/
     left: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 800;
+    position: absolute;
 }
 
-.absolut_panel li {
-    color: #16ab0f;
-    float: left;
-    line-height: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+.basket_show th {
+    font-family: 'pt_sansbold';
+    padding: 5px 0;
 }
 
-.absolut_panel li a {
-    border-bottom: 1px dashed #16ab0f;
-    color: #16ab0f;
-    font-size: 13px;
+.basket_show td {
+    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    vertical-align: middle;
 }
 
-.absolut_panel li a:hover {
-    color: #ff8400;
-    border-color: #ff8400;
+.basket_show td a {
+    color: #252525;
+}
+
+.basket_show td a:hover {
+    color: #1b9f24;
+}
+
+.produts_in_basket {
+    padding-left: 10px;
+}
+
+.produts_in_basket img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.basket_count span, .basket_count input {
+    display: inline-block;
+}
+
+.basket_count span {
+    vertical-align: middle;
+}
+
+.basket_count input {
+    margin: 0 3px;
+}
+
+.products_name {
+    padding-left: 10px;
+    width: 625px;
+}
+
+.price_in_basket, .summa {
+    text-align: center;
+    width: 125px;
+}
+
+.checkbox_basket {
+    display: none;
+}
+
+.checkbox_basket + label {
+    background: url(../img/checkbox.png) no-repeat 0 0;
+    display: inline-block;
+    height: 17px;
+    margin-left: 10px;
+    width: 17px;
+}
+
+.checkbox_basket:checked + label {
+    background-position: 0 -17px;
 }
 
 /*========================== END katalog ==========================*/
