@@ -520,7 +520,9 @@ header {
 #wrap_for_bx_1 {
     margin: 20px 0 0 0;
 }
-
+#wrap_for_bx_1 .inn {
+    height:232px;
+}
 #wrap_for_bx_1 .bx-wrapper .bx-viewport, #wrap_for_bx_2 .bx-wrapper .bx-viewport,  #bx_2 .bx-wrapper .bx-viewport {
     border: none;
     box-shadow: none;
