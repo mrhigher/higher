@@ -3,23 +3,24 @@ jQuery(document).ready(function() {
     var slider = $('#wrap_for_bx_1 .bxslider').bxSlider({
         mode: 'fade',
         pager: false,
-        controls: false
+        controls: false,
+        auto:true,
     });
 
     $('.slider-next1').click(function(){
-      slider.goToNextSlide(1);
+      slider.goToSlide(1);
       return false;
     });
     $('.slider-next2').click(function(){
-      slider.goToNextSlide(2);
+      slider.goToSlide(2);
       return false;
     });
     $('.slider-next3').click(function(){
-      slider.goToNextSlide(3);
+      slider.goToSlide(3);
       return false;
     });
     $('.slider-next4').click(function(){
-      slider.goToNextSlide(4);
+      slider.goToSlide(4);
       return false;
     });
     
@@ -39,10 +40,7 @@ jQuery(document).ready(function() {
 		$('.overlay, .order_btn').fadeOut(500);
 	});
     
-    //wrap_for_bx_2
-    $('#wrap_for_bx_2').bxSlider({
-        controls: false
-    });
+   
     
     // slider
     $("#example_id").ionRangeSlider({

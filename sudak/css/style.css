@@ -129,6 +129,8 @@ header {
 
 .searchinhead {
     border: 1px solid #d1d2d3;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     float: left;
     margin: 5px 29px 0 0;
@@ -268,6 +270,8 @@ header {
     background: -o-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: -ms-linear-gradient(-90deg, #7d7d7d 0%, #212121 99%);
     background: linear-gradient(180deg, #7d7d7d 0%, #212121 99%);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-box-shadow: inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow:    inset 0px -2px 0px 2px rgba(0, 0, 0, 0.75);
@@ -313,6 +317,8 @@ header {
     background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     color: #ffffff;
     display: block;
     float: right;
@@ -352,6 +358,8 @@ header {
     background: linear-gradient(180deg, #ffffff 0%, #ededed 99%);
     border: 1px solid #cfcfcf;
     border-bottom: none;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
     float: left;
     margin: 0 8px 0 0;
@@ -397,6 +405,8 @@ header {
 }
 
 .menu_left {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
     float: left;
     position: relative;
@@ -501,7 +511,7 @@ header {
     margin: 20px 0 0 0;
 }
 
-#wrap_for_bx_1 .bx-wrapper .bx-viewport, #bx_2 .bx-wrapper .bx-viewport {
+#wrap_for_bx_1 .bx-wrapper .bx-viewport, #wrap_for_bx_2 .bx-wrapper .bx-viewport,  #bx_2 .bx-wrapper .bx-viewport {
     border: none;
     box-shadow: none;
     left: 0;
@@ -547,6 +557,8 @@ header {
 
 .products {
 /*    border: 1px solid #c7c7c7;*/
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     margin: 0 0 40px 0;
 /*    overflow: hidden;*/
@@ -658,13 +670,21 @@ header {
     margin: 0 0 8px 2px;
     overflow: hidden;
 }
-
+.ul_4:before, .ul_4:after {
+    content:'';
+    display:table;
+    }
+.ul_4:after {
+    clear:both;
+}
 .ul_4 > li {
     float: left;
 }
 
 .ul_4 > li a {
     box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     color: #ffffff;
     display: block;
@@ -708,6 +728,8 @@ header {
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     width: 103px;
 }
@@ -802,6 +824,8 @@ header {
 .menu_best li.active {
     border-bottom-color: #ffffff;
     border-top: 3px solid #108442;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
     box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.34);
     position: relative;
@@ -836,8 +860,8 @@ header {
     left: 0;
     padding: 0 7px 8px 7px;
     position: absolute;
-    top: -3px;
-/*    z-index: 250;*/
+    top:0px;
+
 }
 
 .products_wrap  > .citm.active {
@@ -893,6 +917,9 @@ header {
 
 .products_wrap > .citm:hover .block_descripton, .products_wrap > .citm:hover .option, .products_wrap > .citm:hover .opt  {
     display: block;
+}
+.products_wrap > .citm:hover {
+    z-index:201;
 }
 
 .toggleMenu {
@@ -961,6 +988,8 @@ header {
     
 .filtr_price {
     border: 1px solid #cfcfcf;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     color: #242323;
     height: 29px;
@@ -1059,6 +1088,8 @@ header {
 }
 
 .btn_reset {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
@@ -1087,6 +1118,8 @@ header {
 .catalogsorter {
     background: #f8f8f8;
     border: 1px solid #cfcfcf;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     margin: 0 0 7px 0;
     padding: 0 0 0 15px;
@@ -1095,6 +1128,8 @@ header {
 .catalogsorter div.cs-skin-sudak {
     background: #fff;
     border: 1px solid #cfcfcf;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     margin: 4px 0;
     width: 150px;
@@ -1159,6 +1194,8 @@ header {
     background: -ms-linear-gradient(top,  #16ab0f 0%,#2d7270 100%);
     background: linear-gradient(to bottom,  #16ab0f 0%,#2d7270 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', endColorstr='#2d7270',GradientType=0 );
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
@@ -1194,6 +1231,8 @@ header {
 
 .navi {
     border: 1px solid #cfcfcf;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     padding: 5px 0;
 }
@@ -1236,6 +1275,8 @@ header {
 .sortaou div.cs-skin-sudak {
     background: #fff;
     border: 1px solid #cfcfcf;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     margin: 0 0 0 10px;
     padding: 8px 0 0 0;
@@ -1271,10 +1312,14 @@ header {
     margin-top: -2px;
 }
 
-№wrap_for_bx_2 li:nth-child(1) {
+#wrap_for_bx_2 li:nth-child(1) {
     background: url(../img/slide_1.png) no-repeat;
-    height: 232px;
-    width: 100%;
+     width: 100%;
+}
+#wrap_for_bx_2 li .inn, #wrap_for_bx_1 li .inn {
+    background-size:cover;
+    background-repeat: no-repeat;    
+    height: 232px; 
 }
 
 .absolut_panel {
@@ -1347,6 +1392,8 @@ footer .center {
 .block_green {
     background: url(../img/green_bg.jpg) no-repeat;
     border-bottom: 1px solid #174220;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     float: right;
     margin: 20px 0 0 0;
@@ -1406,6 +1453,8 @@ footer .center {
     border-bottom: 1px solid #194136;
     border-left: 1px solid #256f39;
     border-right: 1px solid #256f39;
+     -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     font-family: 'pt_sansbold';
     color: #ffffff;
@@ -1451,6 +1500,8 @@ footer .center {
 .order_btn {
     background: #fafafa;
     border: 2px solid #148316;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     display: none;
     left: 50%;
@@ -1493,6 +1544,8 @@ footer .center {
     -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.04);
     -moz-box-shadow:    inset 0px 2px 3px 0px rgba(0, 0, 0, 0.04);
     box-shadow:         inset 0px 2px 3px 0px rgba(0, 0, 0, 0.04);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     color: #a2a2a2;
     display: block;
@@ -1510,6 +1563,8 @@ footer .center {
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
@@ -1791,6 +1846,7 @@ display: block; /* I added this line */
     overflow: hidden;
     position: absolute;
     width: 317px;
+    left:-317px;
     top: 0;
     z-index: 600;
 }
@@ -1865,6 +1921,8 @@ display: block; /* I added this line */
 
 .link_menu_mobile span {
     background-color: #d6d6d6;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     display: inline-block;
     height: 25px;
@@ -1931,6 +1989,8 @@ display: block; /* I added this line */
 
 .basket span {
     background-color: #25874c;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     color: #ffffff;
     display: block;
