@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
         mode: 'fade',
         pager: false,
         controls: false,
-        auto:true,
+        auto:false,
     });
 
     $('.slider-next1').click(function(){
