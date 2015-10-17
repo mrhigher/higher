@@ -1336,7 +1336,6 @@ header {
     display:block;
 }
 .basket_wrap {
-   
     z-index:2001;
     position: absolute;
     /* center the div */
@@ -1346,31 +1345,39 @@ header {
     margin-left: auto;
     /* give it dimensions */
     min-height: 10em;
-    width: 90%;
+    width: 1025px;
     /* just for example presentation */
     top: 5em;
-    background-color: blue;
     
 }
 .basket_wrap  .rine.active  {
-      display:block;
-      background: #fff;  
+    display:block;
+    background: #fff;  
+    overflow: hidden;
 }
 .basket_wrap  .rine  {
     display:none;
 }
 
 .basket_show {
-    
     overflow-x:auto;
     border: 1px solid #cfcfcf;
     color: #252525;
-/*    bottom: 0;*/
+    margin: 0 0 10px 0;
 }
 
 .basket_show th {
-    font-family: 'pt_sansbold';
-    padding: 5px 0;
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    height: 34px;
+    vertical-align: middle;
 }
 
 .basket_show td {
@@ -1379,6 +1386,10 @@ header {
     padding-bottom: 5px;
     padding-top: 5px;
     vertical-align: middle;
+}
+
+.basket_show tr:nth-child(even) {
+    background-color: #ededed;
 }
 
 .basket_show td a {
@@ -1394,8 +1405,18 @@ header {
 }
 
 .produts_in_basket img {
-    max-height: 40px;
-    max-width: 40px;
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    display: inline-block;
+    max-height: 51px;
+    max-width: 52px;
+}
+
+.basket_count {
+    border-right: 1px solid #d9d6d6;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 106px;
 }
 
 .basket_count span, .basket_count input {
@@ -1411,11 +1432,13 @@ header {
 }
 
 .products_name {
+    border-right: 1px solid #d9d6d6;
     padding-left: 10px;
-    width: 625px;
+    width: 420px;
 }
 
 .price_in_basket, .summa {
+    border-right: 1px solid #d9d6d6;
     text-align: center;
     width: 125px;
 }
@@ -1435,6 +1458,105 @@ header {
 .checkbox_basket:checked + label {
     background-position: 0 -17px;
 }
+
+.delete {
+    text-align: center;
+    width: 106px;
+}
+
+.form_skidka {
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    float: left;
+    margin: 0 0 40px 20px;
+}
+
+.form_skidka input[type=text] {
+    float: left;
+    height: 30px;
+    padding: 0 0 0 14px;
+    width: 155px;
+}
+
+.form_skidka input[type=submit] {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    color: #ffffff;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.itog {
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+.itog input[type=submit] {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    width: 217px;
+}
+
+.all_delete, .delete_1 {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 15px;
+}
+
+.all_delete {
+    clear: both;
+    margin: 0 20px 20px;
+}
+
+.form_skidka input[type=submit]:hover, .itog input[type=submit]:hover, .all_delete:hover, .delete_1:hover {
+    background: -webkit-linear-gradient(-90deg, #1ec916 0%, #298a6b 99%);
+    background: -moz-linear-gradient(-90deg, #1ec916 0%, #298a6b 99%);
+    background: -o-linear-gradient(-90deg, #1ec916 0%, #298a6b 99%);
+    background: -ms-linear-gradient(-90deg, #1ec916 0%, #298a6b 99%);
+    background: linear-gradient(180deg, #1ec916 0%, #298a6b 99%);
+}
+
+.products_count, .itog_summa {
+    margin-right: 20px;
+}
+
+.products_count span, .itog_summa span {
+    font-family: 'pt_sansbold';
+}
+
 
 /*========================== END katalog ==========================*/
 
