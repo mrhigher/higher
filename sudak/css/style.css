@@ -1312,13 +1312,16 @@ header {
     margin-top: -2px;
 }
 
-.basket_show {
+.basket_wrap {
     background: #fff;
+    left: 0;
+    position: absolute; 
+}
+
+.basket_show {
     border: 1px solid #cfcfcf;
     color: #252525;
 /*    bottom: 0;*/
-    left: 0;
-    position: absolute;
 }
 
 .basket_show th {
