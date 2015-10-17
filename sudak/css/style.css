@@ -1812,9 +1812,9 @@ footer .center {
     display: block;
 }
 .open_menu .type .pct {
-    -webkit-transition: background-image 0.5s ease-in-out;
-    -moz-transition: background-image 0.5s ease-in-out;
-    transition: background-image 0.5s ease-in-out;
+    -webkit-transition: background-image 0.3s ease-in-out;
+    -moz-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
 
     width:63px;
     height:63px;
