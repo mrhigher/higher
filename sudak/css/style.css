@@ -515,7 +515,8 @@ header {
 }
 
 .content_right {
-    float: right;
+    float: left;
+    margin-left: 1%;
     width: 967px;
 }
 
