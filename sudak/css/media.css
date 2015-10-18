@@ -198,6 +198,11 @@
         float: none;
         width: auto;
     }
+    .popup_form {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .order_btn {
         width: 445px;
     }
