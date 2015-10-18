@@ -48,6 +48,8 @@
         padding-left: 1%;
         width: 99%;
     }
+    
+    
 }
 
 @media only screen and (max-width: 1137px) {
@@ -150,7 +152,7 @@
         width: 225px;
     }
     .basket_count {
-        width: 104px;
+        width: 128px;
     }
 }
 

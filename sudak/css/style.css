@@ -1350,10 +1350,9 @@ header {
     margin-left: auto;
     /* give it dimensions */
     min-height: 10em;
-/*    width: 1025px;*/
-    /* just for example presentation */
+    width: 90%;
     top: 5em;
-    display: table;
+
     
 }
 .basket_wrap  .rine.active  {
@@ -1441,6 +1440,7 @@ header {
 }
 
 .basket_show {
+    width:100%;
     overflow-x:auto;
     border: 1px solid #cfcfcf;
     color: #252525;
@@ -1479,6 +1479,10 @@ header {
 
 .basket_show td a:hover {
     color: #1b9f24;
+}
+
+.products_labal {
+    width:1px;
 }
 
 .produts_in_basket {

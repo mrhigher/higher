@@ -98,6 +98,7 @@
                  handles: {
                      's':'.ui-resizable-s'
                  },
+               
                 
                 
                  
