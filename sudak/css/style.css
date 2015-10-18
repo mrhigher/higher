@@ -1375,9 +1375,8 @@ header {
     background-color: skyblue;
     height:33px;
     width:100%;
-    bottom:0px;
     right:0px;
-    top:auto;
+    bottom:0px;
     }
 
     .basket_wrap .row:before, .basket_wrap .row:after {

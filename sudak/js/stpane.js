@@ -22,6 +22,52 @@
           if($.isFunction(setCartpos)) {
           setCartpos();
             }
+            
+            
+                 var compare = $( ".compare_out .resizable" ).resizable({
+                 handles: {
+                     's':$('.compare_out .sudak_resizable')
+                 },
+                 resize: function( event, ui ) {
+                           
+                      $('.compare_out .resizable').scroll(function(){
+            var height = $(this).height();
+            var st = $(this).scrollTop();
+            $('compare_out  .sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
+                });
+                 }
+  
+                    });
+                    
+                     var fav = $( ".fav_out .resizable" ).resizable({
+                 handles: {
+                     's':$('.fav_out .sudak_resizable')
+                 },
+                 resize: function( event, ui ) {
+                           
+                      $('.fav_out  .resizable').scroll(function(){
+            var height = $(this).height();
+            var st = $(this).scrollTop();
+            $('.fav_out .sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
+                });
+                 }
+  
+                    });
+                    
+                 var bask = $( ".bask_out .resizable" ).resizable({
+                 handles: {
+                     's':$('.bask_out .sudak_resizable')
+                 },
+                 resize: function( event, ui ) {
+                    
+                      $('.bask_out .resizable').scroll(function(){
+            var height = $(this).height();
+            var st = $(this).scrollTop();
+            $('.bask_out .sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
+                });
+                 }
+  
+                    });
         
         
          var show_cart = function(el) {

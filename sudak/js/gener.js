@@ -91,26 +91,8 @@
     
     $('body').stPane(); //call stpane plugin
     
-         $( ".resizable" ).resizable({
-//		handles: {
-//			
-//		},
-                 handles: {
-                     's':'.ui-resizable-s'
-                 },
-               
-                
-                
-                 
-//                    stop: function(event, ui) {
-//                        $(this).css("width", '');
-//                    }
-                
-                
-                
-                
-		//minWidth: 50
-	});
+    
+        
         
 
     
