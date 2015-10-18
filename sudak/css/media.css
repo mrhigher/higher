@@ -223,6 +223,9 @@
     .ul_1 {
         margin-left: 25px;
     }
+    .flexslider.flexgall .flex-direction-nav .flex-prev {
+        margin-left: -20px;
+    }
 }
 
 @media only screen and (max-width: 633px) {
@@ -322,9 +325,6 @@
     }
     .header_mobile {
         display: block;
-    }
-    .flexslider.flexgall .flex-direction-nav .flex-prev {
-        margin-left: -20px;
     }
     
 }
