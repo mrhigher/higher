@@ -323,5 +323,8 @@
     .header_mobile {
         display: block;
     }
+    .flexslider.flexgall .flex-direction-nav .flex-prev {
+        margin-left: -20px;
+    }
     
 }
