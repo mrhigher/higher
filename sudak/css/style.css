@@ -1349,9 +1349,10 @@ header {
     margin-left: auto;
     /* give it dimensions */
     min-height: 10em;
-    width: 1025px;
+/*    width: 1025px;*/
     /* just for example presentation */
     top: 5em;
+    display: table;
     
 }
 .basket_wrap  .rine.active  {
@@ -1600,7 +1601,7 @@ header {
     width: 217px;
 }
 
-.all_delete, .delete_1 {
+.all_delete, .delete_1, .oform {
     background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
@@ -1614,9 +1615,14 @@ header {
     color: #ffffff;
     display: inline-block;
     float: left;
-    height: 42px;
     line-height: 42px;
     padding: 0 15px;
+}
+
+.oform {
+    float: right;
+    font-size: 16px;
+    margin-right: 20px;
 }
 
 .all_delete {
