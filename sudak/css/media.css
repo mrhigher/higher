@@ -145,6 +145,15 @@
     }
 }
 
+@media only screen and (max-width: 987px) {
+    .products_name {
+        width: 225px;
+    }
+    .basket_count {
+        width: 104px;
+    }
+}
+
 @media only screen and (max-width: 984px) {
     .block_green {
         background: #19a415;
