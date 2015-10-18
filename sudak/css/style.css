@@ -1375,11 +1375,10 @@ header {
  .ui-resizable-handle.sudak_resizable {
     background-color: skyblue;
     height:33px;
-/*    height:18px;*/
     width:100%;
-/*    bottom:0px;*/
+    bottom:0px;
     right:0px;
-/*    top:auto;*/
+    top:auto;
     }
 
     .basket_wrap .row:before, .basket_wrap .row:after {
