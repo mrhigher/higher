@@ -93,13 +93,12 @@
         overflow: hidden;
         width: 913px;
     }
- 
 }
 
 @media only screen and (max-width: 1059px) {
     .ul_1 {
         float: left;
-        margin: 10px 0;
+        margin-top: 10px;
     }
 }
 

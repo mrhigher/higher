@@ -203,6 +203,7 @@ header {
 
 .ul_1 {
     float: left;
+    margin: 0 0 10px 0;
 }
 
 .ul_1 > li {
@@ -559,6 +560,7 @@ header {
 
 .menu_slider a:hover {
     border-bottom-width: 3px;
+    box-sizing: border-box;
     color: #0f8442;
 }
 
@@ -571,12 +573,10 @@ header {
 }
 
 .products {
-/*    border: 1px solid #c7c7c7;*/
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     margin: 0 0 40px 0;
-/*    overflow: hidden;*/
 }
 
 .products > div {
