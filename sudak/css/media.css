@@ -12,6 +12,9 @@
         float: right;
         margin-right: 10px;
     }
+    .result_search {
+        width: 318px;
+    }
     .content_right {
         width: 75%;
     }
@@ -186,6 +189,26 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .phone_number {
+        text-align: center;
+    }
+    .phone_number span {
+        display: block;
+    }
+    .phone_number, .popup_form {
+        float: none;
+        width: auto;
+    }
+    .order_btn {
+        width: 445px;
+    }
+    .popup_form input[type=submit] {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media only screen and (max-width: 729px) {
     .copyright {
         line-height: 1.2;
@@ -250,6 +273,7 @@
 @media only screen and (max-width: 483px) { 
     .btn_1 {
         clear: both;
+        display: table;
         float: none;
         margin-left: auto;
         margin-right: auto;    
