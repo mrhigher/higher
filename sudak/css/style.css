@@ -164,6 +164,7 @@ header {
     border-radius: 0 0 3px 3px;
     height: 150px;
     position: absolute;
+    z-index:3;
     overflow: auto;
     width: 504px;
     top: 34px;
@@ -652,6 +653,9 @@ header {
     display: block;
     height: 21px;
     width: 21px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .ico_minus {
@@ -1359,6 +1363,85 @@ header {
     display:none;
 }
 
+.bask_sizbl {
+
+}
+
+.resizable {
+    background: #fff;  
+    overflow-y:auto;
+    position:relative;
+    }
+ .ui-resizable-e.sudak_resizable {
+    background-color: skyblue;
+    height:33px;
+/*    height:18px;*/
+    width:100%;
+    bottom:0px;
+    right:0px;
+    top:auto;
+    }
+
+    .basket_wrap .row:before, .basket_wrap .row:after {
+        content:'';
+        display:table;
+    }
+    .basket_wrap .row:after {
+        clear:both;
+    }
+    
+.basket_wrap .rsec_tyanya  {
+  
+    text-align: center;
+    cursor: n-resize;
+    background-color: #F3F3F3;
+}
+
+.bask_sizbl {
+    padding-bottom:33px;
+}
+
+.basket_wrap .out_rsec {
+    height:16px;
+}
+
+.basket_wrap .rsec_tyanya .rsec_iconka {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.basket_wrap  .rsec_iconka {
+    
+    width: 83px;
+    height: 16px;
+    margin: 10px 0px 8px 84px;
+    background-position: 0px 0px;
+}
+.basket_wrap  .rsec_iconka  {
+    display:block;
+    background-image: url('../img/resize_icon.png');
+}
+.basket_wrap .rsec_close {
+    display: block;
+    float: right;
+    height: 10px;
+    padding: 8px 12px 12px 10px;
+    cursor: pointer;
+    color:#252525;
+    font-size:14px;
+}
+.basket_wrap .rsec_close:hover {
+    color:#108442;
+}
+.basket_wrap .rsec_close .rsec_iconka {
+    width: 17px;
+    height: 17px;
+    margin: 0px 0px 2px 5px;
+    background:url(../img/1445169729_ic_close_48px.png);
+    background-size:cover;
+}
+
 .basket_show {
     overflow-x:auto;
     border: 1px solid #cfcfcf;
@@ -1474,7 +1557,7 @@ header {
 .form_skidka input[type=text] {
     float: left;
     height: 30px;
-    padding: 0 0 0 14px;
+    padding: 0 5px 0 14px;
     width: 155px;
 }
 
@@ -1497,7 +1580,7 @@ header {
 
 .itog {
     float: right;
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
 }
 
 .itog input[type=submit] {

@@ -11,7 +11,7 @@
 
         return this.each( function() {
          
-          var bwh = obj.box.outerHeight();
+         var bwh = obj.box.outerHeight();
          var h  = obj.header.outerHeight();
 
            setCartpos = function() {
@@ -29,21 +29,20 @@
     $(el).addClass('active');       
     $('.backfade').addClass('show');
     obj.box.css({top:'-'+ bwh+'px' })
-    .animate({top: 30 +'%'}, 800, function() {
+    .animate({top: 30 +'%'}, 500, function() {
     });
     }
    
      $('.compare_lnk').on('click',function() {
         show_cart('.compare_out');
     });
-    
+     
      $('.fav_lnk').on('click',function() {
         show_cart('.fav_out');
     });
     
     $('.bask_lnk').on('click',function() {
         show_cart('.bask_out');
-        
     });
         
               $(document).mouseup(function (e)
@@ -60,12 +59,19 @@
         }
     });
     
+    
+    $('.rsec_close').on('click',function() {
+          setCartpos();
+    });
+    
     $(document).keydown(function(e) {
     // ESCAPE key pressed
     if (e.keyCode == 27) {
          setCartpos();
     }
         });
+     
+            
    
    
             // We'll get back to this in a moment
