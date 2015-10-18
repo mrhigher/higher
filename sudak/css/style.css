@@ -1609,6 +1609,7 @@ header {
     height: 42px;
     line-height: 42px;
     width: 217px;
+    margin-left:20px;
 }
 
 .all_delete, .delete_1, .oform {
