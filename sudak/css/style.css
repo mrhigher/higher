@@ -1353,7 +1353,7 @@ header {
 /*    width: 1025px;*/
     /* just for example presentation */
     top: 5em;
-    display: table;
+    width: 1025px;
     
 }
 .basket_wrap  .rine.active  {
