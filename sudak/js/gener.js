@@ -93,11 +93,12 @@
     
          $( ".resizable" ).resizable({
 //		handles: {
-//			//s: ".ui-resizable-e"
+//			
 //		},
                  handles: {
-                     's':'#sgrip'
+                     's':'.ui-resizable-s'
                  },
+               
                 
                 
                  
