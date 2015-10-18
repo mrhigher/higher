@@ -95,7 +95,11 @@
 //		handles: {
 //			//s: ".ui-resizable-e"
 //		},
-                 handles: 's',
+                 handles: {
+                     's':'#sgrip'
+                 },
+                
+                
                  
 //                    stop: function(event, ui) {
 //                        $(this).css("width", '');
@@ -107,23 +111,7 @@
 		//minWidth: 50
 	});
         
-        
-//            $(".resizable")
-//      .wrap('<div/>')
-//        .css({'overflow':'hidden'})
-//          .parent()
-//            .css({'display':'inline-block',
-//                  'overflow':'hidden',
-//                  'height':function(){return $('.resizable',this).height();},
-//                  'width':  function(){return $('.resizable',this).width();},
-//                  'paddingBottom':'12px',
-//                  'paddingRight':'12px'
-//                  
-//                 }).resizable()
-//                    .find('.resizable')
-//                      .css({overflow:'auto',
-//                            width:'100%',
-//                            height:'100%'});
+
     
 
         

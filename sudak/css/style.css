@@ -1369,10 +1369,9 @@ header {
     overflow-y:auto;
     position:relative;
     }
- .ui-resizable-e.sudak_resizable {
+ .ui-resizable-handle.sudak_resizable {
     background-color: skyblue;
     height:33px;
-/*    height:18px;*/
     width:100%;
     bottom:0px;
     right:0px;
@@ -1392,6 +1391,7 @@ header {
     text-align: center;
     cursor: n-resize;
     background-color: #F3F3F3;
+   
 }
 
 .bask_sizbl {
