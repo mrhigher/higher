@@ -1446,6 +1446,10 @@ header {
     border: 1px solid #cfcfcf;
     color: #252525;
     margin: 0 0 10px 0;
+  
+}
+.basket_show, .basket_wrap .rsec_tyanya {
+    min-width:500px;  
 }
 
 .basket_show th {
@@ -1502,7 +1506,11 @@ header {
     border-right: 1px solid #d9d6d6;
     padding-left: 18px;
     padding-right: 18px;
+   
+}
+.basket_incount {
     width: 106px;
+    margin:0px auto;
 }
 
 .basket_count span, .basket_count input {
