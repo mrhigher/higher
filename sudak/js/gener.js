@@ -93,10 +93,10 @@
     
          $( ".resizable" ).resizable({
 //		handles: {
-//			//s: ".ui-resizable-e"
+//			
 //		},
                  handles: {
-                     's':'sudak_resizable'
+                     's':'.ui-resizable-s'
                  },
                 
                 
