@@ -96,7 +96,7 @@
 //			//s: ".ui-resizable-e"
 //		},
                  handles: {
-                     's':'#sgrip'
+                     's':'sudak_resizable'
                  },
                 
                 
