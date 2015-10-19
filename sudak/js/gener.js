@@ -107,7 +107,7 @@
   var sticky = $('.header'),
       scroll = $(window).scrollTop();
       var stickh = sticky.outerHeight();
-  if (scroll >= 100) 
+  if (scroll >= stickh) 
   {
       sticky.addClass('fixed'); 
       $('.block_1').css('margin-top',stickh+'px');
@@ -117,6 +117,10 @@
       $('.block_1').css('margin-top',0+'px');
   }
 });
+
+    
+    	$('.phone_mask').mask('+7 (000) 000-00-00');
+
         
         
 
