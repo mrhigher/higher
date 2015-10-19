@@ -95,7 +95,9 @@
     {
         var container = obj.box;
         if (!container.is(e.target) // if the target of the click isn't the container...
-            && container.has(e.target).length === 0) // ... nor a descendant of the container
+            && container.has(e.target).length === 0 
+            && (e.target != $('html').get(0)))
+            
         {
            
              if($.isFunction(setCartpos)) {
