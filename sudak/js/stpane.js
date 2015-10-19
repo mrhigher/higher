@@ -4,9 +4,13 @@
 
         // Establish our default settings
         var obj = $.extend({
-            box         : $(".basket_wrap"),
+            box         : $('.basket_wrap'),
             rine : $('.basket_wrap').find('.rine'),
             header : $('header'),
+            compare_out:$('.compare_out'),
+            fav_out:$('.fav_out'),
+            bask_out:$('.bask_out')
+            
         }, obj);
 
         return this.each( function() {
@@ -24,46 +28,61 @@
             }
             
             
-                 var compare = $( ".compare_out .resizable" ).resizable({
+                 var compare = obj.compare_out.find('.resizable').resizable({
                  handles: {
-                     's':$('.compare_out .sudak_resizable')
+                     's':obj.compare_out.find('.sudak_resizable')
                  },
                  resize: function( event, ui ) {
+                    
+                    var res_h = ui.size.height;
+                    var res_st = obj.compare_out.find('.resizable').scrollTop();
+                    obj.compare_out.find('.sudak_resizable').css({'bottom':'auto', 'top':res_h + res_st +'px'});
+                     
                            
-                      $('.compare_out .resizable').scroll(function(){
+                     obj.compare_out.find('.resizable').scroll(function(){
             var height = $(this).height();
             var st = $(this).scrollTop();
-            $('compare_out  .sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
+            obj.compare_out.find('.sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
                 });
                  }
   
                     });
                     
-                     var fav = $( ".fav_out .resizable" ).resizable({
+                     var fav = obj.fav_out.find('.resizable').resizable({
                  handles: {
-                     's':$('.fav_out .sudak_resizable')
+                     's':obj.fav_out.find('.sudak_resizable')
                  },
                  resize: function( event, ui ) {
+                     
+                    var res_h = ui.size.height;
+                    var res_st = obj.fav_out.find('.resizable').scrollTop();
+                    obj.fav_out.find('.sudak_resizable').css({'bottom':'auto', 'top':res_h + res_st +'px'});
+                     
                            
-                      $('.fav_out  .resizable').scroll(function(){
+                      obj.fav_out.find('.resizable').scroll(function(){
             var height = $(this).height();
             var st = $(this).scrollTop();
-            $('.fav_out .sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
+            obj.fav_out.find('.sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
                 });
                  }
   
                     });
                     
-                 var bask = $( ".bask_out .resizable" ).resizable({
+                 var bask = obj.bask_out.find('.resizable').resizable({
                  handles: {
-                     's':$('.bask_out .sudak_resizable')
+                     's':obj.bask_out.find('.sudak_resizable')
                  },
                  resize: function( event, ui ) {
+                     
+                     var res_h = ui.size.height;
+                    var res_st = obj.bask_out.find('.resizable').scrollTop();
+                    obj.bask_out.find('.sudak_resizable').css({'bottom':'auto', 'top':res_h + res_st +'px'});
+
                     
-                      $('.bask_out .resizable').scroll(function(){
+                      obj.bask_out.find('.resizable').scroll(function(){
             var height = $(this).height();
             var st = $(this).scrollTop();
-            $('.bask_out .sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
+            obj.bask_out.find('.sudak_resizable').css({'bottom':'auto', 'top':height + st +'px'});
                 });
                  }
   
