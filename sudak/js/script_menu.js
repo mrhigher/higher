@@ -14,6 +14,10 @@ $(document).ready(function() {
 			$(this).addClass("parent");
 		};
 	})
+        
+        $(".catalogmenu li ul li").on('hover',function() {
+             //$(this).find('.block_menu_1').css('background','red');
+        })
 	
 	$(".toggleMenu").click(function(e) {
 		e.preventDefault();

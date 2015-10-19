@@ -1,7 +1,13 @@
      
+     
+
+
       
 
      $(function () {
+        
+ 
+         
       $('.ico_plus').on('click',function(){
         var $qta=$(this).closest('.count').find('.qta');
         var currentVal = parseInt($qta.val());
@@ -64,8 +70,9 @@
          $('.open_menu p').find('a').on('hover',function() {
             
              var data = $(this).data('ava');
-             var pct = $(this).parent().prev().find('.pct');
-             pct.css('background-image', 'url(' + data + ')');
+             var pct1 = $(this).parent().prev().find('.pct');
+             var pct2 = $(this).parent().parent().prev().find('.pct');
+             $(pct1).add(pct2).css('background-image', 'url(' + data + ')');
 
     });
     /*preload avas on itm hover end*/
@@ -96,7 +103,20 @@
         
 
     
-
+ $(window).scroll(function(){
+  var sticky = $('.header'),
+      scroll = $(window).scrollTop();
+      var stickh = sticky.outerHeight();
+  if (scroll >= 100) 
+  {
+      sticky.addClass('fixed'); 
+      $('.block_1').css('margin-top',stickh+'px');
+  }  
+  else {
+      sticky.removeClass('fixed');
+      $('.block_1').css('margin-top',0+'px');
+  }
+});
         
         
 
