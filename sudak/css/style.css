@@ -94,7 +94,7 @@ header.fixed {
     width:100%;
 }
 .authinheadinner {
-    background: url(../img/border_gradient.png) no-repeat left top;
+    background: url(../img/border_gradient.png) no-repeat left 2px;
     float: left;
     margin: 0 17px 0 0;
     overflow: hidden;
@@ -562,7 +562,6 @@ header.fixed {
     border-right: 1px solid #c7c7c7;
     border-left: 1px solid #c7c7c7;
     box-shadow: 0px 0px 10px 0.00px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
     margin: 0 0 38px 0;
 }
 
@@ -572,7 +571,7 @@ header.fixed {
     background: -o-linear-gradient(-90deg, #ffffff 0%, #f9f8f8 99%);
     background: -ms-linear-gradient(-90deg, #ffffff 0%, #f9f8f8 99%);
     background: linear-gradient(180deg, #ffffff 0%, #f9f8f8 99%);
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
     color: #2a2b2a;
     display: block;
@@ -583,21 +582,27 @@ header.fixed {
     width: 240px;
     position:relative;
 }
-
+.menu_slider:before, .menu_slider:after {
+    display:table;
+    content:'';
+}
+.menu_slider:after {
+    clear:both;
+}
 .menu_slider a:hover {
-    border-bottom-width: 2px;
-    box-sizing: border-box;
+/*    border-bottom-width: 2px;
+    box-sizing: border-box;*/
     color: #0f8442;
 }
 
-.menu_slider a:after {
+.menu_slider a:hover:after {
     content:'';
     width:100%;
     left:0px;
-    z-index:2;
-    height:1px;
+    z-index:33;
+    height:3px;
     position:absolute;
-    bottom:-3px;
+    bottom:-2px;
     background:#c7c7c7;
 }
 
@@ -607,6 +612,7 @@ header.fixed {
     right: -1px;
     width: 241px;
 }
+
 
 .content_right .h2 {
     margin: 0 0 13px 0;
@@ -2318,11 +2324,12 @@ display: block; /* I added this line */
 
 .mobile_menu .ul_1 li {
     border-right: 1px solid #d6d6d6;
-    padding: 10px 17px 10px 17px;
+    padding: 10px 16px 10px 16px;
 }
 
 .mobile_menu .ul_1 li:last-child {
     border-right: none;
+    padding-left:14px;
 }
 
 .mobile_menu .ul_1 .p_1 {
