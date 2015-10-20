@@ -90,11 +90,12 @@
         
         
          var show_cart = function(el) {
+          var head  = obj.header.outerHeight();
     $('.basket_wrap .rine').removeClass('active');         
     $(el).addClass('active');       
-    $('.backfade').addClass('show');
+    /*$('.backfade').addClass('show');*/
     obj.box.css({top:'-'+ bwh+'px' })
-    .animate({top: 30 +'%'}, 500, function() {
+    .animate({top: head +'px'}, 100, function() {
     });
     }
    
@@ -106,9 +107,9 @@
         show_cart('.fav_out');
     });
     
-    $('.bask_lnk').on('click',function() {
-        show_cart('.bask_out');
-    });
+//    $('.bask_lnk').on('click',function() {
+//        show_cart('.bask_out');
+//    });
         
               $(document).mouseup(function (e)
     {

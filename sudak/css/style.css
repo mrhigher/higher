@@ -83,6 +83,8 @@ label {
 }
 
 header {
+    z-index:2002;
+    position:relative;
     background-color: #fdfdfd;
     border-bottom: 1px solid #dcdddd;
     box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.15);
@@ -244,7 +246,9 @@ header.fixed {
     margin-right: 0;
     padding-right: 0;
 }
-
+.ul_1 > li.bask_lnk:before {
+    display:none;
+}
 .ul_1 > li a {
     color: #20972a;
     display: block;
@@ -1425,8 +1429,7 @@ header.fixed {
 }
 .basket_wrap {
     z-index:2001;
-    position: absolute;
-    /* center the div */
+    position: fixed;
     right: 0;
     left: 0;
     margin-right: auto;
