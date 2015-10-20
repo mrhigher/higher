@@ -590,6 +590,9 @@ header.fixed {
 
 .menu_slider a:last-child {
     border-right: none;
+    position: relative;
+    right: 0px;
+    width: 241px;
 }
 
 .content_right .h2 {
