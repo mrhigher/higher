@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
  
-    var slider = $('#wrap_for_bx_1 .bxslider').bxSlider({
+    var slider = $('#wrap_for_bx_1 .bxslider').show().bxSlider({
         mode: 'fade',
         pager: false,
         controls: false,
@@ -108,6 +108,14 @@ function positionWidth() {
     var widthPopup = $('.order_btn').outerWidth() / 2;
     $('.order_btn').css({'marginLeft': '-' +  widthPopup + 'px'});
 }
+
+$('.products_best').on('mouseenter',function() {
+    $(this).prev('.menu_best').css('z-index','450')
+});
+$('.products_best').on('mouseleave',function() {
+    $(this).prev('.menu_best').css('z-index','1')
+});
+
 
 
 

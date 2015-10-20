@@ -18,6 +18,9 @@
     .content_right {
         width: 74%;
     }
+    .menu_best li.active:after {
+        background:none;
+    }
     .products {
         display: table;
     }
