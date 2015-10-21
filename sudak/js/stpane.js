@@ -9,19 +9,20 @@
             header : $('header'),
             compare_out:$('.compare_out'),
             fav_out:$('.fav_out'),
-            bask_out:$('.bask_out')
+            bask_out:$('.bask_out'),
+            ul_pane:$('.ul_1 li.opp')
             
         }, obj);
 
         return this.each( function() {
          
          var bwh = obj.box.outerHeight();
-         var h  = obj.header.outerHeight();
 
            setCartpos = function() {
-        obj.rine.removeClass('active'); 
-        $('.backfade').removeClass('show');
-        obj.box.css({top:'-' + bwh +'px' })  
+        var srt = $(window).scrollTop();
+        //$('.backfade').removeClass('show');
+        obj.ul_pane.removeClass('act');
+        obj.box.css({top:'-' + bwh + srt  +'px' },100);
         }
           if($.isFunction(setCartpos)) {
           setCartpos();
@@ -89,22 +90,33 @@
                     });
         
         
-         var show_cart = function(el) {
+         var show_cart = function(el, th) {
           var head  = obj.header.outerHeight();
-    $('.basket_wrap .rine').removeClass('active');         
-    $(el).addClass('active');       
-    /*$('.backfade').addClass('show');*/
-    obj.box.css({top:'-'+ bwh+'px' })
-    .animate({top: head +'px'}, 100, function() {
-    });
+        obj.rine.hide();
+        obj.ul_pane.removeClass('act');
+         obj.ul_pane.filter(th).addClass('act');
+        $(el).show();  
+        /*$('.backfade').addClass('show');*/
+        obj.box.css({top:'-'+ bwh+'px' })
+        .animate({top: head +'px'}, 100, function() {
+
+        });
     }
    
      $('.compare_lnk').on('click',function() {
-        show_cart('.compare_out');
+          if($(this).hasClass('act')) {
+             setCartpos()
+         } else {
+          show_cart('.compare_out', '.compare_lnk');
+         }
     });
      
      $('.fav_lnk').on('click',function() {
-        show_cart('.fav_out');
+          if($(this).hasClass('act')) {
+            setCartpos()
+         } else {
+          show_cart('.fav_out', '.fav_lnk');
+         }
     });
     
 //    $('.bask_lnk').on('click',function() {
@@ -113,10 +125,10 @@
         
               $(document).mouseup(function (e)
     {
-        var container = obj.box;
+        var container = obj.box; 
         if (!container.is(e.target) // if the target of the click isn't the container...
             && container.has(e.target).length === 0 
-            && (e.target != $('html').get(0)))
+            && (e.target != $('html').get(0)) && (e.target != obj.ul_pane)) 
             
         {
            

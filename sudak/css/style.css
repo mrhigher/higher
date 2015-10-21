@@ -269,13 +269,17 @@ header.fixed {
     margin: 0 20px 0 0;
     padding: 0 0 0 25px;
 }
-
+.ul_1 > li:hover .p_1, .ul_1 > li.act .p_1  {
+    background: url(../img/ico_3_ac.png) no-repeat left center;
+}
 .ul_1 .p_2 {
     background: url(../img/ico_4.png) no-repeat left center;
     margin: 0 13px 0 0;
     padding: 0 0 0 28px;
 }
-
+.ul_1 > li:hover .p_2, .ul_1 > li.act .p_2 {
+        background: url(../img/ico_4_ac.png) no-repeat left center;
+}
 .ul_1 .p_3 {
     background: url(../img/ico_5.png) no-repeat left center;
     padding: 0 0 0 35px;
@@ -352,6 +356,8 @@ header.fixed {
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+
+    
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -364,6 +370,20 @@ header.fixed {
     margin: 4px 0 0 120px;
     text-align: center;    
     width: 250px;
+}
+.more:hover {
+        -moz-box-shadow:inset 0px -1px 0px rgba(0,0,0,.6);
+    -webkit-box-shadow:inset 0px -1px 0px rgba(0,0,0,.6);
+    box-shadow:inset 0px -1px 0px rgba(0,0,0,.6);
+background: #16ab0f; /* Old browsers */
+background: -moz-linear-gradient(top,  #16ab0f 0%, #19a51a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#16ab0f), color-stop(100%,#19a51a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #16ab0f 0%,#19a51a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #16ab0f 0%,#19a51a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #16ab0f 0%,#19a51a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #16ab0f 0%,#19a51a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', endColorstr='#19a51a',GradientType=0 ); /* IE6-9 */
+
 }
 
 .more img {
@@ -402,7 +422,9 @@ header.fixed {
     text-align: center;
     width: 103px;
 }
-
+.ul_2 > li.active, .ul_2 > li:hover {
+    background:#fff;
+}
 .ul_2 > li:last-child {
     margin-right: 0;
 }
@@ -1102,7 +1124,7 @@ header.fixed {
     width: 78px;
 }
 
-.filtr_price:focus {
+.filtr_price:focus, .popup_form input[type=text]:focus {
     -webkit-box-shadow: 0px 0px 6px rgba(26,189,36,0.92);
     -moz-box-shadow: 0px 0px 6px rgba(26,189,36,0.92);
     box-shadow: 0px 0px 6px rgba(26,189,36,0.92);  
@@ -1441,12 +1463,12 @@ header.fixed {
 
     
 }
-.basket_wrap  .rine.active  {
+/*.basket_wrap  .rine.active  {
     display:block;
-    background: #fff;  
     overflow: hidden;
-}
+}*/
 .basket_wrap  .rine  {
+    background: #fff;  
     display:none;
 }
 
@@ -1722,7 +1744,7 @@ header.fixed {
 
 .all_delete {
     clear: both;
-    margin: 0 20px 20px;
+    margin: 0 20px 11px;
 }
 
 .form_skidka input[type=submit]:hover, .itog input[type=submit]:hover, .all_delete:hover, .delete_1:hover, .oform:hover {
@@ -2056,7 +2078,8 @@ footer .center {
 }
 .catalogmenu > li:hover > ul {
     left: 248px;
-    top: 0;
+    top: -1px;
+    border-left:1px solid #c7c7c7;
 }
 .catalogmenu > li.hasDD {
     background-image: url(../img/str_right.png);
@@ -2081,7 +2104,7 @@ footer .center {
 }
 
 .catalogmenu .open_menu {
-    background: #fff;
+    background: #fdfdfd;
     border-bottom: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
     border-top: 1px solid #c7c7c7;
@@ -2434,6 +2457,7 @@ display: block; /* I added this line */
 /*========================== END mobile_menu ==========================*/
 
 .header_mobile {
+    background-color:#fdfdfd;
     border-bottom: 1px solid #dcdddd;
     -moz-box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0px 1px 4px 0.00px rgba(0, 0, 0, 0.15);
