@@ -128,9 +128,10 @@
         var container = obj.box; 
         if (!container.is(e.target) // if the target of the click isn't the container...
             && container.has(e.target).length === 0 
-            && (e.target != $('html').get(0)) && (e.target != obj.ul_pane)) 
+            && (e.target != $('html').get(0)) && (!obj.ul_pane.is(e.target))) 
             
         {
+  
            
              if($.isFunction(setCartpos)) {
                  setCartpos();
