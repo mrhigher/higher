@@ -1428,7 +1428,7 @@ header.fixed {
     display:block;
 }
 .basket_wrap {
-    z-index:2001;
+    z-index:1199;
     position: fixed;
     right: 0;
     left: 0;
@@ -2403,7 +2403,7 @@ display: block; /* I added this line */
 }
 .link_menu_mobile span.ico_10 {
     background-image: url(../img/ico_10.png);
-    background-position:center 10px;
+    background-position:center 3px;
 }
 .link_menu_mobile span.ico_11 {
     background-image: url(../img/ico_11.png);

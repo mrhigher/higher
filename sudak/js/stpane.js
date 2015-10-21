@@ -2,7 +2,7 @@
 
     $.fn.stPane = function(obj) {
 
-        // Establish our default settings
+       
         var obj = $.extend({
             box         : $('.basket_wrap'),
             rine : $('.basket_wrap').find('.rine'),
@@ -142,7 +142,7 @@
             
    
    
-            // We'll get back to this in a moment
+          
         });
 
     }
