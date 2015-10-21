@@ -8,19 +8,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" /> 
     <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinSudak.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
     <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-select.css" />
     <link rel="stylesheet" type="text/css" href="SelectInspiration/css/cs-skin-sudak.css" />
     <script src="js/jquery-1.8.3.min.js"></script> 
+    <script src="js/jquery-ui.js"></script> 
 </head>
 <body>
-<!--
-<header>
+<div class='backfade'></div>
+<!-- mobile_menu -->
+<div class="mobile_menu">
+    <a href="#" class="close_form"></a>
+    <form action="#" class="form_mobile" method="post">
+        <input type="text" placeholder="Поиск..." />
+        <input type="image" src="img/ico_submit.png" />
+    </form>
+    <ul class="ul_1">
+        <li>
+            <p class="p_1">
+                <a href="">Сравнение</a>
+                Товаров (0)
+            </p>
+        </li>
+        <li>
+            <p class="p_2">
+                <a href="">Избранное</a>
+                Товаров (0)
+            </p>
+        </li>
+    </ul>
+    <ul class="link_menu_mobile">
+        <li><a href=""><span class="ico_7"></span>Главная</a></li>
+        <li><a href=""><span class="ico_8"></span>О нас</a></li>
+        <li><a href=""><span class="ico_9"></span>Оплата и доставка    </a></li>
+        <li><a href=""><span class="ico_10"></span>Литература</a></li>
+        <li><a href=""><span class="ico_11"></span>Контакты</a></li>
+        <li><a href=""><span class="ico_12"></span>АГРОЛАБОРАТОРИЯ</a></li>
+    </ul>
+    <ul class="authinheadinner">
+        <li class="enter"><a href="">Вход</a></li>
+        <li class="reg"><a href="">Регистрация</a></li>
+    </ul>
+</div><!-- END mobile_menu -->
+<div class="header_mobile">
+    <a href="#" class="show_menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <p class="basket">
+        <img src="img/basket_ico_2.png" alt="" />
+        <span>2</span>
+    </p>
+</div>
+<header class="header">
     <div class="center clearfix">
         <ul class="authinheadinner">
             <li class="reg"><a href="">Регистрация</a></li>
@@ -29,21 +77,35 @@
         <form action="#" method="post" class="searchinhead">
             <input type="text" placeholder="Введите название товара или категории" />
             <input type="submit" value="" />
+            <ul class="result_search">
+                <li><a href="">Бренды</a></li>
+                <li><a href="">Поиск-Профи</a></li>
+                <li><a href="">Товары</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+                <li><a href="">Фрегат F1</a></li>
+            </ul>
         </form>
         <ul class="ul_1">
-            <li>
+            <li class="compare_lnk opp">
                 <p class="p_1">
                     <a href="">Сравнение</a>
                     Товаров (0)
                 </p>
             </li>
-            <li>
+            <li class="fav_lnk opp">
                 <p class="p_2">
                     <a href="">Избранное</a>
                     Товаров (0)
                 </p>
             </li>
-            <li>
+            <li class="bask_lnk">
                 <p class="p_3">
                     <a href="">Корзина</a>
                     50 товаров на 12 000,00 руб.
@@ -52,7 +114,6 @@
         </ul>
     </div>
 </header>
--->
 <div class="center block_1 clearfix">
     <a href="/" class="logo"><img src="img/logo.png" alt="" /></a>
     <img class="agro" src="img/agro.png" alt="" />
@@ -305,250 +366,9 @@
                 <a href=""><img src="img/view_3.png" alt="" /></a>
             </p>
         </div>
-        <!-- products -->
-        <div class="products">
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/menu_best_ico_2.png" alt="" />
-                </div>
-                <p class="title_products">Бензопила<br />
-                «Кентавр БП-4520Н»</p>
-                <p class="price_line">7000 руб.</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">5450 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="2"  class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3 in_basket">
-                        <a href="#">В корзине</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/produts_img_2.jpg" alt="" />
-                </div>
-                <p class="title_products">Скотч парниковый<br />
-                «Alenor SMD A-2»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">2120 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_3.png" alt="" />
-                </div>
-                <p class="title_products">Аккумуляторный<br /> 
-                опрыскиватель «SOLO 416»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">8199 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <div class="img_products">
-                    <img src="img/products_img_4.png" alt="" />
-                </div>
-                <p class="title_products">Кассеты для рассады<br />
-                «Киссон»</p>
-                <ul class="ul_3 clearfix">
-                    <li class="price">54 руб.</li>
-                    <li class="count">
-                        <span class="ico_minus"></span>
-                        <input type="text" value="1" class="qta" />
-                        <span class="ico_plus"></span>
-                    </li>
-                </ul>
-                <ul class="ul_4">
-                    <li>
-                        <a href="#" class="btn_2"><img src="img/ico_12.png" alt="" />В избранное</a>
-                    </li>
-                    <li class="btn_3">
-                        <a href="#">В корзину</a>
-                    </li>
-                </ul>
-            </div><!-- END div -->
-        </div><!-- END products -->
+        
+        
+        
         <a href="#" class="ajaxpages"><span></span>Показать ещё</a>
         <!-- navi -->
         <div class="navi clearfix">
@@ -571,7 +391,6 @@
     </div><!-- END content_right -->
 </div><!-- END content -->
 <!------------------------ footer ------------------------>
-<!--
 <footer>
     <div class="center">
         <ul class="footer_menu">
@@ -595,7 +414,6 @@
     <hr class="line_footer" />
         <p class="copyright">"Земледелец-Профи" 2015 &copy; Все права защищены. Информация сайта защищена законом об авторских правах.</p>
 </footer>
--->
 <!-- popup -->
 <div class="overlay"></div>
 <div class="order_btn">
@@ -617,6 +435,7 @@
     </form>
 </div>
 <!-- END popup -->
+<script src="jQuery-Mask-Plugin-master/dist/jquery.mask.js" type="text/javascript"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/script_menu.js"></script>
@@ -625,5 +444,6 @@
 <script src="SelectInspiration/js/classie.js"></script>
 <script src="SelectInspiration/js/selectFx.js"></script>
 <script src="js/gener.js"></script>
+<script src="js/stpane.js"></script>
 </body>
 </html>
