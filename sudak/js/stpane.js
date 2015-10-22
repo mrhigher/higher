@@ -23,7 +23,7 @@
         var bwh = obj.box.outerHeight();
         //$('.backfade').removeClass('show');
         obj.ul_pane.removeClass('act');
-        obj.box.animate({top:'-' + bwh  +'px'}, 500, function() {
+        obj.box.animate({top:'-' + bwh  +'px'}, 250, function() {
 
         });
         }
@@ -104,7 +104,7 @@
        
         /*$('.backfade').addClass('show');*/
         obj.box.css({top:'-'+ bwh +'px' })
-        .animate({top: head +'px'}, 500, function() {
+        .animate({top: head +'px'}, 250, function() {
 
         });
     }
