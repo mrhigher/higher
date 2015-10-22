@@ -616,8 +616,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     clear:both;
 }
 .menu_slider a:hover {
-/*    border-bottom-width: 2px;
-    box-sizing: border-box;*/
     color: #0f8442;
 }
 
@@ -1091,6 +1089,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .margin_1 {
     margin-top: 20px;
+    position: relative;
     width: 250px;
 }
 
@@ -1811,7 +1810,62 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 100%;
 }
 
+.img_for_spisok {
+    max-height: 56px;
+    max-width: 87px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
 
+.spisok_gallery .spisok_name {
+    width: 240px;
+}
+
+.vybor {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 5px 0 12px;
+    position: absolute;
+    right: -135px;
+    top: 20px;
+    z-index: 400;
+}
+
+.vybor a {
+    background: -webkit-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: -moz-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: -o-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: -ms-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #f8f8f8 0%, #ffffff 100%);
+    border-radius: 3px;
+    color: #1b832f;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 79px;
+}
+
+.vybor a:hover {
+    color: #ff8400;
+}
+
+.vybor img {
+    position: absolute;
+    left: -11px;
+    top: 10px;
+    width: 11px;
+}
 
 /*========================== END katalog ==========================*/
 
