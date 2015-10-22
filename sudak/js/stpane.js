@@ -16,16 +16,19 @@
 
         return this.each( function() {
          
-         var bwh = obj.box.outerHeight();
+         
 
-           setCartpos = function() {
+           setCartpos = function(el) {
         var srt = $(window).scrollTop();
+        var bwh = obj.box.outerHeight();
         //$('.backfade').removeClass('show');
         obj.ul_pane.removeClass('act');
-        obj.box.css({top:'-' + bwh + srt  +'px' },100);
+        obj.box.animate({top:'-' + bwh  +'px'}, 250, function() {
+
+        });
         }
           if($.isFunction(setCartpos)) {
-          setCartpos();
+        //  setCartpos();
             }
             
             
@@ -91,14 +94,17 @@
         
         
          var show_cart = function(el, th) {
+          var bwh = obj.box.outerHeight();  
           var head  = obj.header.outerHeight();
+
         obj.rine.hide();
+        obj.rine.filter(el).show();
         obj.ul_pane.removeClass('act');
-         obj.ul_pane.filter(th).addClass('act');
-        $(el).show();  
+        obj.ul_pane.filter(th).addClass('act');
+       
         /*$('.backfade').addClass('show');*/
-        obj.box.css({top:'-'+ bwh+'px' })
-        .animate({top: head +'px'}, 100, function() {
+        obj.box.css({top:'-'+ bwh +'px' })
+        .animate({top: head +'px'}, 250, function() {
 
         });
     }
