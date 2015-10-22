@@ -1867,6 +1867,125 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 11px;
 }
 
+.basket_menu {
+    border-left: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+}
+
+.basket_menu li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.basket_menu li a {
+    color: #191818;
+    display: block;
+    overflow: hidden;
+}
+
+.basket_menu li a .span_for_ico {
+    background-color: #f6f6f6;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 10px 0 0;
+    width: 39px;
+}
+
+.basket_menu li a span {
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+}
+
+.basket_menu li a:hover {
+    color: #ff4800;
+}
+
+.span_1 {
+    background-image: url(../img/span_1.png);
+}
+
+.span_2 {
+    background-image: url(../img/span_2.png);
+}
+
+.span_3 {
+    background-image: url(../img/span_3.png);
+}
+
+.span_4 {
+    background-image: url(../img/span_4.png);
+}
+
+.basket_menu li a:hover .span_4 {
+    background-image: url(../img/span_4_hover.png);
+}
+
+.span_5 {
+    background-image: url(../img/span_5.png);
+}
+
+.basket_menu li a:hover .span_6 {
+    background-image: url(../img/span_6_hover.png);
+}
+
+.span_7 {
+    background-image: url(../img/span_7.png);
+}
+
+.span_8 {
+    background-image: url(../img/span_8.png);
+}
+
+.basket_page_products {
+    padding: 0 0 0 13px;
+    text-align: left;
+}
+
+.basket_page {
+    width: auto;
+}
+
+.basket_page .products_name a {
+    color: #161616;
+}
+
+.basket_page .products_name a span {
+    color: #666666;
+    font-size: 12px;
+}
+
+.basket_page .products_name {
+    width: 658px;
+}
+
+.basket_page .basket_incount {
+    position: relative;
+}
+
+.not_products {
+    background-color: #fdf7f5;
+    border: 1px solid #ff4800;
+    border-radius: 3px;
+    bottom: -35px;
+    color: #ff4800;
+    font-size: 12px;
+    height: 27px;
+    left: 0;
+    line-height: 27px;
+    padding: 0 13px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.not_products img {
+    position: absolute;
+    left: -43px;
+    top: -8px;
+    z-index: 250;
+}
+
+
 /*========================== END katalog ==========================*/
 
 /*========================== footer ==========================*/
