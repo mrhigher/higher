@@ -775,7 +775,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     float: left;
 }
 
-.ul_4 > li a {
+.ul_4 > li a, .spisok .btn_3 a, .spisok .btn_2 {
     box-sizing: border-box;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1461,13 +1461,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     min-height: 10em;
     width: 90%;
     top: 5em;
-
-    
 }
-/*.basket_wrap  .rine.active  {
-    display:block;
-    overflow: hidden;
-}*/
+
 .basket_wrap  .rine  {
     background: #fff;  
     display:none;
@@ -1763,6 +1758,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .products_count span, .itog_summa span {
     font-family: 'pt_sansbold';
 }
+
+.spisok {
+    border: 1px solid #c7c7c7;
+    border-radius: 8px;
+}
+
+.spisok td {
+    background-color: #ffffff;
+    border-bottom: 1px solid #c7c7c7;
+    height: 73px;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.spisok_name {
+    color: #252525;
+    padding: 0 0 0 20px;
+    width: 325px;
+}
+
+.true_false {
+    color: #1b9f24;
+    text-align: center;
+    width: 64px;
+}
+
+.spisok_price {
+    color: #101010;
+    text-align: center;
+    width: 200px;
+}
+
+.spisok .count {
+    width: 90px;
+}
+
+.spisok .count span, .spisok .count input {
+    float: left;
+}
+
+.spisok .btn_3 {
+    margin: 0 16px;
+}
+
+.spisok .btn_2 {
+    margin-right: 20px;
+}
+
+.for_spisok {
+    text-align: center;
+    width: 100%;
+}
+
 
 
 /*========================== END katalog ==========================*/
