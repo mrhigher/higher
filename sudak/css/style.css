@@ -616,8 +616,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     clear:both;
 }
 .menu_slider a:hover {
-/*    border-bottom-width: 2px;
-    box-sizing: border-box;*/
     color: #0f8442;
 }
 
@@ -775,7 +773,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     float: left;
 }
 
-.ul_4 > li a {
+.ul_4 > li a, .spisok .btn_3 a, .spisok .btn_2 {
     box-sizing: border-box;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1091,6 +1089,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .margin_1 {
     margin-top: 20px;
+    position: relative;
     width: 250px;
 }
 
@@ -1234,6 +1233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .margin_2 {
+    margin-left: 23px;
     margin-top: 20px;
 }
 
@@ -1460,13 +1460,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     min-height: 10em;
     width: 90%;
     top: 5em;
-
-    
 }
-/*.basket_wrap  .rine.active  {
-    display:block;
-    overflow: hidden;
-}*/
+
 .basket_wrap  .rine  {
     background: #fff;  
     display:none;
@@ -1696,8 +1691,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .itog {
+    background-color: #ffffff;
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    color: #161616;
     float: right;
+    font-size: 24px;
     margin: 0 20px 0 0;
+    padding: 3px 3px 3px 19px;
 }
 
 .itog input[type=submit] {
@@ -1713,7 +1714,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     color: #ffffff;
     font-size: 16px;
     height: 42px;
-    line-height: 42px;
     width: 217px;
     margin-left:20px;
 }
@@ -1755,12 +1755,239 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background: linear-gradient(180deg, #1ec916 0%, #298a6b 99%);
 }
 
-.products_count, .itog_summa {
+.itog_summa {
     margin-right: 20px;
 }
 
-.products_count span, .itog_summa span {
+.itog_summa span {
     font-family: 'pt_sansbold';
+}
+
+.spisok {
+    border: 1px solid #c7c7c7;
+    border-radius: 8px;
+}
+
+.spisok td {
+    background-color: #ffffff;
+    border-bottom: 1px solid #c7c7c7;
+    height: 73px;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.spisok_name {
+    color: #252525;
+    padding: 0 0 0 20px;
+    width: 325px;
+}
+
+.true_false {
+    color: #1b9f24;
+    text-align: center;
+    width: 64px;
+}
+
+.spisok_price {
+    color: #101010;
+    text-align: center;
+    width: 200px;
+}
+
+.spisok .count {
+    width: 90px;
+}
+
+.spisok .count span, .spisok .count input {
+    float: left;
+}
+
+.spisok .btn_3 {
+    margin: 0 16px;
+}
+
+.spisok .btn_2 {
+    margin-right: 20px;
+}
+
+.for_spisok {
+    text-align: center;
+    width: 100%;
+}
+
+.img_for_spisok {
+    max-height: 56px;
+    max-width: 87px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.spisok_gallery .spisok_name {
+    width: 240px;
+}
+
+.vybor {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 5px 0 12px;
+    position: absolute;
+    right: -135px;
+    top: 20px;
+    z-index: 400;
+}
+
+.vybor a {
+    background: -webkit-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: -moz-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: -o-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: -ms-linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #f8f8f8 0%, #ffffff 100%);
+    border-radius: 3px;
+    color: #1b832f;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 79px;
+}
+
+.vybor a:hover {
+    color: #ff8400;
+}
+
+.vybor img {
+    position: absolute;
+    left: -11px;
+    top: 10px;
+    width: 11px;
+}
+
+.basket_menu {
+    border-left: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+}
+
+.basket_menu li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.basket_menu li a {
+    color: #191818;
+    display: block;
+    overflow: hidden;
+}
+
+.basket_menu li a .span_for_ico {
+    background-color: #f6f6f6;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 10px 0 0;
+    width: 39px;
+}
+
+.basket_menu li a span {
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+}
+
+.basket_menu li a:hover {
+    color: #ff4800;
+}
+
+.span_1 {
+    background-image: url(../img/span_1.png);
+}
+
+.span_2 {
+    background-image: url(../img/span_2.png);
+}
+
+.span_3 {
+    background-image: url(../img/span_3.png);
+}
+
+.span_4 {
+    background-image: url(../img/span_4.png);
+}
+
+.basket_menu li a:hover .span_4 {
+    background-image: url(../img/span_4_hover.png);
+}
+
+.span_5 {
+    background-image: url(../img/span_5.png);
+}
+
+.basket_menu li a:hover .span_6 {
+    background-image: url(../img/span_6_hover.png);
+}
+
+.span_7 {
+    background-image: url(../img/span_7.png);
+}
+
+.span_8 {
+    background-image: url(../img/span_8.png);
+}
+
+.basket_page_products {
+    padding: 0 0 0 13px;
+    text-align: left;
+}
+
+.basket_page {
+    width: auto;
+}
+
+.basket_page .products_name a {
+    color: #161616;
+}
+
+.basket_page .products_name a span {
+    color: #666666;
+    font-size: 12px;
+}
+
+.basket_page .products_name {
+    width: 658px;
+}
+
+.basket_page .basket_incount {
+    position: relative;
+}
+
+.not_products {
+    background-color: #fdf7f5;
+    border: 1px solid #ff4800;
+    border-radius: 3px;
+    bottom: -35px;
+    color: #ff4800;
+    font-size: 12px;
+    height: 27px;
+    left: -44px;
+    line-height: 27px;
+    padding: 0 13px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 250;
+}
+
+.not_products img {
+    position: absolute;
+    left: 132px;
+    top: -8px;
 }
 
 
