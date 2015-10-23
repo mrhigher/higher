@@ -1691,8 +1691,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .itog {
+    background-color: #ffffff;
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    color: #161616;
     float: right;
+    font-size: 24px;
     margin: 0 20px 0 0;
+    padding: 3px 3px 3px 19px;
 }
 
 .itog input[type=submit] {
@@ -1708,7 +1714,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     color: #ffffff;
     font-size: 16px;
     height: 42px;
-    line-height: 42px;
     width: 217px;
     margin-left:20px;
 }
@@ -1750,11 +1755,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background: linear-gradient(180deg, #1ec916 0%, #298a6b 99%);
 }
 
-.products_count, .itog_summa {
+.itog_summa {
     margin-right: 20px;
 }
 
-.products_count span, .itog_summa span {
+.itog_summa span {
     font-family: 'pt_sansbold';
 }
 
@@ -1971,18 +1976,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     color: #ff4800;
     font-size: 12px;
     height: 27px;
-    left: 0;
+    left: -44px;
     line-height: 27px;
     padding: 0 13px;
     position: absolute;
     white-space: nowrap;
+    z-index: 250;
 }
 
 .not_products img {
     position: absolute;
-    left: -43px;
+    left: 132px;
     top: -8px;
-    z-index: 250;
 }
 
 
