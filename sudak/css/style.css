@@ -1489,7 +1489,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     }
     
 .basket_wrap .rsec_tyanya  {
-  
     text-align: center;
     cursor: n-resize;
     background-color: #F3F3F3;
@@ -1990,8 +1989,89 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     top: -8px;
 }
 
-
 /*========================== END katalog ==========================*/
+
+/*========================== card_main ==========================*/
+
+.card_main {
+    margin: 15px 0 0 0;
+    overflow: hidden
+}
+
+.card_main a {
+    color: #333333;
+}
+
+#bx_for_card {
+    float: left;
+    margin: 0 4px 0 0;
+    width: 440px;
+}
+
+#bx_for_card .bx-wrapper .bx-viewport {
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+#bx_for_card .bx-wrapper {
+    margin-bottom: 5px;
+}
+
+#bx_for_card #bx-pager a {
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    display: inline-block;
+    
+}
+
+#bx_for_card #bx-pager a.active {
+    border-color: #209338;
+}
+
+.anons {
+    color: #333333;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 15px 0 0 0;
+}
+
+.anons p {
+    margin: 0 0 5px 0;
+}
+
+.block_anons {
+    background-color: #ffffff;
+    border: 1px solid #d9d6d6;
+    border-radius: 3px;
+    float: left;
+    width: 420px;
+}
+
+.block_anons > div {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 15px 17px 10px 17px;
+}
+
+.block_anons > div:last-child {
+    border-bottom: none;
+}
+
+.h4 {
+    font-family: 'pt_sansbold';
+    font-size: 14px;
+}
+
+.all_xar {
+    background-color: #ebebeb;
+    border: 1px solid #d1cfcf;
+    display: table;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 18px;
+}
+
+/*========================== END card_main ==========================*/
 
 /*========================== footer ==========================*/
 

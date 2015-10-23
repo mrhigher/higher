@@ -24,6 +24,12 @@ jQuery(document).ready(function() {
       return false;
     });
     
+    // bx card
+    
+    $('#bx_for_card .bxslider').bxSlider({
+      pagerCustom: '#bx-pager'
+    });
+    
     // popup
     $('.show_popup').click(function(e) {
         e.preventDefault();
