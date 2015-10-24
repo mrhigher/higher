@@ -62,9 +62,10 @@ jQuery(document).ready(function() {
     
     //range_price*****************
     var $range_price = $('#price_filtr'),
-    $input = $('#price_input_from'),
+    $price_input_from = $('#price_input_from'),
+    $price_input_to = $('#price_input_to'),
     instance_price,
-    min_price = 0,
+    min_price = 100,
     max_price = 20000;
     $range_price.ionRangeSlider({
         min: 100,
@@ -81,14 +82,13 @@ jQuery(document).ready(function() {
     
     $range_price.on("change", function () {
         var $this = $(this);
-        $('#price_input_from').val($this.data("from"));
-        $('#price_input_to').val($this.data("to"));
+        $price_input_from.val($this.data("from"));
+        $price_input_to.val($this.data("to"));
     });
     instance_price = $range_price.data("ionRangeSlider");
 
-    $input.on("change keyup", function () {
+    $price_input_from.on("change", function () {
     var val = $(this).prop("value");
-    
     // validate
     if (val < min_price) {
         val = min_price;
@@ -98,8 +98,74 @@ jQuery(document).ready(function() {
     instance_price.update({
         from: val
     });
-});
+    });
+    $price_input_to.on("change", function () {
+    var val = $(this).prop("value");
+    // validate
+    if (val < min_price) {
+        val = min_price;
+    } else if (val > max_price) {
+        val = max_price;
+    }
+    instance_price.update({
+        to: val
+    });
+    });
      //range_price***************** end
+     
+     
+         //range_weight*****************
+    var $range_weight = $('#weight_filtr'),
+    $weight_input_from = $('#weight_input_from'),
+    $weight_input_to = $('#weight_input_to'),
+    instance_weight,
+    min_weight = 100,
+    max_weight = 8000;
+    $range_weight.ionRangeSlider({
+        min: min_weight,
+        max: max_weight,
+        from: min_weight,
+        to: max_weight,
+        step: min_weight,
+        type: 'double',
+        hide_min_max: true,
+       //prefix: "",
+       //  input_values_separator: ':',
+        grid: false
+    });
+    
+    $range_weight.on("change", function () {
+        var $this = $(this);
+        $weight_input_from.val($this.data("from"));
+        $weight_input_to.val($this.data("to"));
+    });
+    instance_weight = $range_weight.data("ionRangeSlider");
+
+    $weight_input_from.on("change", function () {
+    var val = $(this).prop("value");
+    // validate
+    if (val < min_weight) {
+        val = max_weight;
+    } else if (val > max_price) {
+        val = max_weight;
+    }
+    instance_weight.update({
+        from: val
+    });
+    });
+    $weight_input_to.on("change", function () {
+    var val = $(this).prop("value");
+    // validate
+    if (val < min_weight) {
+        val = min_price;
+    } else if (val > max_weight) {
+        val = max_weight;
+    }
+    instance_weight.update({
+        to: val
+    });
+    });
+     //range_weight***************** end
    
     // accordeon
     $('.setting_filtr').css({'display':'none'});

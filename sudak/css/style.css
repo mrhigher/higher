@@ -1098,6 +1098,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .filtr_wrap > div {
+    overflow:hidden;
     border-bottom: 1px solid #cfcfcf;
     padding-bottom: 10px;
 }
@@ -1131,10 +1132,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .link_filtr {
+    float:left;
     color: #262626;
     cursor: pointer;
     font-size: 15px;
     padding: 10px 0 0 14px;
+}
+.setting_filtr {
+    clear:both;
 }
 
 .checkbox {
@@ -1165,7 +1170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     height: 1px;
     margin: 20px 0 12px;
 }
-.line_gray.cl_1 {
+.catrange + .line_gray {
      margin: 6px 0 12px;
 }
 .style_1 {
