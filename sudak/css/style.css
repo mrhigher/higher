@@ -2129,6 +2129,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .artik {
     color: #151414;
+    margin: 0 0 10px 0;
+}
+
+.other_setting div.cs-skin-sudak {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow:    inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    box-shadow:         inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder, .other_setting .cs-skin-sudak .cs-options {
+    background: transparent;
+    border-bottom: none;
+    color: #151515;
 }
 
 /*========================== END card_main ==========================*/
