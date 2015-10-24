@@ -2060,6 +2060,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .h4 {
     font-family: 'pt_sansbold';
     font-size: 14px;
+    margin: 0 0 10px 0;
 }
 
 .all_xar {
@@ -2069,6 +2070,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     height: 35px;
     line-height: 35px;
     padding: 0 18px;
+}
+
+.ul_xar {
+    margin: 0 0 20px 0;    
+}
+
+.ul_xar > li {
+    font-size: 12px;
+    margin: 0 0 13px 0;
+}
+
+.ul_xar > li:last-child {
+    margin-bottom: 0;
+}
+
+.ul_xar > li span {
+    display: inline-block;
+}
+
+.span_width {
+    background: url(../img/block_width_bg.png) repeat-x left 9px;
+    width: 220px;
+}
+
+.span_width > span {
+    background-color: #ffffff;
+}
+
+.other_setting {
+    background-color: #ffffff;
+    border: 1px solid #d9d6d6;
+    float: right;
+    width: 328px;
+}
+
+.red_not_btn {
+    background: -webkit-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
+    background: -moz-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
+    background: -o-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
+    background: -ms-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
+    background: linear-gradient(180deg, #ff7773 0%, #d1342f 98%);
+    color: #ffffff!important;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    margin: 0 0 13px 0;
+    padding: 0 0 0 13px;
+}
+
+.red_not_btn img {
+    margin: 0 9px 0 0;
+}
+
+.wrap_info {
+    padding: 0 11px;
+}
+
+.artik {
+    color: #151414;
 }
 
 /*========================== END card_main ==========================*/
