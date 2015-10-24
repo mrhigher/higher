@@ -28,7 +28,7 @@
         });
         }
           if($.isFunction(setCartpos)) {
-        //  setCartpos();
+         setCartpos();
             }
             
             

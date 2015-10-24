@@ -60,17 +60,47 @@ jQuery(document).ready(function() {
         
     });
     
-    $('#price_filtr').ionRangeSlider({
-        min: 0,
-        max: 24,
-        from: 0,
-        to: 24,
+    //range_price*****************
+    var $range_price = $('#price_filtr'),
+    $input = $('#price_input_from'),
+    instance_price,
+    min_price = 0,
+    max_price = 20000;
+    $range_price.ionRangeSlider({
+        min: 100,
+        max: 20000,
+        from: 100,
+        to: 10500,
+        step: 100,
         type: 'double',
-        prefix: "",
-        input_values_separator: ':',
+        hide_min_max: true,
+       //prefix: "",
+       //  input_values_separator: ':',
         grid: false
     });
     
+    $range_price.on("change", function () {
+        var $this = $(this);
+        $('#price_input_from').val($this.data("from"));
+        $('#price_input_to').val($this.data("to"));
+    });
+    instance_price = $range_price.data("ionRangeSlider");
+
+    $input.on("change keyup", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < min_price) {
+        val = min_price;
+    } else if (val > max_price) {
+        val = max_price;
+    }
+    instance_price.update({
+        from: val
+    });
+});
+     //range_price***************** end
+   
     // accordeon
     $('.setting_filtr').css({'display':'none'});
 			
