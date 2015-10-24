@@ -121,6 +121,52 @@
     
     	$('.phone_mask').mask('+7 (000) 000-00-00');
 
+
+    /* range slider */
+         $('.catrange').each(function(key, value) {
+             
+        var  $range_id = $("input[class*='_filtr']" ).eq(key),
+             $input_from = $("input[class*='_input_from']").eq(key),
+             $input_to = $("input[class*='_input_to']").eq(key),
+             $instance = true,
+             $min_val = $input_from.attr('placeholder').replace(/\s+/g, ''),
+             $max_val = $input_to.attr('placeholder').replace(/\s+/g, '');
+             $range_id.ionRangeSlider({
+                min: $min_val,
+                max: $max_val,
+                from: $min_val,
+                to: $max_val,
+                step: $min_val,
+                type: 'double',
+                hide_min_max: true,
+               //prefix: "",
+               //  input_values_separator: ':',
+                grid: false
+        });
+        
+        $range_id.on("change", function () {
+        var $this = $(this);
+        
+        $input_from.val($this.data("from"));
+        $input_to.val($this.data("to"));
+        });
+         $instance = $range_id.data("ionRangeSlider");
+         $input_from.on("change", function (e) {
+    var val = $(this).prop("value");
+    
+    $instance.update({
+        from: val
+    });
+    });
+         $input_to.on("change", function (e) {
+    var val = $(this).prop("value");
+    $instance.update({
+        to:val
+    });
+    });
+       
+     }); 
+     /*range slider end*/
         
         
 
