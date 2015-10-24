@@ -2141,12 +2141,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     font-size: 14px;
     height: 30px;
     line-height: 30px;
+    max-width: 304px;
+    width: 304px;
 }
 
 .other_setting .cs-skin-sudak.cs-select span.cs-placeholder, .other_setting .cs-skin-sudak .cs-options {
     background: transparent;
     border-bottom: none;
     color: #151515;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
+    margin-left: 220px;
+    margin-top: 3px;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder {
+    margin-left: 13px;
+}
+
+.other_setting  .cs-skin-sudak.cs-active .cs-options {
+    top: 32px;
+}
+
+.other_setting .cs-skin-sudak.cs-active span.cs-placeholder::after {
+    margin-top: -2px;
+}
+
+.wrap_info .count span, .wrap_info .count input {
+    float: left;
 }
 
 /*========================== END card_main ==========================*/
