@@ -125,18 +125,20 @@
     /* range slider */
          $('.catrange').each(function(key, value) {
              
-        var  $range_id = $("input[class*='_filtr']" ).eq(key),
+        var  $range_id = $("input[class*='_filtr']").eq(key),
              $input_from = $("input[class*='_input_from']").eq(key),
              $input_to = $("input[class*='_input_to']").eq(key),
              $instance = true,
              $min_val = $input_from.attr('placeholder').replace(/\s+/g, ''),
-             $max_val = $input_to.attr('placeholder').replace(/\s+/g, '');
+             $max_val = $input_to.attr('placeholder').replace(/\s+/g, ''),
+             $range_step = $range_id.attr("data-step").replace(/\s+/g, '');
+
              $range_id.ionRangeSlider({
                 min: $min_val,
                 max: $max_val,
                 from: $min_val,
                 to: $max_val,
-                step: $min_val,
+                step: $range_step,
                 type: 'double',
                 hide_min_max: true,
                //prefix: "",
