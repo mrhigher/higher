@@ -2133,6 +2133,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .artik {
     color: #151414;
+    margin: 0 0 10px 0;
+}
+
+.other_setting div.cs-skin-sudak {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow:    inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    box-shadow:         inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    max-width: 304px;
+    width: 304px;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder, .other_setting .cs-skin-sudak .cs-options {
+    background: transparent;
+    border-bottom: none;
+    color: #151515;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
+    margin-left: 220px;
+    margin-top: 3px;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder {
+    margin-left: 13px;
+}
+
+.other_setting  .cs-skin-sudak.cs-active .cs-options {
+    top: 32px;
+}
+
+.other_setting .cs-skin-sudak.cs-active span.cs-placeholder::after {
+    margin-top: -2px;
+}
+
+.wrap_info .count span, .wrap_info .count input {
+    float: left;
 }
 
 /*========================== END card_main ==========================*/
