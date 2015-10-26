@@ -2050,6 +2050,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     border-color: #209338;
 }
 
+#bx-pager {
+    height: 66px;
+    overflow: hidden;
+}
+
 .anons {
     color: #333333;
     font-size: 12px;
@@ -2325,6 +2330,84 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .reviews_main {
     clear: both;
 }
+
+.characteristics, .link_reviews {
+    border-radius: 3px 3px 0 0;
+    display: block;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    width: 167px;
+}
+
+.characteristics {
+    background: -webkit-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
+    background: -moz-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
+    background: -o-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
+    background: -ms-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
+    background: linear-gradient(180deg, #ededed 0%, #d9d6d6 100%);
+    -webkit-box-shadow: 0px -2px 3px 0.00px rgba(0, 0, 0, 0), inset 0px -2px 4px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px -2px 3px 0.00px rgba(0, 0, 0, 0), inset 0px -2px 4px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px -2px 3px 0.00px rgba(0, 0, 0, 0), inset 0px -2px 4px 0px rgba(0, 0, 0, 0.11);
+    color: #1d1d1d;
+    margin: 0 6px 0 0;
+}
+
+.link_reviews {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+.link_reviews img, .characteristics img {
+    vertical-align: middle;
+}
+
+.link_reviews img {
+    margin: 0 15px;
+}
+
+.characteristics img {
+    margin: 0 19px 0 15px;
+}
+
+.reviews {
+    background-color: #fefefe;
+    border: 1px solid #d9d6d6;
+    box-shadow: 0px -3px 4px 0.00px rgba(0, 0, 0, 0.06);
+    clear: both;
+    margin: -1px 0 0 0;
+    overflow: hidden;
+    padding: 31px 44px 0 0;
+}
+
+.add_reviews {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    float: right;
+    height: 29px;
+    line-height: 29px;
+    m31
+    width: 138px;
+}
+
+
 /*========================== END card_main ==========================*/
 
 /*========================== footer ==========================*/
