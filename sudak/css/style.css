@@ -2403,8 +2403,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     float: right;
     height: 29px;
     line-height: 29px;
-    m31
+    margin: 0 0 15px 0;
     width: 138px;
+}
+
+.add_reviews img {
+    margin: 0 10px 0 11px;
+}
+
+.reviews_people {
+    color: #202020;
+    clear: both;    
+    margin: 0 0 0 43px;
+}
+
+.photo_people {
+    background-color: #ebebeb;
+    border-right: 1px solid #d9d6d6;
+    float: left;
+    margin: 0 17px 0 0;
+    text-align: center;
+    width: 40px;
+}
+
+.photo_people img {
+    max-width: 40px;
+    vertical-align: middle;
+}
+
+.name_people {
+    background-color: #f7f7f7;
+    border: 1px solid #d9d6d6;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.date_reviews {
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+.date_reviews img {
+    margin: 0 14px 0 0;
+    vertical-align: middle;
+}
+
+.reviews_txt {
+    border-bottom: 1px solid #d9d6d6;
+    color: #202020;
+    line-height: 1.2;
+    margin: 0 0 40px 41px;
+    padding: 0 0 16px 0;
+}
+
+.dostoin_nedost {
+    font-family: 'pt_sansbold';
+    margin: 18px 0 0 0;
 }
 
 
