@@ -79,9 +79,14 @@
     padding: 1px 5px;
     font-weight:bold;
 }
-.irs-from:after, .irs-to:after {
+.catrange .irs-from, .catrange .irs-to, .catrange .irs-single {
+    font-size:11px;
+}
+
+.popup_form .irs-from:after, .popup_form .irs-to:after {
     content:' : 00';
 }
+
 
 
 

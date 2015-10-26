@@ -164,13 +164,13 @@
             <div>
                 <p class="link_filtr">Фильтровать по цене:</p>
                 <div class="setting_filtr">
-                    <div>
-                        <input class="filtr_price" type="text" placeholder="1200" /> &mdash;
-                        <input class="filtr_price" type="text" placeholder="10 500" /> руб.
-                        <input type="text" id="price_filtr" name="example_name" value="" />
+                    <div class="catrange">
+                        <input class="filtr_input price_input_from"   type="text" placeholder="100" /> &mdash;
+                        <input class="filtr_input price_input_to"   type="text" placeholder="15000" /> руб.
+                        <input type="text" class="rangeos price_filtr"  data-step="100" name="example_name" value="" />
                     </div>
                     <hr class="line_gray" />
-                    <div>
+                    <div class="optlist">
                         <p class="style_1">Форма плода:</p>
                         <div class="checkbox">
                             <input id="checkbox_1" type="checkbox" /> 
@@ -191,11 +191,65 @@
             <div>
                 <p class="link_filtr">Вес плода</p>
                 <div class="setting_filtr">
-                    <div>
-                        <input class="filtr_price" type="text" placeholder="1200" /> &mdash;
-                        <input class="filtr_price" type="text" placeholder="10 500" /> руб.
+                    <div class="catrange">
+                        <input class="filtr_input weight_input_from"   type="text" placeholder="50" /> &mdash;
+                        <input class="filtr_input weight_input_to"     type="text" placeholder="1500" /> гр.
+                        <input type="text" class="rangeos weight_filtr" data-step="50"  name="example_name" value="" />
                     </div>
-                    <hr class="line_gray" />
+                 
+              
+                </div>
+            </div><!-- END div -->
+            <div>
+                <p class="link_filtr">Фасовка</p>
+                <div class="setting_filtr">
+           
+                    
+                       <div class="optlist single">
+                      
+                        <div class="checkbox">
+                            <input id="checkbox_11" type="checkbox"> 
+                            <label for="checkbox_11">1000 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_22" type="checkbox"> 
+                            <label for="checkbox_22">1500 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_33" type="checkbox"> 
+                            <label for="checkbox_33">1 г</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_44" type="checkbox"> 
+                            <label for="checkbox_44">20 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_55" type="checkbox"> 
+                            <label for="checkbox_55">1500 г</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_66" type="checkbox"> 
+                            <label for="checkbox_66">40 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_77" type="checkbox"> 
+                            <label for="checkbox_77">20000 шт</label>
+                        </div>
+                    </div>
+                 
+              
+                </div>
+            </div><!-- END div -->
+            <!-- div -->
+            <div>
+                <p class="link_filtr">Срок созреваемости</p>
+                <div class="setting_filtr">
+                    <div class="catrange">
+                        <input class="filtr_input term_input_from"   type="text" placeholder="1" /> &mdash;
+                        <input class="filtr_input term_input_to"   type="text" placeholder="7" /> лет.
+                        <input type="text" class="rangeos term_filtr"  data-step="1" name="example_name" value="" />
+                    </div>
+                      <hr class="line_gray" />
                     <div>
                         <p class="style_1">Форма плода:</p>
                         <div class="checkbox">
@@ -213,16 +267,6 @@
                     </div>
                 </div>
             </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <p class="link_filtr">Срок созреваемости</p>
-                <div class="setting_filtr">
-                    <div>
-                        <input class="filtr_price" type="text" placeholder="1200" /> &mdash;
-                        <input class="filtr_price" type="text" placeholder="10 500" /> руб.
-                    </div>
-                </div>
-            </div><!-- END div -->
             <div class="btn_show_reset">
                 <span class="btn_show"><img src="img/ico_14.png" alt="" />Показать</span>
                 <span class="btn_reset btn_2">Сбросить</span>
@@ -234,7 +278,7 @@
         <div class="catalogsorter clearfix">
             <p class="sort">
                 Сортировать по:
-                <select class="cs-select cs-skin-sudak" name="" id="">
+                <select class="cs-select cs-skin-sudak" name="" >
                     <option value="">популярности</option>
                     <option value="">продажам</option>
                     <option value="">отзывам</option>
@@ -633,7 +677,7 @@
             </div>
             <p class="sortaou">
                 Выводить по:
-                <select class="cs-select cs-skin-sudak" name="" id="">
+                <select class="cs-select cs-skin-sudak" name="" >
                     <option value="">15</option>
                     <option value="">50</option>
                     <option value="">100</option>

@@ -60,17 +60,6 @@ jQuery(document).ready(function() {
         
     });
     
-    $('#price_filtr').ionRangeSlider({
-        min: 0,
-        max: 24,
-        from: 0,
-        to: 24,
-        type: 'double',
-        prefix: "",
-        input_values_separator: ':',
-        grid: false
-    });
-    
     // accordeon
     $('.setting_filtr').css({'display':'none'});
 			
