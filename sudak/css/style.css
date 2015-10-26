@@ -1269,6 +1269,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow:    inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
+    box-shadow:         inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
     margin: 4px 0;
     width: 150px;
 }
@@ -1300,6 +1303,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder:after {
     margin-left: 24px;
+    margin-top: 1px;
+}
+
+.catalogsorter .cs-skin-sudak.cs-active span.cs-placeholder:after {
+    margin-top: -5px;
 }
 
 .sort {
@@ -1316,6 +1324,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     display: inline-block;
     text-align: center;
     width: 47px;
+}
+
+.template a:nth-of-type(1) {
+    margin-left: 7px;
 }
 
 .template a img {
@@ -1385,7 +1397,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     display: block;
     float: left;
     height: 21px;
-    line-height: 21px;
+    line-height: 22px;
     text-align: center;
     width: 21px;
 }
@@ -2162,9 +2174,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     color: #151515;
 }
 
+.cs-options li {
+    background: #fff;
+}
+
 .other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
     margin-left: 220px;
     margin-top: 3px;
+}
+
+.other_setting .cs-skin-sudak.cs-select span.cs-placeholder {
+    display: inline-block;
+    width: 280px;    
 }
 
 .other_setting .cs-skin-sudak.cs-select span.cs-placeholder {
@@ -2299,6 +2320,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .garant {
     margin-bottom: 8px;
+}
+
+.reviews_main {
+    clear: both;
 }
 /*========================== END card_main ==========================*/
 
