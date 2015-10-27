@@ -1404,6 +1404,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     line-height: 22px;
     text-align: center;
     width: 21px;
+    margin-top:1px;
 }
 
 .navigation a:hover {
