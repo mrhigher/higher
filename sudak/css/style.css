@@ -1273,7 +1273,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     -moz-box-shadow:    inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
     box-shadow:         inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
     margin: 4px 0;
-    width: 150px;
+    width: 141px;
 }
 
 .catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder {
@@ -1281,7 +1281,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .catalogsorter .cs-placeholder {
-    height: 31px;
+    height: 28px;
     line-height: 31px;
     padding: 0 0 0 11px!important;
 }
@@ -1302,7 +1302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder:after {
-    margin-left: 24px;
+    margin-left: 22px;
     margin-top: 1px;
 }
 
@@ -1316,7 +1316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .template {
     float: right;
-    line-height: 44px;
+    line-height: 42px;
 }
 
 .template a {
