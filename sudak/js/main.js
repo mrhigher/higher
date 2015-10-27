@@ -24,11 +24,6 @@ jQuery(document).ready(function() {
       return false;
     });
     
-    // bx card
-    
-    $('#bx_for_card .bxslider').bxSlider({
-      pagerCustom: '#bx-pager'
-    });
     
     // popup
     $('.show_popup').click(function(e) {
@@ -82,6 +77,29 @@ $(window).load(function() {
     prevText: "",           
     nextText: "", 
   });
+    
+    $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 82,
+        itemMargin: 5,
+        asNavFor: '#slider',
+        prevText: "",           
+        nextText: ""
+    });
+ 
+    $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        directionNav: false,
+        slideshow: false,
+        sync: "#carousel",
+        prevText: "",           
+        nextText: ""
+    });
  
   
 });

@@ -2023,37 +2023,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     overflow: hidden
 }
 
-#bx_for_card {
+.slider_card_main {
     float: left;
     margin: 0 4px 0 0;
-    width: 440px;
+    width: 444px;
 }
 
-#bx_for_card .bx-wrapper .bx-viewport {
+.slider_card_main .flex-direction-nav a {
+    height: 58px;
+    margin-top: -29px;
+    width: 58px;
+}
+
+.slider_card_main .flex-next {
+    background: url(../img/next_icos.png) no-repeat;
+}
+
+.slider_card_main .flex-prev {
+    background: url(../img/prev_icos.png) no-repeat;
+}
+
+.slider_card_main #slider {
     border: 1px solid #d9d6d6;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
-#bx_for_card .bx-wrapper {
     margin-bottom: 5px;
 }
 
-#bx_for_card #bx-pager a {
-    border: 1px solid #d9d6d6;
-    border-radius: 3px;
-    display: inline-block;
-    
+.slider_card_main .flex-direction-nav a::before, .slider_card_main .flex-direction-nav a.flex-next::before {
+    display: none;
 }
 
-#bx_for_card #bx-pager a.active {
+.slider_card_main .flexslider .slides img {
+    margin: 0 auto;
+}
+
+.slider_card_main #carousel .slides > li {
+    border: 1px solid #d9d6d6;
+    margin-right: 5px;
+}
+
+.slider_card_main #carousel .slides > li.flex-active-slide {
     border-color: #209338;
 }
 
-#bx-pager {
-    height: 66px;
-    overflow: hidden;
-}
+
 
 .anons {
     color: #333333;
@@ -2462,6 +2474,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     margin: 18px 0 0 0;
 }
 
+.title_1 {
+    background: #eeeeee;
+    border-radius: 3px;
+    color: #000000;
+    font-family: Arial;
+    font-weight: 400;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 0 17px 0;
+    padding: 0 0 0 10px;
+}
+
+.margin_left {
+    margin: 0 0 0 11px;
+}
+
+.title_2 {
+    color: #2f2f2f;
+    font-family: 'pt_sansbold';
+    font-size: 18px;
+    margin: 0 0 14px 0;
+}
+
+.block_info input[type=radio] {
+    display: none;
+}
+
+.block_info label {
+    background: url(../img/radio_btn.png) no-repeat 0 -17px;
+    color: #434343;
+}
+
+.for_type {
+    height: 17px;
+    line-height: 17px;
+    margin: 0 45px 0 0;
+    padding: 0 0 0 23px;
+}
+
+.block_info input[type=radio]:checked + label {
+    background-position: 0 0;
+}
+
+.margin_3 {
+    margin-top: 26px;
+}
+
+.gray_block {
+    background-color: #eeeeee;
+    display: inline-block;
+    height: 48px;
+    margin: 0 15px 0 30px;
+    width: 48px;
+}
+
+.dost {
+    color: #000000!important;
+    display: block;
+    font-family: Arial;
+    font-size: 14px;
+}
 
 /*========================== END card_main ==========================*/
 
