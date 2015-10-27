@@ -51,6 +51,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
+textarea {
+    resize: vertical;
+}
+
 h2, .h2 {
     font-family: 'pt_sansregular';
     font-size: 30px;
@@ -2048,6 +2052,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     margin-bottom: 5px;
 }
 
+.slider_card_main #slider li {
+    height: 351px;
+}
+
+.slider_card_main #slider li img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .slider_card_main .flex-direction-nav a::before, .slider_card_main .flex-direction-nav a.flex-next::before {
     display: none;
 }
@@ -2597,7 +2611,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .descript_dostavka_1 {
     float: left;
-    height: 48px;
     line-height: 1.1;
     width: 475px;
 }
@@ -2676,6 +2689,82 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .block_info .itog {
     color: #161616;
     font-size: 18px;
+}
+
+.table_2 td {
+    vertical-align: middle;
+}
+
+.form_reviews {
+    clear: both;
+    margin: 0 0 0 44px;
+}
+
+.otsenka img {
+    vertical-align: middle;
+}
+
+.otsenka img:nth-of-type(1) {
+    margin-left: 8px;
+}
+
+.form_reviews {
+    color: #1d1d1d;
+}
+
+.form_reviews input, .form_reviews textarea {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    display: block;
+}
+
+.form_reviews input[type=text] {
+    background-color: #ffffff;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow:    inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    box-shadow:         inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
+    height: 27px;
+    margin: 5px 0 19px 0;
+    width: 300px;
+}
+
+.otsenka {
+    margin: 0 0 17px 0;
+}
+
+#my_comment {
+    margin: 6px 0 22px 0;
+    min-height: 113px;
+    width: 300px;
+}
+
+.kapcha {
+    display: block;
+    margin: 2px 0 8px 0;
+}
+
+.form_reviews input[type=submit] {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    color: #ffffff;
+    height: 29px;
+    margin: -9px 0 35px 0;
+    padding: 0 18px;
+}
+
+.form_reviews input[type=submit]:hover {
+    background: -webkit-linear-gradient(-90deg, #6dac6a 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #6dac6a 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #6dac6a 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #6dac6a 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #6dac6a 0%, #2d7270 99%);
 }
 
 /*========================== END card_main ==========================*/
