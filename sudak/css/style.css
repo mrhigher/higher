@@ -1277,15 +1277,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     -moz-box-shadow:    inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
     box-shadow:         inset 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
     margin: 4px 0;
-    width: 150px;
+    width: 141px;
 }
 
 .catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder {
     color: #262626;
+    display:block;
 }
 
 .catalogsorter .cs-placeholder {
-    height: 31px;
+    height: 30px;
     line-height: 31px;
     padding: 0 0 0 11px!important;
 }
@@ -1295,6 +1296,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .catalogsorter .cs-skin-sudak > span {
     border-bottom: none;
+    
 }
 
 .catalogsorter .cs-active {
@@ -1306,12 +1308,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .catalogsorter .cs-skin-sudak.cs-select span.cs-placeholder:after {
-    margin-left: 24px;
-    margin-top: 1px;
+    margin-left: 22px;
+    margin-top: 2px;
+    right:10px;
+    float:right;
 }
 
 .catalogsorter .cs-skin-sudak.cs-active span.cs-placeholder:after {
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
 .sort {
@@ -1320,7 +1324,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .template {
     float: right;
-    line-height: 44px;
+    line-height: 42px;
 }
 
 .template a {
@@ -1433,13 +1437,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     -webkit-border-radius: 3px;
     border-radius: 3px;
     margin: 0 0 0 10px;
-    padding: 8px 0 0 0;
+    padding: 0px 0 0 0;
     width: 56px;
 }
 
 .sortaou .cs-skin-sudak.cs-select span.cs-placeholder::after {
     margin-left: 7px;
     margin-top: 3px;
+    right:0px;
+    margin-right:7px;
 }
 
 .sortaou .cs-skin-sudak.cs-select span.cs-placeholder {
@@ -1452,6 +1458,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .sortaou .cs-skin-sudak.cs-select span.cs-placeholder {
     margin-left: 10px;
+    padding:9px 0px 6px 0px;
+    display:block;
 }
 
 .sortaou .cs-skin-sudak .cs-options {
