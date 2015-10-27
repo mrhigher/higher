@@ -199,29 +199,50 @@
                     <input type="radio" id="type_2" name="type" />
                     <label class="for_type" for="type_2">Юридическое лицо</label>
                     <p class="title_2 margin_3">Местоположение<sup>*</sup></p>
-                    <p class="title_2">Индекс<sup>*</sup></p>
-                    <input type="text" placeholder="Индекс*" />
-                    <p class="title_2">Адрес (без города)<sup>*</sup></p>
-                    <input type="text" placeholder="Адрес (без города)" />
-                    <p class="title_2">E-mail<sup>*</sup></p>
-                    <input type="text" placeholder="dadada@gmail.com" />
-                    <p class="title_2">Контактное лицо<sup>*</sup></p>
-                    <input type="text" placeholder="Дмитрий Советский" />
+                    <div class="for_input">
+                        <input type="submit" value="" />
+                        <input type="text" placeholder="Калининградская область,<span>Северо-запад, Россия</span>" />
+                        <span class="close_result_search"><img src="img/ico_close_input.png" alt="" /></span>
+                     </div>
+                    <p class="title_2 margin_4">Индекс<sup>*</sup></p>
+                    <input class="input_oform" type="text" placeholder="Индекс*" />
+                    <p class="title_2 margin_4">Адрес (без города)<sup>*</sup></p>
+                    <input class="input_oform" type="text" placeholder="Адрес (без города)" />
+                    <p class="title_2 margin_4">E-mail<sup>*</sup></p>
+                    <input class="input_oform" type="text" placeholder="dadada@gmail.com" />
+                    <p class="title_2 margin_4">Контактное лицо<sup>*</sup></p>
+                    <input class="input_oform" type="text" placeholder="Дмитрий Советский" />
                 </div><!-- END margin_left -->
-                <p class="title_1">Служба доставки</p>
+                <!-- Служба доставки -->
+                <p class="title_1 margin_5">Служба доставки</p>
                 <input type="radio" checked=checked id="dostavka" name="dostavka" />
                 <label class="dost" for="dostavka">
                     <span class="gray_block"></span>
-                    Почта России, 7-15 дней — 75 руб.
-                    <span class="descript_dostavka">Тарифы за услуги почтовых и курьерских служб изменяются в зависимости от веса с определенным шагом - обычно 500 или 1000 грамм.</span>
+                    <span class="descript_dostavka_1">
+                        <span class="title_3">Почта России, 7-15 дней — 75 руб.</span>
+                        <span class="descript_dostavka">Тарифы за услуги почтовых и курьерских служб изменяются в зависимости от веса с определенным шагом - обычно 500 или 1000 грамм.</span></span>
                 </label>
                 <input type="radio" id="dostavka_2" name="dostavka" />
                 <label class="dost" for="dostavka_2">
                     <span class="gray_block"></span>
                     Самовывоз из магазина в Симферополе — 0 руб.
+                </label><!-- Конец служба доставки -->
+                <!-- Платежная система -->
+                <p class="title_1 margin_6">Платежная система</p>
+                <input type="radio" checked=checked id="dostavka" name="dostavka" />
+                <label class="dost" for="dostavka">
+                    <span class="gray_block"></span>
+                    <span class="descript_dostavka_1">
+                        <span class="title_3">Почта России, 7-15 дней — 75 руб.</span>
+                        <span class="descript_dostavka">Тарифы за услуги почтовых и курьерских служб изменяются в зависимости от веса с определенным шагом - обычно 500 или 1000 грамм.</span></span>
                 </label>
-                <p class="title_1">Товары в заказе</p>
-                <table>
+                <input type="radio" id="dostavka_2" name="dostavka" />
+                <label class="dost" for="dostavka_2">
+                    <span class="gray_block"></span>
+                    Самовывоз из магазина в Симферополе — 0 руб.
+                </label><!-- Конец Платежная система -->
+                <p class="title_1 margin_6">Товары в заказе</p>
+                <table class="table_1">
                     <tr>
                         <th colspan="2">Товары</th>
                         <th>Скидка</th>
@@ -247,7 +268,7 @@
                     </tr>
                 </table>
                 <p class="title_1">Комментарии к заказу:</p>
-                <textarea name=""></textarea>
+                <textarea class="comment"></textarea>
             </form>
             <div class="itog">Итого: 215 000 руб. <input type="submit" value="Оформить заказ">     </div>
         </div><!-- END block_info -->
@@ -308,12 +329,6 @@
 <script src="SelectInspiration/js/selectFx.js"></script>
 <script src="js/gener.js"></script>
 <script src="js/stpane.js"></script>
-<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
-<script type="text/javascript">
-	$(function(){
-		$.pixlayout({clip: true, src: "oforml.jpg", show:true, center:true, top:0, left:0, pervious: false});
-}); 
-</script>
 
 </body>
 </html>
