@@ -2166,7 +2166,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 328px;
 }
 
-.red_not_btn {
+.red_not_btn, .green_true_btn {
     background: -webkit-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
     background: -moz-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
     background: -o-linear-gradient(-90deg, #ff7773 0%, #d1342f 98%);
@@ -2180,7 +2180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     padding: 0 0 0 13px;
 }
 
-.red_not_btn img {
+.red_not_btn img, .green_true_btn img {
     margin: 0 9px 0 0;
 }
 
@@ -2775,6 +2775,66 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background: linear-gradient(180deg, #6dac6a 0%, #2d7270 99%);
 }
 
+.green_true_btn {
+    background: -webkit-linear-gradient(-90deg, #1daa16 0%, #1a7339 98%);
+    background: -moz-linear-gradient(-90deg, #1daa16 0%, #1a7339 98%);
+    background: -o-linear-gradient(-90deg, #1daa16 0%, #1a7339 98%);
+    background: -ms-linear-gradient(-90deg, #1daa16 0%, #1a7339 98%);
+    background: linear-gradient(180deg, #1daa16 0%, #1a7339 98%);
+}
+
+.buy_1 {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    padding: 0 12px 0 0;
+}
+
+.buy_1:hover, .wrap_info_2 .btn_3.active {
+    background: -webkit-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
+    background: -moz-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
+    background: -o-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
+    background: -ms-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
+    background: linear-gradient(180deg, #05ba00 0%, #3a9276 99%);
+}
+
+.wrap_info_2 .btn_3 {
+    overflow: hidden;
+    width: 137px;
+}
+
+.wrap_info_2 .btn_3, .buy_1 {
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    height: 39px;
+    line-height: 39px;
+}
+
+.wrap_info_2 .btn_3 span {
+    float: left;
+    height: 39px;
+}
+
+.buy_1 img {
+    margin: 0 13px;
+    vertical-align: middle;
+}
+
+.to_basket {
+    background: url("../img/basket_ico.png") no-repeat scroll 7px center;
+    width: 43px;
+}
+
+.wrap_info_2 .btn_3.active {
+    
+}
+
 /*========================== END card_main ==========================*/
 
 /*========================== footer ==========================*/
@@ -3041,18 +3101,21 @@ footer .center {
 
 /*========================== popup order_window ==========================*/
 
-.order_window {
+.order_window, .buy_click_1 {
     background: #fafafa;
     color: #bbb7b7;
     border: 2px solid #148316;
     border-radius: 3px;
+    display: none;
+    left: 50%;
     padding: 15px 16px 16px 16px;
     position: absolute;
+    top: 50%;
     width: 293px;
     z-index: 999;
 }
 
-.order_window input[type=text] {
+.order_window input[type=text], .buy_click_1 input[type=text] {
     background-color: #ffffff;
     border: 1px solid #e2e2e2;
     border-radius: 3px;
@@ -3065,9 +3128,10 @@ footer .center {
 
 .descript_1 {
     font-size: 12px;
+    margin: 5px 0 18px 0;
 }
 
-.order_window input[type=submit] {
+.order_window input[type=submit], .buy_click_1 input[type=submit] {
     background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #21913b 99%);
     background: -moz-linear-gradient(-90deg, #16ab0f 0%, #21913b 99%);
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #21913b 99%);
