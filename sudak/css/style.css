@@ -2502,7 +2502,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .block_info label {
-    background: url(../img/radio2.png) no-repeat 10px 0;
+    background: url(../img/radio2.png) no-repeat 0 0;
     color: #434343;
 }
 
@@ -2514,7 +2514,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .block_info input[type=radio]:checked + label {
-    background: url(../img/radio1.png) no-repeat 10px 0;
+    background: url(../img/radio1.png) no-repeat 0 0;
 }
 
 .margin_3 {
@@ -2531,6 +2531,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .dost {
+    background-position: 10px 0!important;
     color: #000000!important;
     display: block;
     font-family: Arial;
