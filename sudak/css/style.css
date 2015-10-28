@@ -1853,7 +1853,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .spisok_price span {
 	display: block;
-	width: 150px;
+	width: 100px;
+        margin:0 auto;
+        padding:0px 15px;
+       
 }
 
 .spisok .count {
