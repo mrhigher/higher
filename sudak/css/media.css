@@ -115,6 +115,7 @@
     .catalogsorter {
         margin-right: 10px;
     }
+ 
 }
 
 @media only screen and (max-width: 1066px) {
@@ -243,19 +244,16 @@
 	.margin_2 {
 		width: 65%;
 	}
+        .template .templ_tit {
+                display:none;
+        }
 }
 
 @media only screen and (max-width: 870px) {
 	.margin_2 {
 		width: 58%;
 	}
-	.template {
-		clear: both;
-		float: left;
-	}
-	.sort {
-		margin-bottom: 10px;
-	}	
+	
 }
 
 @media only screen and (max-width: 848px) {
@@ -297,9 +295,12 @@
 		clear: none;
 		float: right;
 	}
-	.sort {
-		margin-bottom: 0;
-	}
+	
+        .template .templ_tit {
+            display:block;
+            float:left;
+        }
+        
 }
 
 @media only screen and (max-width: 768px) {
@@ -377,13 +378,11 @@
     .products_count {
         margin-left: 20px;
     }
-    .template {
-		clear: both;
-		float: left;
-	}
-	.sort {
-		margin-bottom: 10px;
-	}
+     .template .templ_tit {
+                display:none;
+    }
+
+        
 }
 
 @media only screen and (max-width: 519px) {
@@ -424,6 +423,14 @@
         margin-bottom: 36px;
         margin-left: 20px;
     }
+    
+        .template {
+		clear: both;
+		float: left;
+	}
+	.sort {
+		margin-bottom: 10px;
+	}
         
 }
 

@@ -184,6 +184,15 @@
             $("ul#tab li:nth-child("+nthChild+")").addClass("active");
         }
     });
+    
+
+
+
+    $('.close_result_search').on('click',function() {
+        $('.for_input input').val('');
+    })
+
+
 
 
 

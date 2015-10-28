@@ -1327,6 +1327,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     line-height: 42px;
 }
 
+
 .template a {
     border-left: 1px solid #cfcfcf;
     display: inline-block;
@@ -2591,23 +2592,30 @@ ul#tab li.active {
 }
 
 .block_info label {
-    background: url(../img/radio2.png) no-repeat 0 0;
+    background: url(../img/radio2.png) no-repeat 5px 0;
     color: #434343;
+}
+.block_info label.for_type {
+     background-position:0px 0px;
 }
 
 .for_type {
     height: 17px;
     line-height: 17px;
     margin: 0 45px 0 0;
-    padding: 0 0 0 23px;
+    padding: 1px 0 0 23px;
 }
 
 .block_info input[type=radio]:checked + label {
-    background: url(../img/radio1.png) no-repeat 0 0;
+    background: url(../img/radio1.png) no-repeat 5px 0;
+}
+.block_info input[type=radio]:checked + label.for_type 
+{
+    background: url(../img/radio1.png) no-repeat 0px 0;
 }
 
  .block_info  input[type=radio]:checked + label.dost.st_2 {
-     background-position:0px 11px;
+     background-position:5px 16px;
 }
 
 .margin_3 {
@@ -2633,10 +2641,10 @@ ul#tab li.active {
     overflow: hidden;
 }
 .dost.st_2  {
-     background-position: 0px 11px;
+     background-position: 5px 16px;
 }
 .dost.st_2 .descript_dostavka_1  {
-    margin-top:10px;
+    margin-top:14px;
 }
 
 
@@ -2651,6 +2659,34 @@ ul#tab li.active {
     position: relative;
     width: 551px;
 }
+.for_input  input[type=text] {
+      transition: width 0.25s;
+}
+.for_input  input[type=text].reginpt {
+    width: 170px;
+    min-width: 170px;
+    max-width: 270px;
+    
+}
+
+input[type=text].reginpt::-webkit-input-placeholder {color:#1f1f1f;}
+input[type=text].reginpt::-moz-placeholder          {color:#1f1f1f;}/* Firefox 19+ */
+input[type=text].reginpt:-moz-placeholder           {color:#1f1f1f;}/* Firefox 18- */
+input[type=text].reginpt:-ms-input-placeholder      {color:#1f1f1f;}
+
+input[type=text].locinpt::-webkit-input-placeholder {color:#b4b4b4;}
+input[type=text].locinpt::-moz-placeholder          {color:#b4b4b4;}/* Firefox 19+ */
+input[type=text].locinpt:-moz-placeholder           {color:#b4b4b4;}/* Firefox 18- */
+input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
+
+.for_input input[type=text].locinpt {
+    width: 150px;
+    min-width: 100px;
+    max-width: 170px;
+    padding-left:3px;
+    color:#b4b4b4;
+}
+
 
 .for_input .close_result_search {
     cursor: pointer;
@@ -2806,8 +2842,11 @@ ul#tab li.active {
     border: 1px solid #c7c7c7;
     border-radius: 3px;
     display: block;
+    box-sizing:border-box;
 }
-
+.form_reviews textarea {
+    padding:4px 8px;
+}
 .form_reviews input[type=text] {
     background-color: #ffffff;
     -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
@@ -2816,6 +2855,8 @@ ul#tab li.active {
     height: 27px;
     margin: 5px 0 19px 0;
     width: 300px;
+    padding:0px 8px;
+   
 }
 
 .otsenka {
@@ -3214,10 +3255,10 @@ footer .center {
     border: 2px solid #148316;
     border-radius: 3px;
     display: none;
-    left: 50%;
+/*    left: 50%;*/
     padding: 15px 16px 16px 16px;
     position: absolute;
-    top: 50%;
+/*    top: 50%;*/
     width: 293px;
     z-index: 999;
 }
@@ -3230,8 +3271,9 @@ footer .center {
     display: block;
     font-size: 16px;
     height: 46px;
-    padding: 0 0 0 12px;
-    width: calc(100% - 12px);
+    padding: 0 12px 0 12px;
+    width:100%;
+    box-sizing: border-box;
 }
 
 .descript_1 {
@@ -3252,6 +3294,14 @@ footer .center {
     height: 46px;
     text-transform: uppercase;
     width: 100%;
+}
+.order_window input[type=submit]:hover, .order_window input[type=submit]:focus,
+.buy_click_1 input[type=submit]:hover, .buy_click_1 input[type=submit]:focus {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
 }
 
 /*========================== END popup order_window ==========================*/
