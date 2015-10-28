@@ -2591,23 +2591,30 @@ ul#tab li.active {
 }
 
 .block_info label {
-    background: url(../img/radio2.png) no-repeat 0 0;
+    background: url(../img/radio2.png) no-repeat 5px 0;
     color: #434343;
+}
+.block_info label.for_type {
+     background-position:0px 0px;
 }
 
 .for_type {
     height: 17px;
     line-height: 17px;
     margin: 0 45px 0 0;
-    padding: 0 0 0 23px;
+    padding: 1px 0 0 23px;
 }
 
 .block_info input[type=radio]:checked + label {
-    background: url(../img/radio1.png) no-repeat 0 0;
+    background: url(../img/radio1.png) no-repeat 5px 0;
+}
+.block_info input[type=radio]:checked + label.for_type 
+{
+    background: url(../img/radio1.png) no-repeat 0px 0;
 }
 
  .block_info  input[type=radio]:checked + label.dost.st_2 {
-     background-position:0px 11px;
+     background-position:5px 16px;
 }
 
 .margin_3 {
@@ -2633,10 +2640,10 @@ ul#tab li.active {
     overflow: hidden;
 }
 .dost.st_2  {
-     background-position: 0px 11px;
+     background-position: 5px 16px;
 }
 .dost.st_2 .descript_dostavka_1  {
-    margin-top:10px;
+    margin-top:14px;
 }
 
 
@@ -2650,6 +2657,12 @@ ul#tab li.active {
     margin: 0 0 24px 0;
     position: relative;
     width: 551px;
+}
+.for_input .reginpt {
+    
+}
+.for_input .loginpt {
+    
 }
 
 .for_input .close_result_search {
