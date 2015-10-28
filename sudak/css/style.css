@@ -3294,6 +3294,14 @@ footer .center {
     text-transform: uppercase;
     width: 100%;
 }
+.order_window input[type=submit]:hover, .order_window input[type=submit]:focus,
+.buy_click_1 input[type=submit]:hover, .buy_click_1 input[type=submit]:focus {
+    background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
+    background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
+}
 
 /*========================== END popup order_window ==========================*/
 
