@@ -432,6 +432,10 @@
 		margin-bottom: 10px;
 	}
         
+         .template .templ_tit {
+                display:block
+    }
+        
 }
 
 @media only screen and (max-width: 449px) {
