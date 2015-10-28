@@ -58,6 +58,9 @@
     .breadcrumb, .h2, .margin_1 {
         margin-left: 1%;
     }
+    .spisok_gallery .spisok_name {
+		width: 200px;
+	}
 
 }
 
@@ -101,8 +104,10 @@
     }
     .block_menu_1 {
         width:273px;
-       
     }
+    .spisok_gallery .spisok_name {
+		width: 150px;
+	}
 }
 
 @media only screen and (max-width: 1108px) {
@@ -384,10 +389,11 @@
         margin-left: 20px;
     }
      .template .templ_tit {
-                display:none;
-    }
-
-        
+        display:none;
+    } 
+    .spisok_gallery .spisok_name {
+		width: 120px;
+	}   
 }
 
 @media only screen and (max-width: 519px) {
