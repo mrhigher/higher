@@ -1971,6 +1971,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background-image: url(../img/span_6_hover.png);
 }
 
+.span_6 {
+    background-image: url(../img/span_6.png);
+}
+
 .span_7 {
     background-image: url(../img/span_7.png);
 }
@@ -2602,6 +2606,10 @@ ul#tab li.active {
     background: url(../img/radio1.png) no-repeat 0 0;
 }
 
+ .block_info  input[type=radio]:checked + label.dost.st_2 {
+     background-position:0px 11px;
+}
+
 .margin_3 {
     margin-bottom: 5px;
     margin-top: 26px;
@@ -2616,14 +2624,22 @@ ul#tab li.active {
 }
 
 .dost {
-    background-position: 10px 1px!important;
-    color: #000000!important;
+    background-position: 10px 1px;
+    color: #000000;
     display: block;
     font-family: Arial;
     font-size: 14px;
     margin: 0 0 12px 0;
     overflow: hidden;
 }
+.dost.st_2  {
+     background-position: 0px 11px;
+}
+.dost.st_2 .descript_dostavka_1  {
+    margin-top:10px;
+}
+
+
 
 .for_input {
     background-color: #ffffff;
