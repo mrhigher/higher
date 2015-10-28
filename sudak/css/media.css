@@ -132,11 +132,20 @@
 }
 @media only screen  and (min-width:1022px) and (max-width: 1041px) {
     .content_right {
-    margin-left: 1.4%;
+        margin-left: 1.4%;
+    }
+      
 }
-    
-    
+
+@media only screen and (max-width: 1024px) {
+    .margin_2 {
+        width: 71%;
+    }
+    .catalogsorter {
+        margin-right: 0;
+    }
 }
+
 @media only screen and (max-width: 1022px) {
     .content_left {
         display: none;
@@ -183,6 +192,12 @@
        -moz-border-radius: 3px;
        border-radius: 3px;
     }
+    .margin_1 {
+        display: block;
+    }
+    .margin_2 {
+        width: 54%;
+    }
 }
 
 @media only screen and (max-width: 987px) {
@@ -222,6 +237,65 @@
         padding-right: 2%;
         width: 96%;
     }
+}
+
+@media only screen and (max-width: 965px) {
+	.template {
+		clear: both;
+		float: left;
+	}
+	.sort {
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 910px) {
+	.margin_2 {
+		width: 65%;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.margin_2 {
+		width: 58%;
+	}	
+}
+
+@media only screen and (max-width: 848px) {
+	.margin_2 {
+		width: 59%;
+	}
+}
+
+@media only screen and (max-width: 833px) {
+	.margin_2 {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 821px) {
+	.margin_2 {
+		width: 61%;
+	}
+}
+
+@media only screen and (max-width: 807px) {
+	.margin_2 {
+		width: 62%;
+	}
+}
+
+@media only screen and (max-width: 796px) {
+	.margin_1 {
+		margin-bottom: 20px;
+		width: 94%;
+	}
+	.margin_2 {
+		clear: both;
+		float: none;
+		margin-left: 0;
+		width: 94%;
+	}
 }
 
 @media only screen and (max-width: 768px) {
