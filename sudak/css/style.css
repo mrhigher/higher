@@ -1806,9 +1806,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 	overflow-x: auto;
 }
 
-.width_1 {
-	width: 300px;
-}
+
 
 .wrap_for_table .spisok {
 	border-left: none;
@@ -1835,7 +1833,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .spisok_name {
     color: #252525;
-    padding: 0 0 0 20px;
+    padding: 0 15px 0 20px;
    
 }
 
@@ -1844,6 +1842,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     text-align: center;
     width: 64px;
     padding:0px 10px;
+    white-space:nowrap;
 }
 
 .spisok_price {
@@ -1853,7 +1852,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .spisok_price span {
 	display: block;
-	width: 150px;
+	width: 100px;
+        margin:0 auto;
+        padding:0px 15px;
+       
 }
 
 .spisok .count {
@@ -1885,7 +1887,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .spisok_gallery .spisok_name {
-    width: 240px;
+    width: 180px;
+    padding:0px 15px;
 }
 
 .vybor {
