@@ -116,7 +116,7 @@
         margin-right: 10px;
     }
     .width_1 {
-		width: 300px;
+		width: 280px;
 	}
 }
 
@@ -180,7 +180,7 @@
         margin-right: auto;
     }
     .products_best {
-        display: table;
+       /* display: table; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -470,5 +470,9 @@
 @media only screen and (max-width: 380px) {
     .flexslider.flexgall .flex-direction-nav .flex-prev {
         margin-left: -15px;
+    }
+    
+    .width_1 {
+	width: 200px;
     }
 }
