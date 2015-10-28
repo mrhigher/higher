@@ -2841,8 +2841,11 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     border: 1px solid #c7c7c7;
     border-radius: 3px;
     display: block;
+    box-sizing:border-box;
 }
-
+.form_reviews textarea {
+    padding:4px 8px;
+}
 .form_reviews input[type=text] {
     background-color: #ffffff;
     -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.47);
@@ -2851,6 +2854,8 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     height: 27px;
     margin: 5px 0 19px 0;
     width: 300px;
+    padding:0px 8px;
+   
 }
 
 .otsenka {
