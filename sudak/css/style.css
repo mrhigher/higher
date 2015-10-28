@@ -1071,6 +1071,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .breadcrumb > li a {
+    line-height: 1.4em;
     color: #242424;
 }
 
