@@ -203,15 +203,19 @@
     })
 //this.style.width = ((this.value.length + 1) * 8) + 'px'
 
+
 function resizeInput() {
-    $(this).attr('size', $(this).val().length);
+    var max = 5;
+    var len = $(this).attr('size', $(this).val().length);
+    if(len>=max) {
+        len = 3;
+        $(this).attr('size', '3');
+    }
 }
 
-//$('input[type="text"]')
-//    // event handler
-//    .keyup(resizeInput)
-//    // resize on page load
-//    .each(resizeInput);
+$('.reginpt').keyup(resizeInput).each(resizeInput);
+
+
 
 
    
