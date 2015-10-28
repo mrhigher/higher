@@ -55,7 +55,10 @@
         width: 99%;
     }
     
-    
+    .breadcrumb, .h2, .margin_1 {
+        margin-left: 1%;
+    }
+
 }
 
 @media only screen and (max-width: 1137px) {
@@ -102,10 +105,26 @@
     }
 }
 
+@media only screen and (max-width: 1108px) {
+    .margin_2 {
+        width: 73%;
+    }
+    .breadcrumb {
+        clear: both;
+    }
+    .catalogsorter {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1066px) {
+    .margin_2 {
+        width: 72%;
+    }
+}
+
 @media only screen and (max-width: 1059px) {
-    
-    
-    
+
     .ul_1 {
         float: left;
         margin-top: 10px;
