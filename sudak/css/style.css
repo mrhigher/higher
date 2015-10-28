@@ -1801,9 +1801,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     font-family: 'pt_sansbold';
 }
 
+.wrap_for_table {
+	border-right: 1px solid #c7c7c7;
+	float:left;
+	overflow-x: auto;
+}
+
+.wrap_for_table .spisok {
+	border-left: none;
+}
+
 .spisok {
     border: 1px solid #c7c7c7;
+    border-right: none;
     border-radius: 8px;
+    float:left;
 }
 
 .spisok td {
