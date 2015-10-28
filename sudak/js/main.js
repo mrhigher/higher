@@ -34,11 +34,11 @@ jQuery(document).ready(function() {
 	});
 	
 	$('.close_popup').click(function() {
-		$('.overlay, .order_btn, .order_window').fadeOut(500);
+		$('.overlay, .order_btn, .order_window, .buy_click_1').fadeOut(500);
 	});
     
     $('.overlay').click(function() {
-		$('.overlay, .order_btn, .order_window').fadeOut(500);
+		$('.overlay, .order_btn, .order_window, .buy_click_1').fadeOut(500);
 	});
     
     // popup 2
@@ -47,6 +47,14 @@ jQuery(document).ready(function() {
         $('.overlay, .order_window').fadeIn(500);
 		positionTop2();
         positionWidth2();
+	});
+    
+    // popup 3
+    $('.show_buy_click_1').click(function(e) {
+        e.preventDefault();
+        $('.overlay, .buy_click_1').fadeIn(500);
+		positionTop3();
+        positionWidth3();
 	});
     
    
@@ -138,6 +146,16 @@ function positionTop2() {
 function positionWidth2() {
     var widthPopup = $('.order_window').outerWidth() / 2;
     $('.order_window').css({'marginLeft': '-' +  widthPopup + 'px'});
+}
+
+function positionTop3() {
+    var heightPopup = $('.buy_click_1').outerHeight() / 2;
+    $('.buy_click_1').css({'marginTop': '-' +  heightPopup + 'px'});
+}
+
+function positionWidth3() {
+    var widthPopup = $('.buy_click_1').outerWidth() / 2;
+    $('.buy_click_1').css({'marginLeft': '-' +  widthPopup + 'px'});
 }
 
 $('.products_best').on('mouseenter',function() {

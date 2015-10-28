@@ -2805,6 +2805,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .wrap_info_2 .btn_3 {
+    margin: 0 13px 0 0;
     overflow: hidden;
     width: 137px;
 }
@@ -2813,8 +2814,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     border-radius: 4px;
     color: #ffffff;
     display: inline-block;
+    float: left;
     height: 39px;
     line-height: 39px;
+    margin-bottom: 12px;
 }
 
 .wrap_info_2 .btn_3 span {
