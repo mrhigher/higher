@@ -353,6 +353,10 @@
 }
 
 @media only screen and (max-width: 633px) {
+    
+    .single_spisok .spisok_name {
+        width:160px;
+    }
     .authinheadinner {
         float: none;
         display: table;
@@ -415,6 +419,10 @@
      #wrap_for_bx_1 li .inn {
         height:190px;
     }
+    
+    .single_spisok .spisok_name {
+        width:130px;
+    }
 }
 
 @media only screen and (max-width: 483px) { 
@@ -445,9 +453,7 @@
      .template .templ_tit {
         display:block
     }
-    .width_1 {
-		width: 198px;
-	}
+  
         
 }
 
@@ -471,9 +477,11 @@
     .header_mobile {
         display: block;
     }
-    .width_1 {
-		width: 160px;
-	}
+    
+     .single_spisok .spisok_name {
+        width:70px;
+    }
+   
     
 }
 
@@ -482,7 +490,5 @@
         margin-left: -15px;
     }
     
-    .width_1 {
-	width: 185px;
-    }
+   
 }
