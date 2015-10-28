@@ -179,11 +179,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .products_best {
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .ul_2 {
         clear: both;
         margin-top: 20px;
@@ -437,9 +432,12 @@
 		margin-bottom: 10px;
 	}
         
-         .template .templ_tit {
-                display:block
+     .template .templ_tit {
+        display:block
     }
+    .width_1 {
+		width: 198px;
+	}
         
 }
 
@@ -463,7 +461,9 @@
     .header_mobile {
         display: block;
     }
-    
+    .width_1 {
+		width: 150px;
+	}
     
 }
 
