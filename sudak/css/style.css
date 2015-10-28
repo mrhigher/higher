@@ -2838,8 +2838,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 43px;
 }
 
-.wrap_info_2 .btn_3.active {
-    
+.har {
+    clear: both;
+    margin: 0 0 0 44px;
+}
+
+.har td {
+    color: #202020;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.har td:first-child {
+    border-right: 1px solid #dddddd;
+    padding: 0 0 0 11px;
+    width: 770px;
+}
+
+.har td:nth-child(2) {
+    padding: 0 0 0 14px;
+    width: 346px;
+}
+
+.har tr:nth-child(odd) td {
+    background-color: #ededed;
 }
 
 /*========================== END card_main ==========================*/
