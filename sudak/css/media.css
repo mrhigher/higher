@@ -196,7 +196,7 @@
         display: block;
     }
     .margin_2 {
-        width: 54%;
+        width: calc(100% - 303px);
     }
 }
 
@@ -239,16 +239,6 @@
     }
 }
 
-@media only screen and (max-width: 965px) {
-	.template {
-		clear: both;
-		float: left;
-	}
-	.sort {
-		margin-bottom: 10px;
-	}
-}
-
 @media only screen and (max-width: 910px) {
 	.margin_2 {
 		width: 65%;
@@ -258,6 +248,13 @@
 @media only screen and (max-width: 870px) {
 	.margin_2 {
 		width: 58%;
+	}
+	.template {
+		clear: both;
+		float: left;
+	}
+	.sort {
+		margin-bottom: 10px;
 	}	
 }
 
@@ -295,6 +292,13 @@
 		float: none;
 		margin-left: 0;
 		width: 94%;
+	}
+	.template {
+		clear: none;
+		float: right;
+	}
+	.sort {
+		margin-bottom: 0;
 	}
 }
 
@@ -373,6 +377,13 @@
     .products_count {
         margin-left: 20px;
     }
+    .template {
+		clear: both;
+		float: left;
+	}
+	.sort {
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (max-width: 519px) {
