@@ -188,7 +188,9 @@
 
 
 
-
+    $('.close_result_search').on('click',function() {
+        $('.for_input input').val('');
+    })
 
 
 
