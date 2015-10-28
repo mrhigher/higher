@@ -437,9 +437,12 @@
 		margin-bottom: 10px;
 	}
         
-         .template .templ_tit {
-                display:block
+     .template .templ_tit {
+        display:block
     }
+    .width_1 {
+		width: 198px;
+	}
         
 }
 
@@ -463,7 +466,9 @@
     .header_mobile {
         display: block;
     }
-    
+    .width_1 {
+		width: 150px;
+	}
     
 }
 
