@@ -1836,7 +1836,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     padding: 0 15px 0 20px;
    
 }
-
+.single_spisok .spisok_name {
+    width:190px;
+}
 .true_false {
     color: #1b9f24;
     text-align: center;
