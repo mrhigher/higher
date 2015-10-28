@@ -2658,12 +2658,34 @@ ul#tab li.active {
     position: relative;
     width: 551px;
 }
-.for_input .reginpt {
+.for_input  input[type=text] {
+      transition: width 0.25s;
+}
+.for_input  input[type=text].reginpt {
+    width: 170px;
+    min-width: 170px;
+    max-width: 270px;
     
 }
-.for_input .loginpt {
-    
+
+input[type=text].reginpt::-webkit-input-placeholder {color:#1f1f1f;}
+input[type=text].reginpt::-moz-placeholder          {color:#1f1f1f;}/* Firefox 19+ */
+input[type=text].reginpt:-moz-placeholder           {color:#1f1f1f;}/* Firefox 18- */
+input[type=text].reginpt:-ms-input-placeholder      {color:#1f1f1f;}
+
+input[type=text].locinpt::-webkit-input-placeholder {color:#b4b4b4;}
+input[type=text].locinpt::-moz-placeholder          {color:#b4b4b4;}/* Firefox 19+ */
+input[type=text].locinpt:-moz-placeholder           {color:#b4b4b4;}/* Firefox 18- */
+input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
+
+.for_input input[type=text].locinpt {
+    width: 150px;
+    min-width: 100px;
+    max-width: 170px;
+    padding-left:3px;
+    color:#b4b4b4;
 }
+
 
 .for_input .close_result_search {
     cursor: pointer;
