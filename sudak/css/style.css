@@ -1815,7 +1815,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .wrap_for_table .spisok {
-	width: 555px;
+	width: 100%;
 }
 
 .spisok {
@@ -1848,7 +1848,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .spisok_price {
     color: #101010;
     text-align: center;
-    width: 200px;
+}
+
+.spisok_price span {
+	display: block;
+	width: 150px;
 }
 
 .spisok .count {
