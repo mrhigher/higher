@@ -3270,8 +3270,9 @@ footer .center {
     display: block;
     font-size: 16px;
     height: 46px;
-    padding: 0 0 0 12px;
+    padding: 0 12px 0 12px;
     width:100%;
+    box-sizing: border-box;
 }
 
 .descript_1 {
