@@ -106,7 +106,7 @@
         width:273px;
     }
     .spisok_gallery .spisok_name {
-		width: 150px;
+		width: 135px;
 	}
 }
 
@@ -120,9 +120,10 @@
     .catalogsorter {
         margin-right: 10px;
     }
-    .width_1 {
-		width: 280px;
+    .single_spisok .spisok_name {
+		width: 160px;
 	}
+        
 }
 
 @media only screen and (max-width: 1066px) {
@@ -333,9 +334,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .width_1 {
-		width: 250px;
-	}
+   
 }
 
 @media only screen and (max-width: 729px) {
@@ -392,7 +391,7 @@
         display:none;
     } 
     .spisok_gallery .spisok_name {
-		width: 120px;
+		width: 60px;
 	}   
 }
 
