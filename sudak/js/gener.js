@@ -184,7 +184,34 @@
             $("ul#tab li:nth-child("+nthChild+")").addClass("active");
         }
     });
+    
+    
+    $('.reginpt').on('keypress',function() {
+//        var max = 5;
+//       var len =  $(this).length;
+//       alert(len)
+//        if (len >= max) {
+//            console.log(3);
+//    //$('#charNum').text(' you have reached the limit');
+//  } else {
+//        console.log(4);
+//    var char = max - len;
+//    $('#charNum').text(char + ' characters left');
+//  }
+  
+  resizeInput()
+    })
+//this.style.width = ((this.value.length + 1) * 8) + 'px'
 
+function resizeInput() {
+    $(this).attr('size', $(this).val().length);
+}
+
+//$('input[type="text"]')
+//    // event handler
+//    .keyup(resizeInput)
+//    // resize on page load
+//    .each(resizeInput);
 
 
    
