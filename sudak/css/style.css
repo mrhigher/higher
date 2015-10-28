@@ -2376,7 +2376,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .characteristics {
- 
+    margin-right:6px;
 }
 
 .link_reviews {
@@ -2404,28 +2404,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     overflow: hidden;
     padding: 31px 44px 0 0;
 }
-.characteristics .icon, .link_reviews  .icon {
+
+.charact .icon, .characteristics .icon, .link_revs  .icon, .link_reviews .icon {
      display:inline-block;
      background-repeat:no-repeat;
      vertical-align: middle;
 }
-.characteristics .icon{
+.charact .icon, .characteristics .icon{
     margin: 0 19px 0 15px;
     width:11px;
     height:7px;
     background-image:url(../img/ico_17.png);
 }
-.characteristics.active .icon {
+.charact.active .icon, .characteristics.active .icon {
     background-image:url(../img/ico_17_ac.png);
 }
-.link_reviews  .icon {
+.link_revs  .icon, .link_reviews .icon {
     width:15px;
     height:14px;
     margin: 0 15px;
     background-image:url(../img/ico_18_ac.png);
     background-position:0px 1px
 }
-.link_reviews.active .icon {
+.link_revs.active .icon, .link_reviews.active .icon {
    background-image:url(../img/ico_18.png); 
 }
 .add_reviews {
@@ -2453,7 +2454,7 @@ ul#tabs {
     padding: 0;
     text-align: center;
 }
-ul#tabs li {
+.hreftab .itm, ul#tabs li {
        background: -webkit-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
     background: -moz-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
     background: -o-linear-gradient(-90deg, #ededed 0%, #d9d6d6 100%);
@@ -2466,11 +2467,19 @@ ul#tabs li {
     margin: 0 6px 0 0;
     text-align:left;
     cursor: pointer;
+
+    border-radius: 3px 3px 0 0;
+    display: block;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    width: 167px;
+    
 }
 ul#tabs li:hover {
    
 }
-ul#tabs li.active {
+.hreftab .active, ul#tabs li.active {
       background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
