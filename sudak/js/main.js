@@ -43,18 +43,16 @@ jQuery(document).ready(function() {
     
     // popup 2
     $('.show_order_window').click(function(e) {
-        e.preventDefault();
+         e.preventDefault();
         $('.overlay, .order_window').fadeIn(500);
-		positionTop2();
-        positionWidth2();
+        $('.order_window').center();
 	});
     
     // popup 3
     $('.show_buy_click_1').click(function(e) {
         e.preventDefault();
         $('.overlay, .buy_click_1').fadeIn(500);
-		positionTop3();
-        positionWidth3();
+         $('.buy_click_1').center();
 	});
     
    
@@ -166,7 +164,14 @@ $('.products_best').on('mouseleave',function() {
 });
 
 
-
+jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+    return this;
+}
 
 
 
