@@ -2850,24 +2850,27 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     text-align: left;
 }
 
-.table_1 td:first-child {
+
+.table_1 .prod_pick {
     width: 90px;
 }
-
-.table_1 td:nth-child(2) {
+.table_1 .prod_pick img {
+    
+}
+.table_1 .prod_title {
     width: 266px;
 }
-
-.table_1 td:nth-child(3), .table_1 td:nth-child(4) {
-    width: 146px;
+.table_1 .prod_discount {
+     width: 146px;
 }
-
-.table_1 td:nth-child(5) {
-    width: 141px;
+.table_1 .prod_price {
+     width: 146px;
 }
-
-.table_1 td:nth-child(6) {
-    width: 142px;
+.table_1 .prod_amount {
+     width: 141px;
+}
+.table_1 .prod_sum {
+        width: 142px;
 }
 
 .comment {
