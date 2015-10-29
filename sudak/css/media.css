@@ -58,9 +58,9 @@
     .breadcrumb, .h2, .margin_1 {
         margin-left: 1%;
     }
-    .spisok_gallery .spisok_name {
+   /* .spisok_gallery .spisok_name {
 		width: 200px;
-	}
+	} ucomm*/
 
 }
 
@@ -105,9 +105,9 @@
     .block_menu_1 {
         width:273px;
     }
-    .spisok_gallery .spisok_name {
+    /*.spisok_gallery .spisok_name {
 		width: 135px;
-	}
+	} ucomm*/
 }
 
 @media only screen and (max-width: 1108px) {

@@ -1626,7 +1626,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     height: 34px;
     vertical-align: middle;
 }
-
+.basket_show th:first-child {
+    box-shadow: none
+}
 .basket_show td {
     border-bottom: 1px solid #cfcfcf;
     border-top: 1px solid #cfcfcf;
@@ -1653,6 +1655,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .produts_in_basket {
     padding-left: 10px;
+    padding-right:10px; 
 }
 
 .produts_in_basket img {
@@ -1682,13 +1685,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     vertical-align: middle;
 }
 
-.basket_count input {
-    margin: 0 3px;
-}
-
 .products_name {
     border-right: 1px solid #d9d6d6;
-    padding-left: 10px;
+    padding-left: 0px;
     width: 420px;
 }
 
@@ -1717,6 +1716,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .delete {
     text-align: center;
     width: 106px;
+}
+.basket_show .delete {
+     width:auto;
+     padding:0px 23px;
+}
+
+.basket_show .delete img {
+    max-width:inherit;
 }
 
 .form_skidka {
@@ -1751,6 +1758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .itog {
+    overflow:hidden;
     background-color: #ffffff;
     border: 1px solid #d9d6d6;
     border-radius: 3px;
@@ -1853,13 +1861,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .spisok_name {
     color: #252525;
-    padding: 0 15px 0 20px;
+    padding: 0 15px 0 15px;
    
 }
 .single_spisok .spisok_name {
     width:190px;
 }
-.true_false {
+.spisok .true_false {
     color: #1b9f24;
     text-align: center;
     width: 64px;
@@ -1868,50 +1876,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .spisok_price {
+    padding:0px 15px;
     color: #101010;
     text-align: center;
+    white-space: nowrap;
 }
 
 .spisok_price span {
-	display: block;
-	
-        margin:0 auto;
-        padding:0px 15px;
+
        
 }
-
-.spisok .count {
+.spisok .spisok_count, .basket_page .basket_incount {
+    padding:0px 15px;
+}
+.spisok .count, .basket_page .basket_incount {
     width: 90px;
+    margin:0 auto;
 }
 
-.spisok .count span, .spisok .count input {
+.spisok .count span, .spisok .count input, .basket_count  span, .basket_count input {
     float: left;
 }
 
-.spisok .btn_3 {
-    margin: 0 16px;
+
+.spisok .mar_3 {
+    padding: 0 15px;
+}
+.spisok .mar_2, .spisok .mar_3 {
+    width:110px;
 }
 
-.spisok .btn_2 {
-    margin-right: 20px;
+.spisok .mar_2 {
+    padding-right: 5px;
 }
 
 .for_spisok {
     text-align: center;
     width: 100%;
 }
+.spisok_pick {
+    padding-left: 10px;
+    padding-right:10px;
+}
 
 .img_for_spisok {
     max-height: 56px;
     max-width: 87px;
-    padding-left: 10px;
-    padding-right:10px;
     vertical-align: middle;
 }
 
 .spisok_gallery .spisok_name {
     width: 180px;
-    padding:0px 15px;
 }
 
 .vybor {
@@ -2039,6 +2054,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     text-align: left;
 }
 
+.basket_info:before, basket_info:after {
+    content:'';
+    display:table;
+}
+basket_info:after  {
+    clear:both;
+}
 .basket_page {
     width: auto;
 }
@@ -2828,24 +2850,27 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     text-align: left;
 }
 
-.table_1 td:first-child {
+
+.table_1 .prod_pick {
     width: 90px;
 }
-
-.table_1 td:nth-child(2) {
+.table_1 .prod_pick img {
+    
+}
+.table_1 .prod_title {
     width: 266px;
 }
-
-.table_1 td:nth-child(3), .table_1 td:nth-child(4) {
-    width: 146px;
+.table_1 .prod_discount {
+     width: 146px;
 }
-
-.table_1 td:nth-child(5) {
-    width: 141px;
+.table_1 .prod_price {
+     width: 146px;
 }
-
-.table_1 td:nth-child(6) {
-    width: 142px;
+.table_1 .prod_amount {
+     width: 141px;
+}
+.table_1 .prod_sum {
+        width: 142px;
 }
 
 .comment {
@@ -2870,8 +2895,13 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     color: #161616;
     font-size: 18px;
 }
-.block_info .itog .val {
-    display:inline-block;
+    
+.basket_info .itog  {
+    margin:11px 0px 0px 0px;
+    font-size:24px;
+}
+ .itog .val {
+    float:left;
     margin:12px 0px 0px 19px;
         
 }
