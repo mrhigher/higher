@@ -2056,6 +2056,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     border-radius: 3px;
     bottom: -35px;
     color: #ff4800;
+    display: none;
     font-size: 12px;
     height: 27px;
     left: -44px;
