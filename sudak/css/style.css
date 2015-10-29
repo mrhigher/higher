@@ -2835,9 +2835,14 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     min-height: 132px;
     resize: vertical;
     width: 938px;
+  
     padding-left:15px;
     padding-right:15px;
     box-sizing: border-box;
+}
+.form_basket .comment {
+    padding-top:8px;
+    padding-bottom:8px;  
 }
 
 .block_info .itog {
