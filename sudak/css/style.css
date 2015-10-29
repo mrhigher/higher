@@ -3214,8 +3214,8 @@ footer .center {
     height: 46px;
     line-height: 46px;
     margin: 0 0 5px 0;
-    padding: 0 0 0 12px;
-    width: 281px;
+    padding: 0 12px 0 12px;
+    width: 270px;
 }
 
 .popup_form input[type=submit] {
