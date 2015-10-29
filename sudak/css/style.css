@@ -2690,11 +2690,9 @@ ul#tab li.active {
     width: 551px;
 }
 .for_input  input[type=text] {
-      transition: width 0.25s;
+      width:calc(100% - 80px);
 }
-.for_input  input[type=text].reginpt {
-    width:calc(100% - 80px);
-}
+
 
 input[type=text].reginpt::-webkit-input-placeholder {color:#1f1f1f;}
 input[type=text].reginpt::-moz-placeholder          {color:#1f1f1f;}/* Firefox 19+ */
@@ -2723,9 +2721,11 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 
 .for_input input[type=submit] {
-    background: url(../img/ico_search.gif) no-repeat;
+    background: url(../img/ico_search.gif) no-repeat 8px 12px;
     float: left;
-    margin: 12px 0 0 9px;
+    padding: 0px 9px 0 9px;
+    width:30px;
+    height:100%;
 }
 
 .for_input input[type=text] {
@@ -2734,7 +2734,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     float: left;
     font-size: 14px;
     height: 38px;
-    padding: 0 21px 0 21px;
+    padding: 0 21px 0 19px;
 }
 
 .for_input input[type=text] span {

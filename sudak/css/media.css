@@ -330,7 +330,10 @@
 	}
 	.for_input {
 		width: 85%;
-	}       
+	}
+        .for_input input[type=text] {
+          padding: 0 21px 0 8px;
+        }
 }
 
 @media only screen and (max-width: 768px) {
