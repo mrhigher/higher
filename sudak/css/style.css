@@ -1900,9 +1900,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 
 .spisok .mar_3 {
+    width:110px;
     padding: 0 15px;
 }
-
+.spisok .mar_2, .spisok .mar_3 {
+    width:110px;
+}
 
 .spisok .mar_2 {
     padding-right: 5px;
