@@ -291,13 +291,15 @@
 @media only screen and (max-width: 796px) {
 	.margin_1 {
 		margin-bottom: 20px;
-		width: 94%;
+		width: 98%;
+                /*width: 94%; ucomm*/
 	}
 	.margin_2 {
 		clear: both;
 		float: none;
 		margin-left: 0;
-		width: 94%;
+                /*width: 94%; ucomm*/
+		width: 98%;
 	}
 	.template {
 		clear: none;
@@ -307,6 +309,9 @@
         .template .templ_tit {
             display:block;
             float:left;
+        }
+        .vybor {
+            position:static;
         }
         
 }
