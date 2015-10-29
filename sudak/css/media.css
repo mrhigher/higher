@@ -248,18 +248,31 @@
     }
 }
 
+@media only screen and (max-width: 918px) {
+	.descript_dostavka_1 {
+		float:none;
+		width: auto;
+	}
+}
+
 @media only screen and (max-width: 910px) {
 	.margin_2 {
 		width: 65%;
 	}
-        .template .templ_tit {
-                display:none;
-        }
+    .template .templ_tit {
+        display:none;
+    }
 }
 
 @media only screen and (max-width: 870px) {
 	.margin_2 {
 		width: 58%;
+	}
+	.for_input {
+		width: 466px;
+	}
+	.input_oform {
+		width: 450px;
 	}
 	
 }
@@ -306,14 +319,19 @@
 		float: right;
 	}
 	
-        .template .templ_tit {
-            display:block;
-            float:left;
-        }
-        .vybor {
-            position:static;
-        }
-        
+    .template .templ_tit {
+        display:block;
+        float:left;
+    }
+    .vybor {
+        position:static;
+    }
+    .input_oform {
+		width: 83%;
+	}
+	.for_input {
+		width: 85%;
+	}       
 }
 
 @media only screen and (max-width: 768px) {
