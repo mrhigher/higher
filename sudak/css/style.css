@@ -1744,7 +1744,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     float: right;
     font-size: 24px;
     margin: 0 20px 0 0;
-    padding: 3px 3px 3px 19px;
+    padding: 3px 3px 3px 3px;
 }
 
 .itog input[type=submit] {
@@ -2696,14 +2696,9 @@ ul#tab li.active {
     width: 551px;
 }
 .for_input  input[type=text] {
-      transition: width 0.25s;
+      width:calc(100% - 80px);
 }
-.for_input  input[type=text].reginpt {
-    width: 95%;
-    min-width: 250px;
-    max-width: 450px;
-    
-}
+
 
 input[type=text].reginpt::-webkit-input-placeholder {color:#1f1f1f;}
 input[type=text].reginpt::-moz-placeholder          {color:#1f1f1f;}/* Firefox 19+ */
@@ -2732,9 +2727,11 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 
 .for_input input[type=submit] {
-    background: url(../img/ico_search.gif) no-repeat;
+    background: url(../img/ico_search.gif) no-repeat 8px 12px;
     float: left;
-    margin: 12px 0 0 9px;
+    padding: 0px 9px 0 9px;
+    width:30px;
+    height:100%;
 }
 
 .for_input input[type=text] {
@@ -2743,7 +2740,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     float: left;
     font-size: 14px;
     height: 38px;
-    padding: 0 21px 0 21px;
+    padding: 0 21px 0 5px;
 }
 
 .for_input input[type=text] span {
@@ -2769,9 +2766,10 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 
 .descript_dostavka_1 {
-    float: left;
+    display:block;
     line-height: 1.1;
-    width: 475px;
+    max-width: 475px;
+    overflow:hidden;
 }
 
 .title_3 {
@@ -2843,16 +2841,25 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     min-height: 132px;
     resize: vertical;
     width: 938px;
+  
     padding-left:15px;
     padding-right:15px;
     box-sizing: border-box;
+}
+.form_basket .comment {
+    padding-top:8px;
+    padding-bottom:8px;  
 }
 
 .block_info .itog {
     color: #161616;
     font-size: 18px;
 }
-
+.block_info .itog .val {
+    display:inline-block;
+    margin:12px 0px 0px 19px;
+        
+}
 .table_2 td {
     vertical-align: middle;
 }

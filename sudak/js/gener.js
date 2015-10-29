@@ -190,12 +190,6 @@
 
     $('.close_result_search').on('click',function(e) {
         $('.for_input input').val('');
-        if($('.for_input .reginpt').css('max-width','270px')) {
-           $('.for_input .reginpt').css('width',170); 
-        }
-         if($('.for_input .locinpt').css('max-width','180px')) {
-             $('.for_input .locinpt').css('width',160); 
-         }
     })
 
 
