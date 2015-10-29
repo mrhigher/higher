@@ -2693,10 +2693,7 @@ ul#tab li.active {
       transition: width 0.25s;
 }
 .for_input  input[type=text].reginpt {
-    width: 95%;
-    min-width: 250px;
-    max-width: 450px;
-    
+    width:calc(100% - 80px);
 }
 
 input[type=text].reginpt::-webkit-input-placeholder {color:#1f1f1f;}
@@ -2763,9 +2760,10 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 
 .descript_dostavka_1 {
-    float: left;
+    display:block;
     line-height: 1.1;
-    width: 475px;
+    max-width: 475px;
+    overflow:hidden;
 }
 
 .title_3 {
