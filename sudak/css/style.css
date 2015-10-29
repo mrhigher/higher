@@ -1885,6 +1885,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     max-height: 56px;
     max-width: 87px;
     padding-left: 10px;
+    padding-right:10px;
     vertical-align: middle;
 }
 
