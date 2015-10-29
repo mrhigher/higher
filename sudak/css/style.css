@@ -1597,6 +1597,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .wrap_for_table .basket_show td {
 	height: 44px;
+	white-space: nowrap;
+}
+
+.wrap_for_table .basket_show .price_in_basket, .wrap_for_table .basket_show .summa {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.wrap_for_table .basket_page .products_name {
+	padding-right: 5px;
 }
 
 .basket_wrap .rsec_tyanya {
