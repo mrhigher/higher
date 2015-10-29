@@ -2734,7 +2734,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     float: left;
     font-size: 14px;
     height: 38px;
-    padding: 0 21px 0 19px;
+    padding: 0 21px 0 5px;
 }
 
 .for_input input[type=text] span {
