@@ -2693,9 +2693,9 @@ ul#tab li.active {
       transition: width 0.25s;
 }
 .for_input  input[type=text].reginpt {
-    width: 170px;
-    min-width: 170px;
-    max-width: 270px;
+    width: 95%;
+    min-width: 250px;
+    max-width: 450px;
     
 }
 
@@ -2737,7 +2737,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     float: left;
     font-size: 14px;
     height: 38px;
-    padding: 0 0 0 21px;
+    padding: 0 21px 0 21px;
 }
 
 .for_input input[type=text] span {
