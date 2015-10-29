@@ -1736,7 +1736,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     float: right;
     font-size: 24px;
     margin: 0 20px 0 0;
-    padding: 3px 3px 3px 19px;
+    padding: 3px 3px 3px 3px;
 }
 
 .itog input[type=submit] {
@@ -2844,7 +2844,11 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     color: #161616;
     font-size: 18px;
 }
-
+.block_info .itog .val {
+    display:inline-block;
+    margin:12px 0px 0px 19px;
+        
+}
 .table_2 td {
     vertical-align: middle;
 }
