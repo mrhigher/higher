@@ -1580,14 +1580,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .basket_show {
-    width:100%;
-    overflow-x:auto;
+    /*overflow-x:auto;*/
     border: 1px solid #cfcfcf;
+    border-right: none;
     color: #252525;
+    float: left;
     margin: 0 0 10px 0;
-  
+    width:100%;
 }
-.basket_show, .basket_wrap .rsec_tyanya {
+
+.wrap_for_table .basket_show {
+	border-left: none;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.basket_wrap .rsec_tyanya {
     min-width:500px;  
 }
 
@@ -1805,8 +1813,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 	border-right: 1px solid #c7c7c7;
 	overflow-x: auto;
 }
-
-
 
 .wrap_for_table .spisok {
 	border-left: none;
@@ -2033,7 +2039,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .basket_page .products_name {
-    width: 658px;
+    width: 300px;
 }
 
 .basket_page .basket_incount {
