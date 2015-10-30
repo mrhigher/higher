@@ -2840,6 +2840,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     color: #232323;
     vertical-align: middle;
     padding:0px 15px; 
+    white-space: nowrap;
 }
 .table_1 td {
     padding:6px 15px;
@@ -2865,6 +2866,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     vertical-align: middle;
 }
 .table_1 .prod_title {
+    white-space: normal;
     width: 236px;
 }
 .table_1 .prod_discount {
