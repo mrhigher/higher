@@ -844,7 +844,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .btn_3:hover a {
-    background-image: url(../img/plus_basket.png);
+    background-image: url(../img/plus_basket1.png);
+    background-position:8px center;
 }
 
 .in_basket, .in_basket:hover {
