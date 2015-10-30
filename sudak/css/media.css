@@ -61,7 +61,7 @@
    /* .spisok_gallery .spisok_name {
 		width: 200px;
 	} ucomm*/
-
+	
 }
 
 @media only screen and (max-width: 1219px) {
@@ -82,6 +82,9 @@
 	}
 	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
 		margin-left: 73%;
+	}
+	.btn_4 {
+		margin-bottom: 10px;
 	}
 }
 
@@ -646,9 +649,6 @@
     }
     .slider_card_main {
 		width: 90%;
-	}
-	.btn_4 {
-		margin-bottom: 10px;
 	}
 	.btn_4, .btn_5 {
 		float: none;
