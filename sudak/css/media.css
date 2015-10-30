@@ -606,6 +606,9 @@
      .template .templ_tit {
         display:block
     }
+    .har td:nth-child(2) {
+		padding-right: 10px;
+	}
     /*.slider_card_main {
 		width: 70%;
 	}*/    
