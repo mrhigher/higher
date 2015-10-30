@@ -407,7 +407,7 @@
 		padding: 0 21px 0 8px;
     }
 	.slider_card_main {
-		width: 41%;
+		width: 45%;
 	}
 	.block_anons {
 		float: right;
@@ -438,6 +438,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .slider_card_main {
+		width: 45%;
+	}
    
 }
 
