@@ -2831,6 +2831,9 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     margin:0px 0px 34px 0px
 }
 
+.wrap_table_1 .wrap_for_table {
+    border:0px;
+}
 
 .table_1 td, .table_1 th {
     border: 1px solid #dcdcdc;
