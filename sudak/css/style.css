@@ -1841,7 +1841,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 	border-left: none;
 }
 
-.wrap_for_table .spisok {
+.wrap_for_table .spisok, .wrap_for_table .table_1 {
 	width: 100%;
 }
 
@@ -2827,14 +2827,19 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     margin: 34px 0 28px 0;
 }
 
+.wrap_table_1 {
+    margin:0px 0px 34px 0px
+}
+
 .table_1 {
-    margin: -15px 0 34px 11px;
+    margin: 0px 0 0px 11px;
 }
 
 .table_1 td, .table_1 th {
     border: 1px solid #dcdcdc;
     color: #232323;
     vertical-align: middle;
+    padding:0px 15px; 
 }
 
 .table_1 th {
@@ -2845,33 +2850,33 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     height: 104px;
     text-align: center;
 }
-
 .table_1 th:first-child {
     padding: 0 0 0 17px;
     text-align: left;
 }
-
-
 .table_1 .prod_pick {
-    width: 90px;
+    width: 60px;
+    padding:0px 14px;
 }
 .table_1 .prod_pick img {
-    
+    max-width:inherit;
+    vertical-align: middle;
 }
 .table_1 .prod_title {
-    width: 266px;
+    width: 236px;
 }
 .table_1 .prod_discount {
-     width: 146px;
+     width: 116px;
+     
 }
 .table_1 .prod_price {
-     width: 146px;
+     width: 116px;
 }
 .table_1 .prod_amount {
-     width: 141px;
+     width: 111px;
 }
 .table_1 .prod_sum {
-        width: 142px;
+    width:112px;
 }
 
 .comment {
