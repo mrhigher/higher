@@ -64,6 +64,27 @@
 
 }
 
+@media only screen and (max-width: 1219px) {
+	.slider_card_main {
+		width: 36%;
+	}
+	.block_anons {
+		width: 35%;
+	}
+	.other_setting {
+		width: 28%;
+	}
+	.other_setting div.cs-skin-sudak {
+		width: 100%;
+	}
+	.message {
+		width: 100%;
+	}
+	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
+		margin-left: 73%;
+	}
+}
+
 @media only screen and (max-width: 1137px) {
     .more .ico_6 {
         display: none;
@@ -108,6 +129,16 @@
     /*.spisok_gallery .spisok_name {
 		width: 135px;
 	} ucomm*/
+	.block_anons {
+		margin: 0px 1% 0px 0px;
+	}
+	.other_setting {
+		float:left;
+	}
+	.slider_card_main {
+		width: 34%;
+	}
+
 }
 
 @media only screen and (max-width: 1108px) {
@@ -207,6 +238,16 @@
     .margin_2 {
         width: calc(100% - 303px);
     }
+    .slider_card_main {
+		margin-left: 1%;
+		width: 32%;
+	}
+	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder {
+		width: 97%;
+	}
+	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
+		margin-left: 69%;
+	}
 }
 
 @media only screen and (max-width: 987px) {
@@ -261,6 +302,19 @@
     .template .templ_tit {
         display:none;
     }
+    .other_setting {
+		clear: both;
+		float: none;
+		margin-bottom: 20px;
+		margin-left: 1%;
+		width: 40%;
+	}
+	.slider_card_main {
+		width: 37%;
+	}
+	.block_anons {
+		width: 55%;
+	}
 }
 
 @media only screen and (max-width: 870px) {
@@ -273,12 +327,24 @@
 	.input_oform {
 		width: 450px;
 	}
+	.btn_5, .garant {
+		float: right;
+	}
+	.garant {
+		margin-right: 10px;
+	}
+	.slider_card_main {
+		width: 37%;
+	}
 	
 }
 
 @media only screen and (max-width: 848px) {
 	.margin_2 {
 		width: 59%;
+	}
+	.other_setting {
+		width: 46%;
 	}
 }
 
@@ -291,6 +357,9 @@
 @media only screen and (max-width: 821px) {
 	.margin_2 {
 		width: 61%;
+	}
+	.slider_card_main {
+		width: 40%;
 	}
 }
 
@@ -331,9 +400,16 @@
 	.for_input {
 		width: 85%;
 	}
-        .for_input input[type=text] {
-          padding: 0 21px 0 8px;
-        }
+    .for_input input[type=text] {
+		padding: 0 21px 0 8px;
+    }
+	.slider_card_main {
+		width: 41%;
+	}
+	.block_anons {
+		float: right;
+		width: 51%;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -375,6 +451,12 @@
     .flexslider.flexgall .flex-direction-nav .flex-prev {
         margin-left: -20px;
     }
+    .slider_card_main {
+		width: 43%;
+	}
+	.other_setting {
+		width: 53%;
+	}
 }
 
 @media only screen and (max-width: 646px) {
@@ -412,6 +494,27 @@
         margin-right: auto;
         overflow: hidden;
     }
+    .slider_card_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 47%;
+	}
+	.block_anons {
+		float: none;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 98%;
+	}
+	.other_setting {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+	.har {
+		margin-left: 1%;
+	}
 }
 
 @media only screen and (max-width: 562px) {
@@ -433,7 +536,10 @@
     } 
     .spisok_gallery .spisok_name {
 		width: 60px;
-	}   
+	}  
+	.slider_card_main {
+		width: 51%;
+	} 
 }
 
 @media only screen and (max-width: 519px) {
@@ -455,11 +561,13 @@
     
      #wrap_for_bx_1 li .inn {
         height:190px;
-    }
-    
+    }  
     .single_spisok .spisok_name {
         width:130px;
     }
+    .slider_card_main {
+		width: 60%;
+	}
 }
 
 @media only screen and (max-width: 483px) { 
@@ -490,8 +598,9 @@
      .template .templ_tit {
         display:block
     }
-  
-        
+    .slider_card_main {
+		width: 65%;
+	}     
 }
 
 @media only screen and (max-width: 449px) {
@@ -518,14 +627,31 @@
      .single_spisok .spisok_name {
         width:70px;
     }
-   
-    
+    .slider_card_main {
+		width: 76%;
+	}
+	.other_setting {
+		width: 90%;
+	}
+	.garant {
+		float: none;
+	}
 }
 
 @media only screen and (max-width: 380px) {
     .flexslider.flexgall .flex-direction-nav .flex-prev {
         margin-left: -15px;
     }
-    
-   
+    .slider_card_main {
+		width: 83%;
+	}
+	.btn_4 {
+		margin-bottom: 10px;
+	}
+	.btn_4, .btn_5 {
+		float: none;
+	}
+	.reviews {
+		padding-right: 10px;
+	}   
 }

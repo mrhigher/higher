@@ -2242,6 +2242,7 @@ basket_info:after  {
     background-color: #ffffff;
     border: 1px solid #d9d6d6;
     float: right;
+    margin: 0 1px 0 0;
     width: 328px;
 }
 
