@@ -2890,11 +2890,11 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     background-color: #ffffff;
     border-radius: 2px;
     border: 1px solid #e3e3e3;
-    margin: -6px 0 28px 10px;
+    margin: 0px 10px 28px 10px;
     min-height: 132px;
     resize: vertical;
-    width: 938px;
-  
+    max-width:938px;
+    width:100%;
     padding-left:15px;
     padding-right:15px;
     box-sizing: border-box;
