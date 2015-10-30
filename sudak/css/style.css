@@ -844,7 +844,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .btn_3:hover a {
-    background-image: url(../img/plus_basket.png);
+    background-image: url(../img/plus_basket1.png);
+    background-position:8px center;
 }
 
 .in_basket, .in_basket:hover {
@@ -1840,7 +1841,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 	border-left: none;
 }
 
-.wrap_for_table .spisok {
+.wrap_for_table .spisok, .wrap_for_table .table_1 {
 	width: 100%;
 }
 
@@ -2670,13 +2671,16 @@ ul#tab li.active {
     color: #434343;
 }
 .block_info label.for_type {
+     
      background-position:0px 0px;
 }
 
 .for_type {
+  
+    display:inline-block;
     height: 17px;
     line-height: 17px;
-    margin: 0 45px 0 0;
+    margin: 0 45px 8px 0;
     padding: 1px 0 0 23px;
 }
 
@@ -2694,7 +2698,7 @@ ul#tab li.active {
 
 .margin_3 {
     margin-bottom: 5px;
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .gray_block {
@@ -2791,8 +2795,8 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     color: #b4b4b4;
     height: 38px;
     margin: 0 0 18px 0;
-    padding: 0 0 0 15px;
-    width: 535px;
+    padding: 0 15px 0 15px;
+    width: 521px;
 }
 
 .margin_4 {
@@ -2827,51 +2831,59 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     margin: 34px 0 28px 0;
 }
 
-.table_1 {
-    margin: -15px 0 34px 11px;
+.wrap_table_1 {
+    margin:0px 0px 34px 0px
+}
+
+.wrap_table_1 .wrap_for_table {
+    border:0px;
 }
 
 .table_1 td, .table_1 th {
     border: 1px solid #dcdcdc;
     color: #232323;
     vertical-align: middle;
+    padding:0px 15px; 
+    white-space: nowrap;
 }
-
+.table_1 td {
+    padding:6px 15px;
+}
 .table_1 th {
     height: 28px;
 }
-
 .table_1 td {
-    height: 104px;
+    height: 92px;
     text-align: center;
 }
-
 .table_1 th:first-child {
     padding: 0 0 0 17px;
     text-align: left;
 }
-
-
 .table_1 .prod_pick {
-    width: 90px;
+    width: 60px;
+    padding-left:14px;
+    padding-right:14px;
 }
 .table_1 .prod_pick img {
-    
+    max-width:inherit;
+    vertical-align: middle;
 }
 .table_1 .prod_title {
-    width: 266px;
+    white-space: normal;
+    width: 236px;
 }
 .table_1 .prod_discount {
-     width: 146px;
+     width: 116px;
 }
 .table_1 .prod_price {
-     width: 146px;
+     width: 116px;
 }
 .table_1 .prod_amount {
-     width: 141px;
+     width: 111px;
 }
 .table_1 .prod_sum {
-        width: 142px;
+    width:112px;
 }
 
 .comment {
