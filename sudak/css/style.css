@@ -2831,9 +2831,6 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     margin:0px 0px 34px 0px
 }
 
-.table_1 {
-    margin: 0px 0 0px 0px;
-}
 
 .table_1 td, .table_1 th {
     border: 1px solid #dcdcdc;
@@ -2841,12 +2838,14 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     vertical-align: middle;
     padding:0px 15px; 
 }
-
+.table_1 td {
+    padding:6px 15px;
+}
 .table_1 th {
     height: 28px;
 }
 .table_1 td {
-    height: 104px;
+    height: 92px;
     text-align: center;
 }
 .table_1 th:first-child {
@@ -2855,7 +2854,8 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 .table_1 .prod_pick {
     width: 60px;
-    padding:0px 14px;
+    padding-left:14px;
+    padding-right:14px;
 }
 .table_1 .prod_pick img {
     max-width:inherit;
