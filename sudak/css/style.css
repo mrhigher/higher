@@ -2845,7 +2845,6 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 .table_1 th {
     height: 28px;
 }
-
 .table_1 td {
     height: 104px;
     text-align: center;
@@ -2867,7 +2866,6 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 .table_1 .prod_discount {
      width: 116px;
-     
 }
 .table_1 .prod_price {
      width: 116px;
