@@ -24,6 +24,7 @@ $(document).ready(function() {
 		$(this).toggleClass("active");
 		$(".catalogmenu").toggle();
 	});
+
 	adjustMenu();
     
     /*******************************************************/
@@ -51,7 +52,15 @@ $(window).bind('orientationchange', function() {
             });
             
         }   else {
-            $('.catalogmenu').show();
+            if(!$('.catalogmenu').hasClass('with_cats')) { //chesk if is second page
+                 $('.catalogmenu').show();
+            };
+             $(".catalogmenucolumn.toggle_cats").unbind('click').bind('click', function(e) {
+			e.preventDefault();
+                        $(".catalogmenu").toggle();
+                        
+            });
+           
             $(".catalogmenu li").removeClass("hover");
 //		$(".catalogmenu li a").unbind('click');
 //		$(".catalogmenu li").unbind('mouseleave').bind('mouseenter mouseleave', function() {
