@@ -70,15 +70,15 @@ jQuery(document).ready(function() {
     });
     
     // accordeon
-    $('.setting_filtr').css({'display':'none'});
+    //$('.setting_filtr').css({'display':'none'});
+    //$('.setting_filtr').addClass('open');
 			
     $('.link_filtr').click(function(){
         //$('.link_filtr').not($(this)).removeClass('open');
-        $('.setting_filtr').not($(this).next('.setting_filtr')).slideUp(500);
+        $('.setting_filtr').not($(this).next('.setting_filtr')).slideDown(500);
         $(this).next('.setting_filtr').slideToggle(500);
         //$(this).toggleClass('open');
     });
-    
 });
 
 $(window).load(function() {
