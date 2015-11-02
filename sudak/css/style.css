@@ -2459,6 +2459,9 @@ basket_info:after  {
     margin-right:6px;
 }
 
+.characteristics:hover {
+    background: #fff!important;
+}
 
 .link_reviews img, .characteristics img {
     vertical-align: middle;

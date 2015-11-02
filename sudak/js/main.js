@@ -79,6 +79,11 @@ jQuery(document).ready(function() {
         //$(this).toggleClass('open');
     });
     
+    $('.vnutr .catalogmenu').css('display', 'none');
+    $('.vnutr .catalogmenu').on('hover', function(){
+        $('.catalogmenu').show();
+    });
+    
 });
 
 $(window).load(function() {
