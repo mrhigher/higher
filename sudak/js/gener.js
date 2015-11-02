@@ -231,6 +231,7 @@
         }
         
         each_opts() //run each chckboxes
+        
        var fo_vyb =  function() {
            $('.vybor').fadeOut()
        }
