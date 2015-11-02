@@ -3013,10 +3013,12 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
-    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    padding: 0 12px 0 0;
+}
+.btn_3.st_2, .buy_1 {
+      -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
     box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
-    padding: 0 12px 0 0;
 }
 
 .buy_1:hover, .wrap_info_2 .btn_3.active {
@@ -3043,9 +3045,11 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     margin-bottom: 12px;
 }
 
+
 .wrap_info_2 .btn_3 span {
     float: left;
     height: 39px;
+    
 }
 
 .buy_1 img {
@@ -3054,12 +3058,17 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 
 .to_basket {
-    background: url("../img/basket_ico.png") no-repeat scroll 7px center;
-    -webkit-border-image: url(../img/border_image.png) 2 repeat round;
-    -o-border-image: url(../img/border_image.png) 2 repeat round;
-    -moz-border-image: url(../img/border_image.png) 2 repeat round;
-    border-image: url(../img/border_image.png) 2 repeat round;
-    width: 43px;
+    background: url("../img/basket_ico.png") no-repeat scroll 0px center;
+    width: 19px;
+    margin:0px 25px 14px 15px;
+}
+.to_basket:after {
+    content:'';
+    margin-left:30px;
+    width:2px;
+    height:100%;
+    background:url(../img/to_cart_ic.png) no-repeat;
+    float:left;
 }
 
 .har {
