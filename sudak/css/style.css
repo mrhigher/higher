@@ -515,9 +515,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     left: 0;
     position: absolute;
     top: 46px;
-    z-index: 200;
+   
 }
-
+.catalogmenu.with_cats {
+    display:none;   
+}
+ .menu_left:hover  .catalogmenu.with_cats {
+         display: block;
+ }
 .catalogmenu > li {
     background-color: #fdfdfd;
     border-bottom: 1px solid #c7c7c7;
@@ -1134,7 +1139,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 
 
-.filtr_price:focus, .popup_form input[type=text]:focus {
+.filtr_price:focus, .popup_form input[type=text]:focus,.filtr_input:focus  {
     -webkit-box-shadow: 0px 0px 6px rgba(26,189,36,0.92);
     -moz-box-shadow: 0px 0px 6px rgba(26,189,36,0.92);
     box-shadow: 0px 0px 6px rgba(26,189,36,0.92);  
@@ -3462,7 +3467,7 @@ footer .center {
 }
 
 .catalogmenu {
-    z-index:1;
+    z-index:201;
 }
 .catalogmenu > li.hover > ul {
     left: 248px;
