@@ -2067,6 +2067,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 basket_info:after  {
     clear:both;
 }
+
+.border_radius_left {
+    border-radius: 2px 0 0 0;
+}
+
+.border_radius_right {
+    border-radius: 0 2px 0 0;
+}
+
 .basket_page {
     width: auto;
 }
