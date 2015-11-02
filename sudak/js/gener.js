@@ -194,6 +194,50 @@
 
 
 
+/*bullet position*/
+        $('.filtr_input').focus(function()  {
+         var el = $(this).parent().find('.vybor');
+        el.fadeIn(300);
+        }); 
+        $('.filtr_input').blur( function() {
+         var el = $(this).parent().find('.vybor');
+         el.fadeOut(300); 
+        });
+        
+ 
+        var each_opts = function() {
+            var n = 0;
+        $('.optlist').find('input[type=checkbox]').each(function(i, val) {
+         $(val).on('click', function() {
+          
+         var el = $(val).parent().parent().find('.vybor');    
+        if($(val).is(':checked')) {
+         el.fadeIn(300);   
+           n = n + 1;
+           console.log(n)
+        } else {
+            n = n - 1;
+           console.log(n)
+            if (n == 0) {
+            el.fadeOut(300); 
+                        
+            }
+        
+        }
+         
+        }); 
+            
+        })
+        }
+        
+        each_opts() //run each chckboxes
+       var fo_vyb =  function() {
+           $('.vybor').fadeOut()
+       }
+     
+    
+   /*bullet position end */
+
 
 
    
