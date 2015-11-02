@@ -78,12 +78,6 @@ jQuery(document).ready(function() {
         $(this).next('.setting_filtr').slideToggle(500);
         //$(this).toggleClass('open');
     });
-    
-    $('.vnutr .catalogmenu').css('display', 'none');
-    $('.vnutr .catalogmenu').on('hover', function(){
-        $('.catalogmenu').show();
-    });
-    
 });
 
 $(window).load(function() {
