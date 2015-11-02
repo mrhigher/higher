@@ -3064,7 +3064,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 }
 .to_basket:after {
     content:'';
-    margin-left:30px;
+    margin-left:29px;
     width:2px;
     height:100%;
     background:url(../img/to_cart_ic.png) no-repeat;
