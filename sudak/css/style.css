@@ -1108,11 +1108,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .filtr_wrap > div {
-    overflow:hidden;
     border-bottom: 1px solid #cfcfcf;
     padding-bottom: 10px;
 }
-
+.filtr_wrap > div:after {
+    content:'';
+    display:table;
+    clear:both;
+}
 .filtr_wrap > div:last-child {
     border-bottom: none;
 }
@@ -1120,7 +1123,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .setting_filtr > div {
     padding: 0 14px;
 }
-
+.setting_filtr .catrange {
+    position:relative;
+}
 .optlist.single {
     padding:12px 14px 0px 14px;
 }
@@ -1155,7 +1160,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 .setting_filtr {
     clear:both;
 }
-
+.optlist {
+    position:relative;
+}
 .checkbox {
     margin: 0 0 8px 0;
 }
@@ -1979,6 +1986,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     left: -11px;
     top: 10px;
     width: 11px;
+}
+.catrange  .vybor {
+    display:none;
+    top:14px;
+    right:-177px;
+}
+.optlist .vybor {
+    display:none;
+    top: -6px;
+    right: -177px;
+}
+.optlist.single .vybor {
+    display:none;
+    top: -23px;
+    right: -177px;
 }
 
 .basket_menu {
