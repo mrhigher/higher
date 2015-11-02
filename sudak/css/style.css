@@ -2459,9 +2459,6 @@ basket_info:after  {
     margin-right:6px;
 }
 
-.link_reviews {
-
-}
 
 .link_reviews img, .characteristics img {
     vertical-align: middle;
@@ -3005,6 +3002,7 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     background: -o-linear-gradient(-90deg, #1daa16 0%, #1a7339 98%);
     background: -ms-linear-gradient(-90deg, #1daa16 0%, #1a7339 98%);
     background: linear-gradient(180deg, #1daa16 0%, #1a7339 98%);
+    cursor: default;
 }
 
 .buy_1 {
@@ -3055,6 +3053,10 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 
 .to_basket {
     background: url("../img/basket_ico.png") no-repeat scroll 7px center;
+    -webkit-border-image: url(../img/border_image.png) 2 repeat round;
+    -o-border-image: url(../img/border_image.png) 2 repeat round;
+    -moz-border-image: url(../img/border_image.png) 2 repeat round;
+    border-image: url(../img/border_image.png) 2 repeat round;
     width: 43px;
 }
 
