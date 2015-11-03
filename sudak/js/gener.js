@@ -203,13 +203,23 @@
          el.fadeOut(300); 
         });
         
-        $('.catrange').find('.irs').on('mousedown', function() {
+        $('.catrange').find('.irs').on('click', function() {
              var el = $(this).parent().find('.vybor');
              el.fadeIn(300); 
-        }).on('mouseup', function() {
-             var el = $(this).parent().find('.vybor');
-             el.fadeOut(300); 
         })
+        
+                     $(document).mouseup(function (e)
+     {
+        var container = $('.catrange .irs, .filtr_input'); 
+        if (!container.is(e.target) 
+            && container.has(e.target).length === 0 
+             ) 
+        {
+            var el = $('.catrange').find('.irs').parent().find('.vybor');
+             el.fadeOut(300); 
+            
+        }
+            });
    
         
  

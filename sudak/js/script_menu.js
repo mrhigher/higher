@@ -3,12 +3,16 @@ var ww = document.body.clientWidth;
 
 $(document).ready(function() {
     
-    $(".catalogmenu li, .catalogmenu.with_cats li").each(function() {
+    $(".catalogmenu li").each(function() {
         if($(this).find('ul').length) {
           $(this).toggleClass('hasDD');
         }
     });
-
+    $(".catalogmenu.with_cats li").each(function() {
+        if($(this).find('ul').length) {
+          $(this).toggleClass('hasDD');
+        }
+    });
     
     
    
