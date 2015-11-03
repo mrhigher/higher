@@ -8,6 +8,14 @@ $(document).ready(function() {
           $(this).toggleClass('hasDD');
         }
     });
+    $(".catalogmenu.with_cats li").each(function() {
+        if($(this).find('ul').length) {
+          $(this).toggleClass('hasDD');
+        }
+    });
+    
+    
+   
     
 	$(".catalogmenu li a").each(function() {
 		if ($(this).next().length > 0) {
