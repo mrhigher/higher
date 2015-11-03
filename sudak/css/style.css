@@ -1518,9 +1518,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     display:none;
 }
 .basket_wrap  .basket_show th {
-    background:#fff
+    box-shadow:none;
+    background:#fff;
+    color:red;    
 }
-
+.basket_wrap  .basket_show th.th_good {
+    border-right:1px solid red;
+}
+.basket_wrap  .basket_show th.th_price {
+    border-right:1px solid red;
+}
+.basket_wrap .basket_show tr:nth-child(even) {
+    background-color:#fff;
+}
 .resizable {
     background: #fff;  
     overflow-y:auto;
