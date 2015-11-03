@@ -541,7 +541,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     display:none;   
 }
  .menu_left:hover  .catalogmenu.with_cats {
-         display: block;
+     display: block;
  }
 .catalogmenu > li {
     background-color: #fdfdfd;
@@ -1664,7 +1664,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     vertical-align: middle;
 }
 .basket_show th:first-child {
-    box-shadow: none
+    box-shadow: none;
 }
 .basket_show td {
     border-bottom: 1px solid #cfcfcf;
@@ -2092,8 +2092,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background-image: url(../img/span_5.png);
 }
 
+.basket_menu li a:hover .span_1 {
+    background-image: url(../img/span_1_hover.png);
+}
+
+.basket_menu li a:hover .span_2 {
+    background-image: url(../img/span_2_hover.png);
+}
+
+.basket_menu li a:hover .span_3 {
+    background-image: url(../img/span_3_hover.png);
+}
+
+.basket_menu li a:hover .span_5 {
+    background-image: url(../img/span_5_hover.png);
+}
+
 .basket_menu li a:hover .span_6 {
     background-image: url(../img/span_6_hover.png);
+}
+
+.basket_menu li a:hover .span_7 {
+    background-image: url(../img/span_7_hover.png);
+}
+
+.basket_menu li a:hover .span_8 {
+    background-image: url(../img/span_8_hover.png);
 }
 
 .span_6 {
@@ -2122,10 +2146,20 @@ basket_info:after  {
 }
 
 .border_radius_left {
-    border-radius: 2px 0 0 0;
+    border: none;
 }
 
-.border_radius_right {
+.border_radius_left td:first-child {
+    border-left: 1px solid #cfcfcf;
+}
+
+.border_radius_left th:first-child {
+    border-top: 1px solid #cfcfcf;
+    border-radius: 2px 0 0 0;
+    border-left: 1px solid #cfcfcf;
+}
+
+.border_radius_right th:last-child {
     border-radius: 0 2px 0 0;
 }
 
@@ -3746,7 +3780,7 @@ footer .center {
 
 .flexslider.flexgall  { 
     width: 90%;
-    margin: 0 auto; 
+    margin: 40px auto 0; 
     background-color:transparent;
     border:0px;
 }
@@ -3754,8 +3788,6 @@ footer .center {
   height: auto;
   margin:0 auto;
 }
-
-
 
 .flexslider.flexgall .flex-direction-nav a,
 .flexslider.flexgall .flex-direction-nav a {
