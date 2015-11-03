@@ -81,22 +81,7 @@ jQuery(document).ready(function() {
             event.preventDefault();
         });
         
-        // смена background
-        $('.pos_abs').not( ":first" ).css({opacity: 0});
-        $('.pos_abs:first').css({zIndex:1}).addClass('active');
-        setInterval(function(){
-           var obj = $('.pos_abs.active');
-        obj.css({zIndex:0}).removeClass('active');
-        var index = obj.index();
-         if($('.pos_abs:eq('+(index+1)+')').length) {
-               var nextObj = $('.pos_abs:eq('+(index+1)+')');
-            }else{
-               var nextObj = $('.pos_abs:eq(0)');
-           }
-        nextObj.css({zIndex: 1}).addClass('active').animate({opacity: 1}, 1000, function(){
-               obj.css({opacity: 0});
-           });
-        }, 3000); 
+        
    
 });
 
