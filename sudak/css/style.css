@@ -666,10 +666,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 242px;
 }
 .menu_slider a:last-child:hover:after {
- 
+
     right:0px;
 } 
-
 
 .content_right .h2 {
     margin: 0 0 13px 0;
@@ -684,13 +683,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .products > div {
     background-color: #ffffff;
-/*    border-right: 1px solid #c7c7c7;*/
-/*    float: left;*/
     padding: 0 7px 0px 7px;
     width: 226px;
-  
 }
-
 
 .img_products {
     text-align:center;
@@ -2205,6 +2200,7 @@ basket_info:after  {
     border: 1px solid #d9d6d6; 
     height: 351px;
     margin: 0 0 5px 0;
+    position: relative;
     text-align: center;
 }
 
@@ -3196,6 +3192,14 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 
 .har tr:nth-child(odd) td {
     background-color: #ededed;
+}
+
+.resp_vid_hold {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 /*========================== END card_main ==========================*/
