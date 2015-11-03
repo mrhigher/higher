@@ -582,6 +582,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     z-index: 200;
 }
 
+.catalogmenu > li:hover > .parent::after {
+    content: "";
+    background: #fff;
+    height: 36px;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    width: 1px;
+}
+
 /*========================== content ==========================*/
 
 .content_left {
@@ -3585,6 +3595,7 @@ footer .center {
     background-image: url("images/downArrow.png");
     background-repeat: no-repeat;
     background-position: right;
+    position: relative;
 }
 
 .catalogmenu > li > a {
@@ -3975,8 +3986,6 @@ display: block; /* I added this line */
     background: none;
     line-height: 60px;
 }
-
-
 
 .mobile_menu .enter {
     margin-left: 19px;
