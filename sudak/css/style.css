@@ -646,10 +646,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 242px;
 }
 .menu_slider a:last-child:hover:after {
- 
+
     right:0px;
 } 
-
 
 .content_right .h2 {
     margin: 0 0 13px 0;
@@ -664,13 +663,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 
 .products > div {
     background-color: #ffffff;
-/*    border-right: 1px solid #c7c7c7;*/
-/*    float: left;*/
     padding: 0 7px 0px 7px;
     width: 226px;
-  
 }
-
 
 .img_products {
     text-align:center;
