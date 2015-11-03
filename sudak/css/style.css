@@ -3617,7 +3617,7 @@ footer .center {
     background-position: right;
     position: relative;
 }
-.catalogmenu > li > .parent:after {
+.catalogmenu > li > .parent:after, .catalogmenu.with_cats > li > .parent:after {
     content:'';
     position:absolute;
     right:-1px;
@@ -3627,10 +3627,10 @@ footer .center {
     display:none;
     z-index:210;
 }
-.catalogmenu > li:hover > .parent:after {
+.catalogmenu > li:hover > .parent:after, .catalogmenu.with_cats > li:hover > .parent:after {
     display:block;
 }
-.catalogmenu > li > .parent:hover:after{
+.catalogmenu > li > .parent:hover:after, .catalogmenu.with_cats > li > .parent:hover:after {
     display:block;
 }
 .catalogmenu > li > a {
@@ -3649,7 +3649,7 @@ footer .center {
 }
 
 .catalogmenu {
-    z-index:201;
+    z-index:405;
 }
 .catalogmenu > li.hover > ul {
     left: 248px;

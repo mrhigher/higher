@@ -214,7 +214,7 @@
         left: -9999px;
         
         }
-    .catalogmenu > li > .parent:hover:after{
+    .catalogmenu > li > .parent:hover:after,  .catalogmenu.with_cats > li > .parent:hover:after{
         display:none;
     }    
     .products {
