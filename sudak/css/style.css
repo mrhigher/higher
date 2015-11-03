@@ -1649,24 +1649,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     min-width:500px;  
 }
 
-.basket_show th, .border_radius_left th .corner,  .basket_show.border_radius_right th .corner  {
+.basket_show th   {
+    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+.basket_show th, .border_radius_left th .corner, .basket_show.border_radius_right th .corner {
     background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -ms-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: linear-gradient(180deg, #16ab0f 0%, #2d7270 99%);
-    -webkit-box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow:    inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
-    box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
     color: #ffffff;
     height: 34px;
     vertical-align: middle;
 }
-.border_radius_left th .corner {
-     -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
+.basket_show.border_radius_right th:first-child,  .border_radius_left th .corner, .border_radius_right th .corner {
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:    inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
     box-shadow:         inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
 }
+
+
 .basket_show th:first-child, .basket_show th:last-child {
     box-shadow: none;
 }
@@ -2164,10 +2168,13 @@ basket_info:after  {
 .border_radius_left th:first-child, .border_radius_right th:last-child {
     background:none;
 }
+.basket_show .basket_page_products {
+    height:35px;
+}
 .border_radius_left th .text, .border_radius_right th .text {
     position:relative;
 }
-.border_radius_left th .corner, .border_radius_right th .corner  {
+.basket_show.border_radius_left th .corner, .basket_show.border_radius_right th .corner  {
     display:block;
     position:absolute;
     height:100%;
@@ -2175,12 +2182,17 @@ basket_info:after  {
     left:0px;
     top:0px;   
     z-index:0;
+    box-sizing:content-box;
 }
-
-.border_radius_left th .corner {
+.basket_show.border_radius_right th .corner {
+    width:101%;
+}
+.basket_show.border_radius_left th .corner {
+    height:34px;
     border-top: 1px solid #cfcfcf;
     border-radius: 4px 0 0 0;
     border-left: 1px solid #cfcfcf;
+    margin-left:-0.06rem;
     
 }
 
