@@ -204,7 +204,6 @@
     .menu_left h3 {
         cursor: pointer;
     }
-  
     .menu_left:hover  .catalogmenu {
          display: block;
     }
@@ -215,6 +214,9 @@
         left: -9999px;
         
         }
+    .catalogmenu > li > .parent:hover:after,  .catalogmenu.with_cats > li > .parent:hover:after{
+        display:none;
+    }    
     .products {
         margin-left: auto;
         margin-right: auto;

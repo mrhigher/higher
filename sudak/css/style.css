@@ -1649,7 +1649,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     min-width:500px;  
 }
 
-.basket_show th {
+.basket_show th, .border_radius_left th .corner,  .basket_show.border_radius_right th .corner  {
     background: -webkit-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -moz-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
     background: -o-linear-gradient(-90deg, #16ab0f 0%, #2d7270 99%);
@@ -1662,7 +1662,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     height: 34px;
     vertical-align: middle;
 }
-.basket_show th:first-child {
+.basket_show th:first-child, .basket_show th:last-child {
     box-shadow: none;
 }
 .basket_show td {
@@ -2148,18 +2148,38 @@ basket_info:after  {
     border: none;
 }
 
+.border_radius_left th, .border_radius_right th {
+    position:relative;
+    
+}
 .border_radius_left td:first-child {
     border-left: 1px solid #cfcfcf;
 }
 
-.border_radius_left th:first-child {
+.border_radius_left th:first-child, .border_radius_right th:last-child {
+    background:none;
+}
+.border_radius_left th .text, .border_radius_right th .text {
+    position:relative;
+}
+.border_radius_left th .corner, .border_radius_right th .corner  {
+    display:block;
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0px;   
+    z-index:0;
+}
+
+.border_radius_left th .corner {
     border-top: 1px solid #cfcfcf;
-    border-radius: 2px 0 0 0;
+    border-radius: 4px 0 0 0;
     border-left: 1px solid #cfcfcf;
 }
 
-.border_radius_right th:last-child {
-    border-radius: 0 2px 0 0;
+.border_radius_right th .corner, .wrap_for_table.with_r_radius {
+    border-radius: 0 4px 0 0;
 }
 
 .basket_page {
@@ -3586,7 +3606,22 @@ footer .center {
     background-position: right;
     position: relative;
 }
-
+.catalogmenu > li > .parent:after, .catalogmenu.with_cats > li > .parent:after {
+    content:'';
+    position:absolute;
+    right:-1px;
+    top:0px;
+    width:1px;
+    height:100%;
+    display:none;
+    z-index:210;
+}
+.catalogmenu > li:hover > .parent:after, .catalogmenu.with_cats > li:hover > .parent:after {
+    display:block;
+}
+.catalogmenu > li > .parent:hover:after, .catalogmenu.with_cats > li > .parent:hover:after {
+    display:block;
+}
 .catalogmenu > li > a {
     display: block;
 }
@@ -3603,7 +3638,7 @@ footer .center {
 }
 
 .catalogmenu {
-    z-index:201;
+    z-index:405;
 }
 .catalogmenu > li.hover > ul {
     left: 248px;
