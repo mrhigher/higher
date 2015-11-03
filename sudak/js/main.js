@@ -85,7 +85,10 @@ jQuery(document).ready(function() {
     $('#add_reviews_tab').css('display', 'none');
     $('.add_reviews').on('click', function(e) {
         e.preventDefault();
-        $('#add_reviews_tab').css('display', 'block');
+        $('#tabs li').removeClass('active');
+        $('#tab li').removeClass('active');
+        $('#add_reviews_tab').css('display', 'block').addClass('active');
+        $('#tab li').eq(2).addClass('active');
     });
    
 });
