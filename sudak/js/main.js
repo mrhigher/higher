@@ -98,7 +98,7 @@ jQuery(document).ready(function() {
         var width = '100%';
         var height = '100%';
         
-        _this.parent('li').removeClass('active');
+        $('.wrap_mini_img').find('li') .removeClass('active')
         _this.parent('li').addClass('active');
 
         //$(this).css('opacity', '0');
