@@ -570,7 +570,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     color: #009335;
 }
 
-
 .catalogmenu > li .type a:hover {
     color: #ff8400;
     text-decoration: none;
@@ -580,16 +579,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background: #fff;
     position: absolute;
     z-index: 200;
-}
-
-.catalogmenu > li:hover > .parent::after {
-    content: "";
-    background: #fff;
-    height: 36px;
-    position: absolute;
-    right: -1px;
-    top: 0;
-    width: 1px;
 }
 
 /*========================== content ==========================*/
