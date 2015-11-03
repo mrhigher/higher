@@ -1662,6 +1662,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     height: 34px;
     vertical-align: middle;
 }
+.border_radius_left th .corner {
+     -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
+    box-shadow:         inset 0px -1px 0px 0px rgba(0, 0, 0, 0.6);
+}
 .basket_show th:first-child, .basket_show th:last-child {
     box-shadow: none;
 }
@@ -2176,7 +2181,7 @@ basket_info:after  {
     border-top: 1px solid #cfcfcf;
     border-radius: 4px 0 0 0;
     border-left: 1px solid #cfcfcf;
-    box-sizing:border-box;
+    
 }
 
 .border_radius_right th .corner, .wrap_for_table.with_r_radius {
