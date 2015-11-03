@@ -3617,7 +3617,22 @@ footer .center {
     background-position: right;
     position: relative;
 }
-
+.catalogmenu > li > .parent:after {
+    content:'';
+    position:absolute;
+    right:-1px;
+    top:0px;
+    width:1px;
+    height:100%;
+    display:none;
+    z-index:210;
+}
+.catalogmenu > li:hover > .parent:after {
+    display:block;
+}
+.catalogmenu > li > .parent:hover:after{
+    display:block;
+}
 .catalogmenu > li > a {
     display: block;
 }

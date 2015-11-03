@@ -532,20 +532,23 @@
     <h2 class="h2">Бензопилы «Кентавр»</h2>
     <!-- content_left -->
     <div class="content_left margin_1">
-        <!-- filtr_wrap -->
+   <!-- filtr_wrap -->
         <div class="filtr_wrap">
             <!-- div -->
             <div>
                 <p class="link_filtr">Фильтровать по цене:</p>
                 <div class="setting_filtr">
-                    <div>
-                        <input class="filtr_price" type="text" placeholder="1200" /> &mdash;
-                        <input class="filtr_price" type="text" placeholder="10 500" /> руб.
-                        <input type="text" id="price_filtr" name="example_name" value="" />
+                    <div class="catrange">
+                        <div class="vybor"><img src="img/vybor_ico.png" alt="" />Выбрано: 15 <a href="">Показать</a></div>
+                        <input class="filtr_input price_input_from"   type="text" placeholder="100" /> &mdash;
+                        <input class="filtr_input price_input_to"   type="text" placeholder="15000" /> руб.
+                        <input type="text" class="rangeos price_filtr"  data-step="100" name="example_name" value="" />
                     </div>
                     <hr class="line_gray" />
-                    <div>
+                    <div class="optlist">
                         <p class="style_1">Форма плода:</p>
+                        <div class="vybor"><img src="img/vybor_ico.png" alt="" />Выбрано: 15 <a href="">Показать</a></div>
+
                         <div class="checkbox">
                             <input id="checkbox_1" type="checkbox" /> 
                             <label for="checkbox_1">Конусовидная</label>
@@ -565,13 +568,72 @@
             <div>
                 <p class="link_filtr">Вес плода</p>
                 <div class="setting_filtr">
-                    <div>
-                        <input class="filtr_price" type="text" placeholder="1200" /> &mdash;
-                        <input class="filtr_price" type="text" placeholder="10 500" /> руб.
+                    <div class="catrange">
+                        <div class="vybor"><img src="img/vybor_ico.png" alt="" />Выбрано: 15 <a href="">Показать</a></div>
+                        <input class="filtr_input weight_input_from"   type="text" placeholder="50" /> &mdash;
+                        <input class="filtr_input weight_input_to"     type="text" placeholder="1500" /> гр.
+                        <input type="text" class="rangeos weight_filtr" data-step="50"  name="example_name" value="" />
                     </div>
-                    <hr class="line_gray" />
-                    <div>
+                 
+              
+                </div>
+            </div><!-- END div -->
+            <div>
+                <p class="link_filtr">Фасовка</p>
+                <div class="setting_filtr">
+           
+                    
+                       <div class="optlist single">
+                      <div class="vybor"><img src="img/vybor_ico.png" alt="" />Выбрано: 15 <a href="">Показать</a></div>
+
+                        <div class="checkbox">
+                            <input id="checkbox_11" type="checkbox"> 
+                            <label for="checkbox_11">1000 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_22" type="checkbox"> 
+                            <label for="checkbox_22">1500 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_33" type="checkbox"> 
+                            <label for="checkbox_33">1 г</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_44" type="checkbox"> 
+                            <label for="checkbox_44">20 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_55" type="checkbox"> 
+                            <label for="checkbox_55">1500 г</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_66" type="checkbox"> 
+                            <label for="checkbox_66">40 шт</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_77" type="checkbox"> 
+                            <label for="checkbox_77">20000 шт</label>
+                        </div>
+                    </div>
+                 
+              
+                </div>
+            </div><!-- END div -->
+            <!-- div -->
+            <div>
+                <p class="link_filtr">Срок созреваемости</p>
+                <div class="setting_filtr">
+                    <div class="catrange">
+                       <div class="vybor"><img src="img/vybor_ico.png" alt="" />Выбрано: 15 <a href="">Показать</a></div>
+                        <input class="filtr_input term_input_from"   type="text" placeholder="1" /> &mdash;
+                        <input class="filtr_input term_input_to"   type="text" placeholder="7" /> лет.
+                        <input type="text" class="rangeos term_filtr"  data-step="1" name="example_name" value="" />
+                    </div>
+                      <hr class="line_gray" />
+                    <div class="optlist">
                         <p class="style_1">Форма плода:</p>
+                         <div class="vybor"><img src="img/vybor_ico.png" alt="" />Выбрано: 15 <a href="">Показать</a></div>
+
                         <div class="checkbox">
                             <input id="checkbox_4" type="checkbox" /> 
                             <label for="checkbox_4">Конусовидная</label>
@@ -584,16 +646,6 @@
                             <input id="checkbox_6" type="checkbox" /> 
                             <label for="checkbox_6">Круглая</label>
                         </div>
-                    </div>
-                </div>
-            </div><!-- END div -->
-            <!-- div -->
-            <div>
-                <p class="link_filtr">Срок созреваемости</p>
-                <div class="setting_filtr">
-                    <div>
-                        <input class="filtr_price" type="text" placeholder="1200" /> &mdash;
-                        <input class="filtr_price" type="text" placeholder="10 500" /> руб.
                     </div>
                 </div>
             </div><!-- END div -->
