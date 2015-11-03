@@ -54,9 +54,7 @@ jQuery(document).ready(function() {
         $('.overlay, .buy_click_1').fadeIn(500);
          $('.buy_click_1').center();
 	});
-    
-   
-    
+
     // slider
     $("#example_id").ionRangeSlider({
         grid: false,
@@ -70,8 +68,6 @@ jQuery(document).ready(function() {
     });
     
     // accordeon
-    //$('.setting_filtr').css({'display':'none'});
-    //$('.setting_filtr').addClass('open');
 			
     $('.link_filtr').click(function(){
         //$('.link_filtr').not($(this)).removeClass('open');
@@ -79,6 +75,29 @@ jQuery(document).ready(function() {
         $(this).next('.setting_filtr').slideToggle(500);
         //$(this).toggleClass('open');
     });
+    
+    // перемотка
+        $('.top_menu a').click(function(event) {
+            event.preventDefault();
+        });
+        
+        // смена background
+        $('.pos_abs').not( ":first" ).css({opacity: 0});
+        $('.pos_abs:first').css({zIndex:1}).addClass('active');
+        setInterval(function(){
+           var obj = $('.pos_abs.active');
+        obj.css({zIndex:0}).removeClass('active');
+        var index = obj.index();
+         if($('.pos_abs:eq('+(index+1)+')').length) {
+               var nextObj = $('.pos_abs:eq('+(index+1)+')');
+            }else{
+               var nextObj = $('.pos_abs:eq(0)');
+           }
+        nextObj.css({zIndex: 1}).addClass('active').animate({opacity: 1}, 1000, function(){
+               obj.css({opacity: 0});
+           });
+        }, 3000); 
+   
 });
 
 $(window).load(function() {
@@ -92,29 +111,6 @@ $(window).load(function() {
     nextText: "", 
   });
     
-    $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 82,
-        itemMargin: 5,
-        asNavFor: '#slider',
-        prevText: "",           
-        nextText: ""
-    });
- 
-    $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        directionNav: false,
-        slideshow: false,
-        sync: "#carousel",
-        prevText: "",           
-        nextText: ""
-    });
- 
   
 });
 
@@ -154,6 +150,16 @@ function positionTop3() {
 function positionWidth3() {
     var widthPopup = $('.buy_click_1').outerWidth() / 2;
     $('.buy_click_1').css({'marginLeft': '-' +  widthPopup + 'px'});
+}
+
+function gotocoord(val){
+    $("html,body").stop(true, true).animate({'scrollTop': val-40}, 1500);
+}
+
+function gotoblock(id){
+    var obj = $('#'+id);
+    var destination = obj.offset().top;
+    $("html,body").stop(true, true).animate({'scrollTop': destination-60}, 1500);
 }
 
 $('.products_best').on('mouseenter',function() {

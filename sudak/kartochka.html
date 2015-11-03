@@ -159,64 +159,16 @@
     <div class="card_main">
         <!-- slider_card_main -->
         <div class="slider_card_main">
-            <div id="slider" class="flexslider">
-                <ul class="slides">
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                <!-- items mirrored twice, total of 12 -->
-                </ul>
+            <div class="wrap_img">
+                <img src="img/card_demo.png" alt="" />
             </div>
-            <div id="carousel" class="flexslider">
-              <ul class="slides">
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <!-- items mirrored twice, total of 12 -->
-              </ul>
-            </div>
+            <ul class="wrap_mini_img">
+                <li class="active"><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+            </ul>
         </div><!-- END slider_card_main -->
         <!-- block_anons -->
         <div class="block_anons">
@@ -278,13 +230,12 @@
     <li class="active charact">
        <span class="icon"></span>Характеристики</li>
     <li class="link_revs"><span class="icon"></span>Отзывы (135)</li>
+    <li>Добавить отзів</li>
    
 </ul>
 <ul id="tab">
     <li class="active">
-        
-         <div class="reviews">
-       
+         <div class="reviews">     
                 <table class="har">
                     <tr>
                         <td>Двигатель</td>
@@ -358,9 +309,6 @@
             </div><!-- END reviews -->
     </li>
     <li>
-       
-            
-                   
                 <!-- reviews_people -->
                 <div class="out_reviews_people reviews">
                       <a href="" class="add_reviews"><img src="img/ico_add_reviews.png" alt="" />Добавить отзыв</a>
@@ -406,8 +354,23 @@
                  </div>
                 </div>
             <!-- end out_reviews_people-->
-            
-       
+    </li>
+    <li>
+        <div class="form_reviews">
+            <p class="otsenka">Оцените товар:<img src="img/ico_19_active.png" alt="" /><img src="img/ico_19_active.png" alt="" /><img src="img/ico_19_active.png" alt="" /><img src="img/ico_19_active.png" alt="" /><img src="img/ico_19.png" alt="" /></p>
+            <label for="your_name">Ваше имя:</label>
+            <input id="your_name" type="text" />
+            <label for="dostoin">Достоинства:</label>
+            <input id="dostoin" type="text" />
+            <label for="nedost">Недостатки:</label>
+            <input id="nedost" type="text" />
+            <label for="my_comment">Комментарий:</label>
+            <textarea id="my_comment"></textarea>
+            <label for="kapcha">Символы с картинки:</label>
+            <img class="kapcha" src="img/demo_kapcha.png" alt="" />
+            <input type="text" id="kapcha" />
+            <input type="submit" value="Отправить" />
+        </div>
     </li>
 
 </ul>

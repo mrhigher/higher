@@ -159,64 +159,16 @@
     <div class="card_main">
         <!-- slider_card_main -->
         <div class="slider_card_main">
-            <div id="slider" class="flexslider">
-                <ul class="slides">
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="img/card_demo.png" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                    <li>
-                      <img src="http://lorempixel.com/397/298/cats/" />
-                    </li>
-                <!-- items mirrored twice, total of 12 -->
-                </ul>
+            <div class="wrap_img">
+                <img src="img/card_demo.png" alt="" />
             </div>
-            <div id="carousel" class="flexslider">
-              <ul class="slides">
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <li>
-                  <img src="http://lorempixel.com/82/61/cats/" />
-                </li>
-                <!-- items mirrored twice, total of 12 -->
-              </ul>
-            </div>
+            <ul class="wrap_mini_img">
+                <li class="active"><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+                <li><img src="http://lorempixel.com/82/61/cats/" /></li>
+            </ul> 
         </div><!-- END slider_card_main -->
         <!-- block_anons -->
         <div class="block_anons">
@@ -238,7 +190,7 @@
                     <li><span class="span_width"><span>Объём двигателя</span></span><span class="data">4л.</span></li>
                     <li><span class="span_width"><span>Цвет</span></span><span class="data">Зелёный</span></li>
                 </ul>
-                <a href="#" class="all_xar">Смотреть все характеристики</a>
+                <a href="#" onclick="gotoblock('b1');" class="all_xar">Смотреть все характеристики</a>
             </div>
         </div><!-- END block_anons -->
         <!-- other_setting -->
@@ -273,7 +225,7 @@
         <!-- reviews_main -->
         <div class="reviews_main">
             <div class="hreftab">
-                <a href="#" class="characteristics itm"><span class="icon"></span>Характеристики</a>
+                <a id="b1" href="#" class="characteristics itm"><span class="icon"></span>Характеристики</a>
             <a href="#" class="link_reviews itm active"><span class="icon"></span>Отзывы (135)</a>
             </div>
             <!-- reviews -->
@@ -364,5 +316,6 @@
 <script src="SelectInspiration/js/selectFx.js"></script>
 <script src="js/gener.js"></script>
 <script src="js/stpane.js"></script>
+
 </body>
 </html>
