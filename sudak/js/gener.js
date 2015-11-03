@@ -198,11 +198,19 @@
         $('.filtr_input').focus(function()  {
          var el = $(this).parent().find('.vybor');
         el.fadeIn(300);
-        }); 
-        $('.filtr_input').blur( function() {
+        }).blur( function() {
          var el = $(this).parent().find('.vybor');
          el.fadeOut(300); 
         });
+        
+        $('.catrange').find('.irs').on('mousedown', function() {
+             var el = $(this).parent().find('.vybor');
+             el.fadeIn(300); 
+        }).on('mouseup', function() {
+             var el = $(this).parent().find('.vybor');
+             el.fadeOut(300); 
+        })
+   
         
  
         var each_opts = function() {
