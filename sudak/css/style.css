@@ -1517,6 +1517,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     background: #fff;  
     display:none;
 }
+.basket_wrap  .basket_show th {
+    background:#fff
+}
 
 .resizable {
     background: #fff;  
