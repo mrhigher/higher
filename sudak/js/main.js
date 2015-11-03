@@ -97,6 +97,9 @@ jQuery(document).ready(function() {
         var vcode = $(this).attr('data-tube');
         var width = '100%';
         var height = '100%';
+        
+        _this.parent('li').removeClass('active');
+        _this.parent('li').addClass('active');
 
         //$(this).css('opacity', '0');
         $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
