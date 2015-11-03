@@ -2161,6 +2161,7 @@ basket_info:after  {
     border: 1px solid #d9d6d6; 
     height: 351px;
     margin: 0 0 5px 0;
+    position: relative;
     text-align: center;
 }
 
@@ -3152,6 +3153,14 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
 
 .har tr:nth-child(odd) td {
     background-color: #ededed;
+}
+
+.resp_vid_hold {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 /*========================== END card_main ==========================*/

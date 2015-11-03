@@ -90,6 +90,23 @@ jQuery(document).ready(function() {
         $('#add_reviews_tab').css('display', 'block').addClass('active');
         $('#tab li').eq(2).addClass('active');
     });
+    
+    // видео
+    jQuery('.video').click(function(){
+        var _this = $(this);
+        var vcode = $(this).attr('data-tube');
+        var width = '100%';
+        var height = '100%';
+
+        //$(this).css('opacity', '0');
+        $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
+        $(this).parent().parent().parent().find('.resp_vid_hold').show();
+
+    _this.parent().parent().parent().find('.resp_video').html('<iframe width="'+ width + '"height="' + height + '"src="https://www.youtube.com/embed/' + vcode + '?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+
+        return false;
+
+    });
    
 });
 
