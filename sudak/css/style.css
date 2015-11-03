@@ -3615,6 +3615,7 @@ footer .center {
     height:100%;
     display:none;
     z-index:210;
+    background-color:#fff;
 }
 .catalogmenu > li:hover > .parent:after, .catalogmenu.with_cats > li:hover > .parent:after {
     display:block;
