@@ -2176,6 +2176,7 @@ basket_info:after  {
     border-top: 1px solid #cfcfcf;
     border-radius: 4px 0 0 0;
     border-left: 1px solid #cfcfcf;
+    box-sizing:border-box;
 }
 
 .border_radius_right th .corner, .wrap_for_table.with_r_radius {
