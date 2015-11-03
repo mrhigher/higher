@@ -2192,6 +2192,7 @@ basket_info:after  {
     border-top: 1px solid #cfcfcf;
     border-radius: 4px 0 0 0;
     border-left: 1px solid #cfcfcf;
+    margin-left:-0.06rem;
     
 }
 
