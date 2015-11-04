@@ -152,6 +152,15 @@ jQuery(document).ready(function() {
         return false;
      });
     
+    // табы на главной
+    $('.menu_best a').click(function(e) {
+        e.preventDefault();
+        $('.menu_best .active').removeClass('active');
+        $(this).parent().addClass('active');
+        var tab = $(this).attr('href');
+        $('.products_best').not(tab).css({'display':'none'});
+        $(tab).fadeIn(400);
+    });
     
 
    
