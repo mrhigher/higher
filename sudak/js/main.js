@@ -110,6 +110,12 @@ jQuery(document).ready(function() {
         return false;
 
     });
+    
+    // активный таб в  шапке слайдера
+    $('.menu_slider a').on('click', function(){
+        $('.menu_slider a').removeClass('active');
+        $(this).addClass('active');
+    });
    
 });
 

@@ -647,7 +647,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     color: #0f8442;
 }
 
-.menu_slider a:hover:after {
+.menu_slider a:hover:after, .menu_slider a.active::after {
     content:'';
     width:100%;
     left:0px;
@@ -665,7 +665,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     width: 242px;
 }
 .menu_slider a:last-child:hover:after {
-
     right:0px;
 } 
 
