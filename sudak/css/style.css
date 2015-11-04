@@ -2267,6 +2267,7 @@ basket_info:after  {
 
 .wrap_img {
     border: 1px solid #d9d6d6; 
+    border-radius: 3px;
     height: 351px;
     margin: 0 0 5px 0;
     position: relative;
@@ -2305,6 +2306,20 @@ basket_info:after  {
 
 .wrap_mini_img li:last-child {
     margin-right: 0;
+    position: relative;
+}
+
+.play_video {
+    background: url(../img/next_icos.png) no-repeat;
+    cursor: pointer;
+    height: 58px;
+    left: 50%;
+    margin-left: -29px;
+    margin-top: -29px;
+    position: absolute;
+    width: 58px;
+    top: 50%;
+    z-index: 300;
 }
 
 .slider_card_main .flex-direction-nav a::before, .slider_card_main .flex-direction-nav a.flex-next::before {
@@ -2369,6 +2384,10 @@ basket_info:after  {
     padding: 0 18px;
 }
 
+.all_xar:hover {
+    background: #ffffff;
+}
+
 .ul_xar {
     margin: 0 0 20px 0;    
 }
@@ -2398,6 +2417,7 @@ basket_info:after  {
 .other_setting {
     background-color: #ffffff;
     border: 1px solid #d9d6d6;
+    border-radius: 3px;
     float: right;
     margin: 0 1px 0 0;
     width: 328px;
@@ -2904,7 +2924,6 @@ ul#tab li.active {
       width:calc(100% - 80px);
 }
 
-
 input[type=text].reginpt::-webkit-input-placeholder {color:#1f1f1f;}
 input[type=text].reginpt::-moz-placeholder          {color:#1f1f1f;}/* Firefox 19+ */
 input[type=text].reginpt:-moz-placeholder           {color:#1f1f1f;}/* Firefox 18- */
@@ -3187,18 +3206,12 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     box-shadow:         inset 0px -1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
-.buy_1:hover, .wrap_info_2 .btn_3.active {
+.buy_1:hover, .wrap_info_2 .btn_3.active, .wrap_info_2 .btn_3:hover {
     background: -webkit-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
     background: -moz-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
     background: -o-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
     background: -ms-linear-gradient(-90deg, #05ba00 0%, #3a9276 99%);
     background: linear-gradient(180deg, #05ba00 0%, #3a9276 99%);
-}
-
-.wrap_info_2 .btn_3 {
-    margin: 0 13px 0 0;
-    overflow: hidden;
-    width: 137px;
 }
 
 .wrap_info_2 .btn_3, .buy_1 {
@@ -3208,14 +3221,14 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     float: left;
     height: 39px;
     line-height: 39px;
-    margin-bottom: 12px;
+    margin: 0 13px 12px 0;
+    overflow: hidden;
+    width: 137px;
 }
-
 
 .wrap_info_2 .btn_3 span {
     float: left;
-    height: 39px;
-    
+    height: 39px;    
 }
 
 .buy_1 img {

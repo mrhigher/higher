@@ -166,13 +166,13 @@ function positionWidth3() {
 }
 
 function gotocoord(val){
-    $("html,body").stop(true, true).animate({'scrollTop': val-40}, 1500);
+    $("html,body").stop(true, true).animate({'scrollTop': val-40}, 500);
 }
 
 function gotoblock(id){
     var obj = $('#'+id);
     var destination = obj.offset().top;
-    $("html,body").stop(true, true).animate({'scrollTop': destination-60}, 1500);
+    $("html,body").stop(true, true).animate({'scrollTop': destination-60}, 500);
 }
 
 $('.products_best').on('mouseenter',function() {
