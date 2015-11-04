@@ -1591,8 +1591,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
     vertical-align: middle;
 }
 
-.basket_wrap  .rsec_iconka {
-    
+.basket_wrap  .rsec_iconka {  
     width: 83px;
     height: 16px;
     margin: 10px 0px 8px 84px;
@@ -2281,7 +2280,7 @@ basket_info:after  {
     text-align: center;
 }
 
-.wrap_img img {
+.wrap_img img.placeholder, .img_js {
     position: relative;
     top: 50%;
     transform: translateY(-50%);

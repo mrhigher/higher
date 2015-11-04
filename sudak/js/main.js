@@ -70,16 +70,14 @@ jQuery(document).ready(function() {
     // accordeon
 			
     $('.link_filtr').click(function(){
-        //$('.link_filtr').not($(this)).removeClass('open');
         $('.setting_filtr').not($(this).next('.setting_filtr')).slideDown(500);
         $(this).next('.setting_filtr').slideToggle(500);
-        //$(this).toggleClass('open');
     });
     
     // перемотка
-        $('.top_menu a').click(function(event) {
-            event.preventDefault();
-        });
+    $('.all_xar').click(function(event) {
+        event.preventDefault();
+    });
     
     //появление кнопки "Добавить отзыв"
     $('#add_reviews_tab').css('display', 'none');
@@ -92,7 +90,7 @@ jQuery(document).ready(function() {
     });
     
     // видео
-    jQuery('.video').click(function(){
+    jQuery('.play_video').click(function(){
         var _this = $(this);
         var vcode = $(this).attr('data-tube');
         var width = '100%';
@@ -101,7 +99,6 @@ jQuery(document).ready(function() {
         $('.wrap_mini_img').find('li') .removeClass('active')
         _this.parent('li').addClass('active');
 
-        //$(this).css('opacity', '0');
         $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
         $(this).parent().parent().parent().find('.resp_vid_hold').show();
 
@@ -110,6 +107,25 @@ jQuery(document).ready(function() {
         return false;
 
     });
+    
+    // смена картинок
+     jQuery('.video').click(function(){
+        var _this = $(this);
+        var vcode = $(this).attr('data-src');
+        var width = '100%';
+        var height = '100%';
+        
+        $('.wrap_mini_img').find('li') .removeClass('active')
+        _this.parent('li').addClass('active');
+
+        $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
+        $(this).parent().parent().parent().find('.resp_vid_hold').show();
+         
+        _this.parent().parent().parent().find('.resp_video').html('<img class=\"img_js\" src="' + vcode + '"/>');
+
+        return false;
+     });
+    
     
     // активный таб в  шапке слайдера
     $('.menu_slider a').on('click', function(){
