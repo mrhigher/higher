@@ -1570,7 +1570,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ab0f', end
 }
 
 .bask_sizbl {
+    border-bottom: 1px solid #c0c0c0;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #cacaca;
+    box-shadow: 0 3px 3px #d9d9d9;
     padding-bottom:33px;
+}
+
+.bask_sizbl table {
+    border: none;
 }
 
 .basket_wrap .out_rsec {
