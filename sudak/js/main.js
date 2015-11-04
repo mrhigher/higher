@@ -5,6 +5,21 @@ jQuery(document).ready(function() {
         pager: false,
         controls: false,
         auto:true,
+     
+      
+             /*
+        To add class on the first visible slide you have to call onSliderLoad. Then you continue adding and removing active-slide class with onSlideAfter call.
+        */
+        onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
+            console.log(currentSlideHtmlObject);
+            $('.menu_slider a').removeClass('active');
+            $('.menu_slider a').eq(currentSlideHtmlObject - 1 ).addClass('active')
+        },
+        onSliderLoad: function () {
+            $('.bxslider > li').eq(1).addClass('active')
+        },
+ 
+
     });
 
     $('.slider-next1').click(function(){
@@ -24,6 +39,11 @@ jQuery(document).ready(function() {
       return false;
     });
     
+        // активный таб в  шапке слайдера
+    $('.menu_slider a').on('click', function(){
+        $('.menu_slider a').removeClass('active');
+        $(this).addClass('active');
+    }); 
     
     // popup
     $('.show_popup').click(function(e) {
@@ -99,39 +119,41 @@ jQuery(document).ready(function() {
         $('.wrap_mini_img').find('li') .removeClass('active')
         _this.parent('li').addClass('active');
 
-        $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
-        $(this).parent().parent().parent().find('.resp_vid_hold').show();
-
-    _this.parent().parent().parent().find('.resp_video').html('<iframe width="'+ width + '"height="' + height + '"src="https://www.youtube.com/embed/' + vcode + '?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+       // $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
+        $('.wrap_img .placeholder').css('opacity', '0');
+       // $(this).parent().parent().parent().find('.resp_vid_hold').show();
+       $('.resp_vid_hold').show();
+       $('.resp_vid_hold').find('.resp_video').html('<iframe width="'+ width + '"height="' + height + '"src="https://www.youtube.com/embed/' + vcode + '?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+       //_this.parent().parent().parent().find('.resp_video').html('<iframe width="'+ width + '"height="' + height + '"src="https://www.youtube.com/embed/' + vcode + '?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
 
         return false;
 
     });
     
     // смена картинок
-     jQuery('.video').click(function(){
-        var _this = $(this);
-        var vcode = $(this).attr('data-src');
+     jQuery('.wrap_mini_img  li').click(function(){
+        var _this = $(this).find('.video');
+        $('.resp_vid_hold').hide();
+        $('.resp_vid_hold').find('.resp_video').empty();
+        var vcode = _this.attr('data-src');
         var width = '100%';
         var height = '100%';
         
         $('.wrap_mini_img').find('li') .removeClass('active')
         _this.parent('li').addClass('active');
-
-        $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
-        $(this).parent().parent().parent().find('.resp_vid_hold').show();
+            
+      //  $(this).parent().parent().parent().find('.placeholder').css('opacity', '0');
+        $('.wrap_img .placeholder').attr('src',vcode).css('opacity', '1');
+      //  $(this).parent().parent().parent().find('.resp_vid_hold').show();
+        $('.wrap_img .resp_vid_hold').show();
          
-        _this.parent().parent().parent().find('.resp_video').html('<img class=\"img_js\" src="' + vcode + '"/>');
+       // _this.parent().parent().parent().find('.resp_video').html('<img class=\"img_js\" src="' + vcode + '"/>');
 
         return false;
      });
     
     
-    // активный таб в  шапке слайдера
-    $('.menu_slider a').on('click', function(){
-        $('.menu_slider a').removeClass('active');
-        $(this).addClass('active');
-    });
+
    
 });
 
