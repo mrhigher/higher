@@ -235,7 +235,9 @@ $('.products_best').on('mouseleave',function() {
     $(this).prev('.menu_best').css('z-index','1')
 });
 
-
+//$('.btn_3').not('.in_basket').on('click',function() {
+//    $(this).find('a')
+//})
 jQuery.fn.center = function () {
     this.css("position","absolute");
     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
