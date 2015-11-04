@@ -2296,14 +2296,17 @@ basket_info:after  {
     cursor:pointer;
     position:relative;
     border: 1px solid #d9d6d6;
+    background-color:#fff;
     border-radius: 3px;
     float: left;
     height: 81px;
     margin: 0 6px 0 0;
     width: 82px;
+    text-align:center;
 }
-.wrap_mini_img li:hover:before {
+.wrap_mini_img li:hover:before, .wrap_mini_img li.active:before {
     content:'';
+    z-index:2;
     position:absolute;
     width:100%;
     height:100%;
@@ -2312,6 +2315,8 @@ basket_info:after  {
     background-color:rgba(0,0,0,.03);
 }
 .wrap_mini_img li img {
+    max-width:82px;
+    max-height:65px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
