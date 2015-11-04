@@ -3273,12 +3273,12 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     margin:0px 25px 14px 15px;
 }
 
-.in_basket__big {
-    background: -webkit-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
-    background: -moz-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
-    background: -o-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
-    background: -ms-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
-    background: linear-gradient(180deg, #0daa10 0%, #09b311 99%);
+.in_basket__big, .in_basket__big:hover {
+    background: -webkit-linear-gradient(-90deg, #0daa10 0%, #09b311 99%)!important;
+    background: -moz-linear-gradient(-90deg, #0daa10 0%, #09b311 99%)!important;
+    background: -o-linear-gradient(-90deg, #0daa10 0%, #09b311 99%)!important;
+    background: -ms-linear-gradient(-90deg, #0daa10 0%, #09b311 99%)!important;
+    background: linear-gradient(180deg, #0daa10 0%, #09b311 99%)!important;
     box-shadow: none!important;
 }
 
