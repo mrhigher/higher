@@ -3272,6 +3272,20 @@ input[type=text].locinpt:-ms-input-placeholder      {color:#b4b4b4;}
     width: 19px;
     margin:0px 25px 14px 15px;
 }
+
+.in_basket__big {
+    background: -webkit-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
+    background: -moz-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
+    background: -o-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
+    background: -ms-linear-gradient(-90deg, #0daa10 0%, #09b311 99%);
+    background: linear-gradient(180deg, #0daa10 0%, #09b311 99%);
+    box-shadow: none!important;
+}
+
+.in_basket__big .to_basket {
+    background-image: url(../img/in_basket__big_ico.png);
+}
+
 .to_basket:after {
     content:'';
     margin-left:29px;
