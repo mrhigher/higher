@@ -2316,7 +2316,7 @@ basket_info:after  {
 }
 .wrap_mini_img li img {
     max-width:82px;
-    max-height:65px;
+    max-height:61px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
