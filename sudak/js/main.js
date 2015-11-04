@@ -235,6 +235,28 @@ $('.products_best').on('mouseleave',function() {
     $(this).prev('.menu_best').css('z-index','1')
 });
 
+$('.citm .btn_3').on('click',function() {
+    if($(this).is('.in_basket')) {
+          $(this).find('a').text('В корзину');
+          $(this).toggleClass('in_basket');
+    } else {
+        $(this).find('a').text('В корзине');
+         $(this).toggleClass('in_basket');
+    }
+    return false;
+})
+
+
+$('.wrap_info_2 .btn_3').on('click',function() {
+    if($(this).is('.in_cart')) {
+          $(this).find('.in_cart_tit').text('В корзину');
+          $(this).toggleClass('in_cart');
+    } else {
+         $(this).find('.in_cart_tit').text('В корзине');
+         $(this).toggleClass('in_cart');
+    }
+    return false;
+})
 
 jQuery.fn.center = function () {
     this.css("position","absolute");
