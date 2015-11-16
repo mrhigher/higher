@@ -267,8 +267,10 @@ header.center {
     transition: 0.2s;
 }
 
-.btn_1:hover {
+.btn_1:hover:before {
+    content: "";
     padding: 5px 82px;
+    position: absolute;
 }
 
 .ul_1 {
