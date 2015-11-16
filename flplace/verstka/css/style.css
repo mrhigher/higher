@@ -175,6 +175,11 @@ header.center {
     width: 63px;
 }
 
+.basket span {
+	position: relative;
+	top: 3px;
+}
+
 .basket:before {
     background: url(../img/basket_ico.png) no-repeat;
     content: "";
