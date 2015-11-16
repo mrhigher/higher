@@ -160,6 +160,8 @@ header.center {
 }
 
 .basket {
+    display:block;
+    text-decoration:none;
     background: #d13159;
     border-radius: 50%;
     font-family: 'pt_sansregular';
@@ -266,7 +268,9 @@ header.center {
     text-decoration: none;
     transition: 0.2s;
 }
-
+.btn_1:hover {
+    opacity: 0.9;
+}
 .btn_1:hover:before {
     content: "";
     padding: 5px 82px;
@@ -719,8 +723,13 @@ header.center {
     height: 55px;
     margin: 9px 0 0 0;
     width: 297px;
+    trasition:0.2s;
 }
-
+.form input[type=submit]:hover {
+    opacity: 0.9;
+   
+    
+}
 .social {
     margin: 8px 38px 0 0;
     width: 441px;
