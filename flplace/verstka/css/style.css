@@ -685,8 +685,9 @@ header.center {
     font-size: 20px;
     height: 62px;
     margin: 0 0 5px 0;
+    padding: 0 6px 0 0;
     text-indent: 22px;
-    width: 386px;
+    width: 380px;
 }
 
 .form input[type=submit] {
