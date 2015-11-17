@@ -360,15 +360,16 @@ header.center {
     position: absolute;
     left: 29px;
     top: -13px;
+    z-index: 1;
 }
 
 .all_products {
-    margin-top: 22px;
+    margin-top: 19px;
 }
 
 .products {
     border: 1px solid #fff;
-    margin: 0 34px 10px 0;
+    margin: 0 33px 10px 0;
     padding: 0 0 20px 0;
     position: relative;
     width: 305px;
@@ -394,8 +395,8 @@ header.center {
     font-size: 15px;
     padding: 7px 3px 54px 0;   
     position: absolute;
-    right: 10px;
-    top: 0;
+    right: 3px;
+    top: 3px;
     text-align: right;
     text-transform: uppercase;
     width: 82px;
@@ -404,7 +405,7 @@ header.center {
 
 .akc .new {
     background: url(../img/green_bg.png) no-repeat;
-    right: 0;
+    right: 3px;
 }
 
 .akc .price_buket span {
@@ -417,7 +418,7 @@ header.center {
     left: 0;
     padding: 15px 0 0 0;
     position: absolute;
-    top: 220px;
+    top: 223px;
     width: 100%;
 }
 
@@ -487,7 +488,7 @@ header.center {
     font-family: 'pt_sansregular';
     font-size: 15px;
     line-height: 1.1;
-    margin: 1px 0 0 0;
+    margin: 5px 0 0 0;
     text-align: center;
 }
 
