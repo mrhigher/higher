@@ -232,7 +232,10 @@ header.center {
     top: 58px;
     text-align: center;
     width: 185px;
+    box-sizing:content-box;
 }
+
+
 
 .ul_menu ul li {
     border-bottom: 1px solid rgba(255, 255, 255, .19);
