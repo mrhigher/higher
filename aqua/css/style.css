@@ -299,7 +299,7 @@ a:hover {text-decoration: underline;}
 }
 
 .wrap_slider {
-    max-width:1440px;
+    width:1440px;
     margin:0 auto 24px auto;
     }
 .wrap_slider .slick-slide {
@@ -331,12 +331,15 @@ a:hover {text-decoration: underline;}
     margin-bottom: 0;
 }
 .slick-next,.slick-prev {
+   
     opacity:1; 
     background-color:rgba(0,0,0,.7);
 }
 .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+    transition: all 0.2s;
     width:131px;
-    width:15%;
+    width:220px;
+/*    width:15%;*/
     height:368px;
     z-index:2;
 }
