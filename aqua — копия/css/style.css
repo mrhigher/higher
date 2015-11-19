@@ -79,11 +79,10 @@ a:hover {text-decoration: underline;}
 }
 
 .wrapper {
-/*    width:1440px;*/
+    width:1440px;
     background: #fff;
     font-family: 'proxima_novaregular';
     font-size: 13px;
-    margin:0 auto;
 }
 
 .pwrap {
@@ -306,7 +305,7 @@ a:hover {text-decoration: underline;}
 }
 
 .wrap_slider {
-/*    width:1440px;*/
+    width:1440px;
     margin:0 auto 24px auto;
     }
 .wrap_slider .slick-slide {
@@ -319,8 +318,8 @@ a:hover {text-decoration: underline;}
 }
 .wrap_slider .prbox {
     color:#fff;
+    left:30px;
     bottom:31px;
-    left:250px;
     position:absolute;
 }
 .wrap_slider .prbox .tit {
@@ -345,7 +344,8 @@ a:hover {text-decoration: underline;}
 .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
     transition: all 0.2s;
     width:220px;
-    height:366px;
+/*    width:15%;*/
+    height:368px;
     z-index:2;
 }
 .slick-next:hover, .slick-prev:hover {
