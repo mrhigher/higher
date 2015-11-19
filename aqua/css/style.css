@@ -299,7 +299,31 @@ a:hover {text-decoration: underline;}
 }
 
 .wrap_slider {
+  /*  width:600px; */
+    margin: 0 auto;
     margin: 0 0 24px 0;
+}
+.wrap_slider .slick-slide {
+    position:relative;
+}
+.wrap_slider .arrows {
+    max-width:600px;
+    position:relative;
+}
+.wrap_slider .prbox {
+    color:#fff;
+    left:30px;
+    bottom:30px;
+    position:absolute;
+}
+.wrap_slider .prbox .tit {
+    margin:0px 0px 5px 0px;
+    font-size:26px;
+    font-family: 'open_sansextrabold';
+}
+.wrap_slider .prbox .pt {
+    font-family: 'proxima_novaregular';
+    font-size:16px;
 }
 
 .wrap_slider .slick-slider {
