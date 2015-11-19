@@ -484,13 +484,16 @@ a:hover {text-decoration: underline;}
 }
 
 .content {
-    background: #fafbfc;
-    border-bottom: 1px solid #e0e7eb;
-    border-top: 1px solid #e3eaed;
     clear: both;
     color: #333;
     margin: 0 0 52px 0;
     padding: 35px 0 ;
+}
+
+.style_1 {
+    background: #fafbfc;
+    border-bottom: 1px solid #e0e7eb;
+    border-top: 1px solid #e3eaed;
 }
 
 .content .title_1 {
@@ -504,7 +507,8 @@ a:hover {text-decoration: underline;}
 }
 
 .all_article {
-    color: #333;    
+    color: #333; 
+    margin-bottom: 35px;
 }
 
 .ul_1 > li {
@@ -513,6 +517,10 @@ a:hover {text-decoration: underline;}
     float: left;
     overflow: hidden;
     width: 319px;
+}
+
+.ul_1 > li + li {
+    margin-left: 19px;
 }
 
 .ul_1 > li img {
@@ -562,4 +570,141 @@ a:hover {text-decoration: underline;}
     font-size: 16px;
     line-height: 1.2;
     margin: 0 0 0 5px;
+    padding: 0 0 8px 0;
+}
+
+.btn_1 {
+    border: 1px solid #0080ff;
+    border-radius: 5px;
+    color: #007fff;
+    display: table;
+    font-size: 16px;
+    height: 49px;
+    line-height: 49px;
+    margin: 0 auto 42px;
+    padding: 0 53px;
+    text-transform: uppercase;
+}
+
+.block_1 {
+    padding: 22px 0 4px 0;
+}
+
+.p_1 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 21px 0;
+    text-align: center;
+}
+
+.p_1 span {
+    color: #fe5917;
+    display: block;
+    font-family: 'proxima_novabold';
+    margin: 7px 0 0 0;
+    text-transform: uppercase;
+}
+
+.wrap_payment {
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    margin: 0 0 22px 0;
+}
+
+.payment {
+    display: table;
+    margin: 0 auto;
+    padding: 21px 0;
+}
+
+.payment li {
+    display: inline-block;
+    *zoom: 1;
+    overflow: hidden;
+    *display: inline;
+    vertical-align: middle;
+}
+
+.payment li + li {
+    margin-left: 29px;
+}
+
+.footer_menu > div {
+    float: left;
+    width: 203px;
+}
+
+.footer_menu > div + div {
+    margin-left: 53px;
+}
+
+.footer_menu a {
+    color: #4d4d4d;
+}
+
+.title_3 {
+    color: #4d4d4d;
+    font-family: 'proxima_novaregular';
+    font-size: 18px;
+}
+
+.ul_2 {
+    margin: 7px 0 23px 0;
+}
+
+.ul_2 > li + li {
+    margin-top: 7px;
+}
+
+.ul_2 a {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.margin_1 {
+    line-height: 1.3;
+    margin-bottom: 10px;
+    margin-top: 28px;
+}
+
+.social {
+    margin: 24px 0 0 0;
+    width: 226px;
+}
+
+.social a {
+    background-image: url(../img/social_sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 32px;
+    width: 33px;
+}
+
+.social > a + a {
+    margin-left: 15px;
+}
+
+.social .title_3 {
+    margin: 0 0 10px 0;
+}
+
+.vk {
+    background-position: 0 0;
+}
+
+.fb {
+    background-position: -33px 0;
+}
+
+.ok {
+    background-position: -66px 0;
+}
+
+.tw {
+    background-position: -99px 0;
+}
+
+.mailru {
+    background-position: -132px 0;
 }
