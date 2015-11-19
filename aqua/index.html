@@ -246,7 +246,7 @@
         </div> <!-- END products_all -->       
     </div><!-- END hit -->
     <!-- content -->
-    <div class="content">
+    <div class="content style_1">
         <article class="wrap_1">
             <h1 class="title_1">Интернет-магазин сантехники Акваформат</h1>
             <p>Пользовательский интерфейс, основанный на заданиях, довольно сильно отличается от основанного на CRUD. В нем вы следите, что делает пользователь и продвигаете команды, которые представляют его намерения. Я хотел бы заявить, раз и навсегда что CQRS не требует интерфейса основанного на заданиях. Можно применить CQRS в CRUD приложении (хотя такие вещи как создание отдельных моделей будет гораздо сложнее).</p>
@@ -265,14 +265,98 @@
                     <img src="img/article_img.png" alt="" />
                     <span class="date_article">25 МАР 2015</span>
                 </a>              
-                <h3 class="title_2">О недостатках и достоинствах акриловых ванн</h3>
+                <h3 class="title_2 item">О недостатках и достоинствах акриловых ванн</h3>
                 <p class="descript_article">Истинная кухня из провинции Сычуань, Китай, которая славится остротой и изысканностью своих блюд.</p>
             </li>
-            <li></li>
-            <li></li>
+            <li>
+                <a class="link_article" href="#">
+                    <img src="img/article_img.png" alt="" />
+                    <span class="date_article">25 МАР 2015</span>
+                </a>              
+                <h3 class="title_2 item">Биде в условиях крайнего севера</h3>
+                <p class="descript_article">Истинная кухня из провинции Сычуань, Китай, которая славится остротой и изысканностью своих блюд. Оформление блюд производится по усмотрению Шеф-Повара. </p>
+            </li>
+            <li>
+                <a class="link_article" href="#">
+                    <img src="img/article_img.png" alt="" />
+                    <span class="date_article">25 МАР 2015</span>
+                </a>              
+                <h3 class="title_2 item">Предлагаю ограничить макс длинну до двух строк этого доста...</h3>
+                <p class="descript_article">Истинная кухня из провинции Сычуань, Китай, которая славится остротой и изысканностью своих блюд. </p>
+            </li>
         </ul>
     </div><!-- END all_article -->
+    <a href="#" class="btn_1">ВСЕ ПУБЛИКАЦИИ</a>
+    <!-- block_1 -->
+    <div class="block_1 style_1">
+        <p class="p_1">
+            Консультируем, принимаем заказы по телефону и через корзину.
+            <span>ЗВОНИТЕ ПРЯМО СЕЙЧАС! (812) 438-07-18</span>
+        </p>
+        <!-- wrap_1 -->
+        <div class="wrap_1">
+            <div class="wrap_payment">
+                <ul class="payment">
+                    <li>
+                        <img src="img/visa.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/visa_1.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/master.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/maestro.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/qiwi.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/yandex.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/wm.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="img/mailru.png" alt="" />
+                    </li>
+                </ul>
+            </div>
+            <nav class="footer_menu clearfix">
+                <div>
+                    <h3 class="title_3">Душевые кабины</h3>
+                    <ul class="ul_2">
+                        <li><a href="#">Кабины угловые</a></li>
+                        <li><a href="#">Кабины прямоугольные</a></li>
+                        <li><a href="#">Кабины ассиметричные</a></li>
+                        <li><a href="#">Душевые углы</a></li>
+                        <li><a href="#">Душевые двери</a></li>
+                        <li><a href="#">Душевые поддоны</a></li>
+                        <li><a href="#">Душевые кабины 90х90</a></li>
+                        <li><a href="#">Шторки на душевые поддоны</a></li>
+                    </ul>
+                    <h3>Инсталляции</h3>
+                    <ul class="ul_2">
+                        <li><a href="#">Комплекты</a></li>
+                        <li><a href="#">Скрытые системы инсталляции</a></li>
+                        <li><a href="#">Комплектующие систем инсталляции</a></li>
+                    </ul>
+                </div>
+                <div>
+                    
+                </div>
+            </nav>
+        </div><!-- END wrap_1 -->
+    </div><!-- END block_1 -->
 </div><!-- END wrapper -->
+<script src="js/jquery.matchHeight-min.js"></script>
+<script>
+    $(function() {
+        $('.item').matchHeight();
+        $('.descript_article').matchHeight();
+    });
+</script>
 <script src="js/slick.min.js"></script>
 <script>
     $(document).ready(function(){
