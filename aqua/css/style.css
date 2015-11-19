@@ -319,7 +319,7 @@ a:hover {text-decoration: underline;}
 .products {
     float: left;
     margin: 0 21px 0 0;
-    min-height: 313px;
+    min-height: 350px;
     position: relative;
     width: 234px;
 }
