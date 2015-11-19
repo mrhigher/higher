@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/jquery-1.8.3.min.js"></script>  
 </head>
@@ -64,8 +66,20 @@
             <li><a href="">Биде</a></li>
         </ul>
     </header><!-- END wrap_1 -->
-    <div class="slider">
-    </div>
+    <!-- wrap_slider -->
+    <div class="wrap_slider">
+        <div class="slider">
+            <div>
+                <img src="img/slide_1.jpg" alt="" />
+            </div>
+            <div>
+                <img src="img/slide_1.jpg" alt="" />
+            </div>
+            <div>
+                <img src="img/slide_1.jpg" alt="" />
+            </div>
+        </div>
+    </div><!-- END wrap_slider -->
     <!-- hit -->
     <div class="hit wrap_1">
         <h2 class="title_1">Хиты продаж</h2>
@@ -259,6 +273,36 @@
         </ul>
     </div><!-- END all_article -->
 </div><!-- END wrapper -->
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.slider').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+      });
+    });
+</script>
 <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
