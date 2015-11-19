@@ -313,7 +313,7 @@ a:hover {text-decoration: underline;}
 .wrap_slider .prbox {
     color:#fff;
     left:30px;
-    bottom:40px;
+    bottom:31px;
     position:absolute;
 }
 .wrap_slider .prbox .tit {
@@ -325,6 +325,7 @@ a:hover {text-decoration: underline;}
 .wrap_slider .prbox .pt {
     font-family: 'proxima_novaregular';
     font-size:16px;
+    line-height: 1.1em;
 }
 
 .wrap_slider .slick-slider {
@@ -521,7 +522,7 @@ a:hover {text-decoration: underline;}
 }
 
 .hit {
-    margin-bottom: 47px;
+    margin-bottom: 38px;
 }
 
 .content {
