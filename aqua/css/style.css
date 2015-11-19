@@ -421,6 +421,10 @@ a:hover {text-decoration: underline;}
     margin: 0 0 11px 0;
 }
 
+.products_name a {
+    color: #333333;
+}
+
 .link_products {
     border: 1px solid transparent;
     border-radius: 5px;
@@ -490,6 +494,7 @@ a:hover {text-decoration: underline;}
 
 .sravnit {
     border: 1px solid #0080ff;
+    bottom: 0;
     color: #007fff;
     height: 37px;
     line-height: 37px;
@@ -500,6 +505,7 @@ a:hover {text-decoration: underline;}
     display: none;
     margin: 5px 0 0 0;
     padding: 3px 0 15px 0;
+    position: relative;
 }
 
 .link_products:hover, .active {
