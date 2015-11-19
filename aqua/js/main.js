@@ -3,10 +3,11 @@
     var $next = $arrows.children(".slick-next");    
     var $prev = $arrows.children(".slick-prev");  
      var slick = $('.slick_slider').slick({
-          slidesToShow: 2,
+        slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true,
-        variableWidth: true
+        variableWidth: true,
+        slickGoTo:2,
     /*    appendArrows: $arrows,
         centerMode: true,
         infinite: true,
