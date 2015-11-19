@@ -79,9 +79,15 @@ a:hover {text-decoration: underline;}
 }
 
 .wrapper {
+    width:1440px;
     background: #fff;
     font-family: 'proxima_novaregular';
     font-size: 13px;
+}
+
+.pwrap {
+    width:1440px;
+    margin:0 auto;
 }
 
 .wrap_1 {
