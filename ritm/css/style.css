@@ -232,7 +232,7 @@ a:hover {
 .content .center_1 {
     background: #fff;
     border: 1px solid #d0d0cf;
-    margin: 0 0 57px 0;
+    margin-bottom: 57px;
     max-width: 1278px;
 }
 
