@@ -612,9 +612,19 @@ a:hover {
     font-family: 'Myriad Pro';
     font-size: 17px;
     line-height: 1.2;
-    margin: 20px 0 0 15px;
+    margin: 30px 0 0 15px;
+    width: 650px;
 }
 
 .footer_phone {
     font-size: 26px;
+    margin-bottom: 9px;
+}
+
+.p_5 {
+    margin: 0 0 3px 5px;
+}
+
+.footer_data {
+    margin: 30px 58px 0 0;
 }
