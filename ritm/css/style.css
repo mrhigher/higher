@@ -232,6 +232,7 @@ a:hover {
 .content .center_1 {
     background: #fff;
     border: 1px solid #d0d0cf;
+    margin-bottom: 57px;
     max-width: 1278px;
 }
 
@@ -319,4 +320,101 @@ a:hover {
     font-size: 20px;
     margin: 65px 0 0 0;
     text-align: center;
+}
+
+.content .center {
+    padding-bottom: 59px;
+}
+
+.ul_2 {
+    margin: 0 0 0 36px;
+    padding: 0 0 29px 0;
+}
+
+.ul_2 > li {
+    float: left;
+    font-family: 'pf_din_text_cond_prolight';
+    font-size: 21px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.ul_2 > li + li {
+    margin-left: 46px;
+}
+
+.ul_2 > li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.ul_2 > li a span {
+    background-position:  center top;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 0 15px 0;
+    height: 64px;
+}
+
+.ul_2 > li:first-child {
+    width: 150px;
+}
+
+.ul_2 > li:first-child span {
+    background-image: url(../img/ico_4.png);
+}
+
+.ul_2 > li:first-child:hover span {
+    background-image: url(../img/ico_4_hover.png);
+}
+
+.ul_2 > li:nth-child(2) {
+    width: 140px;
+}
+
+.ul_2 > li:nth-child(2) span {
+    background-image: url(../img/ico_5.png); 
+}
+
+.ul_2 > li:nth-child(2):hover span {
+    background-image: url(../img/ico_5_hover.png); 
+}
+
+.ul_2 > li:nth-child(3) {
+    width: 180px;
+}
+
+.ul_2 > li:nth-child(3) span {
+    background-image: url(../img/ico_6.png); 
+}
+
+.ul_2 > li:nth-child(3):hover span {
+    background-image: url(../img/ico_6_hover.png); 
+}
+
+.ul_2 > li:nth-child(4) {
+    width: 125px;
+}
+
+.ul_2 > li:nth-child(4) span {
+    background-image: url(../img/ico_7.png);
+    background-position: center center;
+}
+
+.ul_2 > li:nth-child(4):hover span {
+    background-image: url(../img/ico_7_hover.png);
+    background-position: center center;
+}
+
+.ul_2 > li:nth-child(5) {
+    width: 130px;
+}
+
+.ul_2 > li:nth-child(5) span {
+    background-image: url(../img/ico_8.png);
+    background-position: center center;
+}
+
+.ul_2 > li:nth-child(5):hover span {
+    background-image: url(../img/ico_8_hover.png);
 }
