@@ -421,7 +421,7 @@ a:hover {
 }
 
 .block_3 {
-    padding: 59px 0 0 0;
+    padding: 59px 0 43px 0;
     position: relative;
 }
 
@@ -480,4 +480,31 @@ a:hover {
     display: inline-block;
     font-size: 20px;
     margin: 17px 0 0 0;
+}
+
+.block_4 {
+    background: url(../img/bg_1.png) no-repeat center top;
+    line-height: 1.2;
+    padding: 83px 0 113px 0;
+}
+
+.descript {
+    margin: 0 0 0 456px;
+    width: 375px;
+}
+
+.p_2 {
+    font-size: 27px;
+    margin: 0 0 6px 0;
+}
+
+.p_3 {
+    color: rgba(0,0,0, .63);
+    font-size: 20px;
+    margin: 0 0 43px 0;
+}
+
+.p_4 {
+    font-family: 'Myriad Pro';
+    font-size: 27px;
 }
