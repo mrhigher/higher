@@ -175,7 +175,8 @@ a:hover {text-decoration: underline;}
     font-family: 'proxima_novaregular';
     font-size: 13px;
     height: 27px;
-    text-indent: 9px;
+    padding-left: 9px;
+    box-sizing:border-box;
     width: 210px;
 }
 
