@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'clear_sans_mediumregular';
+    src: url('../fonts/clearsans-medium/clearsans-medium-webfont.eot');
+    src: url('../fonts/clearsans-medium/clearsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clearsans-medium/clearsans-medium-webfont.woff2') format('woff2'),
+         url('../fonts/clearsans-medium/clearsans-medium-webfont.woff') format('woff'),
+         url('../fonts/clearsans-medium/clearsans-medium-webfont.ttf') format('truetype'),
+         url('../fonts/clearsans-medium/clearsans-medium-webfont.svg#clear_sans_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pf_din_text_cond_proregular';
+    src: url('../fonts/pfdintextcondpro-regular/pfdintextcondpro-regular-webfont.eot');
+    src: url('../fonts/pfdintextcondpro-regular/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-regular/pfdintextcondpro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-regular/pfdintextcondpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-regular/pfdintextcondpro-regular-webfont.svg#pf_din_text_cond_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('../fonts/pfdintextcomppro-regular/pfdintextcomppro-regular-webfont.eot');
+    src: url('../fonts/pfdintextcomppro-regular/pfdintextcomppro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcomppro-regular/pfdintextcomppro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfdintextcomppro-regular/pfdintextcomppro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextcomppro-regular/pfdintextcomppro-regular-webfont.svg#pf_din_text_comp_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #008ae1;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    font-family: 'pf_din_text_cond_proregular';
+}
+
+.center {
+    margin: 0 auto;
+    width: 990px;
+}
