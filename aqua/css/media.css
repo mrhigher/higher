@@ -4,7 +4,7 @@
     }
     .wrap_slider .prbox {
 /*        color:pink;*/
-        left:250px;
+/*        left:250px;*/
     }
 }
 @media only screen and (max-width:1440px)  {
@@ -13,7 +13,8 @@
     }
     .wrap_slider .prbox {
 /*        color:pink;*/
-        left:250px;
+/*        left:250px;
+        left:30px;*/
     }
 }
 @media only screen and (max-width:1280px) {
@@ -22,7 +23,8 @@
     }
     .wrap_slider .prbox {
 /*        color:green;*/
-        left:250px;
+/*        left:250px;
+         left:30px;*/
 
     }
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
