@@ -91,7 +91,7 @@ a:hover {text-decoration: underline;}
     margin:0 auto;
 }
 
-.wrap_1 {
+.wrap_1, .hitdelim {
     margin: 0 auto;
     width: 1003px;
 }
@@ -364,7 +364,6 @@ a:hover {text-decoration: underline;}
     position:absolute;
     width:24px;
     height:48px;
-    background:red;
     display:block;
     z-index:443;
     text-indent: 9999px;
@@ -536,6 +535,10 @@ a:hover {text-decoration: underline;}
 
 .hit {
     margin-bottom: 38px;
+}
+.hitdelim {
+    margin-bottom:38px;
+    border-bottom:1px solid #fe5917;
 }
 
 .content {
