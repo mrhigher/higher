@@ -265,7 +265,8 @@ a:hover {
     background: url(../img/search_ico.png) no-repeat 5px center;
     color: #9d9d9d;
     font-size: 20px;
-    text-indent: 59px;
+    padding-left: 59px;
+    box-sizing: border-box;
     width: 576px;
 }
 
