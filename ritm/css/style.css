@@ -508,3 +508,85 @@ a:hover {
     font-family: 'Myriad Pro';
     font-size: 27px;
 }
+
+.block_5 {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE5MTggNDAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImhhdDAiIGdyYWRpZW50VW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4MT0iNDIuMTQwNjA4NTAzMDMzJSIgeTE9IjEwNS45MjI0NzYyOTM4ODMlIiB4Mj0iNTcuODU5MzkxNDk2OTY3JSIgeTI9Ii01LjkyMjQ3NjI5Mzg4Mjk1JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDk5ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDczYWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE5MTgiIGhlaWdodD0iNDAxIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+    background-image: -moz-linear-gradient(82deg, #0099d9 0%, #0073ad 100%);
+    background-image: -o-linear-gradient(82deg, #0099d9 0%, #0073ad 100%);
+    background-image: -webkit-linear-gradient(82deg, #0099d9 0%, #0073ad 100%);
+    background-image: linear-gradient(8deg, #0099d9 0%, #0073ad 100%);
+    color: #fff;
+    padding: 13px 0 63px 0;
+}
+
+.title_3 {
+    font-family: 'pf_din_text_comp_proregular';
+    font-size: 47px;
+    text-align: center;
+}
+
+.form_1 {
+    margin: 6px 0 0 36px;
+    width: 486px;
+}
+
+.form_1 input, .form_1 textarea {
+    color: #000;
+    font-family: 'pf_din_text_comp_proregular';
+    font-size: 19px;
+}
+
+.form_1 input {height: 46px;}
+
+.form_1 input[type=text] {
+    margin: 0 0 15px 0;
+    padding: 0 0 0 16px;
+    width: 219px;
+}
+
+.form_1 input[type=submit] {
+    background-color: #6dc300;
+    color: #000;
+    display: block;
+    font-size: 20px;
+    height: 46px;
+    width: 236px;
+
+}
+
+.form_1 textarea {
+    border: none;
+    display: block;
+    margin: 0 0 13px 0;
+    min-height: 103px;
+    resize: vertical;
+    width: 100%;
+}
+
+.form_1 input[type=text]::-webkit-input-placeholder {color:#000000;}
+.form_1 input[type=text]::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+.form_1 input[type=text]:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+.form_1 input[type=text]:-ms-input-placeholder      {color:#000000;}
+
+.write {
+    display: inline-block;
+    font-family: 'pf_din_text_comp_proregular';
+    font-size: 35px;
+    margin: 0 0 10px 0;
+}
+
+.phone_number {
+    font-family: 'pf_din_text_comp_proregular';
+    font-size: 35px;
+    margin: 5px 37px 0 0;
+}
+
+.phone_number span {
+    display: block;
+    font-family: 'Myriad Pro';
+    margin: 5px 0 0 0;
+}
+
+.phone_number span:nth-of-type(1) {
+    margin-top: 10px;
+}
