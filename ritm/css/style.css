@@ -590,3 +590,31 @@ a:hover {
 .phone_number span:nth-of-type(1) {
     margin-top: 10px;
 }
+
+.map {
+    height: 350px;
+}
+
+.footer_menu {
+    margin: 3px 0 0 14px;
+}
+
+.footer_menu > li {
+    float: left;
+    font-size: 18px;
+}
+
+.footer_menu > li + li {
+    margin-left: 29px;
+}
+
+.footer_left {
+    font-family: 'Myriad Pro';
+    font-size: 17px;
+    line-height: 1.2;
+    margin: 20px 0 0 15px;
+}
+
+.footer_phone {
+    font-size: 26px;
+}
