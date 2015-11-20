@@ -164,6 +164,7 @@ a:hover {
     background-image: -webkit-linear-gradient(bottom, #0099d9 0%, #0073ad 100%);
     background-image: linear-gradient(bottom, #0099d9 0%, #0073ad 100%);
     color: #fff;
+    margin: 0 0 4px 0;
     padding: 21px 0 12px 0;
 }
 
@@ -179,4 +180,42 @@ a:hover {
     font-size: 25px;
     margin: 4px 0 0 0;
     text-align: center;
+}
+
+.slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+    transition: all 0.2s;
+    width:220px;
+    height:366px;
+    z-index:2;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    background: url(../img/slick_slider_arrow.png) no-repeat;
+    cursor: pointer;
+    content: "";
+    height: 32px;
+    margin-top: -16px;
+    position: absolute;
+    text-indent: 9999px;
+    width: 18px;
+    z-index: 999;
+}
+
+.slick-prev:before {
+    background-position: 0 0;
+    right: 35px;
+}
+
+.slick-next:before {
+    background-position: -18px 0;
+    left: 28px;
+}
+
+.content {
+    background: url(../img/content_bg.jpg) repeat;
+}
+
+.content .content {
+    background: #fff;
 }
