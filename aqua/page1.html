@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="ion.rangeSlider-master/css/ion.rangeSlider.css" />
+    <link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinAqua.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
 
@@ -16,7 +18,7 @@
 <!-- wrapper -->
 <div class="wrapper">
     <!-- wrap_1 -->
-    <header class="wrap_1">
+    <header class="wrap_1 clearfix">
         <nav class="top_menu clearfix">
             <ul class="top_menu clearfix left">
                 <li><a href="#">О нас</a></li>
@@ -54,7 +56,17 @@
             <span class="basket_details">Корзина<br />
             <span class="basket_price">11 250.5</span> <span class="rouble">i</span></span>
         </a>
-        <ul class="menu_main clearfix">
+      
+    </header><!-- END wrap_1 -->
+    <!-- wrap_slider -->
+    
+    
+
+    
+     <!-- sfwrap_1 -->
+     <div class="for_menu st_1">
+         <div class="wrap_1">
+               <ul class="menu_main cust clearfix">
             <li><a href="#">Ванны</a></li>
             <li><a href="">Душевые кабины</a></li>
             <li><a href="">Смесители</a></li>
@@ -64,15 +76,29 @@
             <li><a href="">Душевые системы</a></li>
             <li><a href="">Инсталляции</a></li>
             <li><a href="">Биде</a></li>
+            <li><a href="">Стульчики</a></li>
+            <li><a href="">Кафель</a></li>
+            <li><a href="">Коврики</a></li>
         </ul>
-    </header><!-- END wrap_1 -->
-    <!-- wrap_slider -->
-
-    
-     <!-- sfwrap_1 -->
+         </div>
+     </div>
      
      <div class="wrap_1">
     <div class="pcontext">
+        <div class="breadcrb">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Ванны</a>
+                </li>
+                <li class="last">
+                    <span>Акриловые ванны с гидромассажем</span> 
+                </li>
+                
+            </ul>
+        </div>
         <aside class="cleft">
             
             
@@ -81,16 +107,16 @@
 			<li class='has-sub active'>
                             <a class="" href=""><span>Ванны</span>  <em class="count">1280</em></a>
                                     <ul style="display:block;">
-                                        <li>Акриловые ванны</li>
-                                        <li>Акриловые ванны с гидромассажем</li>
-                                        <li>Шторки на ванную</li>
-                                        <li>Экраны на ванну</li>
-                                        <li>Комплекты мебели для ванной комнаты</li>
-                                        <li>Мебель для ванной комнаты</li>
-                                        <li>Душевые кабины Oporto Shower</li>
-                                        <li>Душевые кабины Luxus</li>
-                                        <li>Ванны Bas</li>
-                                        <li>Ванны Riho</li>
+                                        <li><a href="#">Акриловые ванны</a></li>
+                                        <li class="cur"><a href="#">Акриловые ванны с гидромассажем</a></li>
+                                        <li><a href="#">Шторки на ванную</a></li>
+                                        <li><a href="#">Экраны на ванну</a></li>
+                                        <li><a href="#">Комплекты мебели для ванной комнаты</a></li>
+                                        <li><a href="#">Мебель для ванной комнаты</a></li>
+                                        <li><a href="#">Душевые кабины Oporto Shower</a></li>
+                                        <li><a href="#">Душевые кабины Luxus</a></li>
+                                        <li><a href="#">Ванны Bas</a></li>
+                                        <li><a href="#">Ванны Riho</a></li>
                                     </ul>      
                                  
 			</li>
@@ -98,16 +124,16 @@
                         <li>
                             <a class="" href="#"><span>Душевые кабины</span>  <em class="count">12</em></a>
                              <ul>
-                                        <li>Акриловые ванны</li>
-                                        <li>Акриловые ванны с гидромассажем</li>
-                                        <li>Шторки на ванную</li>
-                                        <li>Экраны на ванну</li>
-                                        <li>Комплекты мебели для ванной комнаты</li>
-                                        <li>Мебель для ванной комнаты</li>
-                                        <li>Душевые кабины Oporto Shower</li>
-                                        <li>Душевые кабины Luxus</li>
-                                        <li>Ванны Bas</li>
-                                        <li>Ванны Riho</li>
+                                        <li><a href="#">Акриловые ванны</a></li>
+                                        <li class="cur"><a href="#">Акриловые ванны с гидромассажем</a></li>
+                                        <li><a href="#">Шторки на ванную</a></li>
+                                        <li><a href="#">Экраны на ванну</a></li>
+                                        <li><a href="#">Комплекты мебели для ванной комнаты</a></li>
+                                        <li><a href="#">Мебель для ванной комнаты</a></li>
+                                        <li><a href="#">Душевые кабины Oporto Shower</a></li>
+                                        <li><a href="#">Душевые кабины Luxus</a></li>
+                                        <li><a href="#">Ванны Bas</a></li>
+                                        <li><a href="#">Ванны Riho</a></li>
                                     </ul>  
                         </li>
                         
@@ -135,7 +161,377 @@
 		</div><!--end .cssmenu-->
         </aside>
         <section class="cmain">
-            <div>blbbla</div>
+            <div class="type_place">
+                <h2 class="title_b">Выберите тип ванны</h2>
+                <div class="row">
+                    <div class="itm">
+                        <a href="#">  
+                           <div class="pick">
+                        <div class="center-area"><div class="centered">
+                <img src="img/pic1.png">
+            </div>
+            </div> </div>
+                        <span class="val">Ванны акриловые</span>
+                        </a>
+                    </div>
+                      <div class="itm">
+                          <a href="#">  
+                          <div class="pick">
+                        <div class="center-area"><div class="centered">
+                <img src="img/pic2.png">
+            </div>
+            </div> </div>
+                        <span class="val">Ванны с гидромассажем</span>
+                          </a>
+                    </div>
+                      <div class="itm">
+                           <a href="#">  
+                           <div class="pick">
+                        <div class="center-area"><div class="centered">
+                <img src="img/pic3.png">
+            </div>
+            </div> </div>
+                        <span class="val">Ванны стальные</span>
+                           </a> 
+                    </div>
+                      <div class="itm">
+                           <a href="#">  
+                        <div class="pick">
+                        <div class="center-area"><div class="centered">
+                <img src="img/pic4.png">
+            </div>
+            </div> </div>
+                        <span class="val">Ванны чугунные</span>
+                           </a>
+                    </div>
+                      <div class="itm">
+                           <a href="#">  
+                        <div class="pick">
+                              <div class="center-area"><div class="centered">
+                <img src="img/pic5.png">
+        </div>
+  </div>
+                            </div>
+                          
+                        <span class="val">Ванны мраморные</span>
+                           </a> 
+                    </div>
+                      <div class="itm">
+                          <a href="#">
+    <div class="pick">
+    <div class="center-area"><div class="centered">
+                <img src="img/pic6.png">
+        </div>
+  </div>
+      </div>
+<span class="val">Гидромассажное оборудование</span>
+</a>
+</div>
+                      <div class="itm">
+                           <a href="#">
+    <div class="pick">
+    <div class="center-area"><div class="centered">
+                <img src="img/pic7.png">
+        </div>
+  </div>
+      </div>
+<span class="val">Шторки на ванную</span>
+                           </a>
+</div>
+                      <div class="itm">
+                          <a href="#">
+    <div class="pick">
+    <div class="center-area"><div class="centered">
+                <img src="img/pic8.png">
+        </div>
+  </div>
+      </div>
+<span class="val">Карниз на ванную</span>
+                          </a>
+</div>
+                      <div class="itm">
+                           <a href="#">
+    <div class="pick">
+    <div class="center-area"><div class="centered">
+                <img src="img/pic9.png">
+        </div>
+  </div>
+      </div>
+<span class="val">Экраны на ванную</span>
+                           </a>
+</div>
+                
+                      <div class="itm">
+                           <a href="#">
+    <div class="pick">
+    <div class="center-area"><div class="centered">
+                <img src="img/pic10.png">
+        </div>
+  </div>
+      </div>
+<span class="val">Слив-перелив</span>
+                           </a>
+</div>
+                </div>
+       
+                
+            </div>
+            <!-- type_place end -->
+            
+            <div class="filtline">
+                <span class="change_link">Простой фильтр</span>
+                <div class="row sortdup ">
+                    <div class="itm">
+                        
+                        <span class="name">Бредн</span>
+                        <i class="ftogg"></i>
+                    </div>
+                    <div class="itm">
+                        <span class="name">Материал</span>
+                        <i class="ftogg"></i>
+                    </div>
+                    <div class="itm active">
+                        <span class="name">Цвет: <em>3</em></span>
+                        <i class="ftogg"></i>
+                    </div>
+                     <div class="itm active">
+                         
+                        <span class="name">Форма: <em>16</em></span>
+                        <i class="ftogg"></i>
+                       
+                    </div>
+                      <div class="itm clpush">
+                          <div class='sphead'>
+                        <span class="name">Цена</span>
+                        <i class="ftogg"></i>
+                        </div>
+                            <div class="drop_opt">
+                                <div class="range_wrap"><input type="text" id="range_29"></div>
+                            <div class="manage">
+                                <span class="apply">Применить</span>
+                                <span class="clear ionreset">Сбросить</span>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="itm">
+                        <span class="name">Тип</span>
+                        <i class="ftogg"></i>
+                    </div>
+                      <div class="itm clpush">
+                          <div class='sphead'>
+                        <span class="name">Форма</span>
+                        <i class="ftogg"></i>
+                        </div>
+                             <div class="drop_opt">
+                            <div class="option_list">
+                               
+                             
+                                <div class="cheb">
+  <input type="checkbox" id="radio01" name="radio" />
+  <label for="radio01"><span></span>Все</label>
+</div>
+<div class="cheb">
+ <input type="checkbox" id="radio02" name="radio" />
+ <label for="radio02"><span></span>Круглая</label>
+</div>
+<div class="cheb">
+ <input type="checkbox" id="radio03" name="radio" />
+ <label for="radio03"><span></span>Квадратная</label>
+</div>
+<div class="cheb">
+ <input type="checkbox" id="radio04" name="radio" />
+ <label for="radio04"><span></span>Прямоугольная</label>
+</div>                                
+<div class="cheb">
+ <input type="checkbox" id="radio05" name="radio" />
+ <label for="radio05"><span></span>Теплая</label>
+</div>                                
+<div class="cheb">
+ <input type="checkbox" id="radio06" name="radio" />
+ <label for="radio06"><span></span>Бесформенная</label>
+</div>                                
+                                
+                            </div>
+                            <div class="manage">
+                                <span class="apply">Применить</span>
+                                <span class="clear radreset">Сбросить</span>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="itm">
+                        <span class="name">Глубина</span>
+                        <i class="ftogg"></i>
+                    </div>
+                      <div class="itm">
+                        <span class="name">Стилистика дизайна</span>
+                        <i class="ftogg"></i>
+                    </div>
+                      <div class="itm">
+                        <span class="name">Угловая конструкция</span>
+                        <i class="ftogg"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- filtline -->
+            
+            <div class="sorter">
+                <h2 class="title_b">Товары <em>15</em></h2>
+                <ul class="arr">
+                <li><a href="#">По популярности</a></li>
+                <li><a href="#">Подробно</a></li>
+                <li><a href="#">10 на странице</a></li>
+                </ul>
+                
+               
+            </div>
+              <div class="sort_lister">
+                  <div class="row">
+                  <div class="pick">
+                      <a href="#">
+                      <div class="center-area"><div class="centered">
+                <img src="img/prod1.png">
+            </div>
+                          
+                </div></a>
+                     <!-- <img src="img/prod1.png"> -->
+                  </div>
+                  <div class="coldsk">
+                      <div class="tit"><a href="#">Писсуар Jika Livo 4020.0 подвесной</a></div>
+                      <span class="price_products">825600 <span class="rouble">i</span></span>
+                      <div class="char_table">
+                          <ul>
+                              <li>
+                                  <span class="tit">120х70 см</span>
+                                  <p>Размер, ДхШ  </p>
+                                 
+                              </li>
+                              <li>
+                                  <span class="tit">130 л3</span>
+                                  <p>Объем</p>
+                              </li>
+                              <li>
+                                  <span class="tit">Прямоугольная</span>
+                                  <p>Форма</p>
+                              </li>
+                              <li>
+                                  <span class="tit">Bas
+</span>
+                                  <p>Бренд</p>
+                              </li>
+
+                          </ul>
+                      </div>
+                       <div class="products_btn">
+                        <a href="#" class="to_basket">В КОРЗИНУ</a>
+                        <a href="#" class="sravnit">СРАВНИТЬ</a>
+                        </div>
+                  </div>
+                </div>
+                  <div class="row">
+                  <div class="pick">
+                      <a href="#">
+                      <div class="center-area"><div class="centered">
+                <img src="img/prod1.png">
+            </div>
+                          
+                </div></a>
+                     <!-- <img src="img/prod1.png"> -->
+                  </div>
+                  <div class="coldsk">
+                      <div class="tit"><a href="#">Писсуар Jika Livo 4020.0 подвесной</a></div>
+                      <span class="price_products">825600 <span class="rouble">i</span></span>
+                      <div class="char_table">
+                          <ul>
+                              <li>
+                                  <span class="tit">120х70 см</span>
+                                  <p>Размер, ДхШ  </p>
+                                 
+                              </li>
+                              <li>
+                                  <span class="tit">130 л3</span>
+                                  <p>Объем</p>
+                              </li>
+                              <li>
+                                  <span class="tit">Прямоугольная</span>
+                                  <p>Форма</p>
+                              </li>
+                              <li>
+                                  <span class="tit">Bas
+</span>
+                                  <p>Бренд</p>
+                              </li>
+
+                          </ul>
+                      </div>
+                       <div class="products_btn">
+                        <a href="#" class="to_basket">В КОРЗИНУ</a>
+                        <a href="#" class="sravnit">СРАВНИТЬ</a>
+                        </div>
+                  </div>
+                </div>
+                  
+                  <div class="row">
+                  <div class="pick">
+                      <a href="#">
+                      <div class="center-area"><div class="centered">
+                <img src="img/prod1.png">
+            </div>
+                          
+                </div></a>
+                     <!-- <img src="img/prod1.png"> -->
+                  </div>
+                  <div class="coldsk">
+                      <div class="tit"><a href="#">Писсуар Jika Livo 4020.0 подвесной</a></div>
+                      <span class="price_products">825600 <span class="rouble">i</span></span>
+                      <div class="char_table">
+                          <ul>
+                              <li>
+                                  <span class="tit">120х70 см</span>
+                                  <p>Размер, ДхШ  </p>
+                                 
+                              </li>
+                              <li>
+                                  <span class="tit">130 л3</span>
+                                  <p>Объем</p>
+                              </li>
+                              <li>
+                                  <span class="tit">Прямоугольная</span>
+                                  <p>Форма</p>
+                              </li>
+                              <li>
+                                  <span class="tit">Bas
+</span>
+                                  <p>Бренд</p>
+                              </li>
+
+                          </ul>
+                      </div>
+                       <div class="products_btn">
+                        <a href="#" class="to_basket">В КОРЗИНУ</a>
+                        <a href="#" class="sravnit">СРАВНИТЬ</a>
+                        </div>
+                  </div>
+                </div>
+              
+                  
+                  <div class="more_els pvis"><a href="#">еще 6 элементов</a></div>
+                 
+                
+            </div>
+             <!-- sort_lister end -->
+             
+              <div class="pagination">
+	<a class="unvis link" href="#">ПРЕДЫДУЩАЯ</a>
+	
+	
+	<a href="#">1</a>
+	<strong>2</strong>
+	<a href="#">3</a>
+	
+	&nbsp;<a class="link" href="#">СЛЕДУЮЩАЯ</a>
+            </div>
+           
             
             
         </section>
@@ -145,7 +541,7 @@
       </div>
     
     <!-- content -->
-    <div class="content style_1">
+    <div class="content style_2">
         <article class="wrap_1">
             <h1 class="title_1">Интернет-магазин сантехники Акваформат</h1>
             <div id="columnizer">
@@ -297,9 +693,66 @@
     });
 </script>
 <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript" src="ion.rangeSlider-master/js/ion.rangeSlider.js"></script>
+<script>
+    $("#range_29").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 98000,
+    from: 6500,
+    to: 98000,
+    step: 500,
+    grid: false,
+    grid_snap: false,
+    hide_min_max: true,
+});
+</script>
+
+
 <script type="text/javascript">
 	$(function(){
-		/////$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
+            $('.sortdup .sphead').on('click',function(e) {
+              
+             var drop  = $(this).parent('.clpush');
+             if(drop.hasClass('active')) {
+                 closeSortDrop()   
+                 drop.removeClass('active');
+             } else {
+                 closeSortDrop()
+                  drop.find('.drop_opt').stop().slideDown() 
+                 drop.addClass('active');
+             }
+            
+            });
+            
+        
+         $(document).mouseup(function (e)
+            {
+                var container = $(".sortdup .clpush");
+                if (!container.is(e.target) // if the target of the click isn't the container...
+                    && container.has(e.target).length === 0) // ... nor a descendant of the container
+                {
+                   
+                   closeSortDrop()
+                }
+            });
+        
+            var closeSortDrop = function() {
+                var boxwrap = $('.sortdup');
+                    boxwrap.find('.drop_opt').stop().slideUp()
+                    boxwrap.find('.clpush').removeClass('active');
+               
+            }
+            $('.manage').find('.radreset').on('click',function() {
+                var  par =  $(this).parent().parent('.drop_opt');
+                var ch =   par.find('.cheb input[type="checkbox"]').attr('checked',false) 
+               
+            })
+}); 
+</script>
+<script type="text/javascript">
+	$(function(){
+		//$.pixlayout({clip: true, src: "maket2a.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 

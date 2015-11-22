@@ -28,7 +28,8 @@
 
     }
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
-      width:140px;  
+      width:140px; 
+      margin-top:-0.0rem;
     }
       
 }
