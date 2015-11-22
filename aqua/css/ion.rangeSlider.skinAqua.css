@@ -96,7 +96,7 @@
     line-height: 1.333;
     text-shadow: none;
     padding: 1px 5px;
-    background: rgba(255,255,255,0.8);
+    background: transparent;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }

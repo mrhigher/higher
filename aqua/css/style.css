@@ -1196,11 +1196,11 @@ a:hover {text-decoration: underline;}
       float:left;
   }
   .sort_lister .row {
-      padding:15px 0px 0px 0;
+      padding:15px 0px 10px 0;
       width:97%;
       border-radius: 6px;
       border:1px solid transparent;
-      margin:18px 5px 18px 0px;
+      margin:18px 5px 8px 0px;
       border:1px solid transparent;
 
   }

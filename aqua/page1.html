@@ -286,10 +286,46 @@
                         <span class="name">Бредн</span>
                         <i class="ftogg"></i>
                     </div>
-                    <div class="itm">
+                    <div class="itm clpush">
+                        <div class='sphead'>
                         <span class="name">Материал</span>
                         <i class="ftogg"></i>
+                        </div>
+                           <div class="drop_opt">
+                            <div class="option_list">
+                                <div class="cheb">
+  <input type="checkbox" id="radio01" name="radio" />
+  <label for="radio01"><span></span>Все</label>
+</div>
+<div class="cheb">
+ <input type="checkbox" id="radio02" name="radio" />
+ <label for="radio02"><span></span>Круглая</label>
+</div>
+<div class="cheb">
+ <input type="checkbox" id="radio03" name="radio" />
+ <label for="radio03"><span></span>Квадратная</label>
+</div>
+<div class="cheb">
+ <input type="checkbox" id="radio04" name="radio" />
+ <label for="radio04"><span></span>Прямоугольная</label>
+</div>                                
+<div class="cheb">
+ <input type="checkbox" id="radio05" name="radio" />
+ <label for="radio05"><span></span>Теплая</label>
+</div>                                
+<div class="cheb">
+ <input type="checkbox" id="radio06" name="radio" />
+ <label for="radio06"><span></span>Бесформенная</label>
+</div>                                
+                                
+                            </div>
+                            <div class="manage">
+                                <span class="apply">Применить</span>
+                                <span class="clear radreset">Сбросить</span>
+                            </div>
+                        </div>
                     </div>
+                    <!-- itm clpush end -->
                     <div class="itm active">
                         <span class="name">Цвет: <em>3</em></span>
                         <i class="ftogg"></i>
@@ -313,6 +349,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- itm clpush end -->
                       <div class="itm">
                         <span class="name">Тип</span>
                         <i class="ftogg"></i>
@@ -358,6 +395,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- itm clpush end -->
                       <div class="itm">
                         <span class="name">Глубина</span>
                         <i class="ftogg"></i>
@@ -390,11 +428,10 @@
                   <div class="pick">
                       <a href="#">
                       <div class="center-area"><div class="centered">
-                <img src="img/prod1.png">
+                <img src="img/photo_products.png" alt="">
             </div>
                           
                 </div></a>
-                     <!-- <img src="img/prod1.png"> -->
                   </div>
                   <div class="coldsk">
                       <div class="tit"><a href="#">Писсуар Jika Livo 4020.0 подвесной</a></div>
@@ -432,11 +469,11 @@
                   <div class="pick">
                       <a href="#">
                       <div class="center-area"><div class="centered">
-                <img src="img/prod1.png">
+                              <img src="img/photo_products_2.png" alt="">
             </div>
                           
                 </div></a>
-                     <!-- <img src="img/prod1.png"> -->
+                     
                   </div>
                   <div class="coldsk">
                       <div class="tit"><a href="#">Писсуар Jika Livo 4020.0 подвесной</a></div>
@@ -479,7 +516,7 @@
             </div>
                           
                 </div></a>
-                     <!-- <img src="img/prod1.png"> -->
+                    
                   </div>
                   <div class="coldsk">
                       <div class="tit"><a href="#">Писсуар Jika Livo 4020.0 подвесной</a></div>
@@ -688,24 +725,31 @@
 <script src="js/jquery.matchHeight-min.js"></script>
 <script>
     $(function() {
-        $('.item').matchHeight();
-        $('.descript_article').matchHeight();
+      //  $('.item').matchHeight();
     });
 </script>
 <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript" src="ion.rangeSlider-master/js/ion.rangeSlider.js"></script>
 <script>
-    $("#range_29").ionRangeSlider({
+    var ion_options = 
+        {
     type: "double",
     min: 0,
     max: 98000,
-    from: 6500,
-    to: 98000,
     step: 500,
     grid: false,
     grid_snap: false,
     hide_min_max: true,
-});
+    };
+    var rg_29 =  { from: 6500, to: 98000};
+    var allsettings = $.extend({}, ion_options, rg_29);
+    $("#range_29").ionRangeSlider(
+            allsettings
+        );
+    $('.ionreset').on('click',function() {
+        var range_29  = $("#range_29").data("ionRangeSlider");
+        range_29.reset();
+        });
 </script>
 
 
@@ -735,7 +779,13 @@
                    
                    closeSortDrop()
                 }
-            });
+            }).keyup(function(e) {
+                 if (e.keyCode == 27) {
+                      closeSortDrop()
+                }
+               
+                });
+
         
             var closeSortDrop = function() {
                 var boxwrap = $('.sortdup');
