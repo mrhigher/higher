@@ -294,28 +294,28 @@
                            <div class="drop_opt">
                             <div class="option_list">
                                 <div class="cheb">
-  <input type="checkbox" id="radio01" name="radio" />
-  <label for="radio01"><span></span>Все</label>
+  <input type="checkbox"  id="radio0111" name="radio" />
+  <label for="radio0111"><span></span>Все</label>
 </div>
 <div class="cheb">
- <input type="checkbox" id="radio02" name="radio" />
- <label for="radio02"><span></span>Круглая</label>
+ <input type="checkbox"  id="radio0222" name="radio" />
+ <label for="radio0222"><span></span>Круглая</label>
 </div>
 <div class="cheb">
- <input type="checkbox" id="radio03" name="radio" />
- <label for="radio03"><span></span>Квадратная</label>
+ <input type="checkbox"  id="radio0333" name="radio" />
+ <label for="radio0333"><span></span>Квадратная</label>
 </div>
 <div class="cheb">
- <input type="checkbox" id="radio04" name="radio" />
- <label for="radio04"><span></span>Прямоугольная</label>
+ <input type="checkbox"  id="radio0444" name="radio" />
+ <label for="radio0444"><span></span>Прямоугольная</label>
 </div>                                
 <div class="cheb">
- <input type="checkbox" id="radio05" name="radio" />
- <label for="radio05"><span></span>Теплая</label>
+ <input type="checkbox"  id="radio0555" name="radio" />
+ <label for="radio0555"><span></span>Теплая</label>
 </div>                                
 <div class="cheb">
- <input type="checkbox" id="radio06" name="radio" />
- <label for="radio06"><span></span>Бесформенная</label>
+ <input type="checkbox"  id="radio0666" name="radio" />
+ <label for="radio0666"><span></span>Бесформенная</label>
 </div>                                
                                 
                             </div>
@@ -360,32 +360,33 @@
                         <i class="ftogg"></i>
                         </div>
                              <div class="drop_opt">
+                                 <form>
                             <div class="option_list">
                                
                              
                                 <div class="cheb">
-  <input type="checkbox" id="radio01" name="radio" />
-  <label for="radio01"><span></span>Все</label>
+  <input type="checkbox" id="radio_b1" name="radio" />
+  <label for="radio_b1"><span></span>Все</label>
 </div>
 <div class="cheb">
- <input type="checkbox" id="radio02" name="radio" />
- <label for="radio02"><span></span>Круглая</label>
+ <input type="checkbox" id="radio_b2" name="radio" />
+ <label for="radio_b2"><span></span>Круглая</label>
 </div>
 <div class="cheb">
- <input type="checkbox" id="radio03" name="radio" />
- <label for="radio03"><span></span>Квадратная</label>
+ <input type="checkbox" id="radio_b3" name="radio" />
+ <label for="radio_b3"><span></span>Квадратная</label>
 </div>
 <div class="cheb">
- <input type="checkbox" id="radio04" name="radio" />
- <label for="radio04"><span></span>Прямоугольная</label>
+ <input type="checkbox" id="radio_b4" name="radio" />
+ <label for="radio_b4"><span></span>Прямоугольная</label>
 </div>                                
 <div class="cheb">
- <input type="checkbox" id="radio05" name="radio" />
- <label for="radio05"><span></span>Теплая</label>
+ <input type="checkbox" id="radio_b5" name="radio" />
+ <label for="radio_b5"><span></span>Теплая</label>
 </div>                                
 <div class="cheb">
- <input type="checkbox" id="radio06" name="radio" />
- <label for="radio06"><span></span>Бесформенная</label>
+ <input type="checkbox" id="radio_b6" name="radio" />
+ <label for="radio_b6"><span></span>Бесформенная</label>
 </div>                                
                                 
                             </div>
@@ -393,6 +394,7 @@
                                 <span class="apply">Применить</span>
                                 <span class="clear radreset">Сбросить</span>
                             </div>
+                             </form>
                         </div>
                     </div>
                     <!-- itm clpush end -->
@@ -763,7 +765,7 @@
                  drop.removeClass('active');
              } else {
                  closeSortDrop()
-                  drop.find('.drop_opt').stop().slideDown() 
+                  drop.find('.drop_opt').stop().slideDown(200) 
                  drop.addClass('active');
              }
             
@@ -789,14 +791,14 @@
         
             var closeSortDrop = function() {
                 var boxwrap = $('.sortdup');
-                    boxwrap.find('.drop_opt').stop().slideUp()
+                    boxwrap.find('.drop_opt').stop().slideUp(200)
                     boxwrap.find('.clpush').removeClass('active');
                
             }
+            
             $('.manage').find('.radreset').on('click',function() {
-                var  par =  $(this).parent().parent('.drop_opt');
-                var ch =   par.find('.cheb input[type="checkbox"]').attr('checked',false) 
-               
+                var par = $(this).closest('.drop_opt');
+                par.find('input:checkbox').prop('checked', false)
             })
 }); 
 </script>

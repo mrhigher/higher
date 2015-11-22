@@ -1142,7 +1142,6 @@ a:hover {text-decoration: underline;}
     margin:-1px 4px 0 0;
     vertical-align:middle;
     cursor:pointer;
-  
 }
 .cheb input[type="checkbox"] + label span  {
     background-image:url(../img/check_sp.png);
