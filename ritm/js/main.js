@@ -5,6 +5,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         centerMode: true,
         variableWidth: true,
+        dots:true
     });
 
      
