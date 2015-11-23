@@ -1320,3 +1320,27 @@ a:hover {text-decoration: underline;}
     color: #000;
     background-color:#f2f2f2;
 }
+
+#flexslider_1 {
+    float: left;
+    width: 337px;
+}
+
+#flexslider_1 .flex-direction-nav a {
+    background: url(../img/flex_arrow.png) no-repeat;
+    height: 15px;
+    text-indent: 9999px;
+    width: 7px;
+}
+
+#flexslider_1 .flex-direction-nav .flex-prev {
+    background-position: 0 0;
+}
+
+#flexslider_1 .flex-direction-nav .flex-next {
+    background-position: -7px 0;
+}
+
+.block_2 {
+    float: left;
+}
