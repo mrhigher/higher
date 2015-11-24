@@ -1363,7 +1363,7 @@ a:hover {text-decoration: underline;}
 
 #flexslider_1 .flex-direction-nav .flex-prev {
     background-position: 0 0;
-    left:-10px;
+    left: 0px;
 }
 
 #flexslider_1 .flex-direction-nav .flex-next {
@@ -1383,7 +1383,7 @@ a:hover {text-decoration: underline;}
 
 #flexslider_1 .flex-control-thumbs {
     height: 43px;
-    margin: 25px 0 0;
+    margin: 25px 0 0 10px;
 }
 
 .flex-control-nav.flex-control-thumbs {
