@@ -1,4 +1,4 @@
-    $(document).ready(function(){
+$(document).ready(function(){
  
      var slick = $('.slick_slider').slick({
         slidesToShow: 1,
@@ -6,6 +6,7 @@
         centerMode: true,
         variableWidth: true,
     });
+    
 
      
-    });
+});

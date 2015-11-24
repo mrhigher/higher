@@ -158,6 +158,7 @@
 		</div><!--end .cssmenu-->
         </aside>
         <section class="cmain">
+            <!-- type_place -->
             <div class="type_place">
                 <h2 class="title_b">Ванна акриловая BAS Кэмерон 120х70 комплектация стандарт</h2>
                     <!-- flexslider_1 -->
@@ -208,9 +209,50 @@
                         <li class="active"><a href="#tab1">Характеристики</a></li>
                         <li><a href="#tab2">Описание</a></li>
                         <li><a href="#tab3">Отзывы</a></li>
-                    </ul>             
-            </div>
-            <!-- type_place end -->
+                    </ul> 
+                    <div id="tab1" class="border_bottom">
+                        <div class="char_table">
+                            <ul>
+                                <li>
+                                    <span class="tit">120х70 см</span>
+                                    <p>Размер, ДхШ  </p>
+                                </li>
+                                <li>
+                                    <span class="tit">130 л3</span>
+                                    <p>Объем</p>
+                                </li>
+                                <li>
+                                  <span class="tit">Прямоугольная</span>
+                                  <p>Форма</p>
+                                </li>
+                                <li>
+                                  <span class="tit">Bas
+                                  </span>
+                                  <p>Бренд</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span class="tit">41 см</span>
+                                    <p>Глубина ванны (см):</p>
+                                </li>
+                                <li>
+                                    <span class="tit">Россия</span>
+                                    <p>Страна изготовитель</p>
+                                </li>
+                                <li>
+                                  <span class="tit">Акрил</span>
+                                  <p>Материал</p>
+                                </li>
+                                <li>
+                                  <span class="tit">Bas
+                                  </span>
+                                  <p>Бренд</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>            
+            </div><!-- END type_place -->
 
             
         </section>
@@ -437,6 +479,17 @@
             prevText: "",
             nextText: ""
         });
+    });
+    $(window).ready(function() {
+        // табы
+        $('.tabs a').click(function(e) {
+            e.preventDefault();
+            $('.tabs .active').removeClass('active');
+            $(this).parent().addClass('active');
+            var tab = $(this).attr('href');
+           // $('.tabs').not(tab).css({'display':'none'});
+            $(tab).fadeIn(400);
+        })
     });
 </script>
 <script type="text/javascript">
