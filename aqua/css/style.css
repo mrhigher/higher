@@ -1353,8 +1353,17 @@ a:hover {text-decoration: underline;}
     margin-bottom: 0;
 }
 
+#flexslider_1 .flex-control-thumbs li {
+    margin-right: 1px;
+    width: 40px;
+}
+
+#flexslider_1 .flex-control-thumbs {
+    height: 43px;
+}
+
 .flex-control-thumbs .flex_act {
-    border:1px solid green;
+    border:1px solid #fe5917;
 }
 .block_2 {
     float: left;
