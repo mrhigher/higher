@@ -1492,7 +1492,18 @@ a:hover {text-decoration: underline;}
     margin-top: 8px;
 }
 
-.border_bottom {
+.descript_tabs {
     border-bottom: 1px solid #fe5917;
     padding: 0 0 28px 0;
+}
+
+.title_4 {
+    color: #333333;
+    font-family: 'proxima_novabold';
+    font-size: 14px;
+    text-align: center;
+}
+
+#tab2, #tab3 {
+    display: none;
 }
