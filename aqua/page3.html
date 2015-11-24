@@ -174,7 +174,7 @@
                                 <li data-thumb="img/slide_6_mini.png">
                                   <img src="img/slide_4.png" />
                                 </li>
-                                <li data-thumb="img/slide_6_mini.png">
+                                <li data-thumb="img/slide_7_mini.png">
                                   <img src="img/slide_4.png" />
                                 </li>
                                 <li data-thumb="img/slide_4_mini.png">
@@ -186,33 +186,10 @@
                                 <li data-thumb="img/slide_6_mini.png">
                                   <img src="img/slide_4.png" />
                                 </li>
-                                <li data-thumb="img/slide_6_mini.png">
+                                 <li data-thumb="img/slide_7_mini.png">
                                   <img src="img/slide_4.png" />
                                 </li>
-                                <li data-thumb="img/slide_4_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_5_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_6_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_6_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_4_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_5_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_6_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
-                                <li data-thumb="img/slide_6_mini.png">
-                                  <img src="img/slide_4.png" />
-                                </li>
+                       
                             </ul>
                         </div>
                     </div><!-- END flexslider_1 -->
@@ -529,21 +506,19 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script>
     $(window).load(function() {
-        //var flex_options 
         $('#flexslider_1 .flexslider').flexslider({
             animation: "slide",
             controlNav: "thumbnails",
             prevText: "",
             nextText: "",
-             start:function() {
-                 $('.flex-control-nav li').eq(0).addClass('flex_act')
+            start:function() {
+                 $('.flex-control-nav').find('li').eq(0).addClass('flex_act')
              },
-              before: function (slider) { 
-                var cur = slider.currentSlide;
-                $('.flex-control-nav li').removeClass('flex_act');
-                $('.flex-control-nav li').eq(cur).addClass('flex_act')
-	}
-            
+            after: function() {
+              var thumbs = $('.flex-control-nav');  
+              thumbs.find('li').removeClass('flex_act');  
+              thumbs.find('.flex-active').parent('li').addClass('flex_act')
+            }
         });
     });
     $(window).ready(function() {
