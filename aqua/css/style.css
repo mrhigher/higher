@@ -1329,8 +1329,11 @@ a:hover {text-decoration: underline;}
 
 #flexslider_1 {
     float: left;
-    margin: 29px 0 0 17px;
-    width: 337px;
+    margin: 31px 0 0 22px;
+}
+
+#flexslider_1 .flex-viewport {
+    width: 308px;
 }
 
 #flexslider_1 .flex-direction-nav a {

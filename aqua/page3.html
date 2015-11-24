@@ -533,16 +533,17 @@
         $('#flexslider_1 .flexslider').flexslider({
             animation: "slide",
             controlNav: "thumbnails",
+            //itemWidth: 308,
             prevText: "",
-            nextText: "",
-             start:function() {
-                 $('.flex-control-nav li').eq(0).addClass('flex_act')
-             },
-              before: function (slider) { 
-                var cur = slider.currentSlide;
-                $('.flex-control-nav li').removeClass('flex_act');
-                $('.flex-control-nav li').eq(cur).addClass('flex_act')
-	}
+            nextText: ""
+//             start:function() {
+//                 $('.flex-control-nav li').eq(0).addClass('flex_act')
+//             },
+//              before: function (slider) { 
+//                var cur = slider.currentSlide;
+//                $('.flex-control-nav li').removeClass('flex_act');
+//                $('.flex-control-nav li').eq(cur).addClass('flex_act')
+//	}
             
         });
     });
@@ -560,7 +561,7 @@
 </script>
 <script type="text/javascript">
 	$(function(){
-		//$.pixlayout({clip: true, src: "maket3.png", show:true, center:true, top:17, left:0, pervious: false});
+        $.pixlayout({clip: true, src: "maket3.png", show:true, center:true, top:17, left:0, pervious: false});
 }); 
 </script>
 
