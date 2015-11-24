@@ -1329,7 +1329,7 @@ a:hover {text-decoration: underline;}
 
 #flexslider_1 {
     float: left;
-    margin: 31px 0 0 22px;
+    margin: 5px 0 32px 0px;
 }
 
 #flexslider_1 .flex-viewport {
@@ -1395,7 +1395,7 @@ a:hover {text-decoration: underline;}
 }
 .block_2 {
     float: left;
-    margin: 19px 0 0 26px;
+    margin: 19px 0 0 50px;
     width: 290px;
 }
 
@@ -1541,6 +1541,7 @@ a:hover {text-decoration: underline;}
 
 .descript_tabs {
     border-bottom: 1px solid #fe5917;
+    color: #333333;
     padding: 0 0 28px 0;
 }
 
@@ -1548,6 +1549,7 @@ a:hover {text-decoration: underline;}
     color: #333333;
     font-family: 'proxima_novabold';
     font-size: 14px;
+    margin: 22px 0 0 0;
     text-align: center;
 }
 
@@ -1555,3 +1557,62 @@ a:hover {text-decoration: underline;}
     display: none;
 }
 
+.details {
+    margin: 12px 0 33px 0;
+}
+
+.details > li {
+    margin: 0 0 10px 0;
+}
+
+.p_3 {
+    
+}
+
+.details span {
+    background: #fe5917;
+    display: inline-block;
+    height: 3px;
+    margin: 0 9px 0 0;
+    position: relative;
+    top: -3px;
+    width: 3px;
+}
+
+.p_3 + .details {
+    margin-top: 9px;
+}
+
+.p_4 {
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+.p_4 span {
+    font-family: 'proxima_novabold';
+}
+
+.products_vnutr .products {
+    margin-right: 17px;
+}
+
+.products_vnutr .products:nth-child(4n+1) {
+    clear: none;
+}
+
+.products_vnutr .products:nth-child(3n) {
+    margin-right: 0;
+}
+
+.products_vnutr .products:nth-child(3n+1) {
+    clear: both;
+}
+
+.products_vnutr {
+    border-bottom: 1px solid #fe5917;
+    margin: 0 0 25px 0;
+}
+
+.margin_2 {
+    margin-bottom: 100px;
+}
