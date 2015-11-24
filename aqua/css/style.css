@@ -1347,7 +1347,9 @@ a:hover {text-decoration: underline;}
 #flexslider_1 .flex-direction-nav .flex-next {
     background-position: -7px 0;
 }
-
+.flex-control-thumbs .flex_act {
+    border:1px solid green;
+}
 .block_2 {
     float: left;
     margin: 19px 0 0 26px;
