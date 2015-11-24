@@ -1593,7 +1593,7 @@ a:hover {text-decoration: underline;}
 }
 
 .products_vnutr .products {
-    margin-right: 17px;
+    margin-right: 13px;
 }
 
 .products_vnutr .products:nth-child(4n+1) {
@@ -1606,6 +1606,7 @@ a:hover {text-decoration: underline;}
 
 .products_vnutr .products:nth-child(3n+1) {
     clear: both;
+    margin-left: 16px;
 }
 
 .products_vnutr {
@@ -1614,5 +1615,6 @@ a:hover {text-decoration: underline;}
 }
 
 .margin_2 {
+    border-bottom: none;
     margin-bottom: 100px;
 }
