@@ -1347,6 +1347,12 @@ a:hover {text-decoration: underline;}
 #flexslider_1 .flex-direction-nav .flex-next {
     background-position: -7px 0;
 }
+
+#flexslider_1 .flexslider {
+    border: none;
+    margin-bottom: 0;
+}
+
 .flex-control-thumbs .flex_act {
     border:1px solid green;
 }
@@ -1428,8 +1434,66 @@ a:hover {text-decoration: underline;}
     width: 172px;
 }
 
+.tabs {
+    border-bottom: 1px solid #bdccd4;
+    clear: both;
+    margin: 0 0 0 0;
+    padding: 0 0 6px 0;
+}
+
 .block_input .sravnit {
     margin-left: 13px;
     margin-top: 13px;
     width: 230px;
+}
+
+.tabs:before, .tabs:after {
+    content:'';
+    display:table;
+}
+.tabs:after {
+    clear:both;
+}
+
+.tabs li {
+    color: #333333;
+    float: left;
+    font-size: 18px;
+    margin-right: 70px;
+    position: relative;
+}
+
+.tabs li:last-child {
+    margin-right: 0;
+}
+
+.tabs li a {color: #333333;}
+
+.tabs li a:hover {
+    text-decoration: none;
+}
+
+.tabs li.active {
+    box-shadow: none;
+    font-family: 'proxima_novabold';
+    padding: 0 8px;
+}
+
+.tabs li.active:after {
+    background: #fe5917;
+    bottom: -7px;
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+}
+
+.tabs li:first-child {
+    margin-left: 106px;
+    margin-right: 73px;
+}
+
+.tabs li:nth-child(2) {
+    margin-right: 100px;
 }
