@@ -1334,21 +1334,41 @@ a:hover {text-decoration: underline;}
 
 #flexslider_1 .flex-viewport {
     width: 308px;
+    margin: 29px 0 0 17px;
+    width: 337px;
+    width:310px;
 }
 
+.flexslider .slides img {
+    max-width:306px;
+}
+
+.flexslider .flex-viewport {
+    left:14px;
+}
+.flex-direction-nav a {
+    margin-top:-30px;
+}
+#flexslider_1 .flex-direction-nav {
+    position:relative;
+    margin:0px 0px;
+}
 #flexslider_1 .flex-direction-nav a {
     background: url(../img/flex_arrow.png) no-repeat;
     height: 15px;
     text-indent: 9999px;
     width: 7px;
+    opacity: 1;
 }
 
 #flexslider_1 .flex-direction-nav .flex-prev {
     background-position: 0 0;
+    left:-10px;
 }
 
 #flexslider_1 .flex-direction-nav .flex-next {
     background-position: -7px 0;
+    right:-28px;
 }
 
 #flexslider_1 .flexslider {
@@ -1357,12 +1377,17 @@ a:hover {text-decoration: underline;}
 }
 
 #flexslider_1 .flex-control-thumbs li {
-    margin-right: 1px;
-    width: 40px;
+    margin-right: 2px;
+    width: 39px;
 }
 
 #flexslider_1 .flex-control-thumbs {
     height: 43px;
+    margin: 25px 0 0;
+}
+
+.flex-control-nav.flex-control-thumbs {
+    width:108%;
 }
 
 .flex-control-thumbs .flex_act {
