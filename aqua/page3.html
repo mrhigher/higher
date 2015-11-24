@@ -271,6 +271,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo laboriosam velit ab ex fuga expedita sapiente ipsum excepturi! Atque, molestias. Ex, nostrum numquam laboriosam ea error nam quidem. Temporibus, quidem. Error, sapiente ab et! Laboriosam obcaecati facilis, at ipsum laborum aliquid in tempora dolores inventore, nobis ut eveniet autem est.
                     </div><!-- END descript_tabs -->   
             </div><!-- END type_place -->
+                           
+          
 
             
         </section>
@@ -491,11 +493,21 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script>
     $(window).load(function() {
+        //var flex_options 
         $('#flexslider_1 .flexslider').flexslider({
             animation: "slide",
             controlNav: "thumbnails",
             prevText: "",
-            nextText: ""
+            nextText: "",
+             start:function() {
+                 $('.flex-control-nav li').eq(0).addClass('flex_act')
+             },
+              before: function (slider) { 
+                var cur = slider.currentSlide;
+                $('.flex-control-nav li').removeClass('flex_act');
+                $('.flex-control-nav li').eq(cur).addClass('flex_act')
+	}
+            
         });
     });
     $(window).ready(function() {

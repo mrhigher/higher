@@ -329,11 +329,18 @@ a:hover {text-decoration: underline;}
     position:relative;
     outline:none;
 }
+.wrap_slider .slick-slide.slick-current .prbox {
+ display:block; 
+ opacity:1;
+ transition: all 0.5s ease-in;
+ -webkit-transition: all 0.5s ease-in;
+}
 .wrap_slider .arrows {
     max-width:600px;
     position:relative;
 }
 .wrap_slider .prbox {
+    opacity: 0;
     color:#fff;
     bottom:31px;
     left:250px;
@@ -902,7 +909,7 @@ a:hover {text-decoration: underline;}
   font-size:18px;
   font-family: 'proxima_novabold';   
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 3px 5px 10px;
 }
 
 .cssmenu > ul > li > a > em {
@@ -939,7 +946,7 @@ a:hover {text-decoration: underline;}
   color: #4d4d4d;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.1em;
 }
 .cssmenu  ul  ul li.cur a {
     color:#fe5917;
@@ -1346,6 +1353,9 @@ a:hover {text-decoration: underline;}
     margin-bottom: 0;
 }
 
+.flex-control-thumbs .flex_act {
+    border:1px solid green;
+}
 .block_2 {
     float: left;
     margin: 19px 0 0 26px;
@@ -1507,3 +1517,4 @@ a:hover {text-decoration: underline;}
 #tab2, #tab3 {
     display: none;
 }
+
