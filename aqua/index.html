@@ -46,7 +46,16 @@
             <p>Например, <a href="#">раковина для ванной</a></p>
         </div>
         <div class="block_contact left">
-            <p class="phone"><span>+7 (812) 244 94 60</span><a href="#">Обратный звонок</a></p>
+            <p class="phone"><span>+7 (812) 244 94 60</span><a class="show_popup" href="#">Обратный звонок</a></p>
+            <div class="popup">
+                <h2 class="title_6">Спасибо за обращение!</h2>
+                <p class="style_3">Наш менеджер свяжется с Вами в течении 3-х минут</p>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Ваше имя" />
+                    <input class="phone_mask" type="text" placeholder="Ваш телефон" />
+                    <input type="submit" class="to_basket" value="Перезвоните мне" />
+                </form>
+            </div>
             <p class="graf"><span class="day">Пн - Пт:</span> 10:00 до 22:00, <span class="day">Сб-Вс:</span> 10:00 до 22:00</p>
             <a class="mail" href="mailto:hello@acvaformat.ru">hello@acvaformat.ru</a>
         </div>
@@ -565,6 +574,7 @@
         <p>Юридический адрес: 197375, г. Санкт-Петербург, ул. Вербная, дом 18, Литер А. <a href="#">Написать нам</a></p>
     </footer>
 </div><!-- END wrapper -->
+<div class="overlay"></div>
 <script src="js/jquery.columnizer.js"></script>
 <script>
     $(function() {
@@ -611,8 +621,32 @@
         e.preventDefault();
         show_oforml_true();
     });
+
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+         // popup
+        $('.show_popup').click(function(e) {
+            e.preventDefault();
+            $('.overlay, .popup').fadeIn(500);
+    	});
+        
+        $('.overlay').click(function() {
+    		$('.overlay, .popup').fadeOut(500);
+    	});
+        
+       // $('.phone_mask').mask('+7 (000) 000-00-00');
     
+    });
     
+    $(document).keydown(function(e) {
+        // ESCAPE key pressed
+        if (e.keyCode == 27) {
+            $(".popup, .overlay").fadeOut(500);
+        }
+    });
+           
 </script>
 
 </body>
