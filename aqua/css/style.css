@@ -303,14 +303,15 @@ a:hover {text-decoration: underline;}
 .menu_main.menu_custom {
     background-color:transparent;
     text-align:left;
-    margin-bottom:0px;
-    
+    margin-bottom:0px; 
 }
 
 .menu_main > li {
-     margin:5px 28px 3px 0px;
-     display:inline-block;
+    margin:5px 28px 3px 0px;
+    position: relative;
+    display:inline-block;
 }
+
 .menu_main.menu_custom > li {
     margin:0;
     position: relative;
@@ -334,8 +335,9 @@ a:hover {text-decoration: underline;}
     display: none;
     left: 0;
     position: absolute;
+    text-align: left;
+    width: 150px;
     top: 36px;
-    width: 100%;
     z-index: 800;
 }
 
@@ -345,13 +347,14 @@ a:hover {text-decoration: underline;}
 
 .menu_main > li ul li {
     position: relative;
+    width: 150px;
 }
 
 .menu_main > li ul li ul {
     background: #f0f4f7;
     display: none;
     position: absolute;
-    right: -87%;
+    right: -150px;
     top: 0;
 }
 
