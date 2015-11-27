@@ -55,6 +55,7 @@
             <img class="basket_ico" src="img/basket.png" alt="" />
             <span class="basket_details">Корзина<br />
             <span class="basket_price">11 250.5</span> <span class="rouble">i</span></span>
+            <span class="products_in_basket">Товар положен в корзину!</span>
         </a>
      
     </header><!-- END wrap_1 -->
@@ -500,9 +501,21 @@
 <script src="js/main.js"></script>
 <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
-	$(function(){
-		/////$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
-}); 
+	function show_products_in_basket() {
+        $('.products_in_basket').show();
+        setTimeout(hide_products_in_basket, 3000);
+    }
+    
+    function hide_products_in_basket() {
+        $('.products_in_basket').hide();
+    }
+  
+    $('.to_basket').click(function(e) {
+        e.preventDefault();
+        show_products_in_basket();
+    });
+    
+    
 </script>
 
 </body>

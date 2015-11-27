@@ -578,6 +578,25 @@ a:hover {text-decoration: underline;}
     width: 100%;
 }
 
+.products_in_basket {
+    background: #fd6b30;
+    background: -moz-linear-gradient(top, #fd6b30 0%, #fc6a2f 100%);
+    background: -webkit-linear-gradient(top, #fd6b30 0%,#fc6a2f 100%);
+    background: linear-gradient(to bottom, #fd6b30 0%,#fc6a2f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6b30', endColorstr='#fc6a2f',GradientType=0 );
+    border-radius: 5px;
+    bottom: -60px;
+    color: #fefefe;
+    display: none;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 15px;
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    z-index: 801;
+}
+
 .sravnit {
     border: 1px solid #0080ff;
     bottom: 0;
