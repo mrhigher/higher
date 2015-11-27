@@ -578,7 +578,7 @@ a:hover {text-decoration: underline;}
     width: 100%;
 }
 
-.products_in_basket {
+.products_in_basket, .oforml_true {
     background: #fd6b30;
     background: -moz-linear-gradient(top, #fd6b30 0%, #fc6a2f 100%);
     background: -webkit-linear-gradient(top, #fd6b30 0%,#fc6a2f 100%);
@@ -596,6 +596,10 @@ a:hover {text-decoration: underline;}
     top: 1%;
     white-space: nowrap;
     z-index: 801;
+}
+
+.oforml_true {
+    top: 3%;
 }
 
 .sravnit {

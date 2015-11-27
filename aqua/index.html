@@ -55,9 +55,9 @@
             <img class="basket_ico" src="img/basket.png" alt="" />
             <span class="basket_details">Корзина<br />
             <span class="basket_price">11 250.5</span> <span class="rouble">i</span></span>
-            <span class="products_in_basket">Товар положен в корзину!</span>
         </a>
-     
+         <span class="products_in_basket">Товар положен в корзину!</span>
+         <span class="oforml_true">Ваш заказ оформлен</span>
     </header><!-- END wrap_1 -->
     <!-- wrap_slider -->
     <div class="for_menu">
@@ -513,6 +513,20 @@
     $('.to_basket').click(function(e) {
         e.preventDefault();
         show_products_in_basket();
+    });
+    
+    function show_oforml_true() {
+        $('.oforml_true').show();
+        setTimeout(hide_oforml_true, 3000);
+    }
+    
+    function hide_oforml_true() {
+        $('.oforml_true').hide();
+    }
+    
+    $('.sravnit').click(function(e) {
+        e.preventDefault();
+        show_oforml_true();
     });
     
     
