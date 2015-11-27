@@ -46,7 +46,16 @@
             <p>Например, <a href="#">раковина для ванной</a></p>
         </div>
         <div class="block_contact left">
-            <p class="phone"><span>+7 (812) 244 94 60</span><a href="#">Обратный звонок</a></p>
+            <p class="phone"><span>+7 (812) 244 94 60</span><a class="show_popup" href="#">Обратный звонок</a></p>
+            <div class="popup">
+                <h2 class="title_6">Спасибо за обращение!</h2>
+                <p class="style_3">Наш менеджер свяжется с Вами в течении 3-х минут</p>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Ваше имя" />
+                    <input class="phone_mask" type="text" placeholder="Ваш телефон" />
+                    <input type="submit" class="to_basket" value="Перезвоните мне" />
+                </form>
+            </div>
             <p class="graf"><span class="day">Пн - Пт:</span> 10:00 до 22:00, <span class="day">Сб-Вс:</span> 10:00 до 22:00</p>
             <a class="mail" href="mailto:hello@acvaformat.ru">hello@acvaformat.ru</a>
         </div>
@@ -64,19 +73,19 @@
      <div class="for_menu st_1">
          <div class="wrap_1">
                <ul class="menu_main cust clearfix">
-            <li><a href="#">Ванны</a></li>
-            <li><a href="">Душевые кабины</a></li>
-            <li><a href="">Смесители</a></li>
-            <li><a href="">Раковины</a></li>
-            <li><a href="">Унитазы</a></li>
-            <li><a href="">Мебель для ванной</a></li>
-            <li><a href="">Душевые системы</a></li>
-            <li><a href="">Инсталляции</a></li>
-            <li><a href="">Биде</a></li>
-            <li><a href="">Стульчики</a></li>
-            <li><a href="">Кафель</a></li>
-            <li><a href="">Коврики</a></li>
-        </ul>
+                <li><a href="#">Ванны</a></li>
+                <li><a href="">Душевые кабины</a></li>
+                <li><a href="">Смесители</a></li>
+                <li><a href="">Раковины</a></li>
+                <li><a href="">Унитазы</a></li>
+                <li><a href="">Мебель для ванной</a></li>
+                <li><a href="">Душевые системы</a></li>
+                <li><a href="">Инсталляции</a></li>
+                <li><a href="">Биде</a></li>
+                <li><a href="">Стульчики</a></li>
+                <li><a href="">Кафель</a></li>
+                <li><a href="">Коврики</a></li>
+            </ul>
          </div>
      </div>
      
@@ -298,7 +307,19 @@
                     </div><!-- END descript_tabs -->
                     <!-- descript_tabs -->
                     <div id="tab3" class="descript_tabs">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo laboriosam velit ab ex fuga expedita sapiente ipsum excepturi! Atque, molestias. Ex, nostrum numquam laboriosam ea error nam quidem. Temporibus, quidem. Error, sapiente ab et! Laboriosam obcaecati facilis, at ipsum laborum aliquid in tempora dolores inventore, nobis ut eveniet autem est.
+                        <!-- reviews -->
+                        <div class="reviews">
+                            <p>Здесь еще никто не оставлял отзывы. Вы можете быть первым</p>
+                            <p>Все поля обязательны к заполнению. Перед публикацией отзывы проходят модерацию.</p>
+                            <form action="#" method="post">
+                                Представьтесь, пожалуйта
+                                <input type="text" />
+                                Электронная почта
+                                <input type="text" />
+                                Текст отзыва
+                                <textarea></textarea>
+                            </form>
+                        </div><!-- END reviews -->
                     </div><!-- END descript_tabs -->   
             </div><!-- END type_place -->
         <h2 class="title_1">Сопутствующие товары</h2>
@@ -596,6 +617,7 @@
         <p>Юридический адрес: 197375, г. Санкт-Петербург, ул. Вербная, дом 18, Литер А. <a href="#">Написать нам</a></p>
     </footer>
 </div><!-- END wrapper -->
+<div class="overlay"></div>
 <script src="js/jquery.columnizer.js"></script>
 <script type="text/javascript" src="js/accordion.js"></script>
 <script>
@@ -714,12 +736,30 @@
         })
     });
 </script>
-<script type="text/javascript">
-	$(function(){
-        //$.pixlayout({clip: true, src: "maket3.png", show:true, center:true, top:17, left:0, pervious: false});
-}); 
+<script>
+    jQuery(document).ready(function() {
+         // popup
+        $('.show_popup').click(function(e) {
+            e.preventDefault();
+            $('.overlay, .popup').fadeIn(500);
+    	});
+        
+        $('.overlay').click(function() {
+    		$('.overlay, .popup').fadeOut(500);
+    	});
+        
+       // $('.phone_mask').mask('+7 (000) 000-00-00');
+    
+    });
+    
+    $(document).keydown(function(e) {
+        // ESCAPE key pressed
+        if (e.keyCode == 27) {
+            $(".popup, .overlay").fadeOut(500);
+        }
+    });
+           
 </script>
-
 </body>
 </html>
 
