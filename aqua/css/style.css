@@ -339,8 +339,37 @@ a:hover {text-decoration: underline;}
     z-index: 800;
 }
 
-.menu_main > li a:hover ul {
+.menu_main > li:hover > ul {
     display: block;
+}
+
+.menu_main > li ul li {
+    position: relative;
+}
+
+.menu_main > li ul li ul {
+    background: #f0f4f7;
+    display: none;
+    position: absolute;
+    right: -87%;
+    top: 0;
+}
+
+.menu_main > li > ul > li:hover ul {
+    display: block;
+}
+
+.menu_main .menu_arrow {
+    background: url(../img/menu_arrow.jpg) no-repeat;
+    height: 7px;
+    position: absolute;
+    right: 8px;
+    top: 17px;
+    width: 4px;
+}
+
+.menu_main > li ul li a:hover .menu_arrow {
+    background-position: -4px 0;
 }
 
 .wrap_slider {
