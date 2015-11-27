@@ -591,8 +591,9 @@ a:hover {text-decoration: underline;}
     height: 48px;
     line-height: 48px;
     padding: 0 15px;
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 10%;
+    top: 1%;
     white-space: nowrap;
     z-index: 801;
 }
