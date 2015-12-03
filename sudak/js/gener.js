@@ -1,13 +1,6 @@
-     
-     
-
-
-      
 
      $(function () {
-        
- 
-         
+     
       $('.ico_plus').on('click',function(){
         var $qta=$(this).closest('.count').find('.qta');
         var currentVal = parseInt($qta.val());
