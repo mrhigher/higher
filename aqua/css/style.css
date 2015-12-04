@@ -251,11 +251,25 @@ a:hover {text-decoration: underline;}
 .basket {
     color: #333333;
     display: block;
-    margin: -3px 44px 0 0;
+    margin: -3px 14px 0 0;
     position: relative;
     text-align: center;
 }
-
+.rightbox {
+    float:right;
+    width:176px;
+}
+.basket.to_compare {
+    float:right;
+    width:70px;
+     margin: -3px 14px 0 0;
+}
+.basket.to_compare .basket_ico {
+    border-radius: 0px;
+}
+.count_basket {
+    
+}
 .basket_ico {
     border-radius: 50%;
     display: block;
