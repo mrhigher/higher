@@ -3756,7 +3756,6 @@ footer .center {
     padding: 15px 0 0 38px;
     width: 900px;
 }
-/*
 .catalogmenu .open_menu:before, .catalogmenu .open_menu:after {
     display:table;
     content:'';
@@ -3764,7 +3763,6 @@ footer .center {
 .catalogmenu .open_menu:after {
     clear:both;
 }
-*/
 .catalogmenu .open_menu .block_menu_1:nth-child(3n +1) {
     clear:left;
 }
@@ -3772,9 +3770,8 @@ footer .center {
     
 }
 .open_menu .withfade {
-/*    padding-bottom:100px;*/
+    padding-bottom:100px;
 }
-/*
 .catalogmenu  .block_menu_1 .flv {
   
     height:100px;
@@ -3783,56 +3780,63 @@ footer .center {
     z-index:103;
     display:none;
 }
-*/
-/*
 .catalogmenu  .block_menu_1:hover .hovbox {
    z-index:3;
 }
-*/
-/*
 .catalogmenu  .block_menu_1:hover .flv {
     display:block;
 }
-*/
 .block_menu_1 {
     background: #fff;
     float: left;
     height: 110px;
     margin: 0 0 40px 0;
-  position:relative;
-/*    overflow: hidden;*/
+  
     position: relative;
     width: 300px;
 }
-/*
 .catalogmenu  .open_menu .block_menu_1 {
+  position:relative;
 }
-*/
 .catalogmenu .hovbox {
-    background: #fff;
-    height:110px;
+    height:210px;
     width:80%;
-/*    z-index:2;*/
+    z-index:2;
     position:absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
 }
 
+.catalogmenu .block_menu_1:hover .hovbox:after {
+        content:'';
+    position:absolute;
+    top:-10px;
+    left:-19px;
+    width:298px;
+    height:210px;
+    border-radius:6px;
+    background-color:#fff;
+    -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+}
+.catalogmenu .hovbox:before, .catalogmenu .hovbox:after {
+    content:'';
+    display:table;
+}
+.catalogmenu .hovbox:after {
+    clear:both;
+}
 .white_menu_bg {
     background: url(../img/white_bg_menu.png) repeat-x;
-    bottom:0;
+    bottom:100px;
     z-index:4;
     height: 14px;
     left: 0;
     position: absolute;
     width: 100%;
 }
-
 .catalogmenu .block_menu_1:hover .white_menu_bg {
     display:none;
 } 
-
 .open_menu .type {
     position:relative;
     z-index:1;
@@ -3840,18 +3844,6 @@ footer .center {
     float: left;
     font: bold 18px/1 Arial;
     padding: 0 32px 0 0;
-}
-
-.catalogmenu .block_menu_1:hover .hovbox {
-    border-radius:6px;
-    -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,.1);
-    -moz-box-shadow: 0px 2px 5px rgba(0,0,0,.1);
-    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
-    height: auto;
-    left: -19px;
-    padding: 10px 0 5px 19px;
-    top: -10px;
-    z-index: 100;
 }
 
 .open_menu .type img {
