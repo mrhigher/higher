@@ -1,0 +1,669 @@
+@media only screen and (max-width: 1257px) {
+    img {
+        max-width: 100%;
+    }
+    .center {
+        width: 100%;
+    }
+    .searchinhead input[type=text] {
+        width: 250px;
+    }
+    .ul_1 {
+        float: right;
+        margin-right: 10px;
+    }
+    .result_search {
+        width: 318px;
+    }
+    .content_right {
+        width: 74%;
+    }
+    .menu_best li.active:after {
+        background:none;
+    }
+    .products {
+        display: table;
+    }
+    .products > div:nth-child(4) {
+        clear: both;
+    }
+    .more {
+        margin-left: 10px;
+    }
+    .ul_2 {
+        float: left;
+        margin-left: 1%;
+    }
+    .menu_slider {
+        display: none;
+    }
+    .menu_best li.active a {
+        height: 28px;
+    }
+    #wrap_for_bx_1 {
+        margin-top:10px;
+        margin-bottom: 30px;
+    }
+    footer .center {
+        width: 100%;
+    }
+    .footer_menu {
+        padding-left: 1%;
+    }
+    .copyright {
+        padding-left: 1%;
+        width: 99%;
+    }
+    
+    .breadcrumb, .h2, .margin_1 {
+        margin-left: 1%;
+    }
+   /* .spisok_gallery .spisok_name {
+		width: 200px;
+	} ucomm*/
+	
+}
+
+@media only screen and (max-width: 1219px) {
+	.slider_card_main {
+		width: 36%;
+	}
+	.block_anons {
+		width: 35%;
+	}
+	.other_setting {
+		width: 28%;
+	}
+	.other_setting div.cs-skin-sudak {
+		width: 100%;
+	}
+	.message {
+		width: 100%;
+	}
+	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
+		margin-left: 73%;
+	}
+	.btn_4 {
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 1137px) {
+    .more .ico_6 {
+        display: none;
+    }
+    .more {
+        margin-right: 10px;
+        width: 210px;
+    }
+    .ul_2 > li {
+        width: 80px;
+    }
+    .flexslider.flexgall .flex-direction-nav .flex-next {
+        margin-right: -4%;
+    }
+    .products_best .products_wrap {
+        margin-bottom: -1px;
+    }
+    .content_right h2 {
+        text-align: center;
+    }
+    .footer_menu {
+        display: table;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .footer_menu > li {
+        float: left;
+        margin-right: 20px;
+    }
+    .block_green {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        width: 913px;
+    }
+    .block_menu_1 {
+        width:273px;
+    }
+    /*.spisok_gallery .spisok_name {
+		width: 135px;
+	} ucomm*/
+	.block_anons {
+		margin: 0px 1% 0px 0px;
+	}
+	.other_setting {
+		float:left;
+	}
+	.slider_card_main {
+		width: 34%;
+	}
+
+}
+
+@media only screen and (max-width: 1108px) {
+    .margin_2 {
+        width: 73%;
+    }
+    .breadcrumb {
+        clear: both;
+    }
+    .catalogsorter {
+        margin-right: 10px;
+    }
+    .single_spisok .spisok_name {
+		width: 160px;
+	}
+        
+}
+
+@media only screen and (max-width: 1066px) {
+    .margin_2 {
+        width: 72%;
+    }
+}
+
+@media only screen and (max-width: 1059px) {
+
+    .ul_1 {
+        float: left;
+        margin-top: 10px;
+    }
+}
+@media only screen  and (min-width:1022px) and (max-width: 1041px) {
+    .content_right {
+        margin-left: 1.4%;
+    }
+      
+}
+
+@media only screen and (max-width: 1024px) {
+    .margin_2 {
+        width: 71%;
+    }
+    .catalogsorter {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1022px) {
+    .content_left {
+        display: none;
+    }
+    .content_right {
+        padding: 0 1%;
+        width: 96%;
+    }
+    
+    .menu_left > ul {
+        display: none;
+    }
+    .menu_left h3 {
+        cursor: pointer;
+    }
+    .menu_left:hover  .catalogmenu {
+         display: block;
+    }
+    .catalogmenu {
+        z-index:2;
+    }
+    .catalogmenu > li:hover > ul {
+        left: -9999px;
+        
+        }
+    .catalogmenu > li > .parent:hover:after,  .catalogmenu.with_cats > li > .parent:hover:after{
+        display:none;
+    }    
+    .products {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products_best {
+       /* display: table; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ul_2 {
+        clear: both;
+        margin-top: 20px;
+    }
+    .ul_2 > li {
+        margin-bottom:15px;
+        border:1px solid #cfcfcf;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       border-radius: 3px;
+    }
+    .margin_1 {
+        display: block;
+    }
+    .margin_2 {
+        width: calc(100% - 303px);
+    }
+    .slider_card_main {
+		margin-left: 1%;
+		width: 32%;
+	}
+	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder {
+		width: 97%;
+	}
+	.other_setting .cs-skin-sudak.cs-select span.cs-placeholder::after {
+		margin-left: 69%;
+	}
+}
+
+@media only screen and (max-width: 987px) {
+    .products_name {
+        width: 225px;
+    }
+    .basket_count {
+        width: 128px;
+    }
+}
+
+@media only screen and (max-width: 984px) {
+    .block_green {
+        background: #19a415;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE5YTQxNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYTc5M2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #19a415 0%, #2a793a 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#19a415), color-stop(100%,#2a793a));
+        background: -webkit-linear-gradient(top,  #19a415 0%,#2a793a 100%);
+        background: -o-linear-gradient(top,  #19a415 0%,#2a793a 100%);
+        background: -ms-linear-gradient(top,  #19a415 0%,#2a793a 100%);
+        background: linear-gradient(to bottom,  #19a415 0%,#2a793a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19a415', endColorstr='#2a793a',GradientType=0 );
+        border-bottom: 1px solid #174220;
+    }
+    .p_4 {
+        float: none;
+    }
+    .subscribe {
+        float: none;
+        margin-left: 0;
+    }
+    .subscribe input[type=submit] {
+        margin-top: 3px;
+    }
+    .block_green {
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 918px) {
+	.descript_dostavka_1 {
+		
+	}
+}
+
+@media only screen and (max-width: 910px) {
+	.margin_2 {
+		width: 65%;
+	}
+    .template .templ_tit {
+        display:none;
+    }
+    .other_setting {
+		clear: both;
+		float: none;
+		margin-bottom: 20px;
+		margin-left: 1%;
+		width: 40%;
+	}
+	.slider_card_main {
+		width: 37%;
+	}
+	.block_anons {
+		width: 55%;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.margin_2 {
+		width: 58%;
+	}
+	.for_input {
+		width: 466px;
+	}
+	.input_oform {
+		width: 450px;
+	}
+	.btn_5, .garant {
+		float: right;
+	}
+	.garant {
+		margin-right: 10px;
+	}
+	.slider_card_main {
+		width: 37%;
+	}
+	
+}
+
+@media only screen and (max-width: 848px) {
+	.margin_2 {
+		width: 59%;
+	}
+	.other_setting {
+		width: 46%;
+	}
+}
+
+@media only screen and (max-width: 833px) {
+	.margin_2 {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 821px) {
+	.margin_2 {
+		width: 61%;
+	}
+	.slider_card_main {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 807px) {
+	.margin_2 {
+		width: 62%;
+	}
+}
+
+@media only screen and (max-width: 796px) {
+	.margin_1 {
+		margin-bottom: 20px;
+		width: 98%;
+                /*width: 94%; ucomm*/
+	}
+	.margin_2 {
+		clear: both;
+		float: none;
+		margin-left: 0;
+                /*width: 94%; ucomm*/
+		width: 98%;
+	}
+	.template {
+		clear: none;
+		float: right;
+	}
+	
+    .template .templ_tit {
+        display:block;
+        float:left;
+    }
+    .vybor {
+        margin:0px 0px 8px 0px;
+        position:static;
+    }
+    .vybor img {
+        display:none;
+    }         
+
+    .input_oform {
+		width: 83%;
+	}
+	.for_input {
+		width: 85%;
+	}
+    .for_input input[type=text] {
+		padding: 0 21px 0 8px;
+    }
+	.slider_card_main {
+		width: 45%;
+	}
+	.block_anons {
+		float: right;
+		width: 51%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    .phone_number {
+        text-align: center;
+    }
+    .phone_number span {
+        display: block;
+    }
+    .phone_number, .popup_form {
+        float: none;
+        width: auto;
+    }
+    .popup_form {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .order_btn {
+        width: 445px;
+    }
+    .popup_form input[type=submit] {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slider_card_main {
+		width: 46%;
+	}
+   
+}
+
+@media only screen and (max-width: 729px) {
+    .copyright {
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    .ul_1 {
+        margin-left: 25px;
+    }
+    .flexslider.flexgall .flex-direction-nav .flex-prev {
+        margin-left: -20px;
+    }
+    .slider_card_main {
+		width: 46%;
+	}
+	.other_setting {
+		width: 53%;
+	}
+}
+
+@media only screen and (max-width: 646px) {
+	.for_input input[type=text].reginpt {
+		
+	}
+}
+
+@media only screen and (max-width: 633px) {
+    
+    .single_spisok .spisok_name {
+        width:160px;
+    }
+    .authinheadinner {
+        float: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ul_1 {
+        clear: none;
+        float: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ul_1 > li {
+        background: none;
+    }
+    form.searchinhead {
+        clear: both;
+        display: table;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .slider_card_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 96%;
+	}
+	.block_anons {
+		float: none;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 98%;
+	}
+	.other_setting {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+	.har {
+		margin-left: 1%;
+	}
+	.reviews {
+		padding-right: 1%;
+	}
+}
+
+@media only screen and (max-width: 562px) {
+    
+    .itog {
+        float:none;
+    }
+    
+    .itog input[type="submit"] {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        
+    }
+    .products_count {
+        margin-left: 20px;
+    }
+     .template .templ_tit {
+        display:none;
+    } 
+    .spisok_gallery .spisok_name {
+		width: 60px;
+	}  
+	/*.slider_card_main {
+		width: 60%;
+	} */
+}
+
+@media only screen and (max-width: 519px) {
+    .products_best .products_wrap {
+        float: none;
+    }
+    .products > div {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .menu_left {
+        float: none;
+        margin: 0 auto;
+    }
+    .more {
+        float: none;
+        margin: 20px auto 0;
+    }
+    
+     #wrap_for_bx_1 li .inn {
+        height:190px;
+    }  
+    .single_spisok .spisok_name {
+        width:130px;
+    }
+    /*.slider_card_main {
+		width: 65%;
+	}*/
+}
+
+@media only screen and (max-width: 483px) { 
+    .btn_1 {
+        clear: both;
+        display: table;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    .number_phone {
+        margin-left: 20px;
+    }
+    .agro {
+        float: left;
+        margin-bottom: 36px;
+        margin-left: 20px;
+    }
+    
+        .template {
+		clear: both;
+		float: left;
+	}
+	.sort {
+		margin-bottom: 10px;
+	}        
+     .template .templ_tit {
+        display:block
+    }
+    .har td:nth-child(2) {
+		padding-right: 10px;
+	}
+    /*.slider_card_main {
+		width: 70%;
+	}*/    
+}
+
+@media only screen and (max-width: 449px) {
+    header {
+        display: none;
+    }
+    .catalogmenu {
+        top:42px;
+       
+    }
+    .mobile_menu {
+        display: none;
+    }
+     .mobile_menu.mini {
+        display: block;
+    }
+    .agro, .number_phone, .btn_1, .more, .ul_2 {
+        display: none;
+    }
+    .header_mobile {
+        display: block;
+    }
+    
+     .single_spisok .spisok_name {
+        width:70px;
+    }
+    /*.slider_card_main {
+		width: 83%;
+	}*/
+	.other_setting {
+		width: 90%;
+	}
+	.garant {
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+    .flexslider.flexgall .flex-direction-nav .flex-prev {
+        margin-left: -15px;
+    }
+    .slider_card_main {
+		width: 90%;
+	}
+	.btn_4, .btn_5 {
+		float: none;
+	}   
+}
