@@ -126,8 +126,11 @@
         overflow: hidden;
         width: 913px;
     }
-    .block_menu_1 {
+/*    .block_menu_1 {
         width:273px;
+    }*/
+    .block_menu_1 {
+        width:280px;
     }
     /*.spisok_gallery .spisok_name {
 		width: 135px;
