@@ -225,3 +225,43 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 
 /*========================== END slick-slider ==========================*/
+
+/*========================== block_1 ==========================*/
+
+.block_1 {
+    background: url(../img/box_shadow_bg.png) no-repeat center bottom;
+}
+
+.ul_1 > li {
+    border-right: 1px solid #d8d8d8;
+    color: #000;
+    float: left;
+    letter-spacing: 2px;
+    line-height: 1.45;
+    padding: 70px 0 39px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 284px;
+}
+
+.ul_1 > li:last-child {
+    border-right: none;
+}
+
+.ico_4 {
+    background: url(../img/ico_4.png) no-repeat center top 35px;
+}
+
+.ico_5 {
+    background: url(../img/ico_5.png) no-repeat center top 35px;
+}
+
+.ico_6 {
+    background: url(../img/ico_6.png) no-repeat center top 27px;
+}
+
+.ico_7 {
+    background: url(../img/ico_7.png) no-repeat center top 35px;
+}
+
+/*========================== END block_1 ==========================*/
