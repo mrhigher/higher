@@ -71,7 +71,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {text-decoration: underline;}
+a:hover {color: inherit; text-decoration: underline;}
 
 .clearfix {
     display:inline-block;
@@ -131,10 +131,71 @@ a:hover {text-decoration: underline;}
 
 .menu_main {
     border-top: 1px solid #d8d8d8;
-    margin: 29px 0 0 0;
+    margin: 29px 0 3px 0;
+    padding: 25px 0 0 0;
 }
 
 .menu_main li {
     float: left;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu_main li + li {
+    margin-left: 32px;
+}
+
+.menu_main ul {
+    display: table;
+    margin: 0 auto;
 }
 /*========================== END menu_main ==========================*/
+
+/*========================== slick-slider ==========================*/
+
+.wrap_slider .slick-slider {
+    margin-bottom: 0;
+}
+.slick-next,.slick-prev {
+    opacity:1; 
+    background-color:rgba(0,0,0,.7);
+}
+.slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+    transition: all 0.2s;
+    width: 60px;
+    height: 507px;
+    z-index: 2;
+}
+.slick-next:hover, .slick-prev:hover {
+    opacity:1; 
+    background-color:rgba(0,0,0,.8);
+}
+.slick-prev {
+    left:0px;
+}
+.slick-next {
+    right: 0px;
+}
+.slick-prev:before, .slick-next:before  {
+    background: url(../img/slider_arrow.png) no-repeat;
+    content:'';
+    position:absolute;
+    width: 57px;
+    height: 57px;
+    display:block;
+    z-index:443;
+    text-indent: 9999px;
+    margin-top:-29px;
+  
+}
+.slick-prev:before {
+    background-position: 0 0;
+    right: -28px;
+}
+.slick-next:before {
+    background-position: -57px 0;
+    left: -28px;
+}
+
+/*========================== END slick-slider ==========================*/
