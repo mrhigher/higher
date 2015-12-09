@@ -1,3 +1,65 @@
+/*========================== reset.css ==========================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, time {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, input, select, textarea {
+    outline: none;
+}
+
+img, input {
+	border: none;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*========================== END reset.css ==========================*/
+
 body {
 	color: #494949;
     font-family: 'Myriad Pro';
@@ -11,6 +73,23 @@ a {
 
 a:hover {text-decoration: underline;}
 
+.clearfix {
+    display:inline-block;
+}
+
+.clearfix {
+    zoom:1;
+    display:block;
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
 .left {float: left;}
 .right {float: right;}
 
@@ -21,6 +100,41 @@ a:hover {text-decoration: underline;}
 
 .center {
     margin: 0 auto;
-    width: 990px;
+    width: 1143px;
 }
 
+.logo {
+    display: block;
+    margin: 42px 111px 0 419px;
+}
+
+.header_contact {
+    font-size: 16px;
+    margin: 64px 0 0 0;
+}
+
+.header_contact p {
+    margin: 0 0 14px 0;
+}
+
+.header_phone {
+    background: url(../img/ico_1.png) no-repeat left center;
+    padding: 0 0 0 32px;
+}
+
+.header_mail {
+    background: url(../img/ico_2.png) no-repeat left center;
+    padding: 0 0 0 32px;
+}
+
+/*========================== menu_main ==========================*/
+
+.menu_main {
+    border-top: 1px solid #d8d8d8;
+    margin: 29px 0 0 0;
+}
+
+.menu_main li {
+    float: left;
+}
+/*========================== END menu_main ==========================*/
