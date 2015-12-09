@@ -198,4 +198,30 @@ a:hover {color: inherit; text-decoration: underline;}
     left: -28px;
 }
 
+.slick-slide {
+    position: relative;
+}
+
+.slider_txt {
+    background: rgba(255, 255, 255, .88);
+    left: 50%;
+    margin-left: -228px;
+    padding: 25px;
+    position: absolute;
+    text-align: center;
+    top: 142px;
+}
+
+.slider_txt_1 {
+    background: url(../img/ico_3.png) no-repeat center bottom 14px;
+    border: 1px solid #b5b5b5;
+    font-size: 23px;
+    height: 173px;
+    letter-spacing: 2px;
+    line-height: 1.35;
+    padding: 22px 0 0 0;
+    text-transform: uppercase;
+    width: 405px;
+}
+
 /*========================== END slick-slider ==========================*/
