@@ -230,6 +230,7 @@ a:hover {color: inherit; text-decoration: underline;}
 
 .block_1 {
     background: url(../img/box_shadow_bg.png) no-repeat center bottom;
+    margin: 0 0 80px 0;
 }
 
 .ul_1 > li {
@@ -265,3 +266,25 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 
 /*========================== END block_1 ==========================*/
+
+.title_1 {
+    color: #000;
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*========================== block_2 ==========================*/
+
+.block_2 > div {
+    float: left;
+    height: 240px;
+    width: 365px;
+}
+
+.block_2 > div img {
+    height: 100%;
+    width: 100%;
+}
+/*========================== END block_2 ==========================*/
