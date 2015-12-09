@@ -317,12 +317,17 @@ a:hover {color: inherit; text-decoration: underline;}
     top: 10px;
     width: 182px;
 }
+
+.descript_1 a {color: #fff; text-decoration: underline;}
+
+.descript_1 a:hover {text-decoration: none;}
 /*========================== END block_2 ==========================*/
 
 /*========================== myform ==========================*/
 
 .myform {
     background: #eaeaea;
+    margin: 0 0 76px 0;
 }
 
 .myform .center {
