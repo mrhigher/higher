@@ -394,7 +394,7 @@ a:hover {color: inherit; text-decoration: underline;}
     background-color: #d4d4d4;
     color: #535353;
     display: block;
-    font-family: 'Myriad Pro';
+    font-family: "MyriadProRegular";
     font-size: 16px;
     height: 53px;
     margin: 0 0 13px 0;
@@ -412,7 +412,7 @@ a:hover {color: inherit; text-decoration: underline;}
     background: #009fe0;
     color: #fff;
     display: block;
-    font-family: 'Myriad Pro';
+    font-family: "MyriadProRegular";
     font-size: 16px;
     height: 52px;
     letter-spacing: 2px;
@@ -571,13 +571,14 @@ footer.center {
     z-index: 9999;
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (max-width:1920px)  {
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
-        width: 149px; 
+        width: 386px; 
     }
     .wrap_slider, .wrapper {
-        width:1440px;
+        width:1920px;
     }
+    
 }
 
 @media only screen and (max-width:1440px)  {
@@ -589,6 +590,16 @@ footer.center {
     }
     
 }
+
+@media only screen and (min-width:1440px) {
+    .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+        width: 149px; 
+    }
+    .wrap_slider, .wrapper {
+        width:1440px;
+    }
+}
+
 @media only screen and (max-width:1280px) {
     .wrap_slider, .wrapper {
         width:1280px;
