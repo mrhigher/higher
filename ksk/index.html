@@ -253,10 +253,51 @@
             variableWidth: true,
         });
         
+        $('.to_top').click(to_top);
+        
         // matchHeight
         
         $('.name_work').matchHeight();
     });
+    
+    document.onscroll = my_func;
+    function my_func() {
+        var sc = jQuery(document).scrollTop();
+        if(sc > 1000 && jQuery('.to_top').css('display') != 'block') {
+            $('.to_top').css('display', 'block');
+            block_in(0.1, $('.to_top'));
+        }
+        else if(sc < 1000 && jQuery('.to_top').css('display') != 'none') {
+            block_out($('.to_top').css('opacity'), $('.to_top'));
+        }
+    }
+    function block_in(op, elem) {
+        elem.css('opacity', op);
+        op += 0.1;
+        if(op < 1) {
+            setTimeout(function () {block_in(op,elem)},100);
+        }
+    }
+    function block_out(op, elem) {
+        elem.css({'opacity':op});
+        op -= 0.1;
+        if(op > 0) {
+            setTimeout(function () {block_out(op,elem)},100);		
+        }
+        else {
+            $('.to_top').css({'display':'none'});
+        }
+    }
+    
+    function to_top() {
+        var root = jQuery(document);
+        var scrol = root.scrollTop();	
+        scrol -= 20;
+        root.scrollTop(scrol);
+        if(scrol > 0) {
+            setTimeout(to_top, 1);
+        }
+    }
     
 	$(function(){
 		$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
