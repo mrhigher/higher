@@ -572,12 +572,18 @@ footer.center {
 }
 
 @media only screen and (min-width:1440px) {
+    .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+        width: 149px; 
+    }
     .wrap_slider, .wrapper {
         width:1440px;
     }
 }
 
 @media only screen and (max-width:1440px)  {
+    .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+        width: 149px; 
+    }
     .wrap_slider, .wrapper {
         width:1440px;
     }
