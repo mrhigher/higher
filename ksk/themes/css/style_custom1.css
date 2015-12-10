@@ -394,7 +394,7 @@ a:hover {color: inherit; text-decoration: underline;}
     background-color: #d4d4d4;
     color: #535353;
     display: block;
-    font-family: 'Myriad Pro';
+    font-family: "MyriadProRegular";
     font-size: 16px;
     height: 53px;
     margin: 0 0 13px 0;
@@ -412,7 +412,7 @@ a:hover {color: inherit; text-decoration: underline;}
     background: #009fe0;
     color: #fff;
     display: block;
-    font-family: 'Myriad Pro';
+    font-family: "MyriadProRegular";
     font-size: 16px;
     height: 52px;
     letter-spacing: 2px;
