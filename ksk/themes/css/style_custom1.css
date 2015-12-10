@@ -302,6 +302,20 @@ a:hover {color: inherit; text-decoration: underline;}
     width: 365px;
 }
 
+.block_2 > div:hover .for_bg {
+    visibility: hidden;
+}
+
+.for_bg {
+    background: rgba(0, 0, 0, .47);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
 .block_2 > div:nth-child(3n) {
     margin-right: 0;
 }
@@ -336,6 +350,7 @@ a:hover {color: inherit; text-decoration: underline;}
     text-align: center;
     top: 50%;
     width: 182px; 
+    z-index: 5;
 }
 
 .centered {
