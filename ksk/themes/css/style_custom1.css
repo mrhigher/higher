@@ -139,18 +139,18 @@ a:hover {color: inherit; text-decoration: underline;}
     padding: 25px 0 0 0;
 }
 
-.menu_main li {
+.menu_main li, .menu_bottom li {
     float: left;
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.menu_main li + li {
+.menu_main li + li, .menu_bottom li + li {
     margin-left: 32px;
 }
 
-.menu_main ul {
+.menu_main ul, .menu_bottom ul {
     display: table;
     margin: 0 auto;
 }
@@ -531,3 +531,25 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 
 /*========================== END block_4 ==========================*/
+
+.menu_bottom {
+    margin-bottom: 65px;
+    margin-top: 45px;
+}
+
+footer.center {
+    text-align: center;
+}
+
+.copyright {
+    color: #000000;
+    letter-spacing: 1px;
+    margin: 0 0 21px 0;
+    text-transform: uppercase;
+}
+
+.descript_2 {
+    color: #727272;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
