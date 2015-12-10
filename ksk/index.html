@@ -152,11 +152,71 @@
     </div><!-- END myform -->
     <h2 class="title_1">объекты компании</h2>
     <!-- block_3 -->
-    <div class="block_3 center">
-        
+    <div class="block_3 center clearfix">
+        <div class="block_3_1 left">
+            <a class="link_img" href="#"><img src="file/i_pic/img_6.jpg" alt="" /></a>
+            <a class="name_work" href="#">Земляные работы на олимпийских объектах</a>
+            <p class="name_1">Сочи</p>
+        </div>
+        <!-- block_3_2 -->
+        <div class="block_3_2 right clearfix">
+            <div>
+                <a href="#" class="link_img">
+                    <img src="file/i_pic/img_7.jpg" alt="" />
+                </a>
+                <a href="#" class="name_work">Завод “АММоний”</a>
+                <p class="name_1">Менделееевск</p>
+            </div>
+            <div>
+                <a href="#" class="link_img">
+                    <img src="file/i_pic/img_8.jpg" alt="" />
+                </a>
+                <a href="#" class="name_work">СРТО - торжок вдольтрассовый проезд</a>
+                <p class="name_1">Россия</p>
+            </div>
+            <div>
+                <a href="#" class="link_img">
+                    <img src="file/i_pic/img_9.jpg" alt="" />
+                </a>
+                <a href="#" class="name_work">завод танеко</a>
+                <p class="name_1">Нижнекамск</p>
+            </div>
+            <div>
+                <a href="#" class="link_img">
+                    <img src="file/i_pic/img_10.jpg" alt="" />
+                </a>
+                <a href="#" class="name_work">Федеральная дорога “Кола”</a>
+                <p class="name_1">Республика Карелия</p>
+            </div>
+        </div><!-- END block_3_2 -->
     </div><!-- END block_3 -->
+    <h2 class="title_1">Наши заказчики</h2>
+    <!-- block_4 -->
+    <div class="block_4 center">
+        <ul class="ul_2">
+            <li>
+                <img src="file/i_pic/logo_brand_1.png" alt="" />
+            </li>
+            <li>
+                <img src="file/i_pic/logo_brand_2.png" alt="" />
+            </li>
+            <li>
+                <img src="file/i_pic/logo_brand_3.png" alt="" />
+            </li>
+            <li>
+                <img src="file/i_pic/logo_brand_4.png" alt="" />
+            </li>
+            <li>
+                <img src="file/i_pic/logo_brand_5.png" alt="" />
+            </li>
+            <li>
+                <img src="file/i_pic/logo_brand_6.png" alt="" />
+            </li>
+        </ul>
+    </div><!-- END block_4 -->
 </div><!-- END wrapper -->
 <script src="themes/js/slick.min.js"></script>
+<script src="themes/js/jquery.matchHeight-min.js"></script>
 <script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){ 
@@ -166,6 +226,10 @@
             centerMode: true,
             variableWidth: true,
         });
+        
+        // matchHeight
+        
+        $('.name_work').matchHeight();
     });
     
 	$(function(){
