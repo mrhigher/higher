@@ -168,7 +168,7 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
     transition: all 0.2s;
-    width: 220px;
+    width: 389px;
     height: 507px;
     z-index: 2;
 }
