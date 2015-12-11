@@ -459,6 +459,7 @@ header.center {
 
 }
 .order_buket:before {
+	z-index:0;
     content:'';
     display:none;
     position:absolute;

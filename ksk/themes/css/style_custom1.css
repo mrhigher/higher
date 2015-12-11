@@ -428,12 +428,13 @@ a:hover {color: inherit; text-decoration: underline;}
 
 .submit_1 {
     background: #009fe0;
-    box-sizing: content-box;
     color: #fff;
     display: block;
     font-family: "MyriadProRegular";
     font-size: 16px;
     height: 52px;
+    text-align:center;
+    line-height:52px;
     letter-spacing: 2px;
     margin: 38px 0 0 110px;
     position: relative;
@@ -441,24 +442,25 @@ a:hover {color: inherit; text-decoration: underline;}
     width: 212px;
     z-index: 3;
 }
-
-.submit_1:before {
-    box-sizing: content-box;
-    border: 3px solid transparent;
-    content: "";
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 100%;
+.submit_1,.submit_1:hover {
+    text-decoration:none;
+    color:#fff;
 }
-
-.submit_1:hover:before {
-    border: 3px solid #009fe0;
-    height: 52px;
-    display: block;
+.submit_1:before {
+    content: "";
     margin-left: -3px;
     top:-2px;
     z-index:0;
+    background:none;
+    border: 3px solid #009fe0;
+    display: none;
+    height: 55px;
+    position: absolute;
+    width: 217px;
+}
+
+.submit_1:hover:before {
+    display: block;
 }
 
 .margin_1 {
@@ -631,6 +633,7 @@ footer.center {
     position: fixed;
     right: 4%;
     z-index: 9999;
+    display:none;
 }
 
 
