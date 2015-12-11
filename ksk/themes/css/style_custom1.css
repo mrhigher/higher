@@ -391,7 +391,7 @@ a:hover {color: inherit; text-decoration: underline;}
 
 .block_form {
     margin: 64px 0 0 0;
-    padding: 0 0 75px 0;
+    padding: 0 0 0 0;
     position: relative;
     width: 600px; 
 }
@@ -434,20 +434,28 @@ a:hover {color: inherit; text-decoration: underline;}
     font-size: 16px;
     height: 52px;
     letter-spacing: 2px;
-    margin: 0 0 0 110px;
-    position: absolute;
-    top: 307px;
-    -webkit-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    transition: 0.5s ease;
+    margin: 38px 0 0 110px;
+    position: relative;
     text-transform: uppercase;
     width: 212px;
 }
 
-.submit_1:hover {
-    height: 58px;
-    width: 218px;
+.submit_1:before {
+    border: 3px solid transparent;
+    content: "";
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.submit_1:hover:before {
+    height: 52px;
+    display:block;
+    z-index:0;
+    top:-2px;
+    margin-left:-3px;
+    border: 3px solid #009fe0;
 }
 
 .margin_1 {
