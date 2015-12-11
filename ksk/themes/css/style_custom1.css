@@ -648,7 +648,7 @@ footer.center {
 @media only screen and (max-width:1440px)  {
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
         width: 149px; 
-        background:red;
+       
     }
     .wrap_slider, .wrapper {
         width:1440px;
@@ -663,7 +663,7 @@ footer.center {
     
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
       width: 69px; 
-      background:orange;
+     
     }
       
 }
@@ -673,6 +673,6 @@ footer.center {
     }
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
       width: 69px; 
-      background:purple;
+      
     }
 }
