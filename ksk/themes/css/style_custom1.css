@@ -428,6 +428,7 @@ a:hover {color: inherit; text-decoration: underline;}
 
 .submit_1 {
     background: #009fe0;
+    box-sizing: content-box;
     color: #fff;
     display: block;
     font-family: "MyriadProRegular";
@@ -438,9 +439,11 @@ a:hover {color: inherit; text-decoration: underline;}
     position: relative;
     text-transform: uppercase;
     width: 212px;
+    z-index: 3;
 }
 
 .submit_1:before {
+    box-sizing: content-box;
     border: 3px solid transparent;
     content: "";
     display: none;
@@ -450,12 +453,12 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 
 .submit_1:hover:before {
-    height: 52px;
-    display:block;
-    z-index:0;
-    top:-2px;
-    margin-left:-3px;
     border: 3px solid #009fe0;
+    height: 52px;
+    display: block;
+    margin-left: -3px;
+    top:-2px;
+    z-index:0;
 }
 
 .margin_1 {
