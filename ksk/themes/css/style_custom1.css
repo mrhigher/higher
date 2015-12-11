@@ -303,7 +303,7 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 
 .block_2 > div:hover .for_bg {
-    visibility: hidden;
+    background: rgba(0, 0, 0, .1);
 }
 
 .for_bg {
@@ -313,6 +313,7 @@ a:hover {color: inherit; text-decoration: underline;}
     position: absolute;
     top: 0;
     width: 100%;
+    transition: 1s ease;
     z-index: 2;
 }
 
