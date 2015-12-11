@@ -303,7 +303,7 @@ a:hover {color: inherit; text-decoration: underline;}
 }
 
 .block_2 > div:hover .for_bg {
-    visibility: hidden;
+    background: rgba(0, 0, 0, .1);
 }
 
 .for_bg {
@@ -313,6 +313,7 @@ a:hover {color: inherit; text-decoration: underline;}
     position: absolute;
     top: 0;
     width: 100%;
+    transition: 1s ease;
     z-index: 2;
 }
 
@@ -390,6 +391,8 @@ a:hover {color: inherit; text-decoration: underline;}
 
 .block_form {
     margin: 64px 0 0 0;
+    padding: 0 0 75px 0;
+    position: relative;
     width: 600px; 
 }
 
@@ -431,9 +434,20 @@ a:hover {color: inherit; text-decoration: underline;}
     font-size: 16px;
     height: 52px;
     letter-spacing: 2px;
-    margin: 36px 0 0 110px;
+    margin: 0 0 0 110px;
+    position: absolute;
+    top: 307px;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
     text-transform: uppercase;
     width: 212px;
+}
+
+.submit_1:hover {
+    height: 58px;
+    width: 218px;
 }
 
 .margin_1 {
