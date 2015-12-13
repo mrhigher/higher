@@ -194,6 +194,31 @@ a:hover {color: inherit; text-decoration: underline;}
     margin-top:-29px;
   
 }
+/*slick fix :after*/
+.slick-prev:after, .slick-next:after  {
+    content:'';
+    position:absolute;
+    width: 96px;
+    height:507px;
+    display:block;
+    z-index:3;
+    text-indent: 9999px;
+    background:red;
+    top:50%; 
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    
+}
+.slick-prev:after {
+    left:0px;
+}
+.slick-next:after {
+    right:0px;
+
+}
+/*slick fix end */
+
 .slick-prev:before {
     background-position: 0 0;
     right: -28px;
@@ -643,7 +668,6 @@ footer.center {
 @media only screen and (min-width: 1441px) and (max-width:1920px)  {
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
         width: 389px; 
-         background:pink;
     }
     .wrap_slider, .wrapper {
         width:1920px;
@@ -653,7 +677,8 @@ footer.center {
 
 @media only screen and (max-width:1440px)  {
     .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
-        width: 149px; 
+/*        width: 149px; */
+         width:170px;
        
     }
     .wrap_slider, .wrapper {
