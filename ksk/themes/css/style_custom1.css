@@ -728,6 +728,18 @@ footer.center {
     }
 }
 
+@media only screen and (min-width:1921px) {
+    .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+        width: 429px; 
+    }
+    .wrap_slider, .wrapper {
+        width:1920px;
+    }
+    .slick-prev::after, .slick-next::after {
+        width: 406px;
+    }
+}
+
 
 
 
