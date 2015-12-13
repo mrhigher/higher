@@ -203,10 +203,12 @@ a:hover {color: inherit; text-decoration: underline;}
     display:block;
     z-index:3;
     text-indent: 9999px;
-    background: rgba(0,0,0, .7);
+    background: rgba(0,0,0,.7);
     top: 0;
 }
-
+.slick-prev:hover:after, .slick-next:hover:after {
+      background: rgba(0,0,0, .75);
+}
 .slick-prev,
 .slick-next
 {   
