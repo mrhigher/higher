@@ -204,12 +204,19 @@ a:hover {color: inherit; text-decoration: underline;}
     z-index:3;
     text-indent: 9999px;
     background: rgba(0,0,0, .7);
-    top:50%; 
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    
+    top: 0;
 }
+
+.slick-prev,
+.slick-next
+{   
+    top: 0;
+    margin-top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
 .slick-prev:after {
     left: -7px;
 }
@@ -720,3 +727,8 @@ footer.center {
         width: 90px;
     }
 }
+
+
+
+
+
