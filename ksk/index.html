@@ -253,12 +253,32 @@
 <script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){ 
-         var slick = $('.slick_slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            variableWidth: true,
-        });
+                 /* slick_slider */
+            var slick = $('.slick_slider').on('init',function() {
+                $('.slick_slider').css('opacity','0');
+            }).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: true,
+                lazyLoad: 'progressive',
+                speed:1000,
+            });
+
+            var images = $('.slick_slider').find('img');
+            var loadedImgNum = 0;
+            images.on('load', function(){
+                loadedImgNum += 1;
+                if (loadedImgNum == images.length) {
+                    setTimeout(function(){
+
+                        $('.slick-next,.slick-prev').addClass('vis');
+                    }, 300);
+                    $('.slick_slider').css('opacity','1');
+                }
+
+            });
+            /* slick_slider end */
         
         $('.to_top').click(to_top);
         
