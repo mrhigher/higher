@@ -1,16 +1,145 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>{KSK}</title>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<link rel="stylesheet" href="option/css/style_site.css" type="text/css">
-	<link href="option/css/style_css_php.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="option/css/fonts/style.css" type="text/css">
-	<link rel="stylesheet" href="themes/css/slick.css" type="text/css">
-	<link rel="stylesheet" href="themes/css/slick-theme.css" type="text/css">
-	<link rel="stylesheet" href="themes/css/style_custom1.css" type="text/css">
-	<script src="option/js/jquery-1.11.3.min.js"></script>
-    
+    <title>{KCK}</title>
+    <meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+    <link rel="stylesheet" href="option/css/style_site.css" type="text/css">
+    <link href="option/css/style_css_php.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="option/css/fonts/style.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/style_custom1.css" type="text/css">
+    <script src="option/js/jquery-1.11.3.min.js"></script>
+
+
+    <script src="themes/js/slick.min.js"></script>
+    <script src="themes/js/jquery.mask.js"></script>
+    <script src="themes/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            /* slick_slider */
+
+
+            var slick = $('.slick_slider').on('init',function() {
+                $('.slick_slider').css('opacity','0');
+                $('button.slick-prev').before('<span class="prevb mbbefore"></span>');
+                $('button.slick-next').before('<span class="nextb mbbefore"></span>');
+
+                $('button.slick-prev').after('<span class="prevb mbafter"></span>');
+                $('button.slick-next').after('<span class="nextb mbafter"></span>');
+
+
+
+
+                var setbw = function() {
+                var  w = $(document).outerWidth(), mid = $('.center').outerWidth();
+                var wWrap =  parseInt($('.wrapper').css('max-width'));
+                   if (w >= wWrap) {
+                       w = 1920
+                    }
+                    var psize = (w - mid) / 2  ;
+                    $('button.slick-prev, button.slick-next').width(psize + 'px');
+                    $('.prevb.mbafter, .nextb.mbafter').width(psize + 'px');
+
+                    $('.prevb.mbbefore').css('left', psize - 28 + 'px');
+                    $('.nextb.mbbefore').css('right', psize - 28 +'px')
+
+                };
+                setbw()
+
+                $(window).on('resize orientationchange', function() {
+                    setbw();
+                })
+
+
+
+            }).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: true,
+                lazyLoad: 'progressive',
+                speed:1000
+            });
+
+            $('.prevb.mbbefore').click(function(){
+                $('.slick_slider').slick('slickPrev');
+            });
+            $('.nextb.mbbefore').click(function() {
+                $('.slick_slider').slick('slickNext');
+            });
+
+            var images = $('.slick_slider').find('img');
+
+            var loadedImgNum = 0;
+            images.on('load', function(){
+                loadedImgNum += 1;
+                if (loadedImgNum == images.length) {
+                    setTimeout(function(){
+                        $('.prevb.mbafter, .nextb.mbafter').addClass('vis');
+                    }, 300);
+                    $('.slick_slider').css('opacity','1');
+                }
+
+            });
+            /* slick_slider end */
+
+
+
+
+            $('.to_top').click(to_top);
+
+            // matchHeight
+
+            $('.name_work').matchHeight();
+
+            // mask
+
+            $('.for_mask').mask('+7 (000) 000-00-00');
+        });
+
+        document.onscroll = my_func;
+        function my_func() {
+            var sc = jQuery(document).scrollTop();
+            if(sc > 1000 && jQuery('.to_top').css('display') != 'block') {
+                $('.to_top').css('display', 'block');
+                block_in(0.1, $('.to_top'));
+            }
+            else if(sc < 1000 && jQuery('.to_top').css('display') != 'none') {
+                block_out($('.to_top').css('opacity'), $('.to_top'));
+            }
+        }
+        function block_in(op, elem) {
+            elem.css('opacity', op);
+            op += 0.1;
+            if(op < 1) {
+                setTimeout(function () {block_in(op,elem)},100);
+            }
+        }
+        function block_out(op, elem) {
+            elem.css({'opacity':op});
+            op -= 0.1;
+            if(op > 0) {
+                setTimeout(function () {block_out(op,elem)},100);
+            }
+            else {
+                $('.to_top').css({'display':'none'});
+            }
+        }
+
+        function to_top() {
+            var root = jQuery(document);
+            var scrol = root.scrollTop();
+            scrol -= 20;
+            root.scrollTop(scrol);
+            if(scrol > 0) {
+                setTimeout(to_top, 1);
+            }
+        }
+
+
+    </script>
+
 </head>
 <body>
 <!-- wrapper -->
@@ -25,12 +154,12 @@
     <nav class="menu_main">
         <div class="center">
             <ul class="clearfix">
-                <li><a href="#">Рћ РєРѕРјРїР°РЅРёРё</a></li>
-                <li><a href="#">РЈРЎР›РЈР“Р</a></li>
-                <li><a href="#">РђР Р•РќР”Рђ РЎРџР•Р¦РўР•РҐРќРРљР</a></li>
-                <li><a href="#">РєРћРќРўРђРљРўР«</a></li>
-                <li><a href="#">РєР°СЂСЊРµСЂР°</a></li>
-                <li><a href="#">РљРћРќРўРђРљРўР«</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">УСЛУГИ</a></li>
+                <li><a href="#">АРЕНДА СПЕЦТЕХНИКИ</a></li>
+                <li><a href="#">кОНТАКТЫ</a></li>
+                <li><a href="#">карьера</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
         </div>
     </nav>
@@ -38,31 +167,37 @@
     <div class="wrap_slider" >
         <!-- slick_slider -->
         <div class="slick_slider">
-            <div>   
+            <div>
                 <div class="slider_txt">
                     <div class="slider_txt_1">
-                       РїСЂРѕРјС‹С€Р»РµРЅРЅРѕРµ<br />
-                        СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ
+                        промышленное<br />
+                        строительство
                     </div>
                 </div>
+                <div class="a-slide">
                 <img src="file/i_pic/slide_1.jpg" alt="" />
+                </div>
             </div>
             <div>
                 <div class="slider_txt">
                     <div class="slider_txt_1 slider_txt_2">
-                       РїРµСЂРµРІРѕР·РєР° СЃРІРµС‚Р»С‹С…<br />
-                        РЅРµС„С‚РµРїСЂРѕРґСѓРєС‚РѕРІ
+                        перевозка светлых<br />
+                        нефтепродуктов
                     </div>
                 </div>
+                <div class="a-slide">
                 <img src="file/i_pic/slide_2.jpg" alt="" />
+                 </div>
             </div>
             <div>
                 <div class="slider_txt">
                     <div class="slider_txt_1 slider_txt_3">
-                       РїРµСЂРµРІРѕР·РєР° РЅРµС„С‚Рё
+                        перевозка нефти
                     </div>
                 </div>
+                <div class="a-slide">
                 <img src="file/i_pic/slide_3.jpg" alt="" />
+                </div>
             </div>
         </div><!-- END slick_slider -->
     </div><!-- END wrap_slider -->
@@ -70,28 +205,28 @@
     <div class="block_1 center">
         <ul class="ul_1 clearfix">
             <li class="ico_4">
-                <a href="#">СЃСЂРѕ<br /> 
-                    РќРђ РЎРўР РћРРўР•Р›Р¬РќР«Р•<br />
-                    Р РђР‘РћРўР«</a>
+                <a href="#">сро<br />
+                    НА СТРОИТЕЛЬНЫЕ<br />
+                    РАБОТЫ</a>
             </li>
             <li class="ico_5">
-                <a href="#">300<br /> 
-                    Р•Р”РРќРР¦<br />
-                    РЎРџР•Р¦РўР•РҐРќРРљР</a>
+                <a href="#">300<br />
+                    ЕДИНИЦ<br />
+                    СПЕЦТЕХНИКИ</a>
             </li>
             <li class="ico_6">
-                <a href="#">Р’РЎРЇ Р РћРЎРЎРРЇ<br />
-                    Р“Р•РћР“Р РђР¤РРЇ<br />
-                    Р РђР‘РћРў РљРћРњРџРђРќРР</a>
+                <a href="#">ВСЯ РОССИЯ<br />
+                    ГЕОГРАФИЯ<br />
+                    РАБОТ КОМПАНИИ</a>
             </li>
             <li class="ico_7">
                 <a href="file/#">500<br />
-                    РљР’РђР›РР¤РР¦РР РћР’РђРќРќР«РҐ<br />
-                    РЎРћРўР РЈР”РќРРљРђ</a>
+                    КВАЛИФИЦИРОВАННЫХ<br />
+                    СОТРУДНИКА</a>
             </li>
         </ul>
     </div><!-- END block_1 -->
-    <h2 class="title_1">СѓСЃР»СѓРіРё РєРѕРјРїР°РЅРёРё</h2>
+    <h2 class="title_1">услуги компании</h2>
     <!-- block_2 -->
     <div class="block_2 center clearfix">
         <div>
@@ -99,7 +234,7 @@
             <div class="for_bg"></div>
             <div class="wrap_for_center">
                 <div class="centered descript_1">
-                    <a href="#">РїСЂРѕРјС‹С€Р»РµРЅРЅРѕРµ СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ</a>
+                    <a href="#">промышленное строительство</a>
                 </div>
             </div>
         </div>
@@ -108,7 +243,7 @@
             <div class="for_bg"></div>
             <div class="wrap_for_center">
                 <div class="centered descript_1">
-                    <a href="#">РїРµСЂРµРІРѕР·РєР° РЅРµС„С‚Рё</a>
+                    <a href="#">перевозка нефти</a>
                 </div>
             </div>
         </div>
@@ -117,9 +252,9 @@
             <div class="for_bg"></div>
             <div class="wrap_for_center">
                 <div class="centered descript_1">
-                    <a href="#">РїРµСЂРµРІРѕР·РєР°<br />
-                    СЃРІРµС‚Р»С‹С…<br />
-                    РЅРµС„С‚РµРїСЂРѕРґСѓРєС‚РѕРІ</a>
+                    <a href="#">перевозка<br />
+                        светлых<br />
+                        нефтепродуктов</a>
                 </div>
             </div>
         </div>
@@ -128,7 +263,7 @@
             <div class="for_bg"></div>
             <div class="wrap_for_center">
                 <div class="centered descript_1">
-                    <a href="#">Р°СЂРµРЅРґР°<br /> СЃРїРµС†С‚РµС…РЅРёРєРё</a>
+                    <a href="#">аренда<br /> спецтехники</a>
                 </div>
             </div>
         </div>
@@ -137,17 +272,17 @@
             <div class="for_bg"></div>
             <div class="wrap_for_center">
                 <div class="centered descript_1">
-                    <a href="#">РЎРµСЂРІРёСЃРЅРѕРµ<br /> 
-                    РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ<br />
-                    РЅРµС„С‚РµРіР°Р·РѕРІРѕРіРѕ<br />
-                    РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ</a>
+                    <a href="#">Сервисное<br />
+                        обслуживание<br />
+                        нефтегазового<br />
+                        оборудования</a>
                 </div>
             </div>
         </div>
         <div>
             <div class="wrap_for_center full">
                 <div class="centered descript_1">
-                    <a href="#">Рћ РєРѕРјРїР°РЅРёРё</a>
+                    <a href="#">О компании</a>
                 </div>
             </div>
         </div>
@@ -156,24 +291,35 @@
     <div class="myform">
         <div class="center clearfix">
             <div class="block_form right">
-                <p class="p_1">РҐРѕС‚РёС‚Рµ РѕР±СЃСѓРґРёС‚СЊ РїСЂРѕРµРєС‚?</p>
-                <p class="p_1 color_blue margin_1">РјС‹ РІСЃРµРіРґР° СЂР°РґС‹ РѕС‚РІРµС‚РёС‚СЊ РЅР° РІР°С€Рё РІРѕРїСЂРѕСЃС‹</p>
+                <p class="p_1">Хотите обсудить проект?</p>
+                <p class="p_1 color_blue margin_1">мы всегда рады ответить на ваши вопросы</p>
                 <form action="#">
-                    <input class="style_input" type="text" placeholder="Р’Р°С€Рµ РёРјСЏ" />
-                    <input class="style_input for_mask" type="text" placeholder="РљРѕРЅС‚Р°РєС‚РЅС‹Р№ С‚РµР»РµС„РѕРЅ" />
-                    <input class="style_input" type="text" placeholder="- РІС‹Р±РµСЂРёС‚Рµ С‚РµРјСѓ РІРѕРїСЂРѕСЃР° - " />
-                    <a href="#" class="submit_1">РћС‚РїСЂР°РІРёС‚СЊ</a>
+                    <input class="style_input" type="text" placeholder="Ваше имя" />
+                    <input class="style_input for_mask" type="text" placeholder="Контактный телефон" />
+
+                    <input class="style_input" type="text" placeholder="- выберите тему вопроса - " />
+
+                    <div class="styled-select slate">
+                        <select>
+                            <option>- выберите тему вопроса - </option>
+                            <option>The second option</option>
+                            <option>The third option</option>
+                        </select>
+                    </div>
+
+
+                    <a href="#" class="submit_1">Отправить</a>
                 </form>
             </div>
         </div>
     </div><!-- END myform -->
-    <h2 class="title_1">РѕР±СЉРµРєС‚С‹ РєРѕРјРїР°РЅРёРё</h2>
+    <h2 class="title_1">объекты компании</h2>
     <!-- block_3 -->
     <div class="block_3 center clearfix">
         <div class="block_3_1 left">
             <a class="link_img container_1" href="#"><img class="image" src="file/i_pic/img_6.jpg" alt="" /></a>
-            <a class="name_work" href="#">Р—РµРјР»СЏРЅС‹Рµ СЂР°Р±РѕС‚С‹ РЅР° РѕР»РёРјРїРёР№СЃРєРёС… РѕР±СЉРµРєС‚Р°С…</a>
-            <p class="name_1">РЎРѕС‡Рё</p>
+            <a class="name_work" href="#">Земляные работы на олимпийских объектах</a>
+            <p class="name_1">Сочи</p>
         </div>
         <!-- block_3_2 -->
         <div class="block_3_2 right clearfix">
@@ -181,33 +327,33 @@
                 <a href="#" class="link_img container_2">
                     <img class="image" src="file/i_pic/img_7.jpg" alt="" />
                 </a>
-                <a href="#" class="name_work">Р—Р°РІРѕРґ вЂњРђРњРњРѕРЅРёР№вЂќ</a>
-                <p class="name_1">РњРµРЅРґРµР»РµРµРµРІСЃРє</p>
+                <a href="#" class="name_work">Завод “АММоний”</a>
+                <p class="name_1">Менделееевск</p>
             </div>
             <div>
                 <a href="#" class="link_img container_2">
                     <img class="image" src="file/i_pic/img_8.jpg" alt="" />
                 </a>
-                <a href="#" class="name_work">РЎР РўРћ - С‚РѕСЂР¶РѕРє РІРґРѕР»СЊС‚СЂР°СЃСЃРѕРІС‹Р№ РїСЂРѕРµР·Рґ</a>
-                <p class="name_1">Р РѕСЃСЃРёСЏ</p>
+                <a href="#" class="name_work">СРТО - торжок вдольтрассовый проезд</a>
+                <p class="name_1">Россия</p>
             </div>
             <div>
                 <a href="#" class="link_img container_2">
                     <img class="image" src="file/i_pic/img_9.jpg" alt="" />
                 </a>
-                <a href="#" class="name_work">Р·Р°РІРѕРґ С‚Р°РЅРµРєРѕ</a>
-                <p class="name_1">РќРёР¶РЅРµРєР°РјСЃРє</p>
+                <a href="#" class="name_work">завод танеко</a>
+                <p class="name_1">Нижнекамск</p>
             </div>
             <div>
                 <a href="#" class="link_img container_2">
                     <img class="image" src="file/i_pic/img_10.jpg" alt="" />
                 </a>
-                <a href="#" class="name_work">Р¤РµРґРµСЂР°Р»СЊРЅР°СЏ РґРѕСЂРѕРіР° вЂњРљРѕР»Р°вЂќ</a>
-                <p class="name_1">Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ</p>
+                <a href="#" class="name_work">Федеральная дорога “Кола”</a>
+                <p class="name_1">Республика Карелия</p>
             </div>
         </div><!-- END block_3_2 -->
     </div><!-- END block_3 -->
-    <h2 class="title_1">РќР°С€Рё Р·Р°РєР°Р·С‡РёРєРё</h2>
+    <h2 class="title_1">Наши заказчики</h2>
     <!-- block_4 -->
     <div class="block_4 center">
         <ul class="ul_2">
@@ -233,106 +379,21 @@
     </div><!-- END block_4 -->
     <nav class="center menu_bottom">
         <ul class="clearfix">
-            <li><a href="#">Рћ РєРѕРјРїР°РЅРёРё</a></li>
-            <li><a href="#">РЈРЎР›РЈР“Р</a></li>
-            <li><a href="#">РђР Р•РќР”Рђ РЎРџР•Р¦РўР•РҐРќРРљР</a></li>
-            <li><a href="#">РєРћРќРўРђРљРўР«</a></li>
-            <li><a href="#">РєР°СЂСЊРµСЂР°</a></li>
-            <li><a href="#">РљРћРќРўРђРљРўР«</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">УСЛУГИ</a></li>
+            <li><a href="#">АРЕНДА СПЕЦТЕХНИКИ</a></li>
+            <li><a href="#">кОНТАКТЫ</a></li>
+            <li><a href="#">карьера</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
     </nav>
     <footer class="center">
-        <p class="copyright">&copy; 2015 РљР°РјСЃРєР°СЏ СЃС‚СЂРѕРёС‚РµР»СЊРЅР°СЏ РєРѕРјРїР°РЅРёСЏ</p>
-        <p class="descript_2">РћР±СЂР°С‰Р°РµРј РІР°С€Рµ РІРЅРёРјР°РЅРёРµ РЅР° С‚Рѕ, С‡С‚Рѕ РґР°РЅРЅС‹Р№ РРЅС‚РµСЂРЅРµС‚-СЃР°Р№С‚ РЅРѕСЃРёС‚ РёСЃРєР»СЋС‡РёС‚РµР»СЊРЅРѕ<br /> РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Р№ С…Р°СЂР°РєС‚РµСЂ Рё РЅРё РїСЂРё РєР°РєРёС… СѓСЃР»РѕРІРёСЏС… РЅРµ СЏРІР»СЏРµС‚СЃСЏ РїСѓР±Р»РёС‡РЅРѕР№<br /> РѕС„РµСЂС‚РѕР№, РѕРїСЂРµРґРµР»СЏРµРјРѕР№ РїРѕР»РѕР¶РµРЅРёСЏРјРё РЎС‚Р°С‚СЊРё 437 Р“СЂР°Р¶РґР°РЅСЃРєРѕРіРѕ РєРѕРґРµРєСЃР° Р Р¤</p>
+        <p class="copyright">&copy; 2015 Камская строительная компания</p>
+        <p class="descript_2">Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно<br /> информационный характер и ни при каких условиях не является публичной<br /> офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ</p>
     </footer>
     <img class="to_top" src="themes/img/to_top.png" alt="" />
 </div><!-- END wrapper -->
-<script src="themes/js/slick.min.js"></script>
-<script src="themes/js/jquery.mask.js"></script>
-<script src="themes/js/jquery.matchHeight-min.js"></script>
-<script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){ 
-                 /* slick_slider */
-            var slick = $('.slick_slider').on('init',function() {
-                $('.slick_slider').css('opacity','0');
-            }).slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerMode: true,
-                variableWidth: true,
-                lazyLoad: 'progressive',
-                speed:1000,
-            });
 
-            var images = $('.slick_slider').find('img');
-            var loadedImgNum = 0;
-            images.on('load', function(){
-                loadedImgNum += 1;
-                if (loadedImgNum == images.length) {
-                    setTimeout(function(){
-
-                        $('.slick-next,.slick-prev').addClass('vis');
-                    }, 300);
-                    $('.slick_slider').css('opacity','1');
-                }
-
-            });
-            /* slick_slider end */
-        
-        $('.to_top').click(to_top);
-        
-        // matchHeight
-        
-        $('.name_work').matchHeight();
-        
-        // mask
-        $('.for_mask').mask('+7 (000) 000-00-00');
-    });
-    
-    document.onscroll = my_func;
-    function my_func() {
-        var sc = jQuery(document).scrollTop();
-        if(sc > 1000 && jQuery('.to_top').css('display') != 'block') {
-            $('.to_top').css('display', 'block');
-            block_in(0.1, $('.to_top'));
-        }
-        else if(sc < 1000 && jQuery('.to_top').css('display') != 'none') {
-            block_out($('.to_top').css('opacity'), $('.to_top'));
-        }
-    }
-    function block_in(op, elem) {
-        elem.css('opacity', op);
-        op += 0.1;
-        if(op < 1) {
-            setTimeout(function () {block_in(op,elem)},100);
-        }
-    }
-    function block_out(op, elem) {
-        elem.css({'opacity':op});
-        op -= 0.1;
-        if(op > 0) {
-            setTimeout(function () {block_out(op,elem)},100);		
-        }
-        else {
-            $('.to_top').css({'display':'none'});
-        }
-    }
-    
-    function to_top() {
-        var root = jQuery(document);
-        var scrol = root.scrollTop();	
-        scrol -= 20;
-        root.scrollTop(scrol);
-        if(scrol > 0) {
-            setTimeout(to_top, 1);
-        }
-    }
-    
-	$(function(){
-		//$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
-}); 
-</script>
 
 </body>
 </html>
