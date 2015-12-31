@@ -157,3 +157,149 @@ header.center {
     text-align: center;
     text-transform: uppercase;
 }
+
+.gray {
+    background: url(../img/gray_bg.jpg) repeat;
+}
+
+/*========================== slick-slider ==========================*/
+
+.wrap_slider .slick-slider {
+    margin-bottom: 0;
+}
+.slick-next,.slick-prev {
+opacity:0;
+    background: rgba(0,0,0, .7);
+}
+.slick-next.vis,.slick-prev.vis, .prevb.mbafter.vis, .nextb.mbafter.vis  {
+    opacity:1;
+}
+.slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+    transition: all 0.2s;
+    height: 376px;
+    z-index: 5;
+  }
+.slick-next:hover, .slick-prev:hover {
+    background-color:transparent;
+    background-color:rgba(0,0,0,.8);
+}
+.slick-prev {
+    left: -0px;
+}
+.slick-next {
+    right: 0;
+}
+.prevb.mbbefore, .nextb.mbbefore {
+    background: url(../img/slider_arrow.png) no-repeat;
+    content:'';
+    position:absolute;
+    width: 57px;
+    height: 57px;
+    display:block;
+    z-index:443;
+    text-indent: 9999px;
+    margin-top:-29px;
+    cursor: pointer;
+
+}
+
+.slick-prev:before, .slick-next:before {
+    content:'';
+}
+.prevb.mbbefore {
+    top:50%;
+    left:19%;
+}
+.nextb.mbbefore {
+    top:50%;
+    right:19%;
+}
+.slick-prev:hover +  .prevb.mbafter,  .slick-next:hover +  .nextb.mbafter  {
+
+    background:rgba(0,0,0, .8);
+}
+ .prevb.mbafter, .nextb.mbafter  {
+    content:'';
+    position:absolute;
+    width: 86px;
+    height: 376px;
+    display:block;
+    z-index:3;
+    text-indent: 9999px;
+    background: rgba(0,0,0, .7);
+    top: 0;
+}
+.slick-prev:after, .slick-next:after {
+    content:'';
+}
+.prevb.mbafter {
+    left:0px;
+}
+.nextb.mbafter {
+ right:0px;
+}
+.prevb.mbafter, .nextb.mbafter {
+    opacity:0;
+}
+.prevb.mbbefore {
+    background-position: 0 0;
+}
+.nextb.mbbefore  {
+    background-position: -57px 0;
+}
+.slick-prev:hover:after, .slick-next:hover:after {
+    background: rgba(0,0,0, .75);
+}
+.slick-next:hover + .prevb.mbafter {
+    background: rgba(0,0,0, .75);
+}
+.slick-prev,
+.slick-next
+{
+    top: 0;
+    margin-top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+.slick-prev:after {
+    left: -7px;
+}
+.slick-next:after {
+    right: -7px;
+
+}
+/*slick fix end :after */
+
+.slick-prev:before{
+    background-position: 0 0;
+    right: 3px;
+}
+.slick-next:before   {
+    background-position: -57px 0;
+    left: 3px;
+}
+
+.slick-slide {
+    position: relative;
+}
+
+/* END slick */
+
+.h2 {
+    color: #2e2c31;
+    font-family: 'PFDinTextCondProRegular';
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.products a {
+    display: block;
+    float: left;
+}
+
+.products a img {
+    display: block;
+}

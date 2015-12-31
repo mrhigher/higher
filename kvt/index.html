@@ -48,6 +48,52 @@
     <div class="center_2 block_1">
         вывески  /  рекламные конструкции  /  интерьерное оформление
     </div>
+    <!-- gray -->
+    <div class="gray">
+        <div class="center_2">
+            <!-- wrap_slider -->
+            <div class="wrap_slider" >
+                <!-- slick_slider -->
+                <div class="slick_slider">
+                    <div>
+                        <img src="file/i_pic/slide_1.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="file/i_pic/slide_2.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="file/i_pic/slide_3.jpg" alt="" />
+                    </div>
+                </div><!-- END slick_slider -->
+            </div><!-- END wrap_slider -->
+            <h2 class="h2">Мы умеем делать / наша продукция</h2>
+            <div class="products">
+                <a href="#">
+                    <img src="file/i_pic/products_1.jpg" alt="" />
+                    <span class="pr_descript">Объемные буквы</span>
+                </a>
+                <a href="#">
+                    <img src="file/i_pic/products_2.jpg" alt="" />
+                    <span class="pr_descript">Световые короба</span>
+                </a>
+                <a href="#">
+                    <img src="file/i_pic/products_3.jpg" alt="" />
+                    <span class="pr_descript">Рекламные конструкции</span>
+                </a>
+                <a href="#">
+                    <img src="file/i_pic/products_4.jpg" alt="" />
+                    <span class="pr_descript">Брендмауэры</span>
+                </a>
+                <a href="#">
+                    <img src="file/i_pic/products_5.jpg" alt="" />
+                    <span class="pr_descript">Интерьерное оформление</span>
+                </a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div><!-- END gray -->
 </div><!-- END wrapper -->
 <script src="themes/js/slick.min.js"></script>
 <script src="themes/js/jquery.matchHeight-min.js"></script>
@@ -57,13 +103,46 @@
             /* slick_slider */
             var slick = $('.slick_slider').on('init',function() {
                 $('.slick_slider').css('opacity','0');
+                $('button.slick-prev').before('<span class="prevb mbbefore"></span>');
+                $('button.slick-next').before('<span class="nextb mbbefore"></span>');
+
+                $('button.slick-prev').after('<span class="prevb mbafter"></span>');
+                $('button.slick-next').after('<span class="nextb mbafter"></span>');
+
+                var setbw = function() {
+                var  w = $(document).outerWidth(), mid = $('.center').outerWidth();
+                var wWrap =  parseInt($('.wrapper').css('max-width'));
+                   if (w >= wWrap) {
+                       w = 1920
+                    }
+                    var psize = (w - mid) / 2  ;
+                    $('button.slick-prev, button.slick-next').width(psize + 'px');
+                    $('.prevb.mbafter, .nextb.mbafter').width(psize + 'px');
+
+                    $('.prevb.mbbefore').css('left', psize - 28 + 'px');
+                    $('.nextb.mbbefore').css('right', psize - 28 +'px')
+
+                };
+                setbw()
+
+                $(window).on('resize orientationchange', function() {
+                    setbw();
+                })
+
             }).slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
                 variableWidth: true,
                 lazyLoad: 'progressive',
-                speed:1000,
+                speed:1000
+            });
+
+            $('.prevb.mbbefore').click(function(){
+                $('.slick_slider').slick('slickPrev');
+            });
+            $('.nextb.mbbefore').click(function() {
+                $('.slick_slider').slick('slickNext');
             });
 
             var images = $('.slick_slider').find('img');
@@ -72,64 +151,17 @@
                 loadedImgNum += 1;
                 if (loadedImgNum == images.length) {
                     setTimeout(function(){
-
-                        $('.slick-next,.slick-prev').addClass('vis');
+                        $('.prevb.mbafter, .nextb.mbafter').addClass('vis');
                     }, 300);
                     $('.slick_slider').css('opacity','1');
                 }
-
             });
-            /* slick_slider end */
-        
-        $('.to_top').click(to_top);
-        
-        // matchHeight
-        
-        $('.name_work').matchHeight();
-        
+            /* slick_slider end */        
     });
     
-    document.onscroll = my_func;
-    function my_func() {
-        var sc = jQuery(document).scrollTop();
-        if(sc > 1000 && jQuery('.to_top').css('display') != 'block') {
-            $('.to_top').css('display', 'block');
-            block_in(0.1, $('.to_top'));
-        }
-        else if(sc < 1000 && jQuery('.to_top').css('display') != 'none') {
-            block_out($('.to_top').css('opacity'), $('.to_top'));
-        }
-    }
-    function block_in(op, elem) {
-        elem.css('opacity', op);
-        op += 0.1;
-        if(op < 1) {
-            setTimeout(function () {block_in(op,elem)},100);
-        }
-    }
-    function block_out(op, elem) {
-        elem.css({'opacity':op});
-        op -= 0.1;
-        if(op > 0) {
-            setTimeout(function () {block_out(op,elem)},100);		
-        }
-        else {
-            $('.to_top').css({'display':'none'});
-        }
-    }
-    
-    function to_top() {
-        var root = jQuery(document);
-        var scrol = root.scrollTop();	
-        scrol -= 20;
-        root.scrollTop(scrol);
-        if(scrol > 0) {
-            setTimeout(to_top, 1);
-        }
-    }
     
 	$(function(){
-		$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
+		//$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 
