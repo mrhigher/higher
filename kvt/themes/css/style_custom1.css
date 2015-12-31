@@ -16,6 +16,7 @@
 }
 
 .wrapper {
+    background: #fff;
     margin: 0 auto;
     max-width: 1920px;
 }
@@ -38,6 +39,10 @@
     width: 1280px;
 }
 
+header.center {
+    margin-bottom: 20px;
+}
+
 .logo {
     display: block;
     margin: 17px 0 0 35px;
@@ -46,6 +51,7 @@
 .header_right {
     margin: 36px 0 0 47px;
     position: relative;
+    width: 765px;
 }
 
 .header_menu li {
@@ -91,4 +97,63 @@
 
 .ico_1 span:nth-child(3) {
     height: 3px;
+}
+
+.phone {
+    margin: 17px 0 0 0;
+}
+
+.number_phone {
+    background: url(../img/ico_1.png) no-repeat left center;
+    color: #2e2c31;
+    display: block;
+    font-family: 'PFDinTextCondProRegular';
+    font-size: 27px;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 24px;
+}
+
+.number_phone .ml {
+    margin: 0 0 0 16px;
+}
+
+.email {
+    background: url(../img/ico_2.png) no-repeat left center;
+    color: #2e2c31;
+    display: block;
+    font-family: 'PFDinTextCondProRegular';
+    font-size: 18px;
+    padding: 0 0 0 26px;
+}
+
+.block_btn {
+    margin: 14px 29px 0 0;
+}
+
+.btn {
+    background-color: #004769;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: 'PFDinTextCondProRegular';
+    font-size: 16px;
+    height: 31px;
+    line-height: 31px;
+    margin: 0 0 4px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 184px;
+}
+
+.block_1 {
+    background: #d9e007;
+    color: #003a58;
+    font-family: 'PFDinTextCondProRegular';
+    font-size: 34px;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
 }
