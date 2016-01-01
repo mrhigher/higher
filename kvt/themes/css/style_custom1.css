@@ -347,6 +347,7 @@ opacity:0;
 
 .block_2 {
     clear: both;
+    margin: 0 0 270px 0;
     position: relative;
 }
 
@@ -377,6 +378,7 @@ opacity:0;
     font-family: "Segoe Print";
     font-size: 16px;
     line-height: 1.3;
+    margin: 149px 86px 0 0;
     padding: 64px 0 0 60px;
     position: relative;
     z-index: 5;
@@ -395,7 +397,7 @@ opacity:0;
 .form {
     background: url(../img/pl_bg.jpg) no-repeat;
     margin: 0 0 0 255px;
-    padding: 106px 0 0 203px;
+    padding: 106px 0 145px 203px;
     position: absolute;
     top: 79px;
     width: 736px;
@@ -407,11 +409,18 @@ opacity:0;
     border-radius: 5px;
     color: #54666f;
     display: inline-block;
+    font-family: 'PT Sans';
     font-size: 13px;
     height: 43px;
     margin: 0 0 9px 0;
+    padding: 0 0 0 15px;
     width: 303px;
 }
+
+.form ::-webkit-input-placeholder {color:#54666f;}
+.form ::-moz-placeholder          {color:#54666f;}/* Firefox 19+ */
+.form :-moz-placeholder           {color:#54666f;}/* Firefox 18- */
+.form :-ms-input-placeholder      {color:#54666f;}
 
 .form input[type=submit] {
     background-color: #004161;
@@ -421,6 +430,7 @@ opacity:0;
     font-family: 'PFDinTextCondProRegular';
     font-size: 18px;
     height: 52px;
+    margin: 13px 0 0 53px;
     width: 301px;
 }
 
@@ -437,4 +447,58 @@ opacity:0;
 .ico_7 {
     background: url(../img/ico_7.png) no-repeat 1px 11px;
     padding: 0 0 0 51px;
+}
+
+.block_3 {
+    background: url(../img/gray_bg.jpg) repeat;
+    padding: 51px 0 0 0;
+}
+
+.block_3 .ul_1 {
+    margin: 0 0 0 29px;
+}
+
+.ul_1 > li {
+    float: left;
+    font-family: 'PFDinTextCondProRegular';
+    width: 260px;
+}
+
+.ul_1 > li + li {
+    margin-left: 52px;
+}
+
+.ul_1 > li:first-child .descript_2 {
+    background: url(../img/ico_8.png) no-repeat left 3px;
+}
+
+.ul_1 > li:nth-child(2) .descript_2 {
+    background: url(../img/ico_9.png) no-repeat 10px 3px;
+    padding-left: 85px;
+}
+
+.ul_1 > li:nth-child(3) .descript_2 {
+    background: url(../img/ico_10.png) no-repeat 10px 3px;
+    padding-left: 85px;
+}
+
+.ul_1 > li:nth-child(4) .descript_2 {
+    background: url(../img/ico_11.png) no-repeat left 3px;
+}
+
+.descript_2 {
+    border-bottom: 1px solid rgba(0, 73, 106, .33);
+    color: #004161;
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 0 0 26px 0;
+    padding: 0 0 28px 78px;
+}
+
+.descript_3 {
+    color: #54666f;
+    display: block;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    line-height: 1.35;
 }
