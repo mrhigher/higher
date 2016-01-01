@@ -3,7 +3,6 @@
 <head>
 	<title>Квартет</title>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<link rel="stylesheet" href="option/css/style_site.css" type="text/css">
 	<link rel="stylesheet" href="themes/css/reset.css" type="text/css">
 	<link rel="stylesheet" href="option/css/fonts/style.css" type="text/css">
 	<link rel="stylesheet" href="themes/css/slick.css" type="text/css">
@@ -68,7 +67,7 @@
             </div><!-- END wrap_slider -->
             <h2 class="h2">Мы умеем делать / наша продукция</h2>
             <!-- products -->
-            <div class="products">
+            <div class="products clearfix">
                 <a href="#">
                     <img src="file/i_pic/products_1.jpg" alt="" />
                     <span class="pr_descript">Объемные буквы</span>
@@ -104,9 +103,34 @@
             </div><!-- END products -->
         </div>
     </div><!-- END gray -->
+    <!-- block_2 -->
+    <div class="block_2 center_2 clearfix">
+        <div class="block_2_1 left">
+            <span>Отправьте заявку<br>
+                на предварительный<br>
+                расчет</span>
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <div class="ico_5">
+                    <input type="text" placeholder="Ваше имя" />
+                </div>
+                <div class="ico_6">
+                    <input type="text" placeholder="Контактный телефон" />
+                </div>
+                <div class="ico_7">
+                    <input type="text" placeholder="Контактный е-майл" />
+                </div>
+                <input type="submit" value="Отправить" />
+            </form>
+        </div>
+        <div class="block_2_2 right">
+            <span>Мы перезвоним вам<br> 
+                в течении получаса!</span>
+        </div>
+    </div><!-- END block_2 -->
 </div><!-- END wrapper -->
 <script src="themes/js/slick.min.js"></script>
-<script src="themes/js/jquery.matchHeight-min.js"></script>
 <script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){ 
@@ -171,7 +195,7 @@
     
     
 	$(function(){
-		//$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
+		$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 
