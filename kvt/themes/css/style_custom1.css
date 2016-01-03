@@ -195,7 +195,7 @@ header.center {
 }
  .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
     transition: all 0.2s;
-    width: 30%;
+    width: 21px;
     height: 366px;
     z-index: 2;
 }
@@ -205,8 +205,9 @@ header.center {
 .slick-prev {
     left: -0px;
 }
-.slick-next {
+.slick-next, .slick-next:hover {
     right: 0;
+	width: 91px;
 }
 .slick-prev:before, .slick-next:before {
     content:'';
@@ -233,7 +234,8 @@ header.center {
 }
 
 .slick-dots {
-    margin: 0;
+    bottom: -22px;
+	margin: 0;
     padding: 0;
 }
 
