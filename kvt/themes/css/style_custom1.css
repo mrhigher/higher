@@ -513,6 +513,7 @@ header.center {
 .title_1 {
     font-family: 'PFDinTextCondProRegular';
     font-size: 32px;
+	font-weight: normal;
     margin: 0;
     padding: 0;
 }
