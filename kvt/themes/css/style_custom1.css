@@ -670,11 +670,23 @@ header.center {
 }
 
 .review span:before {
-    content: "&quot";
-    font-size: 48px;
+    background: url(../img/ico_12.png) no-repeat;
+    content: "";
+    height: 10px;
     position: absolute;
-    left: -10px;
-    top: 0;
+    left: -15px;
+    top: -20px;
+    width: 13px;
+}
+
+.review span:after {
+    background: url(../img/ico_12.png) no-repeat;
+    bottom: -25px;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: -19px;
+    width: 13px;
 }
 
 .review_txt {
