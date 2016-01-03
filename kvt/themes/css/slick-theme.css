@@ -116,9 +116,9 @@
 {
     position: absolute;
     z-index:33;
-    bottom: 18px;
+    bottom: -18px;
     display: block;
-    right:250px;
+    right:49%;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -129,7 +129,7 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 0 5px;
+    margin: 0 2px;
     padding: 0;
     cursor: pointer;
 }
@@ -144,18 +144,17 @@
     padding: 5px;
     cursor: pointer;
     color: transparent;
-    border: 0;
+    border: 1px solid #000;
     outline: none;
     background: transparent;
-    background:#000000;
+    border-radius:50%;
+    
 }
 .slick-dots li button:before {
     display:none;
-
-
 }
 .slick-dots li.slick-active  button {
-    background:#008fcc;
+    border:1px solid #d9e007;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
