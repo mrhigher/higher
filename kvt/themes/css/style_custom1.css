@@ -167,6 +167,7 @@ header.center {
 .gray {
     background: url(../img/gray_bg.jpg) repeat;
     height: 1040px;
+    min-width:1280px;
 }
 
 /*========================== slick-slider ==========================*/
@@ -175,20 +176,17 @@ header.center {
     margin-bottom: 0;
 }
 .slick-next,.slick-prev {
-opacity:0;
-    background: rgba(0,0,0, .7);
+    /*opacity:0;
+    background: rgba(0,0,0, .4); */
 }
-.slick-next.vis,.slick-prev.vis, .prevb.mbafter.vis, .nextb.mbafter.vis  {
-    opacity:1;
-}
-.slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+ .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
     transition: all 0.2s;
-    height: 376px;
-    z-index: 5;
-  }
+    width: 30%;
+    height: 366px;
+    z-index: 2;
+}
 .slick-next:hover, .slick-prev:hover {
-    background-color:transparent;
-    background-color:rgba(0,0,0,.8);
+   /* background-color:rgba(0,0,0,.5); */
 }
 .slick-prev {
     left: -0px;
@@ -196,69 +194,12 @@ opacity:0;
 .slick-next {
     right: 0;
 }
-.prevb.mbbefore, .nextb.mbbefore {
-    background: url(../img/slider_arrow.png) no-repeat;
-    content:'';
-    position:absolute;
-    width: 57px;
-    height: 57px;
-    display:block;
-    z-index:443;
-    text-indent: 9999px;
-    margin-top:-29px;
-    cursor: pointer;
-
-}
-
 .slick-prev:before, .slick-next:before {
     content:'';
 }
-.prevb.mbbefore {
-    top:50%;
-    left:19%;
-}
-.nextb.mbbefore {
-    top:50%;
-    right:19%;
-}
-.slick-prev:hover +  .prevb.mbafter,  .slick-next:hover +  .nextb.mbafter  {
 
-    background:rgba(0,0,0, .8);
-}
- .prevb.mbafter, .nextb.mbafter  {
-    content:'';
-    position:absolute;
-    width: 86px;
-    height: 376px;
-    display:block;
-    z-index:3;
-    text-indent: 9999px;
-    background: rgba(0,0,0, .7);
-    top: 0;
-}
 .slick-prev:after, .slick-next:after {
     content:'';
-}
-.prevb.mbafter {
-    left:0px;
-}
-.nextb.mbafter {
- right:0px;
-}
-.prevb.mbafter, .nextb.mbafter {
-    opacity:0;
-}
-.prevb.mbbefore {
-    background-position: 0 0;
-}
-.nextb.mbbefore  {
-    background-position: -57px 0;
-}
-.slick-prev:hover:after, .slick-next:hover:after {
-    background: rgba(0,0,0, .75);
-}
-.slick-next:hover + .prevb.mbafter {
-    background: rgba(0,0,0, .75);
 }
 .slick-prev,
 .slick-next
@@ -279,13 +220,21 @@ opacity:0;
 }
 /*slick fix end :after */
 
-.slick-prev:before{
-    background-position: 0 0;
-    right: 3px;
+
+.slick-prev:before, .slick-next:before {
+    background: url(../img/slick_slider_arrow.png) no-repeat;
+    cursor: pointer;
+    content: "";
+    height: 32px;
+    margin-top: -16px;
+    position: absolute;
+    text-indent: 9999px;
+    width: 18px;
+    z-index: 999;
+   
 }
-.slick-next:before   {
-    background-position: -57px 0;
-    left: 3px;
+.slick-next:before {
+    background-position:-18px 0px;
 }
 
 .slick-slide {
@@ -295,6 +244,8 @@ opacity:0;
 /* END slick */
 
 .wrap_slider {
+    width:1280px;
+    margin:0 auto;
     margin-bottom: 48px;
 }
 
@@ -347,7 +298,7 @@ opacity:0;
 
 .block_2 {
     clear: both;
-    margin: 0 0 270px 0;
+    margin: 0 auto 270px auto;
     position: relative;
 }
 
@@ -413,8 +364,15 @@ opacity:0;
     font-size: 13px;
     height: 43px;
     margin: 0 0 9px 0;
-    padding: 0 0 0 15px;
+    padding: 0 12px 0 12px;
     width: 303px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.form input[type=text]:focus {
+	outline: none;
+	border-color: #004161;
 }
 
 .form ::-webkit-input-placeholder {color:#54666f;}
@@ -432,6 +390,9 @@ opacity:0;
     height: 52px;
     margin: 13px 0 0 53px;
     width: 301px;
+}
+.form  .btn_submit.disabled, .form .btn_submit.disabled:hover {
+    cursor: default;
 }
 
 .ico_5 {
@@ -452,6 +413,7 @@ opacity:0;
 .block_3 {
     background: url(../img/gray_bg.jpg) repeat;
     padding: 51px 0 58px 0;
+    min-width:1280px;
 }
 
 .block_3 .ul_1 {
@@ -519,6 +481,7 @@ opacity:0;
     font-family: 'PFDinTextCondProRegular';
     padding: 42px 0 28px 0;
     text-align: center;
+    min-width:1280px;
 }
 
 .title_1 {
@@ -703,6 +666,7 @@ opacity:0;
     background: #002e49;
     color: #fff;
     padding: 0 0 77px 0;
+    min-width:1280px;
 }
 
 .footer .logo {

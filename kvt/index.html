@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="themes/css/slick.css" type="text/css">
 	<link rel="stylesheet" href="themes/css/slick-theme.css" type="text/css">
 	<link rel="stylesheet" href="themes/css/style_custom1.css" type="text/css">
-	<script src="option/js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <!-- wrapper -->
@@ -49,8 +48,8 @@
     </div>
     <!-- gray -->
     <div class="gray">
-        <div class="center_2">
-            <!-- wrap_slider -->
+        
+             <!-- wrap_slider -->
             <div class="wrap_slider" >
                 <!-- slick_slider -->
                 <div class="slick_slider">
@@ -65,6 +64,9 @@
                     </div>
                 </div><!-- END slick_slider -->
             </div><!-- END wrap_slider -->
+       
+        <div class="center_2">
+           
             <h2 class="h2">Мы умеем делать / наша продукция</h2>
             <!-- products -->
             <div class="products clearfix">
@@ -111,18 +113,19 @@
                 расчет</span>
         </div>
         <div class="form">
-            <form action="#" method="post">
+            <form class="rf" action="#" method="post">
                 <div class="ico_5">
-                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" class="rfield" placeholder="Ваше имя" />
                 </div>
                 <div class="ico_6">
-                    <input type="text" placeholder="Контактный телефон" />
+                    <input type="text" class="rfield phone_mask"   placeholder="Контактный телефон" />
                 </div>
                 <div class="ico_7">
-                    <input type="text" placeholder="Контактный е-майл" />
+                    <input type="text" class="rfield"  id="email" placeholder="Контактный е-майл" />
                 </div>
-                <input type="submit" value="Отправить" />
+                <input type="submit" class="btn_submit" value="Отправить" />
             </form>
+             
         </div>
         <div class="block_2_2 right">
             <span>Мы перезвоним вам<br> 
@@ -332,72 +335,37 @@
         </div>
     </footer>
 </div><!-- END wrapper -->
+<script src="option/js/jquery-1.11.3.min.js"></script>
 <script src="themes/js/slick.min.js"></script>
+<script src="themes/js/jquery.mask.js" type="text/javascript"></script>
+<script src="themes/check-form-field-jquery/required_fields.js"></script>
+
+
 <script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){ 
-            /* slick_slider */
-            var slick = $('.slick_slider').on('init',function() {
-                $('.slick_slider').css('opacity','0');
-                $('button.slick-prev').before('<span class="prevb mbbefore"></span>');
-                $('button.slick-next').before('<span class="nextb mbbefore"></span>');
+    $(function(){
+        
+     var slick = $('.slick_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        dots:true
+    });
+            /* slick_slider end */
+            
+        $('.phone_mask').mask('+7 (000) 000-00-00');
 
-                $('button.slick-prev').after('<span class="prevb mbafter"></span>');
-                $('button.slick-next').after('<span class="nextb mbafter"></span>');
-
-                var setbw = function() {
-                var  w = $(document).outerWidth(), mid = $('.center').outerWidth();
-                var wWrap =  parseInt($('.wrapper').css('max-width'));
-                   if (w >= wWrap) {
-                       w = 1920
-                    }
-                    var psize = (w - mid) / 2  ;
-                    $('button.slick-prev, button.slick-next').width(psize + 'px');
-                    $('.prevb.mbafter, .nextb.mbafter').width(psize + 'px');
-
-                    $('.prevb.mbbefore').css('left', psize - 28 + 'px');
-                    $('.nextb.mbbefore').css('right', psize - 28 +'px')
-
-                };
-                setbw()
-
-                $(window).on('resize orientationchange', function() {
-                    setbw();
-                })
-
-            }).slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerMode: true,
-                variableWidth: true,
-                lazyLoad: 'progressive',
-                speed:1000
-            });
-
-            $('.prevb.mbbefore').click(function(){
-                $('.slick_slider').slick('slickPrev');
-            });
-            $('.nextb.mbbefore').click(function() {
-                $('.slick_slider').slick('slickNext');
-            });
-
-            var images = $('.slick_slider').find('img');
-            var loadedImgNum = 0;
-            images.on('load', function(){
-                loadedImgNum += 1;
-                if (loadedImgNum == images.length) {
-                    setTimeout(function(){
-                        $('.prevb.mbafter, .nextb.mbafter').addClass('vis');
-                    }, 300);
-                    $('.slick_slider').css('opacity','1');
-                }
-            });
-            /* slick_slider end */        
+            
+            
+            
     });
     
-	$(function(){
+    
+	
 		//$.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
-}); 
+
+
 </script>
 
 </body>
