@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .clearfix {
     display:inline-block;
 }
@@ -52,6 +57,7 @@ header.center {
 .logo {
     display: block;
     margin: 17px 0 0 35px;
+    padding: 0;
 }
 
 .header_right {
@@ -60,11 +66,17 @@ header.center {
     width: 765px;
 }
 
+.header_menu {
+    margin: 0;
+    padding: 0;
+}
+
 .header_menu li {
     float: left;
     font-family: 'PFDinTextCondProRegular';
     font-size: 17px;
     line-height: 1;
+    list-style-type: none;
     text-transform: uppercase;
 }
 
@@ -115,7 +127,7 @@ header.center {
     display: block;
     font-family: 'PFDinTextCondProRegular';
     font-size: 27px;
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
     padding: 0 0 0 24px;
 }
 
@@ -131,6 +143,8 @@ header.center {
     font-size: 18px;
     padding: 0 0 0 26px;
 }
+
+.email:hover {text-decoration: none;}
 
 .block_btn {
     margin: 14px 29px 0 0;
@@ -216,7 +230,15 @@ header.center {
 }
 .slick-next:after {
     right: -7px;
+}
 
+.slick-dots {
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots li.slick-active button {
+    border-color: #000;
 }
 /*slick fix end :after */
 
@@ -418,11 +440,13 @@ header.center {
 
 .block_3 .ul_1 {
     margin: 0 0 0 29px;
+    padding: 0;
 }
 
 .ul_1 > li {
     float: left;
     font-family: 'PFDinTextCondProRegular';
+    list-style-type: none;
     width: 260px;
 }
 
@@ -487,8 +511,16 @@ header.center {
 .title_1 {
     font-family: 'PFDinTextCondProRegular';
     font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.title_1 a {
+    color: #fff;
     text-decoration: underline;
 }
+
+.title_1 a:hover {text-decoration: none;}
 
 .title_descript {
     color: rgba(255, 255, 255, .65);
@@ -583,6 +615,7 @@ header.center {
 
 .ul_2 {
     margin: 0 0 76px 21px;
+    padding: 0;
 }
 
 .ul_2 li + li {
@@ -623,6 +656,7 @@ header.center {
     border-left: 18px solid transparent;
     border-top: 18px solid #d7e202;
     content: "";
+    font-family: 'PT Sans';
     height: 0;
     left: 48px;
     position: absolute;
@@ -635,8 +669,17 @@ header.center {
     position: relative;
 }
 
+.review span:before {
+    content: "&quot";
+    font-size: 48px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+
 .review_txt {
     margin: 0 0 0 67px;
+    padding: 0;
 }
 
 .review_txt li {
@@ -704,7 +747,11 @@ header.center {
 
 .footer .header_menu li {
     font-size: 18px;
-    text-transform: none;
+    text-transform: lowercase;
+}
+
+.footer .header_menu li:first-letter {
+    text-transform: uppercase;
 }
 
 .footer .header_menu li + li {
