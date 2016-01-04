@@ -195,7 +195,7 @@ header.center {
 }
  .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
     transition: all 0.2s;
-    width: 30%;
+    width: 21px;
     height: 366px;
     z-index: 2;
 }
@@ -205,8 +205,9 @@ header.center {
 .slick-prev {
     left: -0px;
 }
-.slick-next {
+.slick-next, .slick-next:hover {
     right: 0;
+	width: 91px;
 }
 .slick-prev:before, .slick-next:before {
     content:'';
@@ -233,7 +234,8 @@ header.center {
 }
 
 .slick-dots {
-    margin: 0;
+    bottom: -22px;
+	margin: 0;
     padding: 0;
 }
 
@@ -275,6 +277,7 @@ header.center {
     color: #2e2c31;
     font-family: 'PFDinTextCondProRegular';
     font-size: 32px;
+	font-weight: normal;
     line-height: 1.2;
     text-align: center;
 }
@@ -417,6 +420,10 @@ header.center {
     cursor: default;
 }
 
+.btn_submit {
+	cursor: pointer;
+}
+
 .ico_5 {
     background: url(../img/ico_5.png) no-repeat left 7px;
     padding: 0 0 0 51px;
@@ -511,6 +518,7 @@ header.center {
 .title_1 {
     font-family: 'PFDinTextCondProRegular';
     font-size: 32px;
+	font-weight: normal;
     margin: 0;
     padding: 0;
 }
@@ -714,7 +722,7 @@ header.center {
 }
 
 .block_5 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -747,14 +755,14 @@ header.center {
 }
 
 .footer .phone {
-    margin-top: 21px;
+    margin-top: 18px;
 }
 
 .footer .number_phone {
     background-image: url(../img/footer_ico_1.png);
-    background-position: left top;
+    background-position: left 4px;
     color: #fff;
-    margin-bottom: 7px;
+    margin-bottom: 2px;
 }
 
 .footer .header_menu li {
@@ -767,7 +775,7 @@ header.center {
 }
 
 .footer .header_menu li + li {
-    margin-left: 45px;
+    margin-left: 47px;
 }
 
 .footer .header_menu li a {
@@ -777,7 +785,6 @@ header.center {
 .footer .number_phone .ml {
     display: block;
     margin-left: 0;
-    margin-top: 3px;
 }
 
 .footer .email {
