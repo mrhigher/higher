@@ -1,0 +1,87 @@
+ body {
+     background:transparent url(../img/bg.png) no-repeat left bottom;
+     background-position: bottom 140px center;
+     font-size:1em;
+    color:#000;
+     font-family: 'pf_din_text_comp_proregular';
+
+     overflow-x:hidden;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ img {
+     max-width:100%;
+     height: auto;
+ }
+
+ .site-header:before, .site-header:after, .row:before, .row:after {
+     content:'';
+     display:table;
+ }
+ .site-header:after,  .row:after  {
+     clear:both;
+ }
+
+ .site-header .contain {
+     padding:0px;
+     position:relative;
+ }
+
+ .contain {
+     width:98%;
+     margin:0 auto;
+     padding:0px 1%;
+     max-width:1240px;
+ }
+
+
+ .nav_menu {
+     float:right;
+     margin-top: 78px;
+ }
+
+.site-title-sub {
+
+    position:absolute;
+    left:190px;
+    top:84px;
+    font-size:39px;
+    padding:0px 0px 0px 0px;
+    font-weight: normal;
+    font-family: 'politicaregular';
+}
+ .site-title-sub a {
+     color:#000;
+ }
+
+
+.flexnav {
+    font-size:18px;
+}
+
+.site-header {
+    min-height:143px;
+    background-color:#ffbf00;
+}
+
+
+ .footbox {
+     text-align:center;
+     background-color:#ffbf00;
+     height:238px;
+ }
+ .botnav li {
+     margin:30px 15px;
+     display:inline-block;
+ }
+ .botnav li a {
+     color:#000;
+     margin:0px 15px;
+     display:inline-block;
+ }
+ .botnav li a:hover {
+     color:#fff;
+ }
