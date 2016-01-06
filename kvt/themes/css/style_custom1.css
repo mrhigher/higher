@@ -1,8 +1,3 @@
-*,:after,*:before{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 body {
     margin: 0;
@@ -415,6 +410,7 @@ header.center {
     height: 52px;
     margin: 13px 0 0 53px;
     width: 301px;
+    border:0px;
 }
 .form  .btn_submit.disabled, .form .btn_submit.disabled:hover {
     cursor: default;
@@ -518,9 +514,12 @@ header.center {
 .title_1 {
     font-family: 'PFDinTextCondProRegular';
     font-size: 32px;
-	font-weight: normal;
+    font-weight: normal;
+    text-transform: none;
+    line-height: normal;
     margin: 0;
     padding: 0;
+    
 }
 
 .title_1 a {
