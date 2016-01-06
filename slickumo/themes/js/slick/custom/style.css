@@ -1,0 +1,143 @@
+.wrap_slider{
+	height:507px;
+	overflow:hidden;
+	position:relative;
+}
+.wrap_slider .slick-slider {
+    margin-bottom: 0;	
+}
+.wrap_slider.loading .slick-slider{
+	opacity:0;
+}
+.wrap_slider.loading:after{
+	content:'';
+	position:absolute;
+	display:block;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-image:url(../ajax-loader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.wrap_slider.loaded .slick-slider{
+	opacity:1 !important;
+}
+.slick-next,
+.slick-prev {
+    background-color: rgba(0,0,0,0.7) !important;
+	height: 507px;
+	z-index: 5;
+	transition: opacity 0.3s;
+}
+.slick-next:hover,
+.slick-prev:hover{
+	opacity:0.8;
+}
+.slick-prev {
+    left: -0px;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev:before,
+.slick-next:before {
+    content:'';
+}
+.prevb.mbbefore,
+.nextb.mbbefore {
+    background: url(slider_arrow.png) no-repeat;
+    content:'';
+    position:absolute;
+    width: 57px;
+    height: 57px;
+    display:block;
+    z-index:443;
+    text-indent: 9999px;
+    margin-top:-29px;
+    cursor: pointer;
+	opacity:0.9;
+}
+.prevb.mbbefore {
+    top:50%;
+    left:19%;
+	background-position: 0 0;
+}
+.nextb.mbbefore {
+    top:50%;
+    right:19%;
+	background-position: -57px 0;
+}
+.prevb.mbbefore:hover,
+.nextb.mbbefore:hover{
+	opacity:1;
+}
+
+/*slick fix end :after */
+
+.slick-prev:before{
+    background-position: 0 0;
+    right: 3px;
+}
+.slick-next:before   {
+    background-position: -57px 0;
+    left: 3px;
+}
+.slick-slide {
+    position: relative;
+}
+.item_data{
+	width:400px;
+    background: rgba(255, 255, 255, .88);
+    left: 50%;
+    margin-left: -228px;
+    padding: 25px;
+    position: absolute;
+    text-align: center;
+    top: 142px;
+}
+.item_data2{
+	min-height: 173px;
+	border: 1px solid #b5b5b5;
+}
+.item_txt{
+    font-size: 23px;
+    letter-spacing: 2px;
+    line-height: 1.35;    
+    text-transform: uppercase;
+	margin-top:20px;
+}
+.item_img{
+	margin-top:10px;
+	text-align:center;
+}
+.item_img img{
+	display:inline-block;
+}
+
+
+.slick-slide:hover{
+	cursor:move;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.slick-slide:hover{
+	cursor:url(/i/cursor/grab/grab.png) 8 8,-moz-grab;
+}
+.slick-slide:hover{
+	*cursor:url(/i/cursor/grab/grab.cur);
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.slick-slide:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing	
+}
+.slick-slide:active{
+	cursor:url(/i/cursor/grab/grabbing.png) 8 8,-moz-grab;
+}
+.slick-slide:active{
+	*cursor:url(/i/cursor/grab/grabbing.cur);
+}

@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: "pt_sansregular";
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+    url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'politicaregular';
+    src: url('../fonts/Politica/politica-webfont.eot');
+    src: url('../fonts/Politica/politica-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Politica/politica-webfont.woff2') format('woff2'),
+    url('../fonts/Politica/politica-webfont.woff') format('woff'),
+    url('../fonts/Politica/politica-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('../fonts/pf_din_text_comp_pro_regular/pf_din_text_comp_pro_regular-webfont.eot');
+    src: url('../fonts/pf_din_text_comp_pro_regular/pf_din_text_comp_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pf_din_text_comp_pro_regular/pf_din_text_comp_pro_regular-webfont.woff2') format('woff2'),
+    url('../fonts/pf_din_text_comp_pro_regular/pf_din_text_comp_pro_regular-webfont.woff') format('woff'),
+    url('../fonts/pf_din_text_comp_pro_regular/pf_din_text_comp_pro_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.eot');
+    src: url('../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.woff') format('woff'),
+    url('../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: "PFDinTextCondProRegular";
+    src: url("../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.eot") format("embedded-opentype"), url("../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.woff") format("woff"), url("../fonts/pf_din_text_comp_pro_regular3/pfdintextcondpro-regular.ttf") format("truetype"), url("pfdintextcondpro-regular.svg#PFDinTextCondProRegular") format("svg");
+}
+*/
+
+
