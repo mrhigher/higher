@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{KCK slider}</title>
+    <meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+  <!--  <link rel="stylesheet" href="option/css/style_site.css" type="text/css">
+    <link href="option/css/style_css_php.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="option/css/fonts/style.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/style_custom1.css" type="text/css">
+    <script src="option/js/jquery-1.11.3.min.js"></script>
+
+
+    <script src="themes/js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            /* slick_slider */
+
+
+
+
+            var slick = $('.slick_slider').on('init',function() {
+                $('.slick_slider').css('opacity','0');
+                $('button.slick-prev').before('<span class="prevb mbbefore"></span>');
+                $('button.slick-next').before('<span class="nextb mbbefore"></span>');
+
+                $('button.slick-prev').after('<span class="prevb mbafter"></span>');
+                $('button.slick-next').after('<span class="nextb mbafter"></span>');
+
+
+
+
+                var setbw = function() {
+                var  w = $(document).outerWidth(), mid = $('.center').outerWidth();
+                var wWrap =  parseInt($('.wrapper').css('max-width'));
+                   if (w >= wWrap) {
+                       w = 1920
+                    }
+
+                    var psize = (w - mid) / 2  ;
+                    $('button.slick-prev, button.slick-next').width(psize + 'px');
+                    $('.prevb.mbafter, .nextb.mbafter').width(psize + 'px');
+
+                    $('.prevb.mbbefore').css('left', psize - 28 + 'px');
+                    $('.nextb.mbbefore').css('right', psize - 28 +'px')
+
+                };
+                setbw()
+
+                $(window).on('resize orientationchange', function() {
+                    setbw();
+                })
+
+
+
+            }).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: true,
+                lazyLoad: 'progressive',
+                speed:1000
+            });
+
+            $('.prevb.mbbefore').click(function(){
+                $('.slick_slider').slick('slickPrev');
+            });
+            $('.nextb.mbbefore').click(function() {
+                $('.slick_slider').slick('slickNext');
+            });
+
+            var images = $('.slick_slider').find('img');
+
+            var loadedImgNum = 0;
+            images.on('load', function(){
+                loadedImgNum += 1;
+                if (loadedImgNum == images.length) {
+                    setTimeout(function(){
+                        $('.prevb.mbafter, .nextb.mbafter').addClass('vis');
+                    }, 300);
+                    $('.slick_slider').css('opacity','1');
+                }
+
+            });
+            /* slick_slider end */
+
+
+        });
+
+
+
+    </script>
+
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+    <header class="center clearfix">
+        <a href="/" class="logo left"><img src="themes/img/logo.png" alt="" /></a>
+        <div class="header_contact left">
+            <p class="header_phone">(8552) 45-00-25</p>
+            <p class="header_mail"><a href="mailto:sekretar@ksk-chelny.ru">sekretar@ksk-chelny.ru</a></p>
+        </div>
+    </header>
+
+    <!-- wrap_slider -->
+    <div class="wrap_slider" >
+        <!-- slick_slider -->
+        <div class="slick_slider">
+            <div>
+                <div class="slider_txt">
+                    <div class="slider_txt_1">
+                        промышленное<br />
+                        строительство
+                    </div>
+                </div>
+                <div class="a-slide">
+                <img src="file/i_pic/slide_1.jpg" alt="" />
+                </div>
+            </div>
+            <div>
+                <div class="slider_txt">
+                    <div class="slider_txt_1 slider_txt_2">
+                        перевозка светлых<br />
+                        нефтепродуктов
+                    </div>
+                </div>
+                <div class="a-slide">
+                <img src="file/i_pic/slide_2.jpg" alt="" />
+                 </div>
+            </div>
+            <div>
+                <div class="slider_txt">
+                    <div class="slider_txt_1 slider_txt_3">
+                        перевозка нефти
+                    </div>
+                </div>
+                <div class="a-slide">
+                <img src="file/i_pic/slide_3.jpg" alt="" />
+                </div>
+            </div>
+        </div><!-- END slick_slider -->
+    </div><!-- END wrap_slider -->
+
+
+
+
+
+</div><!-- END wrapper -->
+
+
+</body>
+</html>
