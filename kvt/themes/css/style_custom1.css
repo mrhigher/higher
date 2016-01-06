@@ -566,6 +566,10 @@ header.center {
     right: 0;
     top: 0;
     text-align: center;
+	-webkit-transition: 5s;
+     -moz-transition: .5s;
+     -o-transition: .5s;
+	transition: .5s;
 }
 
 .object .descript_4 > div {
@@ -589,8 +593,8 @@ header.center {
     text-decoration: none;
 }
 
-.object > .descript_4:hover {
-    background: #000!important;
+.object .descript_4:hover {
+    background: rgba(0, 0, 0, .58);
 }
 .object .descript_4 > div {
     -webkit-transition:all 0.3s ease-in; 
