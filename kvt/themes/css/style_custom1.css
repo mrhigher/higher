@@ -189,6 +189,7 @@ header.center {
     background: rgba(0,0,0, .4); */
 }
  .slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     width: 21px;
     height: 366px;
@@ -482,6 +483,9 @@ header.center {
     margin: 0 0 28px 0;
     padding: 0 0 0 78px;
 }
+.descript_2:hover {
+    opacity:0.85;
+}
 
 .descript_3 {
     border-top: 1px solid rgba(0, 73, 106, .33);
@@ -567,7 +571,7 @@ header.center {
     margin-left: -103px;
     position: absolute;
     top: 63px;
-    visibility: hidden;
+    opacity: 0;
     width: 194px;
 }
 
@@ -586,9 +590,12 @@ header.center {
 .object > .descript_4:hover {
     background: #000!important;
 }
-
+.object .descript_4 > div {
+    -webkit-transition:all 0.3s ease-in; 
+    transition:all 0.3s ease-in; 
+}
 .object .descript_4:hover > div {
-    visibility: visible;
+    opacity: 1;
 }
 
 .ul_2 li {
@@ -648,7 +655,7 @@ header.center {
 }
 
 .review {
-    background: #d7e202;
+    background: rgba(215, 226, 2, 1);
     color: #2e2c31;
     font-size: 14px;
     line-height: 1.4;
@@ -656,12 +663,20 @@ header.center {
     padding: 30px 30px 34px 26px;
     position: relative;
     width: 477px;
+    -webkit-transition:all 0.3s ease-in; 
+    transition:all 0.3s ease-in; 
 }
-
+.review:hover {
+     background: rgba(215, 226, 2, .85);
+    
+}
+.review:hover:before {
+     border-top-color:  rgba(215, 226, 2, .85);
+} 
 .review:before {
     border-right: 18px solid transparent;
     border-left: 18px solid transparent;
-    border-top: 18px solid #d7e202;
+    border-top: 18px solid  rgba(215, 226, 2, 1);
     content: "";
     font-family: 'PT Sans';
     height: 0;
@@ -669,6 +684,8 @@ header.center {
     position: absolute;
     top: 100%;
     width: 0;
+     -webkit-transition:all 0.3s ease-in; 
+    transition:all 0.3s ease-in; 
 }
 
 .review span {
