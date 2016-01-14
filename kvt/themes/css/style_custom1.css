@@ -994,4 +994,8 @@ header.center {
 	.header_right {width: 43%;}
 }
 
+@media only screen and (max-width: 660px) {
+	body {overflow-x: auto;}
+}
+
 
