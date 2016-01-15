@@ -163,7 +163,8 @@
 }
 
 @media only screen and (max-width: 660px) {
-	.wrap_1 {width: auto;}
+	.wrap_1 {display: none;}
+	.header_right {width: 50%;}
 	.block_btn .btn {display: block;}
 	.block_btn .btn + .btn {margin-left: 0;}
 	.number_phone .ml {display: block; margin-left: 0;}
