@@ -117,11 +117,6 @@
 	.footer .phone {margin-left: 20px; margin-top: 50px;}
 }
 
-/*
-@media only screen and (max-width: 982px) {
-}
-*/
-
 @media only screen and (max-width: 940px) {
 	.block_btn {display: none;}
 	.wrap_1 {width: 470px;}
@@ -139,6 +134,7 @@
 		right: 0;
 		left: 0;
 		top: 0;
+		z-index: 3;
 	}
 	.flexnav li {
 		border-bottom: 1px solid #4c4a4e;
