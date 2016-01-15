@@ -284,7 +284,8 @@ header.center {
 }
 
 .products {
-    margin: 33px 0 0 7px;
+    margin: 33px auto 0;
+	width: 1245px;
 }
 
 .products a {
@@ -292,6 +293,7 @@ header.center {
     float: left;
     margin: 0 35px 32px 0;
     position: relative;
+	width: 285px;
 }
 
 .products a:nth-child(4n) {
@@ -305,6 +307,7 @@ header.center {
 
 .products a img {
     display: block;
+	max-width: 100%;
 }
 
 .pr_descript {
@@ -527,8 +530,7 @@ header.center {
     text-transform: none;
     line-height: normal;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 
 .title_1 a {
@@ -554,6 +556,7 @@ header.center {
 .object > div {
     float: left;
     position: relative;
+	width: 319px;
 }
 
 .object > div img {display: block;}
