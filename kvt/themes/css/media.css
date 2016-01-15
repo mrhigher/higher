@@ -85,6 +85,7 @@
 
 @media only screen and (max-width: 999px) {
 	.center {width: 100%;}
+	.header_right {width: 73%;}
 	.ico_1 {top: 4px;}
 	.products a:nth-child(3n+1) {clear: none;}
 	.products a:nth-child(2n+1) {clear: both; margin-right: 35px;}
@@ -116,9 +117,10 @@
 	.footer .phone {margin-left: 20px; margin-top: 50px;}
 }
 
+/*
 @media only screen and (max-width: 982px) {
-	.header_right {width: 73%;}
 }
+*/
 
 @media only screen and (max-width: 940px) {
 	.block_btn {display: none;}
@@ -195,6 +197,7 @@
 	.ul_1 > li {float: none;}
 	.ul_1 > li + li {margin-left: 0;}
 	.block_3 .ul_1 > li:nth-last-child(2) {margin-bottom: 50px;}
+	.descript_3 {display: none;}
 }
 
 @media only screen and (max-width: 570px) {
