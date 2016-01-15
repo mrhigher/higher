@@ -170,7 +170,7 @@
 	.block_btn .btn + .btn {margin-left: 0;}
 	.number_phone .ml {display: block; margin-left: 0;}
 	.number_phone {background-position: left 6px;}
-	.products a {width: 218px;}
+	.products a, .pr_descript span {width: 218px;}
 	.pr_descript {
 		line-height: 1;
 	}

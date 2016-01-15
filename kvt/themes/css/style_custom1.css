@@ -316,13 +316,17 @@ header.center {
     color: #2e2c31;
     font-family: 'PFDinTextCondProRegular';
     font-size: 23px;
-    height: 56px;
     left: 0;
-    line-height: 56px;
     position: absolute;
-    text-align: center;
     text-decoration: underline;
-    width: 100%;
+}
+
+.pr_descript span {
+    height: 56px;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 285px;
 }
 
 .block_2 {
