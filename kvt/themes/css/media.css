@@ -167,6 +167,7 @@
 	.header_right {width: 50%;}
 	.block_btn .btn {display: block;}
 	.block_btn .btn + .btn {margin-left: 0;}
+	.block_1 {font-size: 30px; line-height: 1.3;}
 	.number_phone .ml {display: block; margin-left: 0;}
 	.number_phone {background-position: left 6px;}
 	.products a, .pr_descript span {width: 218px;}
