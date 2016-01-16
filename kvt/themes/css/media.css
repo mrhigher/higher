@@ -93,6 +93,7 @@
 	.gray {background: none; height: auto;}
 	.wrap_slider {display: none;}
 	.object {width: 640px;}
+	.object {margin-top:0px;}
 	.ul_2 > li:nth-child(2n+1) {clear: both; margin-left: 66px;}
 	.ul_2 > li:nth-child(odd) {margin-left: 0;}
 	.ul_2 li:nth-last-child(4) {margin-bottom: 60px;}
@@ -186,7 +187,7 @@
 		position: static;
 		width: 355px;
 	}
-	.object {width: auto;}
+	.object {width: auto; margin-top:26px;}
 	.object > div {float: none; margin: 0 auto;}
 	.review {margin-right: 0;}
 }
@@ -195,7 +196,7 @@
 	.ul_1 > li {float: none;}
 	.ul_1 > li + li {margin-left: 0;}
 	.block_3 .ul_1 > li:nth-last-child(2) {margin-bottom: 50px;}
-	.descript_3 {display: none;}
+	.descript_3 {display: block;}
 }
 
 @media only screen and (max-width: 570px) {
