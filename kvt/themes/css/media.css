@@ -190,6 +190,7 @@
 	.number_phone {background-position: left 6px;}
 	.products {margin-top: 22px;}
 	.products a, .pr_descript span {width: 218px;}
+	.products a:nth-child(2n+1) {margin-right: 27px;}
 	.pr_descript {
 		line-height: 1;
 	}
