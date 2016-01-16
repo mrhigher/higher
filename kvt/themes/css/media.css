@@ -219,6 +219,7 @@
 	.block_4 {padding-bottom: 28px; padding-top: 38px;}
 	.title_descript {margin-top: 5px;}
 	.footer .number_phone .ml {margin-top: -5px;}
+	.pr_descript span {height: 67px;}
 }
 
 @media only screen and (max-width: 570px) {
