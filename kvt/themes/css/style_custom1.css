@@ -510,7 +510,7 @@ header.center {
 }
 
 .ul_1 > li:last-child {
-    width: 297px!important;
+    width: 297px;
 }
 
 .ul_1 > li:last-child .descript_3 {
