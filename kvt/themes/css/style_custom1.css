@@ -338,7 +338,7 @@ header.center {
 .block_2_1 {
     background: url(../img/ico_3.png) no-repeat center top;
     color: #2e2c31;
-    font-family: "Segoe Print";
+    font-family: 'Conv_SegoePrint';
     font-size: 22px;
     line-height: 1.5;
     margin: 99px 0 0 72px;

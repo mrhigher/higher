@@ -167,3 +167,15 @@
     font-style: normal;
     font-weight: normal;
 }
+
+/* font-family: 'SegoePrint'; */
+
+@font-face {
+    font-family: 'Conv_SegoePrint';
+    src: url('SegoePrint/SegoePrint.eot');
+    src: local('☺'), url('SegoePrint/SegoePrint.woff') format('woff'), url('SegoePrint/SegoePrint.ttf') format('truetype'), url('SegoePrint/SegoePrint.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
