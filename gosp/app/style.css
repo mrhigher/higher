@@ -57,7 +57,6 @@ input[type=submit] {
 
 /*========================== END reset.css ==========================*/
 
-
 @font-face {
     font-family: RobotoRegular;
     font-style: normal;
@@ -78,7 +77,7 @@ input[type=submit] {
 }
 
 @font-face {
-    font-family: 'robotomedium';
+    font-family: 'RobotoMedium';
     src: url('../fonts/RobotoMedium/roboto-medium-webfont.eot');
     src: url('../fonts/RobotoMedium/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/RobotoMedium/roboto-medium-webfont.woff2') format('woff2'),
@@ -102,6 +101,11 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+h1 {
+	font-family: RobotoRegular;
+	font-size: 48px;
 }
 
 /*========================== Общие классы ==========================*/
@@ -139,24 +143,42 @@ a:hover {
 	width: 960px;
 }
 
+.btn_1 {
+	background-color: #bfa35f;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	font-family: 'RobotoMedium';
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
 /*========================== END ==========================*/
 
 .wrapper {
 	border-top: 4px solid #c0a35f;
 	margin: 0 auto;
-	max-width: 1440px;
+	width: 1440px;
 }
 
 .block_1 {
 	background: url(img/bg_1.jpg) no-repeat center top;
 }
 
+.logo {
+	margin: 37px 0 0 0;
+}
+
 /*========================== top_menu ==========================*/
 
 .flexnav {
 	float: none;
-	font-family: 'robotomedium';
-	margin: 44px 0 0 62px;
+	font-family: 'RobotoMedium';
+	margin: 44px 0 0 92px;
 	text-transform: uppercase;
 }
 
@@ -169,7 +191,7 @@ a:hover {
 	padding: 0 21px 15px 0;
 }
 
-.flexnav > li a:hover, .flexnav > li a:active {color: #c0a35f;}
+.flexnav a:hover, .flexnav a:active, .flexnav li ul li a:hover {color: #c0a35f;}
 
 .flexnav li ul, .flexnav li ul li a {
 	background: #ecf0f1;
@@ -216,3 +238,29 @@ a:hover {
 }
 
 /*========================== END top_menu ==========================*/
+
+.number_phone {
+	color: #f9f6f1;
+	display: block;
+	font-size: 21px;
+	margin: 0 0 5px 0;
+}
+
+.ul_1 {
+	margin: 45px 0 0 0;
+}
+
+.ul_1 li {float: left;}
+
+.ul_1 li:last-child {margin-left: 12px;}
+
+.link_1, .link_2 a {
+	color: #c0a35f;
+	font-family: 'RobotoMedium';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.ul_1 .btn_1 {
+	margin: 2px 0 0 0;
+}
