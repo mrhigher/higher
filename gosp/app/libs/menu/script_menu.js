@@ -1,19 +1,9 @@
 
-
 $(document).ready(function() {
-    
-
-
 	adjustMenu();
-    
-    /*******************************************************/
-
-    
 })
 
 var adjustMenu = function() {
-
-
     $(".flexnav li").each(function() {
         if($(this).find('ul').length) {
             $(this).toggleClass('item-with-ul');
@@ -25,7 +15,7 @@ $(window).bind('orientationchange', function() {
 	location.reload();
 });
 
-        checkSize();
+		checkSize();
     
       $(window).resize(checkSize);
       function checkSize(){
@@ -43,17 +33,9 @@ $(window).bind('orientationchange', function() {
                   e.preventDefault();
                   $(".flexnav").removeClass('flexnav-show');
 
-
               });
 
-
-
-
-
           } else {
-
-
-
 
               $(".touch-press").unbind('click').bind('click', function(e) {
                   e.preventDefault();
@@ -63,14 +45,7 @@ $(window).bind('orientationchange', function() {
 
           }
 
-
-
       }
-
-
-
-
-    
-          
+         
 }
 
