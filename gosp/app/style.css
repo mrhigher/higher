@@ -154,19 +154,65 @@ a:hover {
 /*========================== top_menu ==========================*/
 
 .flexnav {
+	float: none;
 	font-family: 'robotomedium';
+	margin: 44px 0 0 62px;
 	text-transform: uppercase;
+}
+
+.flexnav > li {
+	margin: 0 21px 0 0;
 }
 
 .flexnav > li a {
 	color: #f9f6f1;
+	padding: 0 21px 15px 0;
 }
 
-.flexnav > li a:hover {color: #c0a35f;}
+.flexnav > li a:hover, .flexnav > li a:active {color: #c0a35f;}
 
 .flexnav li ul, .flexnav li ul li a {
 	background: #ecf0f1;
 	color: #002e5c;
+}
+
+.flexnav > li.item-with-ul {
+	background: url(libs/menu/arrow_menu.png) no-repeat right 6px;
+}
+
+.flexnav li ul {padding: 0;}
+
+.flexnav li > ul > li.item-with-ul {
+	background: #ecf0f1;	
+}
+
+.flexnav li > ul div ul {
+	float: left;
+	padding: 0;
+	width: auto;
+}
+
+.flexnav > li ul li {
+	float: none;
+	width: 260px;
+}
+
+.flexnav li > ul > li {
+	padding-bottom: 17px;
+	padding-top: 25px;
+	width: 575px;
+}
+
+.flexnav ul li ul li a {
+	background: none;
+	font-size: 14px;
+	line-height: 1.1;
+	padding: 4px 0 8.8px 31px;
+}
+
+.flexnav > li > ul {
+	left: -120px;
+	width: auto;
 }
 
 /*========================== END top_menu ==========================*/
