@@ -65,7 +65,7 @@
 	.block_2_2 {display: none;}
 	.form {left: 50%;margin-left: -368px; margin-top: 40px;}
 	.block_2_1.left {background: none; float: none; padding-top: 0; text-align: center;}
-	.block_2_1 span {transform: none;}
+	.block_2_1 span {transform: none!important;}
 	.ico_1 {right: 0;}
 }
 
@@ -222,7 +222,7 @@
 	.title_descript {margin-top: 5px;}
 	.footer .number_phone .ml {margin-top: -5px;}
 	.pr_descript span {height: 67px;}
-	.review {width: 460px;}
+	.review {font-size: 15px; width: 460px;}
 }
 
 @media only screen and (max-width: 570px) {

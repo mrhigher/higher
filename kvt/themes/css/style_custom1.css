@@ -100,19 +100,9 @@ header.center {
 .ico_1 span {
     background-color: #323840;
     display: block;
+    height: 2px;
     margin: 0 0 1px 0;
     width: 14px;
-}
-
-.ico_1 span:nth-child(1) {
-    height: 1px;
-}
-.ico_1 span:nth-child(2) {
-    height: 2px;
-}
-
-.ico_1 span:nth-child(3) {
-    height: 3px;
 }
 
 .phone {
