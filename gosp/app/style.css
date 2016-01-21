@@ -323,3 +323,47 @@ h1 {
 	margin: 235px 0 0 0;
 	text-align: center;
 }
+
+.ul_2 {
+	margin: 139px 0 0 57px;
+}
+
+.ul_2 > li {
+	color: #f9f6f1;
+	float: left;
+	line-height: 1.35;
+	padding-bottom: 10px;
+	width: 31%;
+}
+
+.ul_2 > li a {border-bottom: 1px solid #d2cbba; color: #f9f6f1; }
+
+.ul_2 > li a:hover {
+	border-bottom-color: transparent;
+	text-decoration: none;
+}
+
+.ul_2 > li:nth-child(1) {
+	background: url(img/ico_1.png) no-repeat left 11px;
+	margin: 0 52px 0 0;
+	padding-left: 82px;
+	padding-top: 14px;
+	width: 30%;
+}
+
+.ul_2 > li:nth-child(2) {
+	background: url(img/ico_2.png) no-repeat left top;
+	margin: 0 34px 0 0;
+	padding-left: 126px;
+	padding-top: 14px;
+}
+
+.ul_2 > li:nth-child(3) {
+	background: url(img/ico_3.png) no-repeat left 15px;
+	padding-left: 91px;
+	padding-top: 15px;
+}
+
+.ul_2 > li + li {
+	margin-left: 10px;
+}
