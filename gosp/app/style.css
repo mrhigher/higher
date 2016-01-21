@@ -107,7 +107,8 @@ input[type=submit] {
 }
 
 body {
-    color: #2d3e50;
+    background: #fff;
+	color: #2d3e50;
 	font-family: RobotoRegular;
 	font-size: 16px;
 }
@@ -121,12 +122,18 @@ a:hover {
 	text-decoration: underline;
 }
 
+h1, h2 {
+	font-family: RobotoRegular;
+	text-transform: uppercase;
+}
+
 h1 {
 	font-family: RobotoRegular;
 	font-size: 48px;
 	line-height: 1.3;
-	text-transform: uppercase;
 }
+
+h2 {font-size: 42px;}
 
 /*========================== Общие классы ==========================*/
 
@@ -150,7 +157,7 @@ h1 {
 .left {float: left;}
 .right {float: right;}
 
-.center_1, .center_2 {
+.center_1, .center_2, .center_3 {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -161,6 +168,10 @@ h1 {
 
 .center_2 {
 	width: 960px;
+}
+
+.center_3 {
+	width: 940px;
 }
 
 .btn_1 {
@@ -396,6 +407,8 @@ h1 {
 	background: #c0a35f;
 }
 
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {bottom: -40px;}
+
 .slide_descript {
 	color: #e0ba61;
 	font-size: 28px;
@@ -417,3 +430,60 @@ h1 {
 	font-size: 28px;
 }
 /*========================== END bxslider ==========================*/
+
+.block_2 {
+	margin-top: 136px;
+}
+
+.h2 {
+	margin: 0 0 90px 0;
+	position: relative;
+}
+
+.h2:before {
+	background: #c0a35f;
+	content: "";
+	height: 5px;
+	position: absolute;
+	top: 73px;
+	width: 160px;
+}
+
+.about_us {
+	margin-bottom: 34px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 900px;
+}
+
+.about_us .play {
+	cursor: pointer;
+	height: 100px;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	width: 100px;
+}
+
+.descript_1 {
+	color: #2d3e50;
+	line-height: 1.5;
+	margin-bottom: 37px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 905px;
+}
+
+.style_2 {
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	display: inline-block;
+	font-family: RobotoRegular;
+	height: 48px;
+	line-height: 48px;
+	letter-spacing: 1px;
+}
