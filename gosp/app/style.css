@@ -337,7 +337,7 @@ h1 {
 }
 
 .ul_2 {
-	margin: 139px 0 0 57px;
+	margin: 139px 0 103px 57px;
 }
 
 .ul_2 > li {
@@ -399,15 +399,17 @@ h1 {
 .slide_descript {
 	color: #e0ba61;
 	font-size: 28px;
+	left: 30px;
 	line-height: 1.2;
 	position: absolute;
-	top: 50px;
+	top: 154px;
 }
 
 .slide_descript > span {
 	color: #fdfdfd;
 	display: block;
 	font-size: 16px;
+	margin: 14px 0 0 0;
 }
 
 .slide_descript > span span {
