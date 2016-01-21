@@ -160,7 +160,7 @@ h4{font-size: 18px;}
 .left {float: left;}
 .right {float: right;}
 
-.center_1, .center_2, .center_3, .center_4 {
+.center_1, .center_2, .center_3, .center_4, .center_5 {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -179,6 +179,10 @@ h4{font-size: 18px;}
 
 .center_4 {
 	width: 780px;
+}
+
+.center_5 {
+	width: 622px;
 }
 
 .btn_1 {
@@ -636,4 +640,83 @@ h4{font-size: 18px;}
 
 .ul_4 a:hover h4 {
 	color: #fff;
+}
+
+.news {
+	background: #002e5c;
+	color: #fff;
+	margin: 0 0 71px 0;
+	padding: 76px 0 60px 0;
+}
+
+.h3_style {
+	text-align: center;
+}
+
+.block_news {
+	margin: 57px 0 64px 0;
+}
+
+.block_news a {
+	color: #fff;
+	line-height: 1.4;
+}
+
+.slick-slide {
+	float: left;
+	width: 329px;
+}
+
+.date {
+	background: #c0a35f;
+	display: block;
+	font-size: 13px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0 19px 0;
+	text-align: center;
+	width: 87px;
+}
+
+.news .btn_2 {
+	border-color: #c0a35f;
+	color: #c0a35f;
+	padding: 0 48px;
+}
+
+.block_5 {
+	color: #002e5c;	
+}
+
+.block_5 .h3_style {
+	color: #002e5c;
+}
+
+.descript_4 {
+	font-size: 17px;
+	line-height: 1.45;
+	margin: 10px 0 35px 0;
+	text-align: center;
+}
+
+.call {
+	border: 2px solid #bbc4ce;
+	border-radius: 24px;
+	color: #002e5c;
+	font-family: RobotoRegular;
+	font-size: 18px;
+	height: 48px;
+	margin: 0 7px 0 13px;
+	text-align: center;
+	width: 353px;
+}
+
+.call_submit {
+	background-color: #bfa35f;
+	border-radius: 24px;
+	color: #fff;
+	font-size: 18px;
+	height: 48px;
+	padding: 0 26px;
+	text-transform: uppercase;
 }
