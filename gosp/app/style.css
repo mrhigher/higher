@@ -122,18 +122,19 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: RobotoRegular;
 	text-transform: uppercase;
 }
 
 h1 {
-	font-family: RobotoRegular;
 	font-size: 48px;
 	line-height: 1.3;
 }
 
 h2 {font-size: 42px;}
+
+h3 {font-size: 28px;}
 
 /*========================== Общие классы ==========================*/
 
@@ -157,7 +158,7 @@ h2 {font-size: 42px;}
 .left {float: left;}
 .right {float: right;}
 
-.center_1, .center_2, .center_3 {
+.center_1, .center_2, .center_3, .center_4 {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -172,6 +173,10 @@ h2 {font-size: 42px;}
 
 .center_3 {
 	width: 940px;
+}
+
+.center_4 {
+	width: 780px;
 }
 
 .btn_1 {
@@ -492,7 +497,7 @@ h2 {font-size: 42px;}
 .block_3 {
 	background: url(img/bg_for_block_3.jpg) no-repeat center top;
 	color: #ffffff;
-	padding: 143px 0 0 0;
+	padding: 143px 0 145px 0;
 }
 
 .block_3 a {color: #fff;}
@@ -503,7 +508,7 @@ h2 {font-size: 42px;}
 }
 
 .ul_3 {
-	margin: 65px 0 0 40px;
+	margin: 65px 0 65px 40px;
 }
 
 .ul_3 > li {
@@ -520,7 +525,7 @@ h2 {font-size: 42px;}
 	background-position: 32px 28px;
 	background-repeat: no-repeat;
 	display: block;
-	height: 300px;
+	height: 294px;
 	padding: 0 25px 0 30px;
 }
 
@@ -545,4 +550,34 @@ h2 {font-size: 42px;}
 .ul_3 > li span {
 	display: block;
 	padding: 191px 0 0 0;
+}
+
+.descript_2 {
+	line-height: 1.5;
+}
+
+.block_4 {
+	background: #c3a867 url(img/bg_for_block_4.jpg) no-repeat center top;
+	padding: 95px 0 0 0;
+}
+
+.h3 {
+	color: #fff;
+	margin: 2px 0 68px 10px;
+	position: relative;
+}
+
+.h3:after {
+	background: #002e5c;
+	content: "";
+	height: 5px;
+	left: 0;
+	position: absolute;
+	top: 50px;
+	width: 80px;
+}
+
+.descript_3 {
+	color: #f9f6f1;
+	line-height: 1.2;
 }
