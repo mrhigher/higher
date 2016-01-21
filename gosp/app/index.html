@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.8.3.min.js"></script>
 	<link rel="stylesheet" href="libs/menu/flexnav.css">
+	<link rel="stylesheet" href="libs/jquery.bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -153,17 +154,34 @@
 				</li>
 			</ul>
 		</div>
+		<div id="bxslider">
+			<ul class="bxslider">
+				<li>
+					<img src="img/slide_1.jpg" alt="">
+					<p class="slide_descript">
+						Здоровье<br> «Премиум»
+						<span>от <span>120 000</span> руб.</span>
+					</p>
+				</li>
+				<li><img src="img/slide_2.jpg" alt=""></li>
+				<li><img src="img/slide_3.jpg" alt=""></li>
+				<li><img src="img/slide_1.jpg" alt=""></li>
+				<li><img src="img/slide_2.jpg" alt=""></li>
+				<li><img src="img/slide_3.jpg" alt=""></li>
+			</ul>
+		</div>
 	</div><!-- END block_1 -->
 </div><!-- END wrapper -->
 <!-- load script menu -->
 <script src="libs/menu/script_menu.js"></script>
+<script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script src="js/common.js"></script>
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
 <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
 //		$.pixlayout({clip: true, src: "maket_menu.png", show:true, center:true, top:0, left:0, pervious: false});
-		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:false, top:0, left:0, pervious: false});
+//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:false, top:0, left:0, pervious: false});
 //		$.pixlayout({clip: true, src: "maket_960.png", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
