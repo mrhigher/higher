@@ -10,4 +10,6 @@ $(document).ready(function(){
 		maxSlides: 3,
 		mode: 'horizontal'
 	});
+	
+	$('.ul_4 li').matchHeight();
 });
