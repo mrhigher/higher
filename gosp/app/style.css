@@ -586,6 +586,7 @@ h4{font-size: 18px;}
 }
 
 .ul_4 {
+	background: #fff;
 	color: #2d3e50;
 	font-size: 13px;
 }
@@ -597,10 +598,15 @@ h4{font-size: 18px;}
 
 .ul_4 a {
 	background: #fff;
+	border-right: 1px solid #c0a35f;
+	border-bottom: 1px solid #c0a35f;
 	display: block;
-	margin: 0 1px 1px 0;
 	padding: 32px 20px 27px 30px;
 	width: 320px;
+}
+
+.ul_4 a:last-child {
+	border-bottom: none;
 }
 
 .h4 {
@@ -618,7 +624,7 @@ h4{font-size: 18px;}
 }
 
 .ul_4 > li:last-child a {
-	margin-right: 0;
+	border-right: 0;
 	width: 318px;
 }
 
