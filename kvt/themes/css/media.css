@@ -223,6 +223,8 @@
 	.footer .number_phone .ml {margin-top: -5px;}
 	.pr_descript span {height: 67px;}
 	.review {font-size: 15px; width: 460px;}
+	.object > div img {width: 100%;}
+	.object > div {width: 367px;}
 }
 
 @media only screen and (max-width: 570px) {
