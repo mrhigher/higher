@@ -221,7 +221,7 @@ h4{font-size: 18px;}
 .wrapper {
 	border-top: 4px solid #c0a35f;
 	margin: 0 auto;
-/*	max-width: 1440px;*/
+/*	width: 1440px;*/
 }
 
 .block_1 {
@@ -232,10 +232,19 @@ h4{font-size: 18px;}
 	margin: 37px 0 0 0;
 }
 
+.logo img:first-child {
+	float: left;
+	margin: 0 13px 0 0;
+}
+
+.logo img:last-child {
+	margin-top: 7px;
+}
+
 /*========================== top_menu ==========================*/
 
 .main_menu {
-	margin-left: 92px;
+	margin-left: 10px;
 }
 
 .flexnav {
@@ -411,6 +420,7 @@ h4{font-size: 18px;}
 
 /*========================== bxslider ==========================*/
 
+/*
 #top_slider .slick-slide {
 	height: 300px;
 	position: relative;
@@ -419,6 +429,13 @@ h4{font-size: 18px;}
 
 #top_slider .slick-slide img {
 	height: 100%;
+}
+*/
+
+.bx-wrapper .bx-viewport {
+	border: none;
+	box-shadow: none;
+	left: 0;;
 }
 
 .slide_descript {
@@ -840,15 +857,19 @@ footer {
 	}
 	.logo {
 		margin-left: 1%;
+	}
+	.logo img:last-child {display: none;}
+/*
 		max-width: 150px;
 		width: 150px;
+*/
 	}
+/*
 	.logo img {
 		height: 59px;
 		width: 171px;
 	}
-/*	.flexnav {margin-left: 40px;}*/
-/*	.link_2 {margin-left: 0;}*/
+*/
 	.ul_1 {margin-right: 1%;}
 	.soc_btn {margin-right: 2%;}
 	.ul_2 {
