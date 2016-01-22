@@ -4,7 +4,7 @@ $(document).ready(function(){
 		autoplay: true,
 		arrows: false,
 		variableWidth: true,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		autoplaySpeed: 4500
 		//rows: 3
 	})
