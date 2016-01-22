@@ -121,7 +121,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 h1, h2, h3, h4 {
@@ -221,11 +221,11 @@ h4{font-size: 18px;}
 .wrapper {
 	border-top: 4px solid #c0a35f;
 	margin: 0 auto;
-	width: 1440px;
+/*	max-width: 1440px;*/
 }
 
 .block_1 {
-	background: url(img/bg_1.jpg) no-repeat center top;
+	background: url(img/bg_1.jpg) no-repeat center top /cover;
 }
 
 .logo {
@@ -234,16 +234,22 @@ h4{font-size: 18px;}
 
 /*========================== top_menu ==========================*/
 
+.main_menu {
+	margin-left: 92px;
+}
+
 .flexnav {
 	float: none;
 	font-family: 'RobotoMedium';
-	margin: 44px 0 0 92px;
+	margin: 44px 0 0 0;
 	text-transform: uppercase;
 }
 
 .flexnav > li {
 	margin: 0 21px 0 0;
 }
+
+.flexnav > li:last-child, .flexnav > li:last-child a {margin-right: 0;}
 
 .flexnav > li a {
 	color: #f9f6f1;
@@ -327,7 +333,7 @@ h4{font-size: 18px;}
 .link_2 {
 	clear: both;
 	color: #c0a35f;
-	margin: 34px 0 0 46px;
+	margin: 34px 0 0 -16px;
 	text-align: center;
 }
 
@@ -376,7 +382,6 @@ h4{font-size: 18px;}
 
 .ul_2 > li a:hover {
 	border-bottom-color: transparent;
-	text-decoration: none;
 }
 
 .ul_2 > li:nth-child(1) {
@@ -507,7 +512,7 @@ h4{font-size: 18px;}
 }
 
 .block_3 {
-	background: url(img/bg_for_block_3.jpg) no-repeat center top;
+	background: #123c65 url(img/bg_for_block_3.jpg) no-repeat center top;
 	color: #ffffff;
 	padding: 143px 0 145px 0;
 }
@@ -641,7 +646,6 @@ h4{font-size: 18px;}
 .ul_4 a:hover {
 	background: #002e5c;
 	color: #fff;
-	text-decoration: none;
 }
 
 .ul_4 a:hover h4 {
@@ -826,4 +830,29 @@ footer {
 	line-height: 77px;
 	margin: 42px 0 0 0;
 	text-align: center;
+}
+
+/*========================== media ==========================*/
+
+@media only screen and (max-width: 1319px) {
+	.center_1 {
+		width: 100%;
+	}
+	.logo {
+		margin-left: 1%;
+		max-width: 150px;
+		width: 150px;
+	}
+	.logo img {
+		height: 59px;
+		width: 171px;
+	}
+/*	.flexnav {margin-left: 40px;}*/
+/*	.link_2 {margin-left: 0;}*/
+	.ul_1 {margin-right: 1%;}
+	.soc_btn {margin-right: 2%;}
+	.ul_2 {
+		margin-left: 2%;
+	}
+	.btn_1 span {display: none;}
 }
