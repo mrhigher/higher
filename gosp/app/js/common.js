@@ -1,11 +1,13 @@
 $(document).ready(function(){
-	$('.bxslider').bxSlider({
-		controls: false,
-		slideWidth: 480,
-		minSlides: 2,
-		maxSlides: 3,
-		mode: 'horizontal'
-	});
+	
+	$('#top_slider').slick({
+		autoplay: true,
+		arrows: false,
+		variableWidth: true,
+//		slidesToShow: 3,
+		autoplaySpeed: 4500
+		//rows: 3
+	})
 	
 	$('.ul_4 li').matchHeight();
 	
@@ -13,8 +15,8 @@ $(document).ready(function(){
 		autoplay: true,
 		arrows: false,
 		variableWidth: true,
-                slidesToShow: 3,
-                autoplaySpeed: 4500,
+		slidesToShow: 3,
+		autoplaySpeed: 4500
 		//rows: 3
 	})
 });

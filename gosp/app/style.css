@@ -406,7 +406,15 @@ h4{font-size: 18px;}
 
 /*========================== bxslider ==========================*/
 
+#top_slider .slick-slide {
+	height: 300px;
+	position: relative;
+	width: 470px;
+}
 
+#top_slider .slick-slide img {
+	height: 100%;
+}
 
 .slide_descript {
 	color: #e0ba61;
@@ -415,6 +423,16 @@ h4{font-size: 18px;}
 	line-height: 1.2;
 	position: absolute;
 	top: 154px;
+	width: 440px;
+}
+
+.slide_descript:before {
+	background: #c0a35f;
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	width: 6px;
 }
 
 .slide_descript > span {
