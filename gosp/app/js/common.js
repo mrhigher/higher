@@ -12,7 +12,9 @@ $(document).ready(function(){
 	$('.block_news').slick({
 		autoplay: true,
 		arrows: false,
-		variableWidth: true
+		variableWidth: true,
+                slidesToShow: 3,
+                autoplaySpeed: 4500,
 		//rows: 3
 	})
 });
