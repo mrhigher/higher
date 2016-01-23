@@ -106,6 +106,8 @@
     height: 28px;
     display: inline-block;
     text-align: center;
+    
+    
   }
   .flexnav-show.flexnav .touch-button {
     width: 100px;
@@ -114,7 +116,7 @@
     position:absolute;
     top:0px;
     height:25px;
-    background:none;
+    background:red;
   }
 .flexnav .touch-button .navicon {
   background:url(arrow_menu.png) no-repeat 50% 3px;
