@@ -57,12 +57,6 @@ $(window).bind('orientationchange', function() {
             })
 
              });
-
-              
-              
-          
-                           
-
               
           })
           

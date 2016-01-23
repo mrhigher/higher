@@ -9,7 +9,7 @@ $(document).ready(function(){
 //		//rows: 3
 //	})
 	
-	$('#top_slider').bxSlider({
+	 topslider = $('#top_slider').bxSlider({
 		auto: true,
 		controls: false,
 		speed: 300,
@@ -39,12 +39,15 @@ $(document).ready(function(){
 		maxSlides: 6
 		//slideWidth: 480
 	});
-	
+
+    
 	var windowWidth = $(window).width();
 	if(windowWidth < 550) {
-		slider = $('#top_slider').bxSlider();
-		slider.destroySlider();
+      	topslider.destroySlider();
 	}
+        var first_fireslide = function() {
+            
+        }
 
 });
 
