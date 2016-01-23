@@ -969,15 +969,17 @@ footer {
 
 @media only screen and (max-width: 880px) {
 	.ul_2 {
-		display: table;
-		margin-left: auto;
-		margin-right: auto;
-/*		width: auto;*/
+		margin-left: 4%;
+		width: auto;
 	}
 	.ul_2 > li, .ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2) {
 		float: none;
 		margin-right: 0;
+		width: 55%;
 	}
+	.ul_2 > li:nth-child(1) {min-height: 70px}
+	.ul_2 > li:nth-child(2) {min-height: 61px}
+	.ul_2 > li:nth-child(3) {min-height: 64px;}
 	.ul_2 > li:nth-child(2) {background-image: url(img/ico_2_mobile.png);}
 	.ul_2 > li + li {margin-left: 0;}
 	.ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2), .ul_2 > li:nth-child(3), .ul_2 > li {padding-left: 110px;}
@@ -1036,5 +1038,13 @@ footer {
 		background: #002e5c;
 		padding: 0;
 		width: 100%;
+	}
+	.flexnav > li {
+		border-top: 1px solid #c0a35f;
+		height: 102px;
+		line-height: 102px;
+	}
+	.flexnav > li a {
+		padding-bottom: 0;
 	}
 }
