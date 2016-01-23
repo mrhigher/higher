@@ -36,29 +36,32 @@ $(window).bind('orientationchange', function() {
 });
 
 		checkSize();
+                
     
       $(window).resize(checkSize);
       function checkSize(){
           var flexnav = $(".flexnav");
 
           $('.touch-with').unbind('click').bind('click',function(e) {
-              e.preventDefault();
-
-            /// $('.item-with-ul').find('ul').removeClass('show_with');
+            //   e.preventDefault();
+            /* 
+             $('.item-with-ul').find('ul').removeClass('show_with');
               if($(this).next().hasClass('show_with')) {
-                //  $(this).next().removeClass('show_with');
+                  $(this).next().removeClass('show_with');
               }
               if($(this).next().not('[show_with]')) {
-                  //$(this).next().toggleClass('show_with');
-              } 
-              $(".item-with-ul ul").each(function(b, a) {
-            $(a).prev().click(function() {
-            $(a).toggleClass("show_with")
-            })
-
-             });
+                  $(this).next().toggleClass('show_with');
+              }
+              */
+            
               
           })
+            $(".item-with-ul ul").each(function(b, a) {
+            $(a).prev().click(function(e) {
+                  e.preventDefault();
+            $(a).toggleClass("show_with")
+            })
+             }); 
           
           
 
