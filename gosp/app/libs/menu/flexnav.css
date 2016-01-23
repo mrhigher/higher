@@ -150,7 +150,7 @@
   }
 
   .menu-button .touch-button {
-    background:#000 url(../img/menu_toggle.png) no-repeat center center;
+/*    background:#000 url(../img/menu_toggle.png) no-repeat center center;*/
     padding:22px 20px;
     position: absolute;
     z-index: 999;
@@ -175,7 +175,7 @@
 }
 
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 700px) {
   body.one-page {
     padding-top: 70px; }
 
