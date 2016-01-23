@@ -28,6 +28,7 @@ $(document).ready(function(){
 //		autoplaySpeed: 4500
 //		//rows: 3
 //	})
+
 	
 	$('.block_news').bxSlider({
 		auto: true,
@@ -38,4 +39,5 @@ $(document).ready(function(){
 		maxSlides: 6
 		//slideWidth: 480
 	});
+
 });
