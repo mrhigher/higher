@@ -932,8 +932,13 @@ footer {
 	.block_3 {padding-bottom: 70px;}
 	.block_4 {padding-top: 45px;}
 	.copy {margin-top: 0;}
+	.ul_4 {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 642px;
+	}
 	.ul_4 > li {border-bottom: 1px solid #c0a35f;}
-	.ul_4 > li:last-child  {border-right: 1px solid #c0a35f;}
+	.ul_4 > li:last-child  {border-right: 1px solid #c0a35f; width: auto;}
 	.descript_1 {
 		margin-left: 5%;
 		margin-right: 5%;
