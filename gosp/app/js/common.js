@@ -28,4 +28,14 @@ $(document).ready(function(){
 //		autoplaySpeed: 4500
 //		//rows: 3
 //	})
+	
+	$('.block_news').bxSlider({
+		auto: true,
+		controls: false,
+		speed: 300,
+		pager:false,
+		slideWidth: 329,
+		maxSlides: 6
+		//slideWidth: 480
+	});
 });

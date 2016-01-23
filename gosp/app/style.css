@@ -680,22 +680,17 @@ h4{font-size: 18px;}
 	text-align: center;
 }
 
-.block_news {
-	margin: 57px 0 64px 0;
-}
-
 .news_wrap {
     margin:0px 1%;
+}
+
+.news_wrap .h3_style {
+	margin: 0 0 57px 0;
 }
 
 .block_news a {
 	color: #fff;
 	line-height: 1.4;
-}
-
-.slick-slide {
-	float: left;
-	width: 329px;
 }
 
 .block_news .date {
@@ -707,6 +702,10 @@ h4{font-size: 18px;}
 	margin: 0 0 19px 0;
 	text-align: center;
 	width: 87px;
+}
+
+.news_wrap .bx-wrapper .bx-viewport {
+	background: transparent;
 }
 
 .news .btn_2 {
