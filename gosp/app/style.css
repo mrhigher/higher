@@ -938,7 +938,8 @@ footer {
 		max-width: 642px;
 	}
 	.ul_4 > li {border-bottom: 1px solid #c0a35f;}
-	.ul_4 > li:last-child  {border-right: 1px solid #c0a35f; width: auto;}
+	.ul_4 > li:last-child  {width: 100%;}
+	.ul_4 > li:last-child a {width: 100%;}
 	.descript_1 {
 		margin-left: 5%;
 		margin-right: 5%;
