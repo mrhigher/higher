@@ -39,6 +39,13 @@ $(document).ready(function(){
 		maxSlides: 6
 		//slideWidth: 480
 	});
-
+	
+	var windowWidth = $(window).width();
+	if(windowWidth < 550) {
+		slider = $('#top_slider').bxSlider();
+		slider.destroySlider();
+	}
 
 });
+
+
