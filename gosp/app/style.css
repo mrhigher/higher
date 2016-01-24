@@ -932,7 +932,7 @@ footer {
 	top: 95px;
 }
 
-.popup .visit label, .popup .input_search {
+.visit label, .enter label, .popup .input_search {
 	border: 2px solid #bbc5ce;
 	-moz-border-radius: 24px;
 	-webkit-border-radius: 24px;
@@ -987,7 +987,7 @@ footer {
 }
 
 .search label {
-	background: url(img/radio.png) no-repeat left top;
+	background: url(img/radio.png) no-repeat 0 -18px;
 	color: #2d3e50;
 	cursor: pointer;
 	display: block;
@@ -1003,7 +1003,7 @@ footer {
 }
 
 .search input[type=radio]:checked + label {
-	background-position: 0 -18px;
+	background-position: 0 0;
 }
 
 .search input[type=submit] {
