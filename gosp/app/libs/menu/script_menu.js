@@ -43,7 +43,7 @@ $(window).bind('orientationchange', function() {
           var flexnav = $(".flexnav");
         
           
-           var c = $(".item-with-ul ul");
+           var c = $(".item-with-ul > ul");
            c.each(function(b, a) {
            $(a).prev().unbind('click').bind('click',function(e) {
            c.not($(a).toggleClass('show_with')).removeClass("show_with");
@@ -56,7 +56,7 @@ $(window).bind('orientationchange', function() {
           flexnav.removeClass('flexnav-show');
           if (flexnav.css("z-index") == "2" ){
                 
-             $(".item-with-ul ul").each(function(b, a) {
+             $(".item-with-ul > ul").each(function(b, a) {
             $(a).prev().unbind('click').bind('click', function(e) {
             return true;
             })

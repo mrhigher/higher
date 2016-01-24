@@ -50,52 +50,53 @@
     overflow: hidden;
     text-decoration: none;
   }
-.flexnav li ul li a {
+.flexnav li > ul li a {
   padding: .28em 1.4em .28em 1.4em;
 }
 
-  .flexnav li ul {
+  .flexnav li > ul {
     width: 100%;
   }
-.flexnav li ul {
+.flexnav li > ul {
   background-color:#000000;
   padding:0.6em 0px;
   width:190px;
 }
-.flexnav-show.flexnav li ul.show_with {
+.flexnav-show.flexnav li > ul.show_with {
   display:block;
 } /* elnew*/
-.flexnav-show.flexnav li ul {
+.flexnav-show.flexnav li > ul {
     position:relative;
     left:-50px;
     border-right:1px solid #fff;
     padding: 0em 0px;
     margin:5px auto;
     display:none;
+    background:red;
 }
-    .flexnav li ul li {
+    .flexnav li > ul li {
       font-size: 100%;
       position: relative;
       overflow: hidden;
     }
 
-  .flexnav li ul.flexnav-show li {
+  .flexnav li > ul.flexnav-show li {
     overflow: visible; }
 
-  .flexnav li ul li a {
+  .flexnav li > ul li a {
     display: block;
     background: #000;
     color:#fff;
     font-size:16px;
   }
-.flexnav li ul li a:hover {
+.flexnav li > ul li a:hover {
    color:#ffbf00;
 }
 
-  .flexnav ul li ul li a {
+  .flexnav  ul li ul li a {
     background: #bfbfbc; }
 
-  .flexnav ul li ul li ul li a {
+  .flexnav ul li > ul li ul li a {
     background: #cbcbc9; }
 
   .flexnav .touch-button {
@@ -215,11 +216,11 @@
       .flexnav li > ul li {
         width: 100%;
       }
-    .flexnav li ul li > ul {
+    .flexnav li > ul li > ul {
       margin-left: 100%;
       top: 0;
     }
-    .flexnav li ul li a {
+    .flexnav li > ul li a {
       border-bottom: none;
     }
 

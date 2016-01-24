@@ -72,6 +72,7 @@ $(document).ready(function () {
 		// initiates gallery slider			
 		var TSsettings = function() {
 			var TSsettings1 = {
+                            infiniteLoop: true,
                             controls: false,
                             arrows: false,
                   	    variableWidth: true,
@@ -85,6 +86,7 @@ $(document).ready(function () {
                             
 			};
 			var TSsettings2 = {
+                            infiniteLoop: true,
                             controls: false,
                             arrows: false,
                   	    variableWidth: true,

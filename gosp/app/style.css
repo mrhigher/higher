@@ -896,8 +896,10 @@ footer {
    z-index: 1;
    width: 96px;
    height: 96px;
-   top: calc(50% - 48px);
-   left: calc(50% - 48px);
+   top:50%;
+   margin-top:-48px;
+   left:50%;
+   margin-left:-48px;
    background-image:url('img/play.png');
    background-repeat: no-repeat;
    background-size: cover;
@@ -910,6 +912,8 @@ footer {
 }
 .play_ic:hover{
    -webkit-transform:scale(1.1);
+   -moz-transform:scale(1.1);
+   transform:scale(1.1);
 }
 .resp_video {
     display:none;
@@ -1122,7 +1126,7 @@ footer {
 	}
 	.flexnav > li {
 		border-top: 1px solid #c0a35f;
-		height: 102px;
+/*		height: 102px;*/
 		line-height: 102px;
 	}!important
 	.flexnav > li a {
