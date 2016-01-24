@@ -21,6 +21,12 @@ $(document).ready(function(){
 //		
 //	});
 	
+	// popup 2
+    $('.show_search').click(function(e) {
+         e.preventDefault();
+        $('.overlay, .search').fadeIn(500);
+        $('.search').center();
+	});
 	
 	// popup 2
     $('.show_visit').click(function(e) {
@@ -202,7 +208,7 @@ $(document).ready(function () {
 $(document).keydown(function(e) {
     // ESCAPE key pressed
     if (e.keyCode == 27) {
-        $(".thank_you, .overlay").fadeOut(500);
+        $(".popup, .overlay").fadeOut(500);
     }
 });
         

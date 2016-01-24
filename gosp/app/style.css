@@ -932,7 +932,7 @@ footer {
 	top: 95px;
 }
 
-.popup label {
+.popup .visit label, .popup .input_search {
 	border: 2px solid #bbc5ce;
 	-moz-border-radius: 24px;
 	-webkit-border-radius: 24px;
@@ -943,6 +943,11 @@ footer {
 	height: 47px;
 	line-height: 45px;
 	overflow: hidden;
+}
+
+.popup .input_search {
+	margin: 0 0 20px 0;
+	width: 100%;
 }
 
 .popup label + label {
@@ -972,10 +977,37 @@ footer {
 	-moz-border-radius: 24px;
 	-webkit-border-radius: 24px;
 	border-radius: 24px;
+	color: #fff;
 	font-size: 18px;
 	height: 48px;
 	margin: 40px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
 	width: 233px;
+}
+
+.search label {
+	background: url(img/radio.png) no-repeat left top;
+	color: #2d3e50;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	height: 18px;
+	line-height: 18px;
+	margin: 0 0 18px 0;
+	padding: 0 0 0 27px;
+}
+
+.search input[type=radio] {
+	display: none;
+}
+
+.search input[type=radio]:checked + label {
+	background-position: 0 -18px;
+}
+
+.search input[type=submit] {
+	margin-top: 22px;
 }
 
 

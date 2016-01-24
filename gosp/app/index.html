@@ -118,7 +118,7 @@
 					<li><a href="#">Контакты</a>
 					</li>
 				</ul>
-				<p class="link_2"><a class="link_2__1 show_enter" href="#">личный кабинет пациента</a>|<a class="link_2__2" href="#">поиск по сайту</a></p>
+				<p class="link_2"><a class="link_2__1 show_enter" href="#">личный кабинет пациента</a>|<a class="link_2__2 show_search" href="#">поиск по сайту</a></p>
 			</nav>
 			<ul class="ul_1 right clearfix">
 				<li><a href="#" class="btn_1 show_visit">записаться<span> на прием</span></a></li>
@@ -386,7 +386,7 @@
 	<form action="`#">
 		<label><span>Ваше имя:</span><input type="text"></label>
 		<label><span>Тел.:</span><input type="tel"></label>
-		<input type="submit" class="btn_1" value="отправить">
+		<input type="submit" value="отправить">
 	</form>
 </div>
 <div class="popup thank_you">
@@ -400,7 +400,19 @@
 	<form action="`#">
 		<label><span>e-mail:</span><input type="text"></label>
 		<label><span>Пароль:</span><input type="password"></label>
-		<input type="submit" class="btn_1" value="отправить">
+		<input type="submit" value="отправить">
+	</form>
+</div>
+<div class="popup search">
+	<span class="close_popup"></span>
+	<h2 class="h2">поиск</h2>
+	<form action="#">
+		<input class="input_search" type="search">
+		<input id="radio_1" type="radio" name="search_param">
+		<label for="radio_1">поиск по отделениям</label>
+		<input id="radio_2" type="radio" name="search_param">
+		<label for="radio_2">поиск по заболеваниям</label>
+		<input type="submit" value="найти">
 	</form>
 </div>
 <!-- load script menu -->
