@@ -111,6 +111,7 @@ body {
 	color: #2d3e50;
 	font-family: RobotoRegular;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 
 img {max-width: 100%;}
@@ -316,6 +317,8 @@ h4{font-size: 18px;}
 	width: auto;
 }
 
+.flexnav .with_menu {width: auto;}
+
 /*========================== END top_menu ==========================*/
 
 .number_phone {
@@ -424,18 +427,6 @@ h4{font-size: 18px;}
 }
 
 /*========================== bxslider ==========================*/
-
-/*
-#top_slider .slick-slide {
-	height: 300px;
-	position: relative;
-	width: 470px;
-}
-
-#top_slider .slick-slide img {
-	height: 100%;
-}
-*/
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
 	background: #c0a35f;
