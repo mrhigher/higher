@@ -867,9 +867,9 @@ footer {
 	text-align: center;
 }
 
-/*
 .overlay {
 	background: rgba(0,46,92, .9);
+	display: none;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -880,13 +880,103 @@ footer {
 
 .popup {
 	background: #fff;
+	display: none;
+	left: 50%;
 	padding: 60px 75px 60px 75px;
 	position: absolute;
 	top: 50%;
 	width: 512px;
 	z-index: 998;
 }
-*/
+
+.popup h2 {
+	color: #002e5c;
+	font-size: 32px;
+	margin-bottom: 60px;
+}
+
+.popup .h2:before {
+	top: 55px;
+	width: 150px;
+}
+
+.popup p {
+	color: #2d3e50;
+	line-height: 1.5;
+}
+
+.close_popup {
+	background: url(img/close_popup.png) no-repeat;
+	cursor: pointer;
+	display: block;
+	height: 14px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 14px;
+}
+
+.popup.visit {
+	top: 600px;
+}
+
+.popup.visit .h2 {
+	line-height: 1.2;
+}
+
+.popup.visit .h2 span {
+	font-family: 'robotolight';
+}
+
+.popup.visit .h2:before, .popup.enter h2:before {
+	top: 95px;
+}
+
+.popup label {
+	border: 2px solid #bbc5ce;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	color: #8ca3b8;
+	display: block;
+	font-size: 18px;
+	height: 47px;
+	line-height: 45px;
+	overflow: hidden;
+}
+
+.popup label + label {
+	margin-top: 20px;
+}
+
+.popup label span {
+	float: left;
+	margin-left: 18px;
+}
+
+.popup label input[type=text], .popup label input[type=tel], .popup label input[type=password] {
+	background: transparent;
+	color: #002e5c;
+	display: inline-block;
+	font-family: 'robotobold';
+	font-size: 18px;
+	height: 43px;
+	padding: 0 0 0 17px;
+	position: relative;
+	top: -1px;
+	width: 65%;
+}
+
+.popup input[type=submit] {
+	background: #c0a35f;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	font-size: 18px;
+	height: 48px;
+	margin: 40px 0 0 0;
+	width: 233px;
+}
 
 
 /*preload yourtube start*/
