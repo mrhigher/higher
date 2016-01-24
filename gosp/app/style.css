@@ -224,7 +224,6 @@ h4{font-size: 18px;}
 .wrapper {
 	border-top: 4px solid #c0a35f;
 	margin: 0 auto;
-/*	width: 1440px;*/
 }
 
 .block_1 {
@@ -867,6 +866,27 @@ footer {
 	margin: 42px 0 0 0;
 	text-align: center;
 }
+
+/*
+.overlay {
+	background: rgba(0,46,92, .9);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 997;
+}
+
+.popup {
+	background: #fff;
+	padding: 60px 75px 60px 75px;
+	position: absolute;
+	top: 50%;
+	width: 512px;
+	z-index: 998;
+}
+*/
 
 
 /*preload yourtube start*/
