@@ -211,6 +211,17 @@ $(document).keydown(function(e) {
         $(".popup, .overlay").fadeOut(500);
     }
 });
+
+ $(document).mouseup(function (e)
+    {
+        var container = $(".popup");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $(".popup, .overlay").fadeOut(500);
+        }
+    });
         
 
 jQuery.fn.center = function () {
