@@ -12,6 +12,8 @@ $(document).ready(function(){
 	
 	
 	$('.ul_4 li').matchHeight();
+        
+         $('.for_mask').mask('+7 (000) 000-00-00');
 	
 //	$('.block_news').slick({
 //		autoplay: true,
@@ -43,6 +45,20 @@ $(document).ready(function(){
 //		//slideWidth: 480
 //	});    
  
+ 
+ 
+function autoPlayVideo(vcode, width, height){
+   "use strict";
+   $("#videoContainer").html('<iframe width="'+width+'" height="'+height+'" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+}
+
+jQuery('.vid_treiler ._face, .vid_treiler .play_ic').click(function(){
+    $('.vid_treiler .resp_video').show();
+    $('.vid_treiler ._face').hide();
+   autoPlayVideo('kDyJN7qQETA','100%','100%');
+   return false;
+});
+
 
                 
  
@@ -140,6 +156,8 @@ $(document).ready(function () {
 
 		
 	});
+        
+        
   
  
 

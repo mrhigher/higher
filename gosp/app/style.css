@@ -200,6 +200,9 @@ h4{font-size: 18px;}
 	padding: 0 20px;
 	text-transform: uppercase;
 }
+.btn_1:hover {
+    opacity:.9
+}
 
 .btn_2 {
 	border: 2px solid #fff;
@@ -502,8 +505,8 @@ h4{font-size: 18px;}
 
 .about_us {
 	margin-bottom: 34px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left:auto;
+	margin-right:auto;
 	position: relative;
 	width: 900px;
 }
@@ -749,6 +752,7 @@ h4{font-size: 18px;}
 	font-size: 18px;
 	height: 48px;
 	margin: 0 7px 0 13px;
+        padding:0px 12px;
 	text-align: center;
 	width: 353px;
 }
@@ -766,6 +770,9 @@ h4{font-size: 18px;}
 	height: 48px;
 	padding: 0 26px;
 	text-transform: uppercase;
+}
+.call_submit:hover {
+    opacity:.9;
 }
 
 .map {
@@ -839,7 +846,9 @@ footer {
 	height: 41px;
 	width: 41px;
 }
-
+.soc_btn a:hover {
+    opacity:0.9;
+}
 .soc_btn a + a {
 	margin-left: 18px;
 }
@@ -859,6 +868,47 @@ footer {
 	text-align: center;
 }
 
+
+/*preload yourtube start*/
+
+.play_ic {
+   display: block;
+   z-index: 1;
+   width: 96px;
+   height: 96px;
+   top: calc(50% - 48px);
+   left: calc(50% - 48px);
+   background-image:url('img/play.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   -moz-transform: all 0.15s ease-in;
+   -ms-transform: all 0.15s ease-in;
+   -webkit-transition: all 0.15s ease-in;
+   -o-transform: all 0.15s ease-in;
+   transform: all 0.15s ease-in;
+}
+.play_ic:hover{
+   -webkit-transform:scale(1.1);
+}
+.resp_video {
+    display:none;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0; 
+    overflow: hidden;
+}
+ .resp_video iframe{
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   width: 100% !important;
+   height: 100% !important;
+}
+
+/*preload yourtube end */
 /*========================== media ==========================*/
 
 @media only screen and (max-width: 1319px) {
@@ -897,6 +947,7 @@ footer {
 	}
 	.menu-button span + span {margin-top: 14px;}
 	.flexnav.flexnav-show {
+                top:75px;
 		position: absolute;
 	}
 	.ul_2 {margin-bottom: 50px; margin-top: 70px;}
