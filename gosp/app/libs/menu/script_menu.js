@@ -53,13 +53,14 @@ $(window).bind('orientationchange', function() {
                   $(this).next().toggleClass('show_with');
               }
               */
-            
-              
           })
-            $(".item-with-ul ul").each(function(b, a) {
-            $(a).prev().click(function(e) {
-                  e.preventDefault();
-            $(a).toggleClass("show_with")
+          
+              
+             $(".item-with-ul ul").each(function(b, a) {
+            $(a).prev().unbind('click').bind('click',function(e) {
+            $(".item-with-ul ul").removeClass("show_with");
+            $(a).addClass("show_with");
+             return false;
             })
              }); 
           
@@ -67,12 +68,18 @@ $(window).bind('orientationchange', function() {
 
           flexnav.removeClass('flexnav-show');
           if (flexnav.css("z-index") == "2" ){
-
+                
+             $(".item-with-ul ul").each(function(b, a) {
+            $(a).prev().unbind('click').bind('click', function(e) {
+            return true;
+            })
+             }); 
+              
               $(".touch-press").unbind('click').bind('click', function(e) {
                   e.preventDefault();
                   $(".flexnav").removeClass('flexnav-show');
-
               });
+              
 
           } else {
 
