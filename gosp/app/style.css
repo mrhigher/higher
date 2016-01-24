@@ -1053,11 +1053,20 @@ footer {
 		border-top: 1px solid #c0a35f;
 		height: 102px;
 		line-height: 102px;
-	}
+	}!important
 	.flexnav > li a {
 		font-size: 36px;
 		padding-bottom: 0;
 	}
+	.show_with ul {
+		background: #c0a35f!important;
+		display: block!important; 
+		float: none!important; 
+		left: 0!important;
+		position: absolute!important;
+		z-index: 999!important;
+	}
+	.show_with ul li a {color: #fff;}
 }
 
 @media only screen and (max-width: 645px) {
