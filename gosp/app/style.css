@@ -901,12 +901,14 @@ footer {
 }
 
 .copy {
-	height: 77px;
-	line-height: 77px;
+	padding:22px 0px 22px 0px;
+	line-height: 1.4em;
 	margin: 42px 0 0 0;
 	text-align: center;
 }
-
+.copy br {
+    display:none;
+}
 .overlay {
 	background: rgba(0,46,92, .9);
 	display: none;
@@ -1425,17 +1427,25 @@ footer {
 	}
 	.ul_3 {margin-bottom: 0;}
 	footer .logo.left, .foooter_data.left, .left.addr, .soc_btn.right {float: none; text-align: center;}
-	footer .logo.left {
+	
+        footer .logo.left {
 		display: block;
 		margin-top: 60px;
 		overflow: hidden;
 	}
+       
 	footer .center_1 {overflow: hidden;}
+        
+        footer .copy br {
+            display:block;
+        } 
         
 	.bx-wrapper img {
 		width:100%;
 	}
 	.flexnav .advbox .tel {font-size: 45px; }
+        
+        
 }
 
 @media only screen and (max-width: 546px) {
