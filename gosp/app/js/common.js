@@ -1,25 +1,5 @@
 $(document).ready(function(){
 	
-//	$('#top_slider').slick({
-//		autoplay: true,
-//		arrows: false,
-//		variableWidth: true,
-//		slidesToShow: 4,
-//		autoplaySpeed: 4500
-//		//rows: 3
-//	})
-	
-//	var width_thank_you = $('.thank_you').innerWidth();
-//	var height_thank_you = $('.thank_you').innerHeight();
-//	
-//	$('.show_popup_thank_you').click(function() {
-//		var elem_popup = $('.thank_you').show();
-//		elem_popup.css({
-//			marginLeft: '-' + width_thank_you/2 + 'px',
-//			marginTop: '-' + height_thank_you/2 + 'px'
-//		});
-//		
-//	});
 	
 	// popup 2
     $('.show_search').click(function(e) {
@@ -53,7 +33,15 @@ $(document).ready(function(){
 		$('.overlay, .popup').fadeOut(500);
 	});
 	
-	
+	var window_width = $(window).width();
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= 5 && window_width > 699) {
+		   $('#header').addClass('bg_header');
+		}
+		else {
+		   $('#header').removeClass('bg_header');
+		}
+	});
 	
 	
 	
@@ -61,35 +49,7 @@ $(document).ready(function(){
         
 	 $('.for_mask').mask('+7 (000) 000-00-00');
 	
-//	$('.block_news').slick({
-//		autoplay: true,
-//		arrows: false,
-//		variableWidth: true,
-//		slidesToShow: 3,
-//		autoplaySpeed: 4500
-//		//rows: 3
-//	})
 
-	
-	/*$('.block_news').bxSlider({
-		auto: true,
-		controls: false,
-		speed: 300,
-		pager:false,
-		slideWidth: 329,
-		maxSlides: 6
-		//slideWidth: 480
-	}); */
-
-   
-//                topslider = $('#top_slider').bxSlider({
-//		auto: true,
-//		controls: false,
-//		speed: 300,
-//		slideWidth: 480,
-//		maxSlides: 6
-//		//slideWidth: 480
-//	});    
  
  
  
@@ -104,9 +64,7 @@ jQuery('.vid_treiler ._face, .vid_treiler .play_ic').click(function(){
    autoPlayVideo('kDyJN7qQETA','100%','100%');
    return false;
 });
-
-
-                
+	               
  
 
 });
@@ -118,32 +76,30 @@ $(document).ready(function () {
 		// initiates gallery slider			
 		var TSsettings = function() {
 			var TSsettings1 = {
-                            infiniteLoop: true,
-                            controls: false,
-                            arrows: false,
-                  	    variableWidth: true,
-                            auto:true,
-                            slidesToShow: 3,
-                            minSlides: 3,
-                            maxSlides: 4,
-                            moveSlides: 1,
-                            startSlide: 0,
-                            mode: 'vertical',
+				infiniteLoop: true,
+				controls: false,
+				arrows: false,
+				variableWidth: true,
+				auto:true,
+				slidesToShow: 3,
+				minSlides: 3,
+				maxSlides: 4,
+				moveSlides: 1,
+				startSlide: 0,
+				mode: 'vertical',
                             
 			};
 			var TSsettings2 = {
-                            infiniteLoop: true,
-                            controls: false,
-                            arrows: false,
-                  	    variableWidth: true,
-                            auto:true,
-                            slidesToShow: 3,
-                            maxSlides: 10,
-                            moveSlides: 1,
-                            startSlide: 0,
-                            slideWidth: 480
-                           
-                 
+				infiniteLoop: true,
+				controls: false,
+				arrows: false,
+				variableWidth: true,
+				auto:true,
+				slidesToShow: 3,
+				maxSlides: 10,
+				moveSlides: 1,
+				startSlide: 0,
+				slideWidth: 480
 			};
 			return ($(window).width()<530) ? TSsettings1 : TSsettings2;
 		}
@@ -232,6 +188,8 @@ jQuery.fn.center = function () {
                                                 $(window).scrollLeft()) + "px");
     return this;
 }
+
+
 
   
  
