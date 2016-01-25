@@ -20,6 +20,7 @@ var adjustMenu = function() {
 	$(document).keydown(function(e) {
 		// ESCAPE key pressed
 		if (e.keyCode == 27) {
+                 
 			$('.flexnav').removeClass('flexnav-show');
 		}
 	});
