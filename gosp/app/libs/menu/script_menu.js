@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	adjustMenu();
+            adjustMenu();
 })
 
 var adjustMenu = function() {
