@@ -175,7 +175,7 @@ $(document).keydown(function(e) {
         if (!container.is(e.target) // if the target of the click isn't the container...
             && container.has(e.target).length === 0) // ... nor a descendant of the container
         {
-            $(".popup, .overlay").fadeOut(500);
+            //$(".popup, .overlay").fadeOut(500);
         }
     });
         
