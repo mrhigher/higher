@@ -1132,8 +1132,6 @@ footer {
 @media only screen and (max-width: 1060px) {
 	body {overflow-x: hidden;}
 	
-	
-	
 	.menu-button span {
 		background: #fff;
 		display: block;
@@ -1358,6 +1356,10 @@ footer {
 	.flexnav .advbox .items span {
 		margin-bottom: 28px;
 		padding: 0 5%;
+	}
+	.flexnav .advbox .tel {
+		display: block;
+		margin-bottom: 50px;
 	}
 }
 
