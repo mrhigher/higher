@@ -132,7 +132,7 @@ $(document).ready(function () {
                             moveSlides: 1,
                             startSlide: 0,
                             mode: 'vertical',
-                            
+//                            adaptiveHeight: true
 			};
 			var BNsettings2 = {
                             pager:false,
