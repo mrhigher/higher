@@ -1356,12 +1356,6 @@ footer {
 }
 
 @media only screen and (max-width: 546px) {
-/*
-	.bx-wrapper {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
-*/
 	.slide_descript {
 		left: 3%;
 		width: 97%;
