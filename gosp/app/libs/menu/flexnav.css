@@ -39,6 +39,7 @@
     font-size: 100%;
     position: relative;
     overflow: hidden;
+	  z-index: 5;
   }
 
   .flexnav li a {
@@ -215,6 +216,7 @@
   }
       .flexnav li > ul li {
         width: 100%;
+		  z-index: 5;
       }
     .flexnav li > ul li > ul {
       margin-left: 100%;

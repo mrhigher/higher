@@ -476,7 +476,7 @@ h4{font-size: 18px;}
 	line-height: 1.2;
 	position: absolute;
 	top: 154px;
-	width: 440px;
+	width: 449px;
 }
 
 .slide_descript:before {
@@ -1036,7 +1036,6 @@ footer {
 
 .play_ic {
    display: block;
-   z-index: 1;
    width: 96px;
    height: 96px;
    top:50%;
@@ -1120,10 +1119,7 @@ footer {
 	.ul_2 {margin-bottom: 50px; margin-top: 70px;}
 	.ul_2 > li, .ul_2 > li:nth-child(1) {margin-bottom: 10px; width: 45%;}
 	.ul_2 > li:last-child {clear: both;}
-}
-
-@media only screen and (max-width: 965px) {
-	.center_2, .center_3 {width: 100%;}
+	/* main_menu */
 	.main_menu.left {
 		float: none;
 		left: 50%;
@@ -1131,10 +1127,13 @@ footer {
 		position: absolute;
 		top: 100px;
 	}
-	.ul_1 {margin-right: 2%;}
 	.logo {margin-left: 2%; width: 190px;}
 	.logo img:last-child {display: block;}
-/*	.btn_1 span {display: block;}*/
+}
+
+@media only screen and (max-width: 970px) {
+	.center_2, .center_3 {width: 100%;}
+	.ul_1 {margin-right: 2%;}
 	.ul_1 li:last-child {margin-left: 25px;}
 	.flexnav > li a {font-size: 16px;}
 	.soc_btn a {float: none;}
@@ -1163,6 +1162,7 @@ footer {
 		margin-right: 5%;
 		width: 90%;
 	}
+	.flexnav li > ul div ul {position: relative; z-index: 5;}
 }
 
 @media only screen and (max-width: 925px) {
@@ -1289,11 +1289,11 @@ footer {
 	}
 	.show_with ul li a {color: #fff!important;}
 	.flexnav li > ul > li.item-with-ul {padding-bottom: 0; padding-top: 0;}
-	.flexnav > li ul li {width: 100%;}
+	.flexnav > li ul li {width: 100%; z-index: 5;}
 	.flexnav-show.flexnav li > ul {margin-top: 0;}
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
+	.flexnav li > ul div ul:first-child {padding-top: 50px;}
 	.flexnav li > ul div ul {
-		padding-top: 50px;
 		width: 100%;
 	}
 	.flexnav ul li ul li a {
@@ -1303,15 +1303,12 @@ footer {
 	.flexnav > li.item-with-ul {background: none;}
 }
 
-@media only screen and (max-width: 645px) {
-	.center_5 {width: 100%;}
-	.ul_4, .call, .call_submit {
-		margin-left: auto;
-		margin-right: auto;
-	}
+@media only screen and (max-width: 658px) {
 	.ul_4 {
 		background: none;
 		display: table;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.ul_4 > li, .ul_4 > li:last-child {
 		border-right: none;
@@ -1324,6 +1321,14 @@ footer {
 		padding-left: 2%;
 		padding-right: 2%;
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 645px) {
+	.center_5 {width: 100%;}
+	.call, .call_submit {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.call, .call_submit {
 		display: table;
@@ -1378,18 +1383,28 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 529px) {
+@media only screen and (max-width: 546px) {
+/*
 	.bx-wrapper {
 		padding-left: 2%;
 		padding-right: 2%;
 	}
-	.block_news > div {
-		margin-bottom: 20px;
-	}
+*/
 	.slide_descript {
 		left: 3%;
 		width: 97%;
 	}
+	
+}
+
+@media only screen and (max-width: 529px) {
+	.block_news > div {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.slide_descript {top: 110px;}
 }
 
 @media only screen and (max-width: 449px) {
