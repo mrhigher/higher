@@ -7,12 +7,12 @@ var adjustMenu = function() {
     
     $(document).mouseup(function (e)
 	{
-		var container = $(".main_menu");
+		var container = $(".main_menu, .top_slwrap");
 
 		if (!container.is(e.target) // if the target of the click isn't the container...
 			&& container.has(e.target).length === 0) // ... nor a descendant of the container
 		{
-			$('.flexnav').removeClass('flexnav-show');
+			 $('.flexnav').removeClass('flexnav-show');
 
 		}
 	});

@@ -221,6 +221,7 @@ h4{font-size: 18px;}
 }
 
 .bg_header {
+        border-top:3px solid #c0a35f;
 	background: #002e5c;
 	padding-bottom: 10px;
 	padding-top: 5px;
@@ -307,6 +308,13 @@ h4{font-size: 18px;}
 }
 
 .flexnav li ul {padding: 0;}
+
+.flexnav > li > ul.hpad1 {
+    left:-85px;
+}
+.flexnav > li > ul.hpad2 {
+    left:-190px;
+}
 
 .flexnav li > ul > li.item-with-ul {
 	background: #ecf0f1;	
@@ -579,10 +587,13 @@ h4{font-size: 18px;}
 .block_3 a {color: #fff;}
 
 .h2_style {
+        
 	font-family: 'robotolight';
 	text-align: center;
 }
-
+.h2_style, .h3_style {
+     line-height:1.3em;
+} 
 .ul_3 {
 	margin: 65px 0 65px 40px;
 }
@@ -890,12 +901,14 @@ footer {
 }
 
 .copy {
-	height: 77px;
-	line-height: 77px;
+	padding:22px 0px 22px 0px;
+	line-height: 1.4em;
 	margin: 42px 0 0 0;
 	text-align: center;
 }
-
+.copy br {
+    display:none;
+}
 .overlay {
 	background: rgba(0,46,92, .9);
 	display: none;
@@ -1313,6 +1326,8 @@ footer {
 		width: 100%;
 	}
 	.flexnav ul li ul li a {
+                font-family: RobotoRegular;
+                text-transform: none;
 		font-size: 28px;
 		padding: 20px 10px 20px 65px;
 	}
@@ -1324,12 +1339,14 @@ footer {
 	}
 	.flexnav .advbox .tel {font-size: 65px; }
 	.flexnav .advbox  .items a {
+                font-family: RobotoRegular;
 		border: 1px solid #c0a35f;
 		border-radius: 34px;
 		display: block;
 		font-size: 25px;
 		height: 68px;
 		line-height: 68px;
+                padding:0px 12px;
 	}
 	.flexnav .advbox  .items a:hover {
 		background: #c0a35f;
@@ -1410,17 +1427,25 @@ footer {
 	}
 	.ul_3 {margin-bottom: 0;}
 	footer .logo.left, .foooter_data.left, .left.addr, .soc_btn.right {float: none; text-align: center;}
-	footer .logo.left {
+	
+        footer .logo.left {
 		display: block;
 		margin-top: 60px;
 		overflow: hidden;
 	}
+       
 	footer .center_1 {overflow: hidden;}
+        
+        footer .copy br {
+            display:block;
+        } 
         
 	.bx-wrapper img {
 		width:100%;
 	}
 	.flexnav .advbox .tel {font-size: 45px; }
+        
+        
 }
 
 @media only screen and (max-width: 546px) {
@@ -1433,20 +1458,26 @@ footer {
 
 @media only screen and (max-width: 529px) {
 	.block_news > div {
-		margin-bottom: 20px;
+                margin-left:2%;
+                margin-right:2%;
+                margin-bottom: 20px;
 	}
 }
 
 @media only screen and (max-width: 475px) {
-	.slide_descript {top: 110px;}
+	.slide_descript {top: 110px; }
 	.flexnav .advbox .tel {font-size: 35px; }
 }
 
 @media only screen and (max-width: 449px) {
+        .slide_descript {top:90px; }
 	.block_6__1 {width: 100%;}
 	.foto_descript {left: 3%;}
 	.call {width: 90%;}
-	.ul_3 > li {width: 90%;}
+        .ul_3 {
+           
+        }
+	.center_1 .ul_3 > li {  width:90%;  margin-left:auto; margin-right: auto;}
 	h1 {font-size: 29px;}
 	h2{font-size: 27px;}
 	h3 {font-size: 24px;}
