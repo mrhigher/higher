@@ -1303,12 +1303,12 @@ footer {
 	.flexnav > li {
 		border-top: 1px solid #c0a35f;
 		line-height: 1.2;
-		padding-bottom: 30px;
-		padding-top: 30px;
 	}
 	.flexnav > li a {
 		font-size: 36px;
-		padding-bottom: 0;
+/*		padding-bottom: 0;*/
+		padding-bottom: 25px;
+		padding-top: 25px;
 	}
 	.show_with ul {
 		background: #c0a35f!important;
@@ -1330,12 +1330,13 @@ footer {
                 font-family: RobotoRegular;
                 text-transform: none;
 		font-size: 28px;
-		padding: 20px 10px 20px 65px;
+		padding: 10px 10px 10px 65px;
 	}
 	.flexnav > li.item-with-ul {background: none;}
 	.flexnav-show .advbox {
 		display: block;
 		border-bottom: none;
+		padding-bottom: 17px;
 		text-align: center;
 	}
 	.flexnav .advbox .tel {font-size: 65px; }
@@ -1360,6 +1361,11 @@ footer {
 	.flexnav .advbox .tel {
 		display: block;
 		margin-bottom: 50px;
+		margin-top: 20px;
+	}
+	.flexnav li > ul > li.item-with-ul > div {
+		background: #c0a35f;
+		padding-bottom: 25px;
 	}
 }
 
