@@ -456,7 +456,9 @@ h4{font-size: 18px;}
 }
 
 .ul_2 > li:nth-child(2) {
-	background: url(img/ico_2.png) no-repeat left top;
+       
+	background: url(img/ico_2_mobile.png) no-repeat 5px 14px;
+        background-size:96px;
 	margin: 0 34px 0 0;
 	padding-left: 126px;
 	padding-top: 14px;
@@ -1232,7 +1234,7 @@ footer {
 	.ul_2 > li:nth-child(1) {min-height: 70px}
 	.ul_2 > li:nth-child(2) {min-height: 61px}
 	.ul_2 > li:nth-child(3) {min-height: 82px;}
-	.ul_2 > li:nth-child(2) {background-image: url(img/ico_2_mobile.png);}
+	.ul_2 > li:nth-child(2) {background-image: url(img/ico_2_mobile.png); background-size:auto;}
 	.ul_2 > li + li {margin-left: 0;}
 	.ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2), .ul_2 > li:nth-child(3), .ul_2 > li {padding-left: 110px;}
 	.style_1 {margin-top: 180px;}
@@ -1510,6 +1512,10 @@ footer {
 	.h2:before {display: none;}
 	
 }
+
+@media only screen and (max-width: 350px) {
+        .slide_descript {top:60px; }
+    }
 
 @media only screen and (max-width: 319px) {
 	body {overflow-x: scroll;}

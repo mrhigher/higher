@@ -12,7 +12,7 @@ var adjustMenu = function() {
 		if (!container.is(e.target) // if the target of the click isn't the container...
 			&& container.has(e.target).length === 0) // ... nor a descendant of the container
 		{
-			 $('.flexnav').removeClass('flexnav-show');
+                            // $('.flexnav').removeClass('flexnav-show');
 
 		}
 	});
@@ -63,10 +63,7 @@ $(window).bind('orientationchange', function() {
             })
              }); 
               
-             /* $(".touch-press").unbind('click').bind('click', function(e) {
-                  e.preventDefault();
-                  $(".flexnav").removeClass('flexnav-show');
-              });*/
+          
               
 
           } else {
@@ -76,6 +73,10 @@ $(window).bind('orientationchange', function() {
                   flexnav.toggleClass('flexnav-show');
 
               });
+              
+            
+
+              
 
           }
 
