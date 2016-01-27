@@ -1,13 +1,13 @@
 
 $(document).ready(function() {
-	adjustMenu();
+            adjustMenu();
 })
 
 var adjustMenu = function() {
     
     $(document).mouseup(function (e)
 	{
-		var container = $(".main_menu, .top_slwrap");
+		var container = $(".main_menu,.top_slwrap, .popup");
 
 		if (!container.is(e.target) // if the target of the click isn't the container...
 			&& container.has(e.target).length === 0) // ... nor a descendant of the container
@@ -20,6 +20,7 @@ var adjustMenu = function() {
 	$(document).keydown(function(e) {
 		// ESCAPE key pressed
 		if (e.keyCode == 27) {
+                 
 			$('.flexnav').removeClass('flexnav-show');
 		}
 	});
