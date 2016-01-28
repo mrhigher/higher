@@ -28,17 +28,12 @@
   text-align:center;
   padding: .78em 1.4em .78em 1.4em;
 }
-  .flexnav.one-page {
-    position: fixed;
-    top: 50px;
-    right: 5%;
-    max-width: 200px;
-  }
+ 
   .flexnav li {
     font-size: 100%;
     position: relative;
     overflow: hidden;
-	  z-index: 5;
+    z-index: 5;
   }
 
   .flexnav li a {
@@ -92,7 +87,7 @@
    color:#ffbf00;
 }
 
-  .flexnav  ul li ul li a {
+  .flexnav  ul li ul li a, .flexnav  ul li ul li span a {
     background: #bfbfbc; }
 
   .flexnav ul li > ul li ul li a {
@@ -106,8 +101,6 @@
     height: 28px;
     display: inline-block;
     text-align: center;
-    
-    
   }
   .flexnav-show.flexnav .touch-button {
     width: 100px;
@@ -116,7 +109,7 @@
     position:absolute;
     top:0px;
     height:25px;
-    background:red;
+   
   }
 .flexnav .touch-button .navicon {
   background:url(arrow_menu.png) no-repeat 50% 3px;
@@ -136,11 +129,13 @@
     }
 
 .menu-button {
+  outline:none;  
   position: relative;
   display: block;
   padding: 1em;
   color: #222222;
   cursor: pointer;
+  top:-44px;
 
 }
 
@@ -152,7 +147,6 @@
   }
 
   .menu-button .touch-button {
-/*    background:#000 url(../img/menu_toggle.png) no-repeat center center;*/
     padding:22px 20px;
     position: absolute;
     z-index: 999;
@@ -182,7 +176,7 @@
     padding-top: 70px; }
 
   .flexnav {
-    z-index:2; /*newel*/
+    z-index:2;
     overflow: visible;
   }
     .flexnav.opacity {
@@ -207,10 +201,10 @@
       position: absolute;
       top: auto;
       left: 0;
-      display:none; /*newel*/
+      display:none; 
     }
   .flexnav li:hover > ul {
-    display:block;/*newel*/
+    display:block;
   }
       .flexnav li > ul li {
         width: 100%;
@@ -238,4 +232,24 @@
 
   .menu-button {
     display: none; }
+    }
+    
+/*for respons menu need*/    
+.rm-css-animate {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
 }
+.rm-calculate {
+    position: absolute !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+.rm-layout-contracted .rm-calculate {
+    width: 100% !important;
+}
+.rm-container .accessibly-hidden {
+    position: absolute;
+    left: -999em;
+}
+/*for respons menu need end */

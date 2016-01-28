@@ -12,10 +12,10 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.8.3.min.js"></script>
 	<!-- top menu -->
-	<link rel="stylesheet" href="libs/menu/flexnav.css">
+	<link rel="stylesheet" href="libs/responsMenu/flexnav.css">
 	<!-- bxslider -->
 	<link rel="stylesheet" href="libs/jquery.bxslider/jquery.bxslider.css">
-        <link href="libs/responsMenu/dist/css/responsive-menu.css" rel="stylesheet">
+        <link href="libs/responsMenu/responsive-menu.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -31,118 +31,137 @@
 					<img src="img/logo.png" alt="" />
 					<img src="img/logo_txt.png" alt="" />
 				</a>
-				<nav class="main_menu left">
-					<div class="menu-button touch-button touch-press">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<ul class="flexnav  clearfix">
-						<li><a href="">о центре</a>
-						</li>
-			
-						<li><a class="close_menu  touch-with" href="/">отделения</a>
-							<ul  class="hpad1">
-								<li class="with_menu">
-			
-									<div class="clearfix">
-			
-										<ul>
-											<li><a href="#">Состоит из одной колонки пункт меню</a></li>
-											<li><a href="#">Оториноларингология (ЛОР)</a></li>
-											<li><a href="#">Офтальмология</a></li>
-											<li><a href="#">Паллиативная помощь</a></li>
-											<li><a href="#">Педиатрия</a></li>
-											<li><a href="#">Пластическая хирургия</a></li>
-											<li><a href="#">Проктология</a></li>
-											<li><a href="#">Психотерапия</a></li>
-											<li><a href="#">Ревматология</a></li>
-											<li><a href="#">Сосудистая хирургия</a></li>
-											<li><a href="#">Стоматология</a></li>
-											<li><a href="#">Терапия</a></li>
-											<li><a href="#">Травматология</a></li>
-											<li><a href="#">Урология</a></li>
-											<li><a href="#">Хирургия</a></li>
-											<li><a href="#">Эндокринология</a></li>
-											<li><a href="#">Эндоскопия</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-			
-						</li>
-						<li><a class="close_menu  touch-with" href="#">программы и услуги</a>
-							<ul class="hpad2">
-								<li>
-									<div class="clearfix">
-										<ul>
-											<li><a href="#">Тестируем длинное название которое в 2 строки</a></li>
-											<li><a href="#">Анестезиология</a></li>
-											<li><a href="#">Аритмология</a></li>
-											<li><a href="#">Гастроэнтерология</a></li>
-											<li><a href="#">Гематология</a></li>
-											<li><a href="#">Гемокоррекция</a></li>
-											<li><a href="#">Генетика</a></li>
-											<li><a href="#">Гинекология и акушерство</a></li>
-											<li><a href="#">Дерматология</a></li>
-											<li><a href="#">Кардиология</a></li>
-											<li><a href="#">Косметология</a></li>
-											<li><a href="#">Лучевая диагностика</a></li>
-											<li><a href="#">Маммология</a></li>
-											<li><a href="#">Мануальная терапия и массаж</a></li>
-											<li><a href="#">Неврология</a></li>
-											<li><a href="#">Онкология</a></li>
-											<li><a href="#">Ортопедия</a></li>
-										</ul>
-										<ul>
-											<li><a href="#">Остеопатия</a></li>
-											<li><a href="#">Оториноларингология (ЛОР)</a></li>
-											<li><a href="#">Офтальмология</a></li>
-											<li><a href="#">Паллиативная помощь</a></li>
-											<li><a href="#">Педиатрия</a></li>
-											<li><a href="#">Пластическая хирургия</a></li>
-											<li><a href="#">Проктология</a></li>
-											<li><a href="#">Психотерапия</a></li>
-											<li><a href="#">Ревматология</a></li>
-											<li><a href="#">Сосудистая хирургия</a></li>
-											<li><a href="#">Стоматология</a></li>
-											<li><a href="#">Терапия</a></li>
-											<li><a href="#">Травматология</a></li>
-											<li><a href="#">Урология</a></li>
-											<li><a href="#">Хирургия</a></li>
-											<li><a href="#">Эндокринология</a></li>
-											<li><a href="#">Эндоскопия</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-			
-						</li>
-						<li><a href="#">Контакты</a>
-						</li>
-                                    	        <li class="advbox">
-			
-																<span class="tel">+7 (495) 234 42 42</span>
-																<div class="items">
-																<span>
-																	<a class="show_visit" href="#">записаться на прием</a>
-																</span>
-																<span>
-																	<a href="#">Перезвоните мне</a>
-																</span>
-																<span>
-																	<a  class="show_enter" href="#">личный кабинет</a>
-																</span>
-																<span>
-																	<a class="show_search" href="#">поиск</a>
-																</span>
-																	</div>
-			
-														</li>
-			
-					</ul>
-					<p class="link_2"><a class="link_2__1 show_enter" href="#">личный кабинет пациента</a>|<a class="link_2__2 show_search" href="#">поиск по сайту</a></p>
-				</nav>
+            
+                            
+        <!-- START Responsive Menu HTML -->
+        <nav class="rm-nav main_menu left">
+            <div class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+            <ul class="flexnav">
+                <li class=""><a href="#">О центре</a></li>
+                <li class=""><a href="#">Отделения</a>
+                                     
+                    <ul class="clearfix hpad1">
+
+                    <li>
+                            <span><a href="#">Состоит из одной колонки пункт меню</a></span>
+                            <span><a href="#">Оториноларингология (ЛОР)</a></span>
+                            <span><a href="#">Офтальмология</a></span>
+                            <span><a href="#">Паллиативная помощь</a></span>
+                            <span><a href="#">Педиатрия</a></span>
+                            <span><a href="#">Пластическая хирургия</a></span>
+                            <span><a href="#">Проктология</a></span>
+                            <span><a href="#">Психотерапия</a></span>
+                            <span><a href="#">Ревматология</a></span>
+                            <span><a href="#">Сосудистая хирургия</a></span>
+                            <span><a href="#">Пластическая хирургия</a></span>
+                            <span><a href="#">Проктология</a></span>
+                            <span><a href="#">Психотерапия</a></span>
+                            <span><a href="#">Стоматология</a></span>
+                            <span><a href="#">Терапия</a></span>
+                            <span><a href="#">Травматология</a></span>
+                            <span><a href="#">Урология</a></span>
+                            <span><a href="#">Хирургия</a></span>
+                            <span><a href="#">Эндокринология</a></span>
+                            <span><a href="#">Эндоскопия</a></span>
+
+                    </li>
+                    </ul>
+               
+                                           
+                       
+               </li>
+               <li><a href="#">программы и услуги</a>
+                   <ul class="clearfix  wide hpad2">
+                       <li>
+                           	<span><a href="#">Тестируем длинное название которое в 2 строки</a></span>
+                                <span><a href="#">Анестезиология</a></span>
+                                <span><a href="#">Аритмология</a></span>
+                                <span><a href="#">Гастроэнтерология</a></span>
+                                <span><a href="#">Гематология</a></span>
+                                <span><a href="#">Гемокоррекция</a></span>
+                                <span><a href="#">Генетика</a></span>
+                                <span><a href="#">Гинекология и акушерство</a></span>
+                                <span><a href="#">Дерматология</a></span>
+                                <span><a href="#">Кардиология</a></span>
+                                <span><a href="#">Косметология</a></span>
+                                <span><a href="#">Лучевая диагностика</a></span>
+                                <span><a href="#">Маммология</a></span>
+                                <span><a href="#">Мануальная терапия и массаж</a></span>
+                                <span><a href="#">Неврология</a></span>
+                                <span><a href="#">Онкология</a></span>
+                                <span><a href="#">Ортопедия</a></span>
+                       </li>
+                         
+                       <li>
+                        <span><a href="#">Остеопатия</a></span>
+                        <span><a href="#">Оториноларингология (ЛОР)</a></span>
+                        <span><a href="#">Офтальмология</a></span>
+                        <span><a href="#">Паллиативная помощь</a></span>
+                        <span><a href="#">Педиатрия</a></span>
+                        <span><a href="#">Пластическая хирургия</a></span>
+                        <span><a href="#">Проктология</a></span>
+                        <span><a href="#">Психотерапия</a></span>
+                        <span><a href="#">Ревматология</a></span>
+                        <span><a href="#">Сосудистая хирургия</a></span>
+                        <span><a href="#">Стоматология</a></span>
+                        <span><a href="#">Терапия</a></span>
+                        <span><a href="#">Травматология</a></span>
+                        <span><a href="#">Урология</a></span>
+                        <span><a href="#">Хирургия</a></span>
+                        <span><a href="#">Эндокринология</a></span>
+                        <span><a href="#">Эндоскопия</a></span>
+                       </li>
+                       
+                   </ul>
+               </li>
+               
+                <li class="botadv"><a href="#">Контакты</a>
+                  <div class="advfixed">
+                        
+                        
+                       <div class="advbox">
+                  
+                 <span class="tel">+7 (495) 234 42 42</span>
+                <div class="items">
+                <span class="show_visit">
+                        <em>записаться на прием</em>
+                </span>
+              
+                <span class="show_enter">
+                        <em>личный кабинет</em>
+                </span>
+                <span class="show_search" style="z-index: 9999">
+                        <em>поиск</em>
+                </span>
+                 <span>
+                        <em >1Перезвоните мне</em>
+                </span>  
+                     <span>
+                        <em>2Перезвоните мне</em>
+                </span>  
+                    </div>
+                        </div>
+                  </div>
+                </li>
+                
+<!--             
+                            
+                        
+                        
+                  
+              
+                </li>-->
+                
+            </ul>
+        	<p class="link_2"><a class="link_2__1 show_enter" href="#">личный кабинет пациента</a>|<a class="link_2__2 show_search" href="#">поиск по сайту</a></p>
+
+        </nav>
+   
+    <!-- End Responsive Menu HTML -->
                       
 				<ul class="ul_1 right clearfix">
 					<li><a href="#" class="btn_1 show_visit">записаться<span> на прием</span></a></li>
@@ -151,109 +170,7 @@
 						<a class="link_1 call_link" href="#">заказать обратный звонок</a>
 					</li>
 				</ul>
-                                   <!-- START Responsive Menu HTML -->
-    <div class="rm-container">
-        <a class="rm-toggle rm-button rm-nojs" href="#">Menu</a>
-
-        <nav class="rm-nav rm-nojs rm-lighten">
-            <ul>
-                <li><a href="#">Main Item 1</a>
-                    <ul>
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                        <li><a href="#">Sub Item 3</a>
-                            <div class="clearfix  listdrop">
-                            <ul>
-                                <li><a href="#">Sub Sub Item 1</a></li>
-                                <li><a href="#">Sub Sub Item 2</a></li>
-                                <li><a href="#">Sub Sub Item 3</a></li>
-                                <li><a href="#">Sub Sub Item 4</a></li>
-                                <li><a href="#">Sub Sub Item 5</a></li>
-                                <li><a href="#">Sub Sub Item 6</a></li>
-                                <li><a href="#">Sub Sub Item 7</a></li>
-                            </ul>
-                                <ul>
-                                        <li><a href="#">Остеопатия</a></li>
-                                        <li><a href="#">Оториноларингология (ЛОР)</a></li>
-                                        <li><a href="#">Офтальмология</a></li>
-                                        <li><a href="#">Паллиативная помощь</a></li>
-                                        <li><a href="#">Педиатрия</a></li>
-                                        <li><a href="#">Пластическая хирургия</a></li>
-                                        <li><a href="#">Проктология</a></li>
-                                        <li><a href="#">Психотерапия</a></li>
-                                        <li><a href="#">Ревматология</a></li>
-                                        <li><a href="#">Сосудистая хирургия</a></li>
-                                        <li><a href="#">Стоматология</a></li>
-                                        <li><a href="#">Терапия</a></li>
-                                        <li><a href="#">Травматология</a></li>
-                                        <li><a href="#">Урология</a></li>
-                                        <li><a href="#">Хирургия</a></li>
-                                        <li><a href="#">Эндокринология</a></li>
-                                        <li><a href="#">Эндоскопия</a></li>
-										</ul>
-                            </div>
-                        
-                        
-                        </li>
-                        <li><a href="#">Sub Item 4</a></li>
-                        <li><a href="#">Sub Item 5</a></li>
-                        <li><a href="#">Sub Item 6</a>
-                            <ul class="listdrop">
-                                <li><a href="#">Sub Sub Item 1</a></li>
-                                <li><a href="#">Sub Sub Item 2</a></li>
-                                <li><a href="#">Sub Sub Item 3</a></li>
-                                <li><a href="#">Sub Sub Item 4</a></li>
-                                <li><a href="#">Sub Sub Item 5</a></li>
-                                <li><a href="#">Sub Sub Item 6</a></li>
-                                <li><a href="#">Sub Sub Item 7</a></li>
-                            </ul></li>
-                        <li><a href="#">Sub Item 7</a></li>
-                        <li><a href="#">Sub Item 8</a></li>
-                        <li><a href="#">Sub Item 9</a></li>
-                    </ul></li>
-                <li><a href="#">Main Item 2</a>
-                    <ul class="listdrop">
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                        <li><a href="#">Sub Item 3</a>
-                            <ul>
-                                <li><a href="#">Sub Sub Item 1</a></li>
-                                <li><a href="#">Sub Sub Item 2</a></li>
-                                <li><a href="#">Sub Sub Item 3</a></li>
-                                <li><a href="#">Sub Sub Item 4</a></li>
-                                <li><a href="#">Sub Sub Item 5</a></li>
-                                <li><a href="#">Sub Sub Item 6</a></li>
-                                <li><a href="#">Sub Sub Item 7</a></li>
-                            </ul></li>
-                        <li><a href="#">Sub Item 4</a></li>
-                        <li><a href="#">Sub Item 5</a></li>
-                    </ul></li>
-                <li><a href="#">Main Item 3</a></li>
-                <li><a href="#">Main Item 4</a>
-                    <ul>
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a></li>
-                        <li><a href="#">Sub Item 3</a>
-                            <ul>
-                                <li><a href="#">Sub Sub Item 1</a></li>
-                                <li><a href="#">Sub Sub Item 2</a></li>
-                                <li><a href="#">Sub Sub Item 3</a></li>
-                            </ul></li>
-                    </ul></li>
-                <li><a href="#">Main Item 5</a>
-                    <ul>
-                        <li><a href="#">Sub Item 1</a></li>
-                        <li><a href="#">Sub Item 2</a>
-                            <ul>
-                                <li><a href="#">Sub Sub Item 1</a></li>
-                                <li><a href="#">Sub Sub Item 2</a></li>
-                                <li><a href="#">Sub Sub Item 3</a></li>
-                            </ul></li>
-                    </ul></li>
-            </ul>
-        </nav>
-    </div><!-- .rm-container -->
-    <!-- End Responsive Menu HTML -->
+       
 			</header><!-- END center_1 --></div>
 		<div class="center_2">
 			<h1 class="style_1">Многопрофильный медицинский центр нового поколения</h1>
@@ -571,106 +488,43 @@
 </div>
 <!-- load script menu -->
 <script src="libs/jquery.mask.js"></script>
-<script src="libs/menu/script_menu.js"></script>
-<!-- matchHeight -->
+
 <script src="libs/jquery.matchHeight-min.js"></script>
 <!-- bxslider -->
 <script src="libs/jquery.bxslider/dist/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="libs/responsMenu/dist/js/responsive-menu.js"></script>
+<script type="text/javascript" src="libs/responsMenu/responsive-menu.js"></script>
+<script src="libs/jquery.touchSwipe.js"></script>
+
+<script>
+        $(function() {      
+      $(".advbox").swipe( {
+        pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom)
+        {
+           
+         // $(this).text("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
+        },
+        pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom)
+        {
+             alert(4);
+             console.log('pinch');
+        //  $(this).text("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
+        },
+        pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom) {
+       //   $(this).html("Pinch zoom scale "+pinchZoom+"  <br/>Distance pinched "+distance+" <br/>Direction " + direction);
+        },
+        fingers:1,  
+        pinchThreshold:0  
+      });
+    });
+    
+</script>
+
+
+<!-- matchHeight -->
+
     <!-- Setup Responsive Menu -->
     <script>
-        jQuery(function ($) {
-            var menu = $('.rm-nav').rMenu({
-
-                // Optional Settings
-
-                /**
-                 * Minimum width for expanded layout in pixels - String
-                 * The media query in css file should be changed to match this
-                 * Must be in pixels and include px units if not using Modernizr.
-                 * @default '769px'
-                 */
-                minWidth: '960px',
-               // menuSel:''
-
-                /**
-                 * The opening and closing speed of the menus in milliseconds
-                 * @default 400
-                 */
-                //transitionSpeed: 400,
-
-                /**
-                 * The jQuery easing function - used with jQuery transitions
-                 * @default 'swing'
-                 * @options 'swing', 'linear'
-                 */
-                //jqueryEasing: 'swing',
-
-                /**
-                 * The CSS3 transitions easing function - used with CSS3 transitions
-                 * @default 'ease'
-                 */
-                //css3Easing: 'ease',
-
-                /**
-                 * Use button as toggle link - instead of text
-                 * @default true
-                 */
-                //toggleBtnBool: true,
-
-                /**
-                 * The Toggle Link selector
-                 * @default '.rm-toggle'
-                 */
-                //toggleSel: '.rm-toggle',
-
-
-                /**
-                 * The menu/sub-menu selector
-                 * @default 'ul'
-                 */
-                //menuSel: 'ul',
-
-                /**
-                 * The menu items selector
-                 * @default 'li'
-                 */
-                //menuItemsSel: 'li',
-
-                /**
-                 * Use CSS3 animation/transitions Boolean
-                 * @default true
-                 * Do not use animation/transitions: false
-                 */
-                //animateBool: false,
-
-                /**
-                 * Force GPU Acceleration Boolean
-                 * @default false
-                 * Do not force: false
-                 */
-                //accelerateBool: true,
-
-                /**
-                 * the setup complete callback function
-                 * @default 'false'
-                 */
-                //setupCallback: false,
-
-                /**
-                 * the tabindex start value - integer
-                 * @default 1
-                 */
-                //tabindexStart: 5,
-
-                /**
-                 * Use development mode - outputs information to console
-                 * @default false
-                 */
-                //developmentMode: false
-
-            });
-        });
+     
     </script>
 <script src="js/common.js"></script>
 

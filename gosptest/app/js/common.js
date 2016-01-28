@@ -1,32 +1,67 @@
 $(document).ready(function(){
+    
+    
+     
+    var menu = $('.rm-nav').rMenu({
+        minWidth: '699px',
+        toggleSel: '.menu-button'
+    });
+ 
+      
+      
+    $(".flexnav li").each(function() {
+        if($(this).find('ul').length) {
+            $(this).toggleClass('item-with-ul');
+        }
+    });
+    $('.advfixed').on('click',function() {
+        var explode = function(){
+         var lh = $('.flexnav').outerHeight();
+        //$(document).scrollTop(200);
+    };
+setTimeout(explode, 0);
+    });
 	
 	
 	// popup 2
     $('.show_search').click(function(e) {
-         e.preventDefault();
+      //   e.preventDefault();
+//        $('.overlay, .search').fadeIn(500);
+//        $('.search').center();
+      //  alert(1)
+	});
+
+        $(".show_search").mousedown(function(e){
+        //  e.preventDefault();
         $('.overlay, .search').fadeIn(500);
         $('.search').center();
+        alert(1)
 	});
-	
+       
+        
+        
 	// popup 2
     $('.show_visit').click(function(e) {
          e.preventDefault();
         $('.overlay, .visit').fadeIn(500);
         $('.visit').center();
+         alert(2)
 	});
 	
 	// popup 2
     $('.show_enter').click(function(e) {
          e.preventDefault();
         $('.overlay, .enter').fadeIn(500);
-        $('.enter').center();
+       $('.enter').center();
+       alert(3)
 	});
 	
 	// popup 2
     $('.show_thank_you').click(function(e) {
          e.preventDefault();
         $('.overlay, .thank_you').fadeIn(500);
-        $('.thank_you').center();
+       $('.thank_you').center();
+       alert(4)
 	});
 	
 	$('.close_popup').click(function() {
@@ -175,24 +210,23 @@ $(document).keydown(function(e) {
         if (!container.is(e.target) // if the target of the click isn't the container...
             && container.has(e.target).length === 0) // ... nor a descendant of the container
         {
-            $(".popup, .overlay").fadeOut(500);
+           // $(".popup, .overlay").fadeOut(500);
         }
     });
         
 
 jQuery.fn.center = function () {
-    this.css("position","absolute");
+    this.css("position","absolute"); //was absolute
+   // this.css("top","200px");
     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
-                                                $(window).scrollTop()) + "px");
+                                                $(window).scrollTop()) + "px"); 
     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
                                                 $(window).scrollLeft()) + "px");
     return this;
 }
 
 
-    $('.flexnav, .flexnav .advbox .items a').on('click',function() {
-        return false;
-    })
+   
 
 
 
