@@ -20,10 +20,11 @@
 <body class="page_about_us">
 <!-- wrapper -->
 <div class="wrapper">
- 	<!-- block_1 -->
-	<div class="block_1">
-		<!-- center_1 -->
-		<div id="header">
+	<!-- for_man -->
+	<div class="wrap_3">
+		<!-- block_1 -->
+		<div class="block_1">
+			<div id="header">
 			<header class="center_1 clearfix">
 				<a href="/" class="logo left">
 					<img src="img/logo.png" alt="" />
@@ -38,13 +39,13 @@
 					<ul class="flexnav flexnav-show clearfix">
 						<li><a href="">о центре</a>
 						</li>
-			
+
 						<li><a class="close_menu  touch-with" href="/">отделения</a>
 							<ul  class="hpad1">
 								<li class="with_menu">
-			
+
 									<div class="clearfix">
-			
+
 										<ul>
 											<li><a href="#">Состоит из одной колонки пункт меню</a></li>
 											<li><a href="#">Оториноларингология (ЛОР)</a></li>
@@ -67,7 +68,7 @@
 									</div>
 								</li>
 							</ul>
-			
+
 						</li>
 						<li><a class="close_menu  touch-with" href="#">программы и услуги</a>
 							<ul class="hpad2">
@@ -114,7 +115,7 @@
 									</div>
 								</li>
 							</ul>
-			
+
 						</li>
 						<li><a href="#">Контакты</a>
 						</li>
@@ -137,7 +138,7 @@
 									</div>
 
 						</li>
-			
+
 					</ul>
 					<p class="link_2"><a class="link_2__1 show_enter" href="#">личный кабинет пациента</a>|<a class="link_2__2 show_search" href="#">поиск по сайту</a></p>
 				</nav>
@@ -149,19 +150,20 @@
 					</li>
 				</ul>
 			</header><!-- END center_1 --></div>
-		<div class="center_2">
-			<h2 class="h2">o центре</h2>
-			<div class="descript_about_us">
-				<p>В основе работы нашего госпиталя лежит неразрывная связь между лечебной деятельностью, научными исследованиями и непрерывным профессионально- образовательным процессом. Именно это позволяет оказывать нашим пациентам максимально эффективную медицинскую помощь.</p>
+			<div class="center_2">
+				<h2 class="h2">o центре</h2>
+				<div class="descript_about_us">
+					<p>В основе работы нашего госпиталя лежит неразрывная связь между лечебной деятельностью, научными исследованиями и непрерывным профессионально- образовательным процессом. Именно это позволяет оказывать нашим пациентам максимально эффективную медицинскую помощь.</p>
 
-				<p>Любой пациент, переступивший порог нашей клиники, является для нас VIP-пациентом.</p>
+					<p>Любой пациент, переступивший порог нашей клиники, является для нас VIP-пациентом.</p>
 
-				<p>Добро пожаловать в мир медицины, где передовые медицинские технологии 					идут рука об руку с заботой и индивидуальным подходом к каждому пациенту.</p>
-				<span class="name_main"><strong>Яков Маркович Марголин,</strong> 
-					Генеральный директор</span>
+					<p>Добро пожаловать в мир медицины, где передовые медицинские технологии 					идут рука об руку с заботой и индивидуальным подходом к каждому пациенту.</p>
+					<span class="name_main"><strong>Яков Маркович Марголин,</strong> 
+						Генеральный директор</span>
+				</div>
 			</div>
-		</div>		
-	</div><!-- END block_1 -->
+		</div><!-- END block_1 -->
+	</div><!-- for_man -->		
 	<div class="mis">
 		<div class="center_2">
 			<h3 class="h3">миссия</h3>
@@ -244,15 +246,16 @@
 	</div><!-- END plus -->
 	<!-- history -->
 	<div class="history center_2 clearfix">
+		<h3 class="h3">история</h3>
+		<div class="right">
+			<img class="img_3" src="img/img_3.jpg" alt="">
+			<img class="img_3_mobile" src="img/img_3_mobile.jpg" alt="">
+		</div>
 		<div class="left">
-			<h3 class="h3">история</h3>
 			<p class="descript_history">Клинический госпиталь на Яузе располагается в историческом центре Москвы в районе Лефортово. Когда-то на этом месте были Астраханские казармы 
 и высшие армейские курсы – ныне Военный университет Министерства обороны Российской Федерации; на левом берегу Яузы располагается Андроников монастырь 
 с древнейшим из сохранившихся московских храмов Спасским собором. Именно здесь более трехсот лет назад благодаря Петру I зародилась российская медицина: были открыты крупные военные госпитали, лазареты, медико-хирургические школы.</p>
 			<a href="#" class="btn_2">подробнее</a>
-		</div>
-		<div class="right">
-			<img src="img/img_3.jpg" alt="">
 		</div>
 	</div><!-- END history -->
 	<!-- block_4 -->
@@ -406,11 +409,14 @@
 <script src="libs/jquery.matchHeight-min.js"></script>
 <!-- bxslider -->
 <script src="libs/jquery.bxslider/dist/jquery.bxslider.min.js"></script>
+<script>
+	$('.data_fakt li, .ul_4 li').matchHeight();
+</script>
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
 <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$.pixlayout({clip: true, src: "page_about_us.jpg", show:true, center:true, top:0, left:0, pervious: false});
+//		$.pixlayout({clip: true, src: "page_about_us.jpg", show:true, center:true, top:0, left:0, pervious: false});
 //		$.pixlayout({clip: true, src: "maket_menu.png", show:true, center:true, top:0, left:0, pervious: false});
 //		$.pixlayout({clip: true, src: "podmenu.png", show:true, center:true, top:0, left:0, pervious: false});
 //		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:false, top:0, left:0, pervious: false});
