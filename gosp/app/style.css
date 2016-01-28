@@ -1431,8 +1431,11 @@ footer {
 	.soc_btn {margin-right: 3%;}
 }
 
-@media only screen and (max-width: 1060px) {
-	body {overflow-x: hidden;}
+    @media only screen and (max-width: 1060px) {
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
 	
 	.menu-button span {
 		background: #fff;
