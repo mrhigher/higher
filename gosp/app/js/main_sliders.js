@@ -35,8 +35,11 @@ $(document).ready(function () {
 		function TStourLandingScript() {
 			TSSlider.reloadSlider(TSsettings());
 		}
-
-		TSSlider = $('#top_slider').bxSlider(TSsettings());
+                
+               
+                TSSlider = $('#top_slider').show().bxSlider(TSsettings());
+               
+		
 		$(window).resize(TStourLandingScript);
 
 		
@@ -79,7 +82,7 @@ $(document).ready(function () {
 			BNSlider.reloadSlider(BNsettings());
 		}
 
-		BNSlider = $('.block_news').bxSlider(BNsettings());
+		BNSlider = $('.block_news').show().bxSlider(BNsettings());
 		$(window).resize(BNtourLandingScript);
 
 		

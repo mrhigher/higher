@@ -475,6 +475,9 @@ h4{font-size: 18px;}
 }
 
 /*========================== bxslider ==========================*/
+#top_slider, .block_news {
+     display:none;
+}
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
 	background: #c0a35f;
@@ -1939,6 +1942,7 @@ footer {
 		left: 3%;
 		width: 97%;
 	}
+         .descript_history {margin:19px 0px 0px 0px;}
 	
 }
 
@@ -1957,6 +1961,8 @@ footer {
 	}
 	.popup h2 {margin-bottom: 50px!important;}
 	.popup input[type="submit"] {margin-top: 20px;}
+        
+       
 }
 
 @media only screen and (max-width: 475px) {

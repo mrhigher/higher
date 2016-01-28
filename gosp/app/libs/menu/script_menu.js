@@ -60,11 +60,11 @@ $(window).bind('orientationchange', function() {
               
               flexnav.removeClass('flexnav-show');
                
-             $(".item-with-ul > ul").each(function(b, a) {
+            /* $(".item-with-ul > ul").each(function(b, a) {
             $(a).prev().unbind('click').bind('click', function(e) {
             return true;
             })
-             }); 
+             }); not need maybe*/
               
           
               
@@ -73,7 +73,7 @@ $(window).bind('orientationchange', function() {
               
                $(".touch-press").unbind('click').bind('click', function(e) {
                   e.preventDefault();
-                  flexnav.toggleClass('flexnav-show');
+                  flexnav.toggleClass('flexnav-show',10000);
 
               }); 
                
