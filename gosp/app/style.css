@@ -1283,12 +1283,25 @@ footer {
 }
 
 .plus .h3:after {
+	background-color: #c0a35f;
 	top: 56px;
+	z-index: 90;
 }
 
 .list_plus {
 	background: #fff;
-	overflow: hidden;
+/*	overflow: hidden;*/
+	position: relative;
+}
+
+.list_plus:before {
+	background: rgba(0, 46, 92, .2);
+	bottom: -49px;
+	content: "";
+	height: 49px;
+	left: 0;
+	position: absolute;
+	width: 100%;
 }
 
 .list_plus > div {
@@ -1303,7 +1316,7 @@ footer {
 }
 
 .list_plus > div:nth-child(1) {
-	 background-position: 47px 57px;;
+	 background-position: 47px 57px;
 }
 
 .list_plus > div:nth-child(2) {
@@ -1329,6 +1342,7 @@ footer {
 }
 
 .history {
+	clear: both;
 	padding: 0 0 97px 0;
 }
 
@@ -1814,9 +1828,6 @@ footer {
 	.list_plus {
 		width: 70%;
 	}
-	.plus .h3::after {
-		background-color: #c0a35f;
-	}
 	.mis {
 		margin-bottom: 70px;
 	}
@@ -1951,7 +1962,10 @@ footer {
 	.data_fakt > li {
 		float: none;
 		width: 315px;
-	} 
+	}
+	.list_plus {
+		width: 98%;
+	}
  
 }
 
@@ -1974,6 +1988,11 @@ footer {
 		margin-bottom: 20px!important;
 	}
 	.h2:before {display: none;}
+	
+	/*========================== внутренние ==========================*/
+	.plus .h3::after {
+		top: 52px;
+	}
 	
 }
 
