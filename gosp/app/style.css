@@ -1607,8 +1607,19 @@ footer {
 		margin-top: 0;
 	}
 	.history .left {
+		float: none;
 		padding: 0 5%;
 		width: 90%;
+	}
+	.img_3 {display: none;}
+	.img_3_mobile {
+		display: block;
+	}
+	.history .right {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 460px;
 	}
 }
 
@@ -1643,16 +1654,7 @@ footer {
 	.style_1 {margin-top: 0;}
 	
 	/*========================== внутреннени ==========================*/
-	.img_3 {display: none;}
-	.img_3_mobile {
-		display: block;
-	}
-	.history .right {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		width: 460px;
-	}
+	
 	.page_about_us .block_1 {
 		background: url(img/man_small.png) no-repeat bottom center;
 	}
