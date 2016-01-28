@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
             adjustMenu();
 })
@@ -12,7 +13,7 @@ var adjustMenu = function() {
 		if (!container.is(e.target) // if the target of the click isn't the container...
 			&& container.has(e.target).length === 0) // ... nor a descendant of the container
 		{
-                            // $('.flexnav').removeClass('flexnav-show');
+                         //    $('.flexnav').removeClass('flexnav-show');
 
 		}
 	});
@@ -54,9 +55,11 @@ $(window).bind('orientationchange', function() {
           
           
 
-          flexnav.removeClass('flexnav-show');
+         // bugggfflexnav.removeClass('flexnav-show'); this was bug
           if (flexnav.css("z-index") == "2" ){
-                
+              
+              flexnav.removeClass('flexnav-show');
+               
              $(".item-with-ul > ul").each(function(b, a) {
             $(a).prev().unbind('click').bind('click', function(e) {
             return true;
@@ -67,16 +70,13 @@ $(window).bind('orientationchange', function() {
               
 
           } else {
-
-              $(".touch-press").unbind('click').bind('click', function(e) {
+              
+               $(".touch-press").unbind('click').bind('click', function(e) {
                   e.preventDefault();
                   flexnav.toggleClass('flexnav-show');
 
-              });
-              
-            
-
-              
+              }); 
+               
 
           }
 

@@ -33,14 +33,11 @@ $(document).ready(function(){
 		$('.overlay, .popup').fadeOut(500);
 	});
 	
-	var window_width = $(window).width();
+	
+        
+        $('#header').fixedHeader()
 	$(window).scroll(function(){
-		if ($(window).scrollTop() >= 5 && window_width > 699) {
-		   $('#header').addClass('bg_header');
-		}
-		else {
-		   $('#header').removeClass('bg_header');
-		}
+		$('#header').fixedHeader()
 	});
 	
 	
@@ -186,6 +183,16 @@ jQuery.fn.center = function () {
                                                 $(window).scrollTop()) + "px");
     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
                                                 $(window).scrollLeft()) + "px");
+    return this;
+}
+jQuery.fn.fixedHeader = function () {
+      var window_width = $(window).width();
+        if ($(window).scrollTop() >= 5 && window_width > 699) {
+               this.addClass('bg_header');
+            }
+            else {
+               this.removeClass('bg_header');
+     } 
     return this;
 }
 
