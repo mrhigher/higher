@@ -1292,12 +1292,11 @@ footer {
 
 .list_plus {
 	background: #fff;
-/*	overflow: hidden;*/
 	position: relative;
 }
 
 .list_plus:before {
-	background: rgba(0, 46, 92, .2);
+	background: url(img/shadow_list_plus.png) repeat-x;
 	bottom: -49px;
 	content: "";
 	height: 49px;
