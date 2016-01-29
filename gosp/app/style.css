@@ -1399,6 +1399,21 @@ footer {
 
 .img_3_mobile {display: none;}
 
+/*========================== page program ==========================*/
+
+.page_programs .block_1 {
+	background-image: url(img/bg_page_program.jpg);
+}
+
+.page_programs .block_1 .center_2 {
+	padding-top: 172px;	
+}
+
+.page_programs .block_1 .h2 {
+	color: #fff;
+	margin-left: 8px;
+}
+
 /*========================== media ==========================*/
 
 @media only screen and (max-width: 1319px) {
