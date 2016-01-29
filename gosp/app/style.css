@@ -526,9 +526,10 @@ h4{font-size: 18px;}
 /*========================== END bxslider ==========================*/
 
 .block_2 {
-	background: url(img/bg.png) no-repeat center top / cover;
+	background: url(img/bg.png) no-repeat left top;
 	margin-bottom: 119px;
-	margin-top: 136px;
+	margin-top: 106px;
+	padding-top: 30px;
 }
 
 .h2 {
@@ -2069,6 +2070,9 @@ footer {
 		padding-left: 2%;
 		padding-right: 2%;
 		width: 100%;
+	}
+	.block_2 {
+		background-image: url(img/bg_mobile.png);
 	}
 }
 
