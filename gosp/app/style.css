@@ -1443,6 +1443,7 @@ footer {
 
 .block_diagnost {
 	display: table;
+	margin-bottom: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -1461,6 +1462,7 @@ footer {
 .search_main {
 	border: 2px solid #bbc5ce;
 	border-radius: 24px;
+	margin-bottom: 56px;
 	position: relative;
 }
 
@@ -1489,17 +1491,18 @@ footer {
 	max-width: 730px;
 }
 
-.program a {
+.programs_services a {
 	color: #002e5c;
 	text-decoration: underline;
 }
 
-.program .h3 {
+.program .h3, .services .h3 {
 	color: #002e5c;
 }
 
-.program .h3:after {
+.program .h3:after, .services .h3:after {
 	background: #c0a35f;
+	top: 54px;
 }
 
 .program_answer {
@@ -1507,7 +1510,7 @@ footer {
 }
 
 .program_answer > div {
-	padding: 0 0 20px 0;
+	padding: 0 0 20px 20px;
 }
 
 .program_answer a {
@@ -1529,6 +1532,24 @@ footer {
 
 .program_item.open {
 	background-image: url(img/accord_ico_top.png);
+}
+
+.services {
+	width: 230px;
+}
+
+.services a {
+	display: block;
+	line-height: 1.2;
+	margin: 0 0 5px 0;
+}
+
+.wrap_accord {
+	margin: 0 0 0 10px;
+}
+
+.programs_services {
+	margin-bottom: 142px;
 }
 
 /*========================== media ==========================*/
