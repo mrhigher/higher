@@ -16,19 +16,7 @@
   .flexnav.opacity {
     opacity: 0;
   }
-  .flexnav.flexnav-show {
-    max-height: 2000px;
-    opacity: 1;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-.flexnav.flexnav-show {
-  text-align:center;
-/*  padding: .78em 1.4em .78em 1.4em;*/
-  background:#2e2c31;
-}
+
   .flexnav.one-page {
     position: fixed;
     top: 50px;
@@ -64,25 +52,14 @@
   padding:0.6em 0px;
   width:190px;
 }
-.flexnav-show.flexnav li ul.show_with {
-  display:block;
-} /* elnew*/
-.flexnav-show.flexnav li ul {
-    position:relative;
-    left:-50px;
-    border-right:1px solid #fff;
-    padding: 0em 0px;
-    margin:5px auto;
-    display:none;
-}
+
     .flexnav li ul li {
       font-size: 100%;
       position: relative;
       overflow: hidden;
     }
 
-  .flexnav li ul.flexnav-show li {
-    overflow: visible; }
+ 
 
   .flexnav li ul li a {
     display: block;
@@ -109,16 +86,7 @@
     display: inline-block;
     text-align: center;
   }
-  .flexnav-show.flexnav .touch-button {
-    width: 100px;
-    left:50%;
-    margin-left:-50px;
-    position:absolute;
-    top:0px;
-    height:25px;
-    background:none;
-
-  }
+  
 .flexnav .touch-button .navicon {
   background:url(../img/arrow.png) no-repeat 50% 3px;
 }
@@ -181,11 +149,24 @@
 @media only screen and (min-width: 941px) {
   body.one-page {
     padding-top: 70px; }
+  
+    .flexnav {
+        margin-right:29px;
+        border-bottom:1px solid #d9e007;
+        max-height:inherit;
+    }
+    .flexnav > li {
+         margin-right:38px;
+        padding:0 0 15px 0
+    }
 
   .flexnav {
     z-index:2; /*newel*/
     overflow: visible;
   }
+   .flexnav {
+        height:auto !important;
+    }
     .flexnav.opacity {
       opacity: 1; }
     .flexnav.one-page {
@@ -238,4 +219,51 @@
 
   .menu-button {
     display: none; }
+}
+
+@media only screen and (max-width: 940px) {
+      .flexnav.flexnav-show {
+    height:200px;   
+    overflow-y:auto;  
+    max-height: 4000px;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+.flexnav.flexnav-show {
+  text-align:center;
+/*  padding: .78em 1.4em .78em 1.4em;*/
+  background:#2e2c31;
+}
+
+  .flexnav li ul.flexnav-show li {
+    overflow: visible; }
+  
+  .flexnav-show.flexnav li ul.show_with {
+  display:block;
+}
+.flexnav-show.flexnav li ul {
+    position:relative;
+    left:-50px;
+    border-right:1px solid #fff;
+    padding: 0em 0px;
+    margin:5px auto;
+    display:none;
+}
+ .flexnav li ul.flexnav-show li {
+    overflow: visible; 
+ }
+ .flexnav-show.flexnav .touch-button {
+    width: 100px;
+    left:50%;
+    margin-left:-50px;
+    position:absolute;
+    top:0px;
+    height:25px;
+    background:none;
+
+  }
+    
 }
