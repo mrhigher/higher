@@ -4,33 +4,33 @@ $(document).ready(function(){
 	// popup 2
     $('.show_search').click(function(e) {
          e.preventDefault();
-        $('.overlay, .search').fadeIn(500);
+        $('.overlay, .search').fadeIn(150);
         $('.search').center();
 	});
 	
 	// popup 2
     $('.show_visit').click(function(e) {
          e.preventDefault();
-        $('.overlay, .visit').fadeIn(500);
+        $('.overlay, .visit').fadeIn(150);
         $('.visit').center();
 	});
 	
 	// popup 2
     $('.show_enter').click(function(e) {
          e.preventDefault();
-        $('.overlay, .enter').fadeIn(500);
+        $('.overlay, .enter').fadeIn(150);
         $('.enter').center();
 	});
 	
 	// popup 2
     $('.show_thank_you').click(function(e) {
          e.preventDefault();
-        $('.overlay, .thank_you').fadeIn(500);
+        $('.overlay, .thank_you').fadeIn(150);
         $('.thank_you').center();
 	});
 	
 	$('.close_popup').click(function() {
-		$('.overlay, .popup').fadeOut(500);
+		$('.overlay, .popup').fadeOut(150);
 	});
 	
 	
