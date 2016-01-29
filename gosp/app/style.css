@@ -2073,6 +2073,7 @@ footer {
 	}
 	.block_2 {
 		background-image: url(img/bg_mobile.png);
+		background-position: -70px 0;
 	}
 }
 
