@@ -1459,6 +1459,7 @@ footer {
 }
 
 .search_main {
+        margin-bottom:25px;
 	border: 2px solid #bbc5ce;
 	border-radius: 24px;
 	position: relative;
@@ -1487,6 +1488,10 @@ footer {
 .program {
 	color: #002e5c;
 	max-width: 730px;
+}
+.wrap_accord {
+     margin-left:10px;
+        
 }
 
 .program a {
