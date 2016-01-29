@@ -119,7 +119,7 @@
 }
 
 @media only screen and (max-width: 940px) {
-	body {overflow-x: hidden;}
+	html, body {overflow-x: hidden;}
 	.block_btn {display: none;}
 	.wrap_1 {width: 470px;}
 	.wrap_1 .block_btn {display: block; margin-top: 0;}

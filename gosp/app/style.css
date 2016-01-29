@@ -1646,7 +1646,10 @@ footer {
 	.ul_2 > li:nth-child(3) {min-height: 82px;}
 	.ul_2 > li:nth-child(2) {background-image: url(img/ico_2_mobile.png); background-size:auto;}
 	.ul_2 > li + li {margin-left: 0;}
-	.ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2), .ul_2 > li:nth-child(3), .ul_2 > li {padding-left: 110px;}
+	.ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2), .ul_2 > li:nth-child(3), .ul_2 > li {
+            padding-left: 110px;
+            min-height:80px;
+        }
 	.style_1 {margin-top: 180px;}
 	.block_3 {padding-top: 80px;}
 	.block_2 {margin-bottom: 70px;}
