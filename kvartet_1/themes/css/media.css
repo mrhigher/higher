@@ -132,6 +132,8 @@
 	.header_menu li {float: none;}
 	.header_menu li + li {margin-left: 0;}
 	.flexnav.flexnav-show {
+              
+               overflow-y:scroll;
 		position: fixed;
 		right: 0;
 		left: 0;
@@ -152,9 +154,9 @@
 	.flexnav li a:hover {text-decoration: none;}
 	.flexnav-show + .close_menu {
 		display: block; 
-		position: absolute;
-		right: 0;
-		top: -25px;
+		position: fixed;
+		right: 40px;
+		top: 20px;
 		z-index: 500;
 	}
 	.phone {margin-top: 12px;}
@@ -175,8 +177,9 @@
 	.block_4 .title_descript {margin-top: 5px;}
 }
 
+
 @media only screen and (max-width: 735px) {
-	.header_right .touch-button.ico_1 {right: 1%;}
+	.header_right .touch-button.ico_1 {right: -3%;}
 	.wrap_1 {width: 420px;}
 	.ul_1 > li:last-child {
 		width: 260px;

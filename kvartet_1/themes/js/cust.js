@@ -1,4 +1,5 @@
 $(function(){
+    
         
  var slick = $('.slick_slider').slick({
 	slidesToShow: 1,
@@ -55,16 +56,25 @@ $(window).bind('orientationchange', function() {
 			  e.preventDefault();
 			  $(this).prev().toggleClass('show_with');
 		  })
-		  flexnav.removeClass('flexnav-show');
+		
 		  if (flexnav.css("z-index") == "2" ){
-			  $(".touch-press").unbind('click').bind('click', function(e) {
-				  e.preventDefault();
-				  $(".flexnav").removeClass('flexnav-show');
-			  });
+                        flexnav.removeClass('flexnav-show');
+//			  $(".touch-press").unbind('click').bind('click', function(e) {
+//				  e.preventDefault();
+//				  $(".flexnav").removeClass('flexnav-show');
+//			  });
 		  } else {
+                       
+
 			  $(".touch-press").unbind('click').bind('click', function(e) {
 				  e.preventDefault();
 				  flexnav.toggleClass('flexnav-show');
+                                  
+                                    var fli = flexnav.find('li').eq(0).outerHeight(),
+                                    flc = flexnav.find('li').length;
+                                    $('.flexnav.flexnav-show').css('height', (fli * flc) - fli + 'px');
+                                  
+                                  
 			  });
 		  }
 	  }   
