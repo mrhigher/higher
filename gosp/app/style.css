@@ -1277,7 +1277,7 @@ footer {
 }
 
 .plus {
-	background: url(img/bg_3.jpg) no-repeat top center;
+	background: url(img/bg_3.jpg) no-repeat top center / cover;
 	margin: 0 0 101px 0;
 	padding: 97px 0 95px 0;
 }
@@ -1406,18 +1406,138 @@ footer {
 
 .page_programs .block_1 {
 	background-image: url(img/bg_page_program.jpg);
+	color: #fff;
+	margin-bottom: 75px;
 }
 
 .page_programs .block_1 .center_2 {
+	padding-bottom: 85px;
 	padding-top: 172px;	
 }
 
 .page_programs .block_1 .h2 {
 	color: #fff;
+	margin-bottom: 50px;
 	margin-left: 8px;
 }
 
+.page_programs .block_1 .h2:before {
+	top: 56px;
+	width: 80px;
+}
+
+.program_descript {
+	line-height: 1.5;
+	margin: 0 0 10px 11px;
+}
+
+.title_3 {
+	color: #002e5c;
+	margin: 0 0 57px 0;
+	text-align: center;
+}
+
+.page_programs .top_slwrap {
+	margin-bottom: 76px;
+}
+
+.block_diagnost {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.block_diagnost > div {
+	float: left;
+	position: relative;
+	width: 480px;
+}
+
+.block_diagnost a, .block_diagnost > div img {
+	display: block;
+}
+
+.search_main {
+	border: 2px solid #bbc5ce;
+	border-radius: 24px;
+	position: relative;
+}
+
+.search_main input[type=text] {
+	border-radius: 24px;
+	color: #bbc5ce;
+	font-size: 18px;
+	height: 44px;
+	padding: 0 15px 0 24px;
+	width: 100%;
+}
+
+.search_main ::-webkit-input-placeholder {color:#bbc5ce;}
+.search_main ::-moz-placeholder          {color:#bbc5ce;}/* Firefox 19+ */
+.search_main :-moz-placeholder           {color:#000000;}/* Firefox 18- */
+.search_main :-ms-input-placeholder      {color:#bbc5ce;}
+
+.search_main input[type=image] {
+	position: absolute;
+	right: 15px;
+	top: 13px;
+}
+
+.program {
+	color: #002e5c;
+	max-width: 730px;
+}
+
+.program a {
+	color: #002e5c;
+	text-decoration: underline;
+}
+
+.program .h3 {
+	color: #002e5c;
+}
+
+.program .h3:after {
+	background: #c0a35f;
+}
+
+.program_answer {
+	line-height: 1.4;
+}
+
+.program_answer > div {
+	padding: 0 0 20px 0;
+}
+
+.program_answer a {
+	display: inline-block;
+	margin: 0 0 10px 0;
+}
+
+.program_item {
+	background: url(img/accord_ico_bottom.png) no-repeat right 5px;
+	color: #002e5c;
+	cursor: pointer;
+	display: table;
+	padding: 0px 22px 20px 0;
+}
+
+.program_item:hover {
+	color: #c0a35f;
+}
+
+.program_item.open {
+	background-image: url(img/accord_ico_top.png);
+}
+
 /*========================== media ==========================*/
+
+@media only screen and (max-width: 1439px) {
+	.block_diagnost {
+		width: 960px;
+	}
+}
 
 @media only screen and (max-width: 1319px) {
 	.center_1 {
