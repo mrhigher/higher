@@ -526,6 +526,7 @@ h4{font-size: 18px;}
 /*========================== END bxslider ==========================*/
 
 .block_2 {
+	background: url(img/bg.png) no-repeat center top / cover;
 	margin-bottom: 119px;
 	margin-top: 136px;
 }
