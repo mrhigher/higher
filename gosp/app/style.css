@@ -527,7 +527,7 @@ h4{font-size: 18px;}
 
 .block_2 {
 	background: url(img/bg.png) no-repeat left top;
-	margin-bottom: 119px;
+	padding-bottom: 119px;
 	margin-top: 106px;
 	padding-top: 30px;
 }
