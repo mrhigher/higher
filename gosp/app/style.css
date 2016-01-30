@@ -1137,6 +1137,7 @@ footer {
 	margin: 0 0 26px 30px;
 }
 
+
 .name_main {
 	display: block;
 	margin: 38px 0 0 12px;
@@ -1411,28 +1412,53 @@ footer {
 	color: #fff;
 	margin-bottom: 75px;
 }
-
+.otdeleniya .block_1 {
+        background-image: url(img/bg_page_program.jpg);
+	color: #fff;
+	margin-bottom: 75px;
+}
 .page_programs .block_1 .center_2 {
 	padding-bottom: 85px;
 	padding-top: 172px;	
 }
-
+.otdeleniya .block_1 .center_2 {
+        padding-bottom: 70px;
+	padding-top: 150px;	
+}
 .page_programs .block_1 .h2 {
 	color: #fff;
 	margin-bottom: 50px;
 	margin-left: 8px;
 }
+.otdeleniya .block_1 .h2 {
+        color: #fff;
+        margin-bottom: 54px;
+	margin-left: 8px;
+}
 
-.page_programs .block_1 .h2:before {
+.page_programs .block_1 .h2:before   {
 	top: 56px;
 	width: 80px;
 }
-
+.otdeleniya .block_1 .h2:before {
+	top: 81px;
+	width: 157px;
+}
 .program_descript {
 	line-height: 1.5;
-	margin: 0 0 10px 11px;
+	margin: 0 10px 10px 11px;
 }
-
+.place_descript {
+        color:#f9f6f1;
+        font-size:18px;
+	line-height: 1.5;
+}
+.place_descript p {
+    margin:0 10px 26px 30px
+}
+.place_descript p {
+    
+}
 .title_3 {
 	color: #002e5c;
 	margin: 0 0 57px 0;
@@ -1556,6 +1582,33 @@ footer {
 
 .programs_services {
 	margin-bottom: 142px;
+}
+
+.departs_block {
+    border-bottom:1px solid #bbc5ce; 
+    margin:0 1% 64px 2%;
+    padding:0px 0px 50px 0px
+}
+
+.departs_block ul {
+    float:left;
+    width:25%;
+    margin:0px 0px 0px 0%;
+}
+.departs_block ul:before, .departs_block ul:after {
+    display:table;
+    content:'';
+}
+.departs_block ul:after {
+    clear:both;
+}
+.departs_block ul li {
+    line-height: 2em;
+/*    padding:0px 0% 6px 0% */
+}
+.departs_block ul li a {
+    text-transform: uppercase;
+    color:#2d3e50;
 }
 
 /*========================== media ==========================*/
@@ -1791,6 +1844,9 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+    
+    
+    
 	.about_us {
 		margin-left: 5%;
 		margin-right: 5%;
@@ -1853,7 +1909,8 @@ footer {
 	.style_1 {margin-top: 0;}
 	
 	/*========================== внутреннени ==========================*/
-	
+        
+       
 	.page_about_us .block_1 {
 		background: url(img/man_small.png) no-repeat bottom center;
 	}
@@ -1863,7 +1920,22 @@ footer {
 	}
 	.descript_about_us {
 		max-width: 95%;
-	}	
+	}
+        
+         .departs_block ul:nth-child(3n + 1 ) {
+            clear:left;
+        }
+        .departs_block ul {
+            width:33.3%;
+        }
+        
+        .departs_block ul:last-child {
+            width:auto;
+        }
+        .departs_block ul:last-child li {
+            float:left;
+            width:33.3%;
+        }
 }
 
 @media only screen and (max-width: 820px) {
@@ -1898,6 +1970,8 @@ footer {
 	.program {
 		max-width: 480px;
 	}
+        
+       
 }
 
 @media only screen and (max-width: 739px) {
@@ -2054,6 +2128,32 @@ footer {
 	.block_diagnost > div:nth-child(1), .block_diagnost > div:nth-child(2), .block_diagnost > div:nth-child(3) {
 		display: block;
 	}
+        .departs_block {
+          padding-left:20px;
+          padding-right:10px;
+            
+        }
+        .departs_block ul:nth-child(3n + 1 ) {
+            clear:none;
+        }
+        .departs_block ul:nth-child(2n + 1 ) {
+            clear:left;
+        }
+        .departs_block ul {
+            margin: 0px 0px 0px 0%;
+            width:50%;
+        }
+        
+        .departs_block ul:last-child {
+            margin: 0px 0px 0px 0%;
+            width:50%;
+        }
+        .departs_block ul:last-child li {
+           float:none;
+           width:auto;
+        }
+        
+        
 }
 
 @media only screen and (max-width: 658px) {
@@ -2093,6 +2193,14 @@ footer {
 	.call {margin-bottom: 20px;}
 	.ul_2 > li, .ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2) {width: 85%;}
 	h1 {font-size: 36px;}
+        .page_programs .block_1 .h2, .otdeleniya .block_1 .h2 {
+            margin-left:30px;
+            font-size:42px
+                
+        }
+        .page_programs .block_1 .center_2, .otdeleniya .block_1 .center_2  {
+            padding-top:100px;
+        }
 	h2{font-size: 28px; margin-bottom: 70px!important;}
 	.h2::before {
 		top: 50px;
@@ -2201,6 +2309,9 @@ footer {
 		width: 98%;
 		text-align: center;
 	}
+        
+        
+
  
 }
 
@@ -2228,6 +2339,25 @@ footer {
 	.plus .h3::after {
 		top: 52px;
 	}
+        
+        
+                
+        .departs_block ul:nth-child(2n + 1 ) {
+            clear:none;
+        }
+        .departs_block ul {
+            float:none;
+            width:80%;
+            margin:0 auto;
+        }
+        .departs_block ul {
+            text-align:center;
+        }
+        .departs_block ul:last-child  {
+           float:none;
+           width:80%;
+           margin:0 auto;
+        }
 	
 }
 
