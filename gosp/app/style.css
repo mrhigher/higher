@@ -1683,6 +1683,33 @@ footer {
     color:#2d3e50;
 }
 
+.departs_block {
+    border-bottom:1px solid #bbc5ce; 
+    margin:0 1% 64px 2%;
+    padding:0px 0px 50px 0px
+}
+
+.departs_block ul {
+    float:left;
+    width:25%;
+    margin:0px 0px 0px 0%;
+}
+.departs_block ul:before, .departs_block ul:after {
+    display:table;
+    content:'';
+}
+.departs_block ul:after {
+    clear:both;
+}
+.departs_block ul li {
+    line-height: 2em;
+/*    padding:0px 0% 6px 0% */
+}
+.departs_block ul li a {
+    text-transform: uppercase;
+    color:#2d3e50;
+}
+
     .select_main {
     text-transform: uppercase;    
     font-family: 'RobotoMedium';
