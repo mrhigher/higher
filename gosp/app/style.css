@@ -1297,7 +1297,7 @@ footer {
 	position: relative;
 }
 
-.list_plus:before {
+.list_plus:before, .cardio_item:before {
 	background: url(img/shadow_list_plus.png) repeat-x;
 	bottom: -49px;
 	content: "";
@@ -1813,7 +1813,7 @@ footer {
 
 .cardio_block_1 {
 	max-width: 480px;
-	padding: 81px 0 0 8px;
+	padding: 81px 0 56px 8px;
 }
 
 .cardio_content {
@@ -1877,6 +1877,80 @@ footer {
 	height: 3px;
 	margin: 15px 0 0 0;
 	width: 72px;
+}
+
+.cardio_item {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	clear: both;
+	line-height: 1.3;
+	margin: 0 0 60px 0;
+	padding: 81px 80px 90px 250px;
+}
+
+.cardio_item p {
+	line-height: 1.4;
+	margin: 0 0 10px 0;
+}
+
+.title_6 {
+	font-size: 32px;
+	margin: 0 0 31px 0;
+}
+
+.cardio_item .title_under:after {
+	height: 5px;
+	margin: 31px 0 0 0;
+	width: 150px;
+}
+
+.cardio_ul {
+	padding: 35px 0 64px 21px;
+}
+
+.cardio_ul li {
+	background: url(img/ico_14.png) no-repeat left center;
+	font-size: 18px;
+	padding: 0 0 0 38px;1
+}
+
+.cardio_ul li + li {
+	margin-top: 8px;
+}
+
+.cardio_price > span {
+	font-family: 'robotobold';
+	font-size: 32px;
+}
+
+.cardio_item .btn_1 {
+	border-radius: 24px;
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 48px;
+}
+
+.cardio_price {
+	display: inline-block;
+	margin: 0 32px 0 0;
+	position: relative;
+	top: 7px;
+}
+
+.one {
+	background-image: url(img/1.png);
+	background-position: 78px 94px;
+}
+
+.two {
+	background-image: url(img/2.png);
+	background-position: 67px 94px;
+}
+
+.three {
+	background-image: url(img/3.png);
+	background-position: 69px 94px;
 }
 
 
