@@ -1448,8 +1448,6 @@ footer {
 
 .page_programs .block_1 .h2:before {
 	display: none;
-	position: static;
-	top: 56px;
 }
 
 .page_programs .block_1 .h2:after {
