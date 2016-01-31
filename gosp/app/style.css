@@ -113,6 +113,10 @@ body {
 	font-size: 16px;
 	overflow-x: hidden;
 }
+.opnav {
+    overflow-y:hidden;
+}
+
 
 img {max-width: 100%;}
 
@@ -221,6 +225,7 @@ h4{font-size: 18px;}
 }
 
 .bg_header {
+        z-index:4000;
         border-top:3px solid #c0a35f;
 	background: #002e5c;
 	padding-bottom: 10px;
@@ -1410,14 +1415,21 @@ footer {
         background-image: url(img/bg_page_program.jpg);
 	color: #fff;
 }
+.doctors.block_1 {
+        background-image: url(img/bg_page_program.jpg);
+	color: #fff;
+} 
 .page_programs .block_1 .center_2 {
 	padding-bottom: 85px;
 	padding-top: 172px;	
 }
 .place_descript.center_2 {
         padding-bottom: 70px;
-	padding-top: 150px;
+	padding-top: 172px;
         margin-bottom:74px;
+}
+ .place_descript.center_2 {
+        margin-bottom:62px;
 }
 .page_programs .block_1 .h2 {
 	color: #fff;
@@ -1436,7 +1448,7 @@ footer {
 }
 .place_descript .h2 {
         color: #fff;
-        margin-bottom: 54px;
+        margin-bottom: 45px;
 	margin-left: 8px;
 }
 
@@ -1444,17 +1456,20 @@ footer {
 	display: none;
 }
 
-.page_programs .block_1 .h2:after {
+.page_programs .block_1 .h2:after, .place_descript .h2:after {
 	background: #c0a35f;
 	content: "";
 	display: block;
-    height: 5px;
+        height: 5px;
 	margin-top: 15px;
 	width: 80px;
 }
 .place_descript .h2:before {
-	top: 81px;
-	width: 157px;
+    display:none;
+}
+.place_descript .h2:after {
+        width:160px;
+        margin-top:21px;
 }
 .program_descript {
 	line-height: 1.5;
@@ -1462,7 +1477,7 @@ footer {
 }
 .place_descript {
         color:#f9f6f1;
-        font-size:18px;
+        font-size:16px;
 	line-height: 1.5;
 }
 .place_descript p {
@@ -1677,12 +1692,15 @@ footer {
     color:#2d3e50;
 }
 
-.departs_block {
+.departs_block, .workers_block {
     border-bottom:1px solid #bbc5ce; 
-    margin:0 1% 64px 2%;
+    margin:0 0% 64px 0%;
     padding:0px 0px 50px 0px
 }
-
+.departs_block {
+    padding-left:2%;
+    padding-right:1%;
+}
 .departs_block ul {
     float:left;
     width:25%;
@@ -1780,7 +1798,7 @@ footer {
 	font-family: 'RobotoMedium';
 	font-size: 24px;
 	margin: 0 0 5px 0;
-	text-transform: uppercase;`
+	text-transform: uppercase;
 }
 
 .ul_6 > li:last-child {
@@ -1918,7 +1936,7 @@ footer {
 .cardio_ul li {
 	background: url(img/ico_14.png) no-repeat left center;
 	font-size: 18px;
-	padding: 0 0 0 38px;1
+	padding: 0 0 0 38px;
 }
 
 .cardio_ul li + li {
@@ -1970,8 +1988,8 @@ footer {
     font-family: 'RobotoMedium';
     color:#2d3e50;
     font-size:16px;    
-    margin:0 auto 20px;
-    width:430px; 
+    margin:0px 10px 11px;
+    max-width:430px; 
     position:relative; 
     border-top:1px solid #999a9a;
     border-bottom:1px solid #fff;
@@ -2048,17 +2066,20 @@ footer {
     display:block;
 }
 .workers_block .item .fio {
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top:16px;
+    padding-bottom:28px;
     position:relative;
-    margin:0px 0px 0px 0px;
     color:#c0a35f;
     font-size:16px;
     font-family: 'robotobold';
 }
 .workers_block .item .qual {
-    margin:6px 0px 6px 0px;
+    line-height:1.4em;
+    margin:6px 0px 4px 0px;
     font-family: 'robotobold';
+}
+.workers_block .item .skill {
+    line-height: 1.4em;
 }
 .workers_block .item .fio:before, .workers_block .item .fio:after  {
     content:'';
@@ -2072,11 +2093,11 @@ footer {
      width:100%;
 }
 .workers_block .item .fio:after {
-    left:22px;
-    height:2px;
+    left:21px;
+    height:3px;
     width:72px;
     background:#002e5c;
-    bottom:0px;
+    bottom:8px;
    
 }
 .workers_block .item em {
@@ -2614,29 +2635,54 @@ footer {
 }
 
 @media only screen and (max-width: 699px) {
-	.style_1 {margin-top: 0; padding-top: 80px;}
+	.style_1 {margin-top: 0; padding-top: 170px;}
 	.menu-button {
 		position: absolute;
+                top:-10px;
 		right: 2%;
 	}
+        .bg_header .menu-button {
+                top:-29px;
+        }
+        
+        .bg_header .logo {
+            margin:14px 0px 4px 2%;
+        }
 	.main_menu.left {top: 40px; width: 100%;}
 	
 	/*========================== top_menu ==========================*/
 	.ul_1, .link_2 {display: none;}
 	.main_menu.left {left: 0;}
+        #header {
+        position:fixed;    
+        }
+        
 	.flexnav {
 		margin-top: 0;
 	}
+
 	.flexnav > li {
 		margin-right: 0;
 	}
 	.flexnav > li a {padding-left: 40px;}
 	.flexnav.flexnav-show {
-		background: #002e5c;
-		padding: 0;
-		text-align: left;
-		width: 100%;
+            overflow-y:scroll;
+             position:fixed;
+             top:110px;
+            background: #002e5c;
+            padding: 0px 0px 80px 0px;
+            text-align: left;
+            width: 105%; /*veeeryyy*/
+            height:100%; /*100%*/
+            z-index:80;
 	}
+        .bg_header .flexnav.flexnav-show  {
+           top:81px;
+          }
+        .flexnav::-webkit-scrollbar {
+        /* display: none; hide scroll bar */  
+        }
+
 	.flexnav > li {
 		border-top: 1px solid #c0a35f;
 		line-height: 1.2;
@@ -2790,13 +2836,23 @@ footer {
 	.call {margin-bottom: 20px;}
 	.ul_2 > li, .ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2) {width: 85%;}
 	h1 {font-size: 36px;}
-        .page_programs .block_1 .h2, .otdeleniya.block_1 .h2 {
+        .page_programs .block_1 .h2, .place_descript .h2 {
             margin-left:30px;
             font-size:42px
                 
         }
-        .page_programs .block_1 .center_2, .otdeleniya.block_1 .center_2  {
-            padding-top:100px;
+       
+        .page_programs .block_1 .center_2, .place_descript.center_2 {
+            padding-top:160px; /**80**/
+        }
+        .place_descript.center_2  {
+            
+        }
+        .place_descript.center_2 .h2 +  p {
+            margin-bottom:15px;
+        }
+         .doctors .place_descript.center_2 {
+            margin-bottom:42px;
         }
 	h2{font-size: 28px; margin-bottom: 70px!important;}
 	.h2::before {
@@ -2804,7 +2860,7 @@ footer {
 		width: 130px;
 	}
 	.flexnav .advbox .tel {font-size: 55px; }
-	.page_programs .block_1 .h2 {
+	.page_programs .block_1 .h2  {
 		font-size: 42px;
 		line-height: 1.2;
 		margin-bottom: 26px!important;
@@ -2815,6 +2871,12 @@ footer {
 	.ul_5 > li + li {
 		margin-top: 20px;
 	}
+        .place_descript .h2 {
+                font-size: 42px;
+		line-height: 1.2;
+		margin-bottom: 35px!important;
+        }
+        
 }
 
 @media only screen and (max-width: 550px) {
@@ -2907,7 +2969,7 @@ footer {
 	.popup h2 {margin-bottom: 50px!important;}
 	.popup input[type="submit"] {margin-top: 20px;} 
 	.page_programs .block_1 .center_2 {
-		padding-top: 112px;
+		padding-top: 170px;
 	}
 	.page_programs .block_1 {
 		margin-bottom: 54px;
@@ -2945,6 +3007,28 @@ footer {
 	}
 	
 }
+
+@media only screen and (max-width: 465px) {
+     .departs_block ul:nth-child(2n + 1 ) {
+            clear:none;
+        }
+        .departs_block ul {
+            float:none;
+            width:80%;
+            margin:0 auto;
+        }
+        .departs_block ul {
+            text-align:center;
+        }
+        .departs_block ul:last-child  {
+           float:none;
+           width:80%;
+           margin:0 auto;
+        }
+
+    }
+
+       
 
 @media only screen and (max-width: 449px) {
 	.slide_descript {top:90px; }
@@ -2994,6 +3078,13 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
+    
+     .select_main span {
+         display:none;
+      }
+      .select_main p {
+          left:20px;
+      }
         .slide_descript {top:60px; }
 	.link_services {
 		float: none;
