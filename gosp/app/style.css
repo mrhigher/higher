@@ -3030,6 +3030,28 @@ footer {
 
        
 
+@media only screen and (max-width: 465px) {
+     .departs_block ul:nth-child(2n + 1 ) {
+            clear:none;
+        }
+        .departs_block ul {
+            float:none;
+            width:80%;
+            margin:0 auto;
+        }
+        .departs_block ul {
+            text-align:center;
+        }
+        .departs_block ul:last-child  {
+           float:none;
+           width:80%;
+           margin:0 auto;
+        }
+
+    }
+
+       
+
 @media only screen and (max-width: 449px) {
 	.slide_descript {top:90px; }
 	.block_6__1 {width: 100%;}
