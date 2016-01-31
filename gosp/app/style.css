@@ -2756,8 +2756,26 @@ footer {
 	}
 	
 	/*========================== внутренние ==========================*/
+	.logo {
+		margin-top: 29px;
+	}
+	.page_about_us  .h2:after {
+		background: #c0a35f;
+		display: block;
+		content: "";
+		height: 5px;
+		margin-top: 21px;
+		width: 160px;
+	}
+	.descript_about_us {
+		margin-top: 54px;
+	}
+	.page_about_us  .h2:before {
+		display: none;
+	}
 	.page_about_us .block_1 .h2 {
-		margin-top: 50px;
+		padding-top: 146px;
+		margin-top: 0;
 	}
 	.list_plus {
 		width: 70%;
@@ -2863,6 +2881,9 @@ footer {
             margin-bottom:42px;
         }
 	h2{font-size: 28px; margin-bottom: 70px!important;}
+	.block_1 .h2 {
+		font-size: 42px;
+	}
 	.h2::before {
 		top: 50px;
 		width: 130px;
