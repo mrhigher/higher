@@ -36,7 +36,7 @@ $(document).ready(function(){
 	
         
         $('#header').fixedHeader()
-	$(window).scroll(function(){
+        $(window).on('scroll resize', function(){
 		$('#header').fixedHeader()
 	});
 	
