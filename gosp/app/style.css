@@ -2562,11 +2562,7 @@ footer {
 	.ul_1, .link_2 {display: none;}
 	.main_menu.left {left: 0;}
         #header {
-        position: static; /*need */
         position:fixed;    
-        }
-        #header.bg_header {
-            position:fixed
         }
         
 	.flexnav {
