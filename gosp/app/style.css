@@ -1756,6 +1756,7 @@ footer {
 
 .ul_5 .btn_1 {
 	padding: 0 35px;
+	white-space: nowrap;
 }
 
 .ul_6 {
@@ -1788,7 +1789,7 @@ footer {
 }
 
 .cardio_block {
-	background: #e5e9ea;
+	background: #e5e9ea url(img/cardio_block_bg.png) no-repeat center top;
 	padding: 46px 0 0 0;
 }
 
@@ -1819,6 +1820,7 @@ footer {
 .cardio_content {
 	line-height: 1.5;
 	margin: 43px 0 0 22px;
+	position: relative;
 }
 
 .cardio_content p {
@@ -1842,12 +1844,16 @@ footer {
 	text-transform: uppercase;
 }
 
-.next_pr a:first-child {
+.next_pr a:nth-of-type(1) {
 	margin-top: 25px;
 }
 
 .cardio_block_2 {
 	position: relative;
+}
+
+.cardio_block_2 img {
+	max-width: 100%;
 }
 
 .descript_foto_cardio {
@@ -1886,6 +1892,7 @@ footer {
 	line-height: 1.3;
 	margin: 0 0 60px 0;
 	padding: 81px 80px 90px 250px;
+	position: relative;
 }
 
 .cardio_item p {
@@ -2121,7 +2128,7 @@ footer {
 	.soc_btn {margin-right: 3%;}
 }
 
-    @media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1060px) {
         html, body {
             max-width: 100%;
             overflow-x: hidden;
@@ -2166,6 +2173,13 @@ footer {
 	.page_about_us .block_1 {
 		background-position: right -89px top 217px;
 	}
+	.bg_cardio {
+		padding-bottom: 50px;
+		padding-top: 0;
+	}
+	.bg_cardio .title_4 {
+		padding-top: 160px;
+	}
 }
 
 @media only screen and (max-width: 1010px) {
@@ -2179,7 +2193,6 @@ footer {
         clear:left;
     }
 }
-
 
 @media only screen and (max-width: 970px) {
 	.center_2, .center_3 {width: 100%;}
@@ -2296,6 +2309,33 @@ footer {
 	.search_main {
 		width: 98%;
 	}
+	.cardio_block_1 {
+		padding-top: 20px;
+	}
+	.cardio_block_1.left {
+		float: none;
+		max-width: 100%;
+		padding-bottom: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.cardio_block_2.right {
+		float: none;
+	}	
+	.descript_foto_cardio {
+		padding: 30px 0 80px 4%;
+		position: static;
+	}
+	.cardio_block {
+		background-image: url(img/cardio_block_bg_mobile.png);
+		background-position: center 355px;
+	}
+	.ul_5 {
+		padding-right: 1%;
+	}
+	.ul_6 > li:last-child {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 925px) {
@@ -2328,12 +2368,15 @@ footer {
 	.program {
 		max-width: 560px;
 	}
- 
+	.cardio_item {
+		padding-right: 50px;
+	}
+	.cardio_block {
+		background-position: center 14%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-    
-    
     
 	.about_us {
 		margin-left: 5%;
@@ -2398,7 +2441,6 @@ footer {
 	
 	/*========================== внутреннени ==========================*/
         
-       
 	.page_about_us .block_1 {
 		background: url(img/man_small.png) no-repeat bottom center;
 	}
@@ -2424,6 +2466,17 @@ footer {
             float:left;
             width:33.3%;
         }
+	.one, .two, .three {
+		background-image: none;
+	}
+	.cardio_item {
+		padding-bottom: 40px;
+		padding-left: 4%;
+		padding-top: 40px;
+	}
+	.cardio_block {
+		background-position: center 16%;
+	}
 }
 
 @media only screen and (max-width: 820px) {
@@ -2458,8 +2511,43 @@ footer {
 	.program {
 		max-width: 480px;
 	}
-        
-       
+	.ul_6 > li {
+		float: none;
+		padding-bottom: 21px;
+		padding-top: 20px;
+		width: 100%;
+	}
+	.ul_6 > li+li {
+		margin-top: 20px;
+	}
+	.ul_6 {
+		margin-left: 3%;
+	}
+	.title_under, .title_4 {
+		font-size: 28px;
+	}
+	.title_4 span {
+		font-size: 42px;
+	}
+	.cardio_descript {font-size: 18px;}
+	.title_6.title_under:after {
+		margin-top: 13px;
+	}
+	.cardio_item {
+		margin-bottom: 29px;
+		padding-top: 23px;
+	}
+	.cardio_ul {
+		padding-bottom: 32px;
+		padding-left: 0;
+		padding-top: 17px;
+	}
+    .ul_5 {
+		margin-bottom: 90px;
+	}
+	.cardio_block {
+		background-position: center 18%;
+	}
 }
 
 @media only screen and (max-width: 739px) {
@@ -2519,6 +2607,10 @@ footer {
     .workers_block .item:nth-child(2n + 1) {
         clear:left;
     }
+	
+	.cardio_block {
+		background-position: center 18%;
+	}
 }
 
 @media only screen and (max-width: 699px) {
@@ -2652,8 +2744,10 @@ footer {
            float:none;
            width:auto;
         }
-        
-        
+	.bg_cardio .title_4 {
+		padding-top: 55px;
+	}
+	
 }
 
 @media only screen and (max-width: 658px) {
@@ -2678,6 +2772,9 @@ footer {
 	.block_2 {
 		background-image: url(img/bg_mobile.png);
 		background-position: -70px 0;
+	}
+	.cardio_block {
+		background-position: center 20%;
 	}
 }
 
@@ -2711,6 +2808,12 @@ footer {
 		font-size: 42px;
 		line-height: 1.2;
 		margin-bottom: 26px!important;
+	}
+	.ul_5 > li {
+		float: none;
+	}
+	.ul_5 > li + li {
+		margin-top: 20px;
 	}
 }
 
@@ -2767,6 +2870,13 @@ footer {
 	.list_plus > div {
 		padding-right: 2%;
 	}
+	.cardio_price {
+		display: block;
+		margin-bottom: 22px;
+	}
+	.cardio_block {
+		background-position: center 18%;
+	}
 }
 
 @media only screen and (max-width: 546px) {
@@ -2775,6 +2885,9 @@ footer {
 		width: 97%;
 	}
 	.descript_history {margin:19px 0px 0px 0px;}
+	.cardio_block {
+		background-position: center 18%;
+	}
 	
 }
 
@@ -2799,24 +2912,25 @@ footer {
 	.page_programs .block_1 {
 		margin-bottom: 54px;
 	}
+	.cardio_block {
+		background-position: center 20%;
+	}
 }
 
+@media only screen and (max-width: 498px) {
 
-    @media only screen and (max-width: 498px) {
-        
-        .workers_block .list {
-            width: 250px;
-        }
-        
+	.workers_block .list {
+		width: 250px;
+	}
 
-    .workers_block .item:nth-child(2n + 1) {
-        clear:none;
-    }
-     .workers_block .item:nth-child(1n + 1) {
-        clear:left;
-    }
+	.workers_block .item:nth-child(2n + 1) {
+		clear:none;
+	}
+	 .workers_block .item:nth-child(1n + 1) {
+		clear:left;
+	}
 
-    }    
+}    
 @media only screen and (max-width: 475px) {
 	.slide_descript {top: 110px; }
 	.flexnav .advbox .tel {font-size: 35px; }
@@ -2856,9 +2970,7 @@ footer {
 	.plus .h3::after {
 		top: 52px;
 	}
-        
-        
-                
+                      
         .departs_block ul:nth-child(2n + 1 ) {
             clear:none;
         }
@@ -2875,6 +2987,9 @@ footer {
            width:80%;
            margin:0 auto;
         }
+	.cardio_block {
+		background-image: none;
+	}
 	
 }
 
