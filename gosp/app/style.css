@@ -1807,7 +1807,7 @@ footer {
 }
 
 .cardio_block {
-	background: #e5e9ea url(img/cardio_block_bg.png) no-repeat center top;
+	background: #e5e9ea url(img/cardio_block_bg.png) no-repeat center -56px;
 	padding: 46px 0 0 0;
 }
 
@@ -1867,7 +1867,9 @@ footer {
 }
 
 .cardio_block_2 {
+	height: 660px;
 	position: relative;
+	width: 458px;
 }
 
 .cardio_block_2 img {
@@ -2342,7 +2344,10 @@ footer {
 	}
 	.cardio_block_2.right {
 		float: none;
-	}	
+	}
+	.cardio_block_2 {
+		height: auto;
+	}
 	.descript_foto_cardio {
 		padding: 30px 0 80px 4%;
 		position: static;
@@ -2792,6 +2797,9 @@ footer {
         }
 	.bg_cardio .title_4 {
 		padding-top: 55px;
+	}
+	.bg_cardio {
+		padding-top: 80px;
 	}
 	
 }
