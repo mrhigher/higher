@@ -340,7 +340,22 @@
 <script>
 $(function() {
 	$('.ul_6 li').matchHeight();
+
+	// перемотка
+    $('.top_menu a').click(function(event) {
+        event.preventDefault();
+    });
 });
+
+function gotocoord(val){
+	$("html,body").stop(true, true).animate({'scrollTop': val-40}, 1500);
+}
+
+function gotoblock(id){
+	var obj = $('#'+id);
+	var destination = obj.offset().top;
+	$("html,body").stop(true, true).animate({'scrollTop': destination-40}, 1500);
+}
 </script>
 
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
