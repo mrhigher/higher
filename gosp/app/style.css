@@ -1476,7 +1476,7 @@ footer {
 }
 .program_descript {
 	line-height: 1.5;
-	margin: 0 10px 10px 11px;
+	margin: 0 14px 10px 11px;
 }
 .place_descript {
         color:#f9f6f1;
@@ -2777,7 +2777,7 @@ footer {
 		width: 160px;
 	}
 	.descript_about_us {
-		margin-top: 54px;
+		margin-top: 0px;
 	}
 	.page_about_us  .h2:before {
 		display: none;
@@ -2835,6 +2835,33 @@ footer {
         .page_about_us .block_4 .descript_3 {
             display:block;
         }
+        
+        .block_1 .h2 {
+            margin-bottom:35px !important; 
+        }
+        .title_under {
+           margin-left:20px;   
+        }
+        h3.title_6.title_under {
+            margin-left:12px;
+        }
+        .descript_foto_cardio  {
+            margin-left:10px;
+        }
+        .cardio_item p {
+            margin-left:12px;
+        }
+        
+        .cardio_ul {
+            padding-left:16px;
+        }
+        
+         .page_programs .block_1 .h2, .page_about_us .block_1 .h2, .page_programs .block_1 .program_descript,  .place_descript .program_descript, {
+             margin-left:30px;
+        }
+        .logo, .bg_header .logo {
+             margin-left:28px;
+        }
 	
 }
 
@@ -2881,8 +2908,9 @@ footer {
         .page_programs .block_1 .h2, .place_descript .h2 {
             margin-left:30px;
             font-size:42px
-                
         }
+                   
+
        
         .page_programs .block_1 .center_2, .place_descript.center_2 {
             padding-top:160px; /**80**/
@@ -2908,8 +2936,8 @@ footer {
 	.page_programs .block_1 .h2  {
 		font-size: 42px;
 		line-height: 1.2;
-		margin-bottom: 26px!important;
 	}
+        
 	.ul_5 > li {
 		float: none;
 	}
