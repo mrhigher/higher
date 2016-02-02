@@ -347,13 +347,13 @@ $(function() {
 });
 
 function gotocoord(val){
-	$("html,body").stop(true, true).animate({'scrollTop': + '-' + height1 + "px"}, 1500);
+	$("html,body").stop(true, true).animate({'scrollTop': - height1 + "px"}, 1500);
 }
 
 function gotoblock(id){
 	var obj = $('#'+id);
 	var destination = obj.offset().top;
-	$("html,body").stop(true, true).animate({'scrollTop': + '-' + height1 + 'px'}, 1500);
+	$("html,body").stop(true, true).animate({'scrollTop': - height1 + 'px'}, 1500);
 }
 </script>
 
