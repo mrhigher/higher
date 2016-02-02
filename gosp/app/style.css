@@ -2869,7 +2869,23 @@ footer {
         .logo, .bg_header .logo {
              margin-left:28px;
         }
+	.cardio_block_2 {
+		width: auto;
+	}
+	/*========================== левый отступ ==========================*/
  
+	.logo, .bg_header .logo {
+		margin-left: 3%;
+	}
+	.cardio_block_1.left, .cardio_item {
+		padding-left: 3%;
+	}
+	.title_under, .cardio_content, .descript_foto_cardio, h3.title_6.title_under, .cardio_item p {
+		margin-left: 0;
+	}
+	.cardio_ul {
+		padding-left: 0;
+	}
 	
 }
 
@@ -2917,9 +2933,7 @@ footer {
             margin-left:30px;
             font-size:42px
         }
-                   
-
-       
+     
         .page_programs .block_1 .center_2, .place_descript.center_2 {
             padding-top:160px; /**80**/
         }
@@ -2932,7 +2946,7 @@ footer {
          .doctors .place_descript.center_2 {
             margin-bottom:42px;
         }
-	h2{font-size: 28px; margin-bottom: 70px!important;}
+	h2{font-size: 28px;}
 	.block_1 .h2 {
 		font-size: 42px;
 	}
@@ -3089,6 +3103,7 @@ footer {
 	
 }
 
+/*
 @media only screen and (max-width: 465px) {
      .departs_block ul:nth-child(2n + 1 ) {
             clear:none;
@@ -3132,6 +3147,7 @@ footer {
     }
 
        
+*/
 
 @media only screen and (max-width: 465px) {
      .departs_block ul:nth-child(2n + 1 ) {
@@ -3224,6 +3240,9 @@ footer {
 		margin-right: 1%;
 		width: 98%;
 		
+	}
+	.ul_6 > li:nth-child(2) {
+		width: auto;
 	}
 }
 @media only screen and (max-width: 319px) {

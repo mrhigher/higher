@@ -186,22 +186,20 @@
 					<p>По подсчетам Всемирной организации здравоохранения, 80% преждевременных инфарктов и инсультов можно предотвратить путем регулярной проверки и наблюдения за факторами риска сердечно-сосудистых заболеваний.</p>
 					<p><strong>«Кардио check-up»</strong> – обследование, позволяющее получить исчерпывающую информацию о состоянии сердечно-сосудистой системы, показывает основные риски и вероятность развития заболевания сердца и сосудов. </p>
 					<p class="next_pr">У нас вы можете пройти следующие программы:<br>
-						<a href="#">Кардио - мини</a><br>
-						<a href="#">Кардио - стандарт</a><br>
-						<a href="#">Кардио - профи</a>
+						<a href="#one">Кардио - мини</a><br>
+						<a href="#two">Кардио - стандарт</a><br>
+						<a href="#three">Кардио - профи</a>
 					</p>
-<!--					<img class="cardio_foto_mobile" src="img/cardio_foto_mobile.png" alt="">-->
 				</div>
 			</div>
 			<div class="cardio_block_2 right">
-<!--				<img class="cardio_foto" src="img/cardio_foto.png" alt="">-->
 				<div class="descript_foto_cardio">
 					<h4 class="title_5">Терновых<br> Ирина Алексеевна</h4>
 					<p><strong>Кардиолог высшей квалификационной категории</strong></p>
 					<p>Кандидат медицинских наук</p>
 				</div>
 			</div>
-			<div class="cardio_item one">
+			<div class="cardio_item one" id="one">
 				<h3 class="title_6 title_under">КАРДИО - <span>МИНИ</span></h3>
 				<p>Быстрая проверка сердца с экспертной диагностикой подойдет для тех, кто хочет регулярно следить за своим здоровьем:</p>
 				<ul class="cardio_ul">
@@ -213,7 +211,7 @@
 				<span class="cardio_price"><span>19 900</span> руб.</span>
                                 <a href="" class="btn_1">записаться <em>на прием</em></a>
 			</div>
-			<div class="cardio_item two">
+			<div class="cardio_item two" id="two">
 				<h3 class="title_6 title_under">КАРДИО - <span>СТАНДАРТ</span></h3>
 				<p>Углубленная проверка сердечно-сосудистой системы холтером, консультация офтальмолога с определением состояния глазного дна:</p>
 				<ul class="cardio_ul">
@@ -229,7 +227,7 @@
 				<span class="cardio_price"><span>19 900</span> руб.</span>
                                 <a href="" class="btn_1">записаться <em>на прием</em></a>
 			</div>
-			<div class="cardio_item three">
+			<div class="cardio_item three" id="three">
 				<h3 class="title_6 title_under">КАРДИО - <span>ПРОФИ</span></h3>
 				<p>Полная проверка сердечно-сосудистой системы для тех, кто не любит компромиссов: включает холтер, велоэргометрию и консультацию офтальмолога с определением состояния глазного дна:</p>
 				<ul class="cardio_ul">
@@ -335,6 +333,29 @@
 <script src="libs/jquery.matchHeight-min.js"></script>
 <!-- bxslider -->
 <script src="js/common.js"></script>
+<script>
+$(function() {
+	$('.ul_6 li').matchHeight();
+
+	// перемотка
+    $('.next_pr a').click(function(event) {
+        event.preventDefault();
+		var my_attr = $(this).attr('href').substring(1);
+		gotoblock(my_attr);
+    });
+});
+
+function gotocoord(val){
+	$("html,body").stop(true, true).animate({'scrollTop': val-40}, 1500);
+}
+
+function gotoblock(id){
+	var obj = $('#'+id);
+	var destination = obj.offset().top;
+	$("html,body").stop(true, true).animate({'scrollTop': destination-40}, 1500);
+}
+</script>
+
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
 <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
