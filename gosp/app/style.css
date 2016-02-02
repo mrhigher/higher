@@ -246,7 +246,7 @@ h4{font-size: 18px;}
 /*========================== END ==========================*/
 
 .wrapper {
-	border-top: 4px solid #c0a35f;
+	border-top: 3px solid #c0a35f;
 	margin: 0 auto;
 }
 
@@ -2169,10 +2169,10 @@ footer {
 	.menu-button span {
 		background: #fff;
 		display: block;
-		height: 4px;
-		width: 50px;
+		height: 3px;
+		width: 40px;
 	}
-	.menu-button span + span {margin-top: 14px;}
+	.menu-button span + span {margin-top: 10px;}
 	.flexnav.flexnav-show {
                 top:75px;
 		position: absolute;
@@ -2652,15 +2652,24 @@ footer {
 	.style_1 {margin-top: 0; padding-top: 170px;}
 	.menu-button {
 		position: absolute;
-                top:-10px;
+                top:-27px;
 		right: 2%;
 	}
         .bg_header .menu-button {
-                top:-29px;
+                top:-30px;
         }
         
         .bg_header .logo {
-            margin:14px 0px 4px 2%;
+            margin:8px 0px 0px 2%;
+        }
+        .logo {
+		margin-top: 16px;
+	}
+       .logo img:first-child {
+            max-width:47px;
+        }
+        .logo img:last-child {
+            max-width:83px;
         }
 	.main_menu.left {top: 40px; width: 100%;}
 	
@@ -2691,7 +2700,7 @@ footer {
             z-index:80;
 	}
         .bg_header .flexnav.flexnav-show  {
-           top:81px;
+           top:60px;
           }
         .flexnav::-webkit-scrollbar {
         /* display: none; hide scroll bar */  
@@ -2765,9 +2774,7 @@ footer {
 	}
 	
 	/*========================== внутренние ==========================*/
-	.logo {
-		margin-top: 29px;
-	}
+
 	.page_about_us  .h2:after {
 		background: #c0a35f;
 		display: block;
@@ -2856,7 +2863,7 @@ footer {
             padding-left:16px;
         }
         
-         .page_programs .block_1 .h2, .page_about_us .block_1 .h2, .page_programs .block_1 .program_descript,  .place_descript .program_descript, {
+         .page_programs .block_1 .h2, .page_about_us .block_1 .h2, .page_programs .block_1 .program_descript,  .place_descript .program_descript {
              margin-left:30px;
         }
         .logo, .bg_header .logo {

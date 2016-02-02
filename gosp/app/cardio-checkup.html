@@ -340,10 +340,11 @@ $(function() {
 	// перемотка
     $('.next_pr a').click(function(event) {
         event.preventDefault();
+       
 		var my_attr = $(this).attr('href').substring(1);
 		gotoblock(my_attr);
     });
-	var height1 = $('#header').height();
+	
 });
 
 function gotocoord(val){
@@ -351,6 +352,7 @@ function gotocoord(val){
 }
 
 function gotoblock(id){
+     var height1 = $('#header').outerHeight();
 	var obj = $('#'+id);
 	var destination = obj.offset().top;
 	$("html,body").stop(true, true).animate({'scrollTop': - height1 + 'px'}, 1500);
