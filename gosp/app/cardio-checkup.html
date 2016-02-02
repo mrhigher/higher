@@ -340,19 +340,18 @@ $(function() {
 	// перемотка
     $('.next_pr a').click(function(event) {
         event.preventDefault();
+       
 		var my_attr = $(this).attr('href').substring(1);
 		gotoblock(my_attr);
     });
+	
 });
 
-function gotocoord(val){
-	$("html,body").stop(true, true).animate({'scrollTop': val-40}, 1500);
-}
-
 function gotoblock(id){
+     var height1 = $('#header').outerHeight();
 	var obj = $('#'+id);
-	var destination = obj.offset().top;
-	$("html,body").stop(true, true).animate({'scrollTop': destination-40}, 1500);
+	var destination = obj.offset().top - height1;
+	$("html,body").stop(true, true).animate({'scrollTop':  destination + 'px'}, 1000);
 }
 </script>
 
