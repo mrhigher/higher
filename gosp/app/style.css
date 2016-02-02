@@ -2877,7 +2877,7 @@ footer {
 	.logo, .bg_header .logo, .descript_3, .descript_about_us p, .mis p, .page_about_us .block_4 .h3, .history .left, .name_main, .page_programs .block_1 .h2, .program_descript, .program .h3, .services .h3, .wrap_accord, .link_services {
 		margin-left: 3%!important;
 	}
-	.cardio_block_1.left, .cardio_item {
+	.cardio_block_1.left, .cardio_item, .link_services {
 		padding-left: 3%;
 	}
 	.title_under, .cardio_content, .descript_foto_cardio, h3.title_6.title_under, .cardio_item p {
@@ -3128,52 +3128,6 @@ footer {
 	
 }
 
-/*
-@media only screen and (max-width: 465px) {
-     .departs_block ul:nth-child(2n + 1 ) {
-            clear:none;
-        }
-        .departs_block ul {
-            float:none;
-            width:80%;
-            margin:0 auto;
-        }
-        .departs_block ul {
-            text-align:center;
-        }
-        .departs_block ul:last-child  {
-           float:none;
-           width:80%;
-           margin:0 auto;
-        }
-
-    }
-
-       
-
-@media only screen and (max-width: 465px) {
-     .departs_block ul:nth-child(2n + 1 ) {
-            clear:none;
-        }
-        .departs_block ul {
-            float:none;
-            width:80%;
-            margin:0 auto;
-        }
-        .departs_block ul {
-            text-align:center;
-        }
-        .departs_block ul:last-child  {
-           float:none;
-           width:80%;
-           margin:0 auto;
-        }
-
-    }
-
-       
-*/
-
 @media only screen and (max-width: 465px) {
      .departs_block ul:nth-child(2n + 1 ) {
             clear:none;
@@ -3261,9 +3215,7 @@ footer {
         .slide_descript {top:60px; }
 	.link_services {
 		float: none;
-		margin-left: 1%;
 		margin-right: 1%;
-		width: 98%;
 		
 	}
 	.ul_6 > li:nth-child(2) {
