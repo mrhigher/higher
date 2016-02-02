@@ -2314,7 +2314,7 @@ footer {
 	.list_plus > div:nth-child(4) {
 		background-position: -474px -115px;
 	}
-	.page_about_us .block_1 .h2, .mis .h3, .fakt .h3, .plus .h3, .history .h3 {
+	.page_about_us .block_1 .h2, .mis .h3, .fakt .h3, .plus .h3, .history .h3, .place_descript p, .place_descript .h2  {
 		margin-left: 3%;
 	}
 	.program {
@@ -2930,7 +2930,6 @@ footer {
 	.ul_2 > li, .ul_2 > li:nth-child(1), .ul_2 > li:nth-child(2) {width: 85%;}
 	h1 {font-size: 36px;}
         .page_programs .block_1 .h2, .place_descript .h2 {
-            margin-left:30px;
             font-size:42px
         }
      
