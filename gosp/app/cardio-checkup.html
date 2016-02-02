@@ -209,7 +209,7 @@
 					<li>Триплексное сканирование сосудов шеи.</li>
 				</ul>
 				<span class="cardio_price"><span>19 900</span> руб.</span>
-                                <a href="" class="btn_1">записаться <em>на прием</em></a>
+                                <a href="" class="btn_1 show_visit">записаться <em>на прием</em></a>
 			</div>
 			<div class="cardio_item two" id="two">
 				<h3 class="title_6 title_under">КАРДИО - <span>СТАНДАРТ</span></h3>
@@ -225,7 +225,7 @@
 					<li>УЗИ щитовидной железы и регионарных лимфоузлов, почек, области надпочечников и мочеточников.</li>
 				</ul>
 				<span class="cardio_price"><span>19 900</span> руб.</span>
-                                <a href="" class="btn_1">записаться <em>на прием</em></a>
+                                <a href="" class="btn_1 show_visit">записаться <em>на прием</em></a>
 			</div>
 			<div class="cardio_item three" id="three">
 				<h3 class="title_6 title_under">КАРДИО - <span>ПРОФИ</span></h3>
@@ -242,7 +242,7 @@
 					<li>УЗИ почек, области надпочечников и мочеточников                         с триплексным сканированием основных сосудов почек                   и внутрипочечного кровотока.</li>
 				</ul>
 				<span class="cardio_price"><span>19 900</span> руб.</span>
-                                <a href="" class="btn_1">записаться <em>на прием</em></a>
+                                <a href="" class="btn_1 show_visit">записаться <em>на прием</em></a>
 			</div>
 		</div><!-- END center_2 -->
 	</div><!-- END cardio_block -->
@@ -258,11 +258,13 @@
 	<!-- block_6 -->
 	<div class="block_6 clearfix">
 		<div class="block_6__1 right">
+                    <a href="#">
 			<img src="img/img_2.jpg" alt="" />
 			<div class="gradient"></div>
 			<p class="foto_descript">Фотографии <br>нашей клиники</p>
 			<span class="ico_8"><img src="img/ico_8.png" alt=""></span>
-		</div>
+                        </a>
+                </div>
 		<div class="map left">
 			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=1mrFJRueM0Rd3xlYNvQzbg1H6ZGs5rGo&width=100%&height=440&lang=ru_UA&sourceType=constructor"></script>
 		</div>
@@ -352,10 +354,16 @@ function gotocoord(val){
 }
 
 function gotoblock(id){
-     var height1 = $('#header').outerHeight();
-	var obj = $('#'+id);
-	var destination = obj.offset().top;
-	$("html,body").stop(true, true).animate({'scrollTop': - height1 + 'px'}, 1500);
+     
+  
+   
+	var obj = $('#'+id),
+        height = 0  ;
+        if($('#header').css('position') !== 'static' || $('#header').css('position') !== 'relative') {
+           height1 = $('#header').outerHeight();
+          }
+	var destination = obj.offset().top - height1;
+	$("html,body").stop(true, true).animate({'scrollTop':  destination + 'px'}, 1000);
 }
 </script>
 
