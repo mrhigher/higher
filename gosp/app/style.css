@@ -2691,7 +2691,7 @@ footer {
 	.flexnav.flexnav-show {
             overflow-y:scroll;
              position:fixed;
-             top:110px;
+             top:81px;
             background: #002e5c;
             padding: 0px 0px 80px 0px;
             text-align: left;

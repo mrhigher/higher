@@ -348,9 +348,15 @@ $(function() {
 });
 
 function gotoblock(id){
-     var height1 = $('#header').outerHeight();
-	var obj = $('#'+id);
-	var destination = obj.offset().top - height1;
+     
+  
+   
+	var obj = $('#'+id),
+        height = 0  ;
+        if($('#header').css('position') !== 'static' || $('#header').css('position') !== 'relative') {
+           height1 = $('#header').outerHeight();
+          }
+	var destination = obj.offset().top + height1;
 	$("html,body").stop(true, true).animate({'scrollTop':  destination + 'px'}, 1000);
 }
 </script>
