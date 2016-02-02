@@ -32,6 +32,9 @@ $(document).keydown(function(e) {
 	 // ESCAPE key pressed
 	 if (e.keyCode == 27) {
 		 $(".flexnav-show").removeClass("flexnav-show");
+		 $("html").removeClass("opnav");
+
+                    
 	 }
 });
     
@@ -59,6 +62,8 @@ $(window).bind('orientationchange', function() {
 		
 		  if (flexnav.css("z-index") == "2" ){
                         flexnav.removeClass('flexnav-show');
+                        $('html').removeClass('opnav'); 
+
 //			  $(".touch-press").unbind('click').bind('click', function(e) {
 //				  e.preventDefault();
 //				  $(".flexnav").removeClass('flexnav-show');
@@ -69,11 +74,14 @@ $(window).bind('orientationchange', function() {
 			  $(".touch-press").unbind('click').bind('click', function(e) {
 				  e.preventDefault();
 				  flexnav.toggleClass('flexnav-show');
+                                  if(flexnav.hasClass('flexnav-show')) {
+                   $('html').addClass('opnav');  
+                   } else {
+                        $('html').removeClass('opnav'); 
+                   }
+                      
                                   
-                                    var fli = flexnav.find('li').eq(0).outerHeight(),
-                                    flc = flexnav.find('li').length;
-                                    $('.flexnav.flexnav-show').css('height', (fli * flc) - fli + 'px');
-                                  
+                              
                                   
 			  });
 		  }

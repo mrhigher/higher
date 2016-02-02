@@ -223,8 +223,6 @@
 
 @media only screen and (max-width: 940px) {
       .flexnav.flexnav-show {
-    height:200px;   
-    overflow-y:auto;  
     max-height: 4000px;
     opacity: 1;
     -webkit-transition: all .1s ease-in-out;
@@ -235,7 +233,7 @@
 .flexnav.flexnav-show {
   text-align:center;
 /*  padding: .78em 1.4em .78em 1.4em;*/
-  background:#2e2c31;
+ 
 }
 
   .flexnav li ul.flexnav-show li {
