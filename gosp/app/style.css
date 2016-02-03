@@ -3175,25 +3175,14 @@ footer {
 		top: 52px;
 	}
                       
-        .departs_block ul:nth-child(2n + 1 ) {
-            clear:none;
-        }
-        .departs_block ul {
-            float:none;
-            width:80%;
-            margin:0 auto;
-        }
-        .departs_block ul {
-            text-align:center;
-        }
-        .departs_block ul:last-child  {
-           float:none;
-           width:80%;
-           margin:0 auto;
-        }
-	.cardio_block {
+  	.cardio_block {
 		background-image: none;
 	}
+        
+         .departs_block ul, .departs_block ul:last-child  {
+            width:auto; 
+            text-align:left; 
+         }
 	
 }
 @media only screen and (max-width: 370px) {
@@ -3202,6 +3191,9 @@ footer {
     }
     .cardio_item .btn_1 em {
         display:none;
+    }
+    .doctors .place_descript.center_2 .h2 {
+        font-size:40px;
     }
 }
 @media only screen and (max-width: 350px) {
