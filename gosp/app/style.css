@@ -443,7 +443,7 @@ h4{font-size: 18px;}
 		width: 100%;
 	}
 	.flexnav h4 {
-                cursor:pointer;
+                cursor:default;
                 padding:0px 0px 20px 50px;
 		color: #fff;
 		font-size: 32px;
@@ -2938,8 +2938,11 @@ footer {
 		width: 100%;
                 display:block !important;
 	}
-         .flexnav li > ul div ul.pad2 {
+        .flexnav li > ul div ul {
             margin-bottom:25px;
+        }
+         .flexnav li > ul div ul.pad2 {
+            margin-bottom:0px;
         }
         .flexnav li > ul div ul.withsub {
            /* margin-bottom:20px; */
@@ -2964,8 +2967,8 @@ footer {
 	.flexnav ul li ul li a {
                 font-family: RobotoRegular;
                 text-transform: none;
-		font-size: 25px;
-		padding: 10px 20px 10px 65px;
+		font-size: 23px;
+		padding: 10px 20px 10px 67px;
 	}
 	.flexnav > li.item-with-ul {background: none;}
 	.flexnav-show .advbox {
@@ -3204,6 +3207,7 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
+    
 	.ul_3, footer .logo.left, .foooter_data, .left.addr, .soc_btn.right {
 		display: table;
 		margin-left: auto;
