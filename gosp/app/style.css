@@ -344,10 +344,11 @@ h4{font-size: 18px;}
 }
 
 .flexnav ul li ul li a {
+    
 	background: none;
 	font-size: 14px;
-	line-height: 1.1;
-	padding: 4px 0 8.8px 31px;
+	line-height: 1.2;
+	padding: 4px 0 12px 31px;
 }
 
 .flexnav > li > ul {
@@ -371,7 +372,7 @@ h4{font-size: 18px;}
 .flexnav h4 {
 	color: #c0a35f;
 	line-height: 1.2;
-	padding: 0 0 0 31px;
+	padding: 0 0 14px 31px;
 	text-transform: uppercase;
 }
 
@@ -416,7 +417,7 @@ h4{font-size: 18px;}
 	.flexnav ul li ul li a, .flexnav h4 {
 		padding-left: 15px;
 	}
-	.flexnav h4 {font-size: 17px;}
+	.flexnav h4 {font-size: 16px;}
 	.flexnav li > ul > li {
 		width: 801px;
 	}
@@ -442,11 +443,19 @@ h4{font-size: 18px;}
 		width: 100%;
 	}
 	.flexnav h4 {
+                cursor:pointer;
+                padding:0px 0px 20px 50px;
 		color: #fff;
-		font-size: 36px;
+		font-size: 32px;
 	}
 	.flexnav li:nth-child(2) li.item-with-ul ul > li:first-child {
 		min-height: auto;
+	}
+}
+@media only screen and (max-width: 550px )  {
+    .flexnav h4 {
+                padding:0px 0px 20px 50px;
+		font-size: 30px;
 	}
 }
 
@@ -2888,7 +2897,7 @@ footer {
 	.flexnav > li {
 		margin-right: 0;
 	}
-	.flexnav > li a {padding-left: 40px;}
+	.flexnav > li a {padding-left: 25px;}
 	.flexnav.flexnav-show {
             overflow-y:scroll;
              position:fixed;
@@ -2912,7 +2921,7 @@ footer {
 		line-height: 1.2;
 	}
 	.flexnav > li a {
-		font-size: 36px;
+		font-size: 34px;
 		padding-bottom: 25px;
 		padding-top: 25px;
 	}
@@ -2928,15 +2937,39 @@ footer {
 	.flexnav > li ul li {width: 100%; z-index: 5;}
 	.flexnav-show.flexnav li > ul {margin-top: 0;}
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
-	.flexnav li > ul div ul:first-child {padding-top: 50px;}
+	.flexnav li > ul div ul:first-child {padding-top: 30px;}
 	.flexnav li > ul div ul {
 		width: 100%;
+                display:block !important;
 	}
+         .flexnav li > ul div ul.pad2 {
+            margin-bottom:25px;
+        }
+        .flexnav li > ul div ul.withsub {
+           /* margin-bottom:20px; */
+        }
+        .flexnav li > ul div ul.part {
+            /*top:-20px;*/ 
+        }
+        .flexnav li > ul div ul li:not(:first-child) {
+             /* height:0px; */
+        }
+        
+        .flexnav li > ul div ul.withsub li, .flexnav li > ul div ul.vissub li  {
+                height:auto;
+        }
+        .flexnav li > ul div ul.withsub + ul.part > li {
+               height:auto;
+        }
+        
+        
+        
+      
 	.flexnav ul li ul li a {
                 font-family: RobotoRegular;
                 text-transform: none;
-		font-size: 28px;
-		padding: 10px 10px 10px 65px;
+		font-size: 25px;
+		padding: 10px 20px 10px 65px;
 	}
 	.flexnav > li.item-with-ul {background: none;}
 	.flexnav-show .advbox {
@@ -3391,25 +3424,14 @@ footer {
 		top: 52px;
 	}
                       
-        .departs_block ul:nth-child(2n + 1 ) {
-            clear:none;
-        }
-        .departs_block ul {
-            float:none;
-            width:80%;
-            margin:0 auto;
-        }
-        .departs_block ul {
-            text-align:center;
-        }
-        .departs_block ul:last-child  {
-           float:none;
-           width:80%;
-           margin:0 auto;
-        }
-	.cardio_block {
+  	.cardio_block {
 		background-image: none;
 	}
+        
+         .departs_block ul, .departs_block ul:last-child  {
+            width:auto; 
+            text-align:left; 
+         }
 	
 }
 @media only screen and (max-width: 370px) {
@@ -3418,6 +3440,9 @@ footer {
     }
     .cardio_item .btn_1 em {
         display:none;
+    }
+    .doctors .place_descript.center_2 .h2 {
+        font-size:40px;
     }
 }
 @media only screen and (max-width: 350px) {

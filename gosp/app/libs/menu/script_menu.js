@@ -51,7 +51,24 @@ $(window).bind('orientationchange', function() {
            c.not($(a).toggleClass('show_with')).removeClass("show_with");
             return false;
            })
-            }); 
+           
+           $(a).find('h4').unbind('click').bind('click', function(e) {
+           $(a).find('ul').toggleClass('show_subitm');
+           })
+            });
+            
+            /*
+            var m = $(".item-with-ul > ul li ul");
+           m.each(function(b, a) {
+           $(a).find('.htit').unbind('click').bind('click',function(e) {
+           m.not($(a).toggleClass('withsub')).removeClass("withsub");
+            return false;
+           })
+            }); */
+            
+            
+            
+            
           
           
 
