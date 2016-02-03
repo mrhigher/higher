@@ -344,11 +344,10 @@ h4{font-size: 18px;}
 }
 
 .flexnav ul li ul li a {
-    
 	background: none;
 	font-size: 14px;
 	line-height: 1.2;
-	padding: 4px 0 12px 31px;
+	padding: 4px 0 8.8px 31px;
 }
 
 .flexnav > li > ul {
@@ -372,7 +371,7 @@ h4{font-size: 18px;}
 .flexnav h4 {
 	color: #c0a35f;
 	line-height: 1.2;
-	padding: 0 0 14px 31px;
+	padding: 0 0 0 31px;
 	text-transform: uppercase;
 }
 
@@ -417,7 +416,7 @@ h4{font-size: 18px;}
 	.flexnav ul li ul li a, .flexnav h4 {
 		padding-left: 15px;
 	}
-	.flexnav h4 {font-size: 16px;}
+	.flexnav h4 {font-size: 17px;}
 	.flexnav li > ul > li {
 		width: 801px;
 	}
@@ -446,16 +445,10 @@ h4{font-size: 18px;}
                 cursor:pointer;
                 padding:0px 0px 20px 50px;
 		color: #fff;
-		font-size: 32px;
+		font-size: 34px;
 	}
 	.flexnav li:nth-child(2) li.item-with-ul ul > li:first-child {
 		min-height: auto;
-	}
-}
-@media only screen and (max-width: 550px )  {
-    .flexnav h4 {
-                padding:0px 0px 20px 50px;
-		font-size: 30px;
 	}
 }
 
@@ -2801,7 +2794,7 @@ footer {
 	.flexnav > li {
 		margin-right: 0;
 	}
-	.flexnav > li a {padding-left: 25px;}
+	.flexnav > li a {padding-left: 40px;}
 	.flexnav.flexnav-show {
             overflow-y:scroll;
              position:fixed;
@@ -2841,13 +2834,13 @@ footer {
 	.flexnav > li ul li {width: 100%; z-index: 5;}
 	.flexnav-show.flexnav li > ul {margin-top: 0;}
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
-	.flexnav li > ul div ul:first-child {padding-top: 30px;}
+	.flexnav li > ul div ul:first-child {padding-top: 40px;}
 	.flexnav li > ul div ul {
 		width: 100%;
                 display:block !important;
 	}
          .flexnav li > ul div ul.pad2 {
-            margin-bottom:25px;
+            margin-bottom:20px;
         }
         .flexnav li > ul div ul.withsub {
            /* margin-bottom:20px; */
@@ -2872,7 +2865,7 @@ footer {
 	.flexnav ul li ul li a {
                 font-family: RobotoRegular;
                 text-transform: none;
-		font-size: 25px;
+		font-size: 28px;
 		padding: 10px 20px 10px 65px;
 	}
 	.flexnav > li.item-with-ul {background: none;}
