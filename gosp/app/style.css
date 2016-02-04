@@ -262,7 +262,7 @@ h4{font-size: 18px;}
 
 .logo img:first-child {
 	float: left;
-	margin: 0 13px 0 0;
+	margin: 2px 13px 0 0;
 }
 
 .logo img:last-child {
@@ -445,7 +445,7 @@ h4{font-size: 18px;}
 		width: 100%;
 	}
 	.flexnav h4 {
-                cursor:pointer;
+                cursor:default;
                 padding:0px 0px 20px 50px;
 		color: #fff;
 		font-size: 32px;
@@ -2945,6 +2945,7 @@ footer {
 	}
        .logo img:first-child {
             max-width:47px;
+            margin:0px 13px 0px 0px;
         }
         .logo img:last-child {
             max-width:83px;
@@ -3001,33 +3002,35 @@ footer {
 		z-index: 999!important;
 	}
 	.show_with ul li a {color: #fff!important;}
-	.flexnav li > ul > li.item-with-ul {padding-bottom: 0; padding-top: 0;}
+	.flexnav li > ul > li.item-with-ul {padding-bottom: 0; padding-top:0;}
 	.flexnav > li ul li {width: 100%; z-index: 5;}
-	.flexnav-show.flexnav li > ul {margin-top: 0;}
+	.flexnav-show.flexnav li > ul {margin-top: 0; margin-bottom:0px;}
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
-	.flexnav li > ul div ul:first-child {padding-top: 30px;}
+	.flexnav li > ul div ul:first-child {padding-top: 34px;}
 	.flexnav li > ul div ul {
 		width: 100%;
                 display:block !important;
 	}
-         .flexnav li > ul div ul.pad2 {
+        .flexnav li > ul div ul {
             margin-bottom:25px;
         }
+         .flexnav li > ul div ul.pad2 {
+            margin-bottom:0px;
+        }
         .flexnav li > ul div ul.withsub {
-           /* margin-bottom:20px; */
         }
         .flexnav li > ul div ul.part {
-            /*top:-20px;*/ 
+           
         }
-        .flexnav li > ul div ul li:not(:first-child) {
-             /* height:0px; */
+        .flexnav li > ul div ul.withsub li:not(:first-child) {
+              height:0px; 
         }
         
         .flexnav li > ul div ul.withsub li, .flexnav li > ul div ul.vissub li  {
                 height:auto;
         }
         .flexnav li > ul div ul.withsub + ul.part > li {
-               height:auto;
+               height:0;
         }
         
         
@@ -3037,7 +3040,8 @@ footer {
                 font-family: RobotoRegular;
                 text-transform: none;
 		font-size: 25px;
-		padding: 10px 20px 10px 65px;
+             
+		padding: 10px 20px 10px 67px;
 	}
 	.flexnav > li.item-with-ul {background: none;}
 	.flexnav-show .advbox {
@@ -3072,7 +3076,7 @@ footer {
 	}
 	.flexnav li > ul > li.item-with-ul > div {
 		background: #c0a35f;
-		padding-bottom: 25px;
+		padding-bottom: 10px;
 	}
 	
 	/*========================== внутренние ==========================*/
@@ -3291,6 +3295,7 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
+    
 	.ul_3, footer .logo.left, .foooter_data, .left.addr, .soc_btn.right {
 		display: table;
 		margin-left: auto;
@@ -3417,6 +3422,10 @@ footer {
 }
 
 @media only screen and (max-width: 498px) {
+    
+     .flexnav ul li ul li a {
+        font-size:23px;
+     }
 
 	.workers_block .list {
 		width: 250px;
@@ -3511,6 +3520,9 @@ footer {
     }
     .doctors .place_descript.center_2 .h2 {
         font-size:40px;
+    }
+    .flexnav .advbox .items a em {
+        display:none;
     }
 }
 @media only screen and (max-width: 350px) {

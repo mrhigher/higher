@@ -20,7 +20,7 @@
     font-size: 100%;
     position: relative;
     overflow: hidden;
-	  z-index: 5;
+    z-index: 5;
   }
 
   .flexnav li a {
@@ -191,10 +191,10 @@
     .flexnav.flexnav-show {
        max-height: 8000px;
        opacity: 1;
-       -webkit-transition: all .1s ease-in-out;
-       -moz-transition: all .1s ease-in-out;
-       -ms-transition: all .1s ease-in-out;
-       transition: all .1s ease-in-out;
+       -webkit-transition: all .0s ease-in-out;
+       -moz-transition: all .0s ease-in-out;
+       -ms-transition: all .0s ease-in-out;
+       transition: all .0s ease-in-out;
      }
     .flexnav.flexnav-show {
       text-align:center;
