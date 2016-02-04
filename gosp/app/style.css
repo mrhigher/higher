@@ -3103,10 +3103,7 @@ footer {
         .flexnav li > ul div ul.withsub + ul.part > li {
                height:0;
         }
-        
-        
-        
-      
+             
 	.flexnav ul li ul li a {
                 font-family: RobotoRegular;
                 text-transform: none;
@@ -3253,7 +3250,10 @@ footer {
 		margin-bottom: 60px;
 	}
 	#header.news_small_bg {padding-bottom: 10px;}
-/*	.news_small_bg.bg_header {padding-bottom: 10px;}*/
+	.news_small_bg .flexnav.flexnav-show {
+		top: 8px;
+	}
+	.news_small_bg .flexnav > li > a {color: #f9f6f1;}
 	/*========================== левый отступ ==========================*/
  
 	.logo, .bg_header .logo, .descript_3, .descript_about_us p, .mis p, .page_about_us .block_4 .h3, .history .left, .name_main, .page_programs .block_1 .h2, .program_descript, .program .h3, .services .h3, .wrap_accord, .link_services, .news__descript, .news_content p {
