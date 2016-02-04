@@ -2960,7 +2960,7 @@ footer {
 	.flexnav > li ul li {width: 100%; z-index: 5;}
 	.flexnav-show.flexnav li > ul {margin-top: 0; margin-bottom:0px;}
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
-	.flexnav li > ul div ul:first-child {padding-top: 30px;}
+	.flexnav li > ul div ul:first-child {padding-top: 34px;}
 	.flexnav li > ul div ul {
 		width: 100%;
                 display:block !important;
@@ -2972,10 +2972,9 @@ footer {
             margin-bottom:0px;
         }
         .flexnav li > ul div ul.withsub {
-           /* margin-bottom:20px; */
         }
         .flexnav li > ul div ul.part {
-            /*top:-20px;*/ 
+           
         }
         .flexnav li > ul div ul.withsub li:not(:first-child) {
               height:0px; 
@@ -3031,7 +3030,7 @@ footer {
 	}
 	.flexnav li > ul > li.item-with-ul > div {
 		background: #c0a35f;
-		padding-bottom: 25px;
+		padding-bottom: 10px;
 	}
 	
 	/*========================== внутренние ==========================*/

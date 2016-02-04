@@ -51,10 +51,7 @@ $(window).bind('orientationchange', function() {
            c.not($(a).toggleClass('show_with')).removeClass("show_with");
             return false;
            })
-           
-           $(a).find('h4').unbind('click').bind('click', function(e) {
-           $(a).find('ul').toggleClass('show_subitm');
-           })
+       
             });
             
             
