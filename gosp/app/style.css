@@ -2350,7 +2350,7 @@ footer {
 }
 
 .news_small_bg.bg_header {
-	padding-bottom: 0;
+	padding-bottom: 10px;
 }
 
 .news_small__title {
