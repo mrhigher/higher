@@ -3475,6 +3475,9 @@ footer {
     .doctors .place_descript.center_2 .h2 {
         font-size:40px;
     }
+    .flexnav .advbox .items a em {
+        display:none;
+    }
 }
 @media only screen and (max-width: 350px) {
     
