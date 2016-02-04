@@ -2977,15 +2977,15 @@ footer {
         .flexnav li > ul div ul.part {
             /*top:-20px;*/ 
         }
-        .flexnav li > ul div ul li:not(:first-child) {
-             /* height:0px; */
+        .flexnav li > ul div ul.withsub li:not(:first-child) {
+              height:0px; 
         }
         
         .flexnav li > ul div ul.withsub li, .flexnav li > ul div ul.vissub li  {
                 height:auto;
         }
         .flexnav li > ul div ul.withsub + ul.part > li {
-               height:auto;
+               height:0;
         }
         
         
@@ -2994,7 +2994,8 @@ footer {
 	.flexnav ul li ul li a {
                 font-family: RobotoRegular;
                 text-transform: none;
-		font-size: 23px;
+		font-size: 25px;
+             
 		padding: 10px 20px 10px 67px;
 	}
 	.flexnav > li.item-with-ul {background: none;}
@@ -3376,6 +3377,10 @@ footer {
 }
 
 @media only screen and (max-width: 498px) {
+    
+     .flexnav ul li ul li a {
+        font-size:23px;
+     }
 
 	.workers_block .list {
 		width: 250px;
