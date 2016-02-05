@@ -465,21 +465,8 @@ h4{font-size: 18px;}
 }
 
 @media only screen and (max-width: 699px ) {
-	.item-with-ul > .clearfix > ul > li {
-		width: 100%;
-	}
-	.flexnav h4 {
-                cursor:default;
-                padding:0px 0px 20px 50px;
-		color: #fff;
-		font-size: 32px;
-	}
-	.flexnav li:nth-child(2) li.item-with-ul ul > li:first-child {
-		min-height: auto;
-	}
-	.flexnav > li .hpad2 > .item-with-ul {
-		background-image: none;
-	}
+	
+	
 	
 }
 @media only screen and (max-width: 550px )  {
@@ -2435,6 +2422,11 @@ footer {
 	border-top: 0;
 }
 
+/*========================== doctors_item ==========================*/
+
+
+/*========================== END doctors_item ==========================*/
+
 /*========================== media ==========================*/
 
 @media only screen and (min-width: 1440px) {
@@ -3094,7 +3086,7 @@ footer {
 		right: 2%;
 	}
 	.bg_header .menu-button {
-		top: 0;
+		top: 6px;
 	}
 	.bg_header .flexnav {margin-top: 0;}
 	.logo {
@@ -3118,6 +3110,21 @@ footer {
 	}
 	.menu-button {
 		top: 15px;
+	}
+	.item-with-ul > .clearfix > ul > li {
+		width: 100%;
+	}
+	.flexnav h4 {
+		cursor:default;
+		padding:0px 0px 20px 50px;
+		color: #fff;
+		font-size: 32px;
+	}
+	.flexnav li:nth-child(2) li.item-with-ul ul > li:first-child {
+		min-height: auto;
+	}
+	.flexnav > li .hpad2 > .item-with-ul {
+		background-image: none;
 	}
 	/*========================== END top_menu ==========================*/
 }
