@@ -2439,7 +2439,7 @@ footer {
 .wrap_foto_doctors img {display: block;}
 
 .wrap_foto_doctors:before {
-	background: url("img/foto_descript_shadow.png") no-repeat center top;
+	background: url("img/foto_descript_shadow.png") no-repeat center top / contain;
     bottom: -45px;
     content: "";
     height: 45px;
@@ -3784,8 +3784,6 @@ footer {
 		width: 315px;
 	}
 	.wrap_foto_doctors:before {
-		-webkit-background-size: contain;
-		background-size: contain;
 		left: 50%;
 		margin-left: -157.5px;
 		width: 315px;
