@@ -1588,6 +1588,7 @@ footer {
         color:#f9f6f1;
         font-size:16px;
 	line-height: 1.5;
+	position: relative;
 }
 .place_descript p {
     margin:0 10px 26px 30px
@@ -2424,6 +2425,92 @@ footer {
 
 /*========================== doctors_item ==========================*/
 
+.doctors_item {
+	background-image: url(img/doctors_item.jpg);
+}
+
+.foto_doctors {
+	position: absolute;
+	right: 10px;
+	top: 140px;
+}
+
+.doctors_item .place_descript.center_2 {
+	padding-top: 161px;
+}
+
+.doctors_item .news_title.h2::after {
+	width: 160px;
+}
+
+.doctors_item__descript {
+	font-family: 'robotobold';
+	font-size: 18px;
+	line-height: 1.6;
+	width: 325px;
+}
+
+.doctors_item .doctors_item__descript {
+	margin: 34px 0 0 10px;
+}
+
+.doctors_item .place_descript.center_2 {
+	margin-bottom: 40px;
+	padding-bottom: 53px;
+}
+
+.descript_doctors {
+	color: #2d3e50;
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0 0 0 10px;
+	max-width: 480px;
+}
+
+.descript_doctors .btn_1 {
+	display: inline-block;
+	font-size: 16px;
+	margin: 35px 0 0 0;
+}
+
+.title_under_2 {
+	line-height: 1.4;
+}
+
+.title_under_2:after {
+	background: #c0a35f none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 20px 0 0;
+    width: 80px;
+}
+
+.doctors_content {
+	margin: 20px 0 0 10px;
+}
+
+.doctors_content .title_under_2 {
+	margin: 58px 0 0 0;
+}
+
+.doctors_content .cardio_ul {
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 80px;
+}
+
+.doctors_content .cardio_ul li {
+	background-position: left 3px;
+	font-size: 16px;
+	line-height: 1.6;
+	padding-left: 31px;
+}
+
+.margin_4 {
+	line-height: 1.5;
+	margin: 35px 0 0 21px;
+}
 
 /*========================== END doctors_item ==========================*/
 
