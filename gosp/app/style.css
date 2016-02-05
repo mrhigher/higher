@@ -408,7 +408,7 @@ h4{font-size: 18px;}
 
 @media only screen and (max-width: 1060px ) {
 	.flexnav > li > ul.hpad2 {
-		left: -315px;
+		left: -200px;
 	}
 	.flexnav li > ul > li {
 		width: 961px;
@@ -416,9 +416,11 @@ h4{font-size: 18px;}
 	.item-with-ul > .clearfix > ul > li {
 		width: 240px;
 	}
+/*
 	.news_small_bg .flexnav {
 		margin-top: 65px;
 	}
+*/
 	.flexnav > li .hpad2 > .item-with-ul {
 		background-position: 250px 0, 728px 0;
 	}
@@ -655,6 +657,10 @@ h4{font-size: 18px;}
 	position: absolute;
 	top: 73px;
 	width: 160px;
+}
+
+.page_about_us .h2:before {
+	top: 243px;
 }
 
 .about_us {
@@ -2364,8 +2370,8 @@ footer {
 
 #header.news_small_bg {
 	background: #002e5c;
-	border-top: 3px solid #c0a35f;
-	padding-bottom: 30px;
+/*	border-top: 3px solid #c0a35f;*/
+/*	padding-bottom: 30px;*/
 }
 
 .not_border .logo {
@@ -2600,16 +2606,13 @@ footer {
 	.main_menu.left {
 		margin-left: 20px;
 	}
-/*	.logo {margin-left: 2%; width: 190px;}*/
-/*	.logo img:last-child {display: block;}*/
-/*	#header {position: static;}*/
 	
 	/*========================== внутренние ==========================*/
 	.page_about_us .block_1 {
 		padding-top: 0;
 	}
 	.page_about_us .block_1 .h2 {
-		margin-top: 165px;
+		padding-top: 165px;
 	}
 	.descript_about_us {
 		max-width: 530px;
@@ -2627,9 +2630,7 @@ footer {
 	.news_small_bg {
 		padding-bottom: 10px;
 	}
-	.news_small_bg .flexnav > li > a {
-		color: #c0a35f;
-	}
+	
 	.news_small_img {
 		margin-top: 140px;
 	}
@@ -3448,10 +3449,12 @@ footer {
 	.news_bg .center_2 {
 		margin-bottom: 60px;
 	}
-	#header.news_small_bg {padding-bottom: 10px;}
+/*	#header.news_small_bg {padding-bottom: 10px;}*/
+/*
 	.news_small_bg .flexnav.flexnav-show {
 		top: 8px;
 	}
+*/
 	.news_small_bg .flexnav > li > a {color: #f9f6f1;}
 	/*========================== левый отступ ==========================*/
  
