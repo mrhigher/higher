@@ -3076,7 +3076,7 @@ footer {
 		z-index:80;
 	}
 	.bg_header .flexnav.flexnav-show  {
-	   top:60px;
+	   top: 74px;
 	  }
 	.flexnav::-webkit-scrollbar {
 	/* display: none; hide scroll bar */  
