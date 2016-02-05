@@ -2982,7 +2982,7 @@ footer {
 	.flexnav.flexnav-show {
 		overflow-y:scroll;
 		 position:fixed;
-		 top:105px;
+		 top:77px;
 /*             top:81px;*/
 		background: #002e5c;
 		left: 0;
@@ -3097,13 +3097,29 @@ footer {
 		top: 0;
 	}
 	.bg_header .flexnav {margin-top: 0;}
-	/*========================== END top_menu ==========================*/
 	.logo {
 		width: 200px;
 	}
 	.logo img:last-child {
 		display: block;
 	}
+	.bg_header .logo {
+		margin:8px 0px 0px 2%;
+	}
+	.logo {
+		margin-top: 16px;
+	}
+	.logo img:first-child {
+		max-width:47px;
+		margin:0px 13px 0px 0px;
+	}
+	.logo img:last-child {
+		max-width:83px;
+	}
+	.menu-button {
+		top: 15px;
+	}
+	/*========================== END top_menu ==========================*/
 }
 
 @media only screen and (max-width: 739px) {
@@ -3173,24 +3189,11 @@ footer {
 @media only screen and (max-width: 699px) {
 	
         
-        .bg_header .logo {
-            margin:8px 0px 0px 2%;
-        }
-        .logo {
-		margin-top: 16px;
-	}
-       .logo img:first-child {
-            max-width:47px;
-            margin:0px 13px 0px 0px;
-        }
-        .logo img:last-child {
-            max-width:83px;
-        }
+        
+       
 /*	.main_menu.left {top: 40px; width: 100%;}*/
 	
-	.menu-button {
-		top: 15px;
-	}
+	
 	
 	/*========================== внутренние ==========================*/
 
