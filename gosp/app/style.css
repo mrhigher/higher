@@ -2429,10 +2429,23 @@ footer {
 	background-image: url(img/doctors_item.jpg);
 }
 
-.foto_doctors {
+.wrap_foto_doctors {
+	max-width: 400px;
 	position: absolute;
 	right: 10px;
-	top: 140px;
+	top: 140px;	
+}
+
+.wrap_foto_doctors img {display: block;}
+
+.wrap_foto_doctors:before {
+	background: url("img/foto_descript_shadow.png") no-repeat center top;
+    bottom: -45px;
+    content: "";
+    height: 45px;
+    left: 0;
+    position: absolute;
+	right: 0;
 }
 
 .doctors_item .place_descript.center_2 {
@@ -2514,6 +2527,10 @@ footer {
 
 .margin_5 {
 	margin-top: 40px;
+}
+
+.wrap_btn_1 {
+	display: block;
 }
 
 /*========================== END doctors_item ==========================*/
@@ -2628,7 +2645,7 @@ footer {
     .workers_block .item:nth-child(3n + 1) {
         clear:left;
     }
-	.btn_1 {
+	.ul_1 .btn_1 {
 		text-transform: lowercase;
 	}
 	.flexnav > li a {
@@ -2855,6 +2872,9 @@ footer {
 	.cardio_block {
 		background-position: center 14%;
 	}
+	.doctors_content .cardio_ul {
+		padding-right: 40px;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -2885,6 +2905,10 @@ footer {
 		margin-right: auto;
 		width: 460px;
 	}
+	
+	/*========================== doctors_item ==========================*/
+	.descript_doctors {max-width: 400px;}
+	/*========================== END doctors_item ==========================*/
 }
 
 @media only screen and (max-width: 880px) {
@@ -3218,6 +3242,8 @@ footer {
 		background-image: none;
 	}
 	/*========================== END top_menu ==========================*/
+	
+	.wrap_foto_doctors {max-width: 350px}
 }
 
 @media only screen and (max-width: 739px) {
@@ -3276,23 +3302,50 @@ footer {
     }
     .workers_block .item:nth-child(2n + 1) {
         clear:left;
-    }
-	
+    }	
 	.cardio_block {
 		background-position: center 18%;
 	}
 	.style_1 {margin-top: 0; padding-top: 170px;}
+	
+	/*========================== doctors_item ==========================*/
+ 
+	.wrap_foto_doctors {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		max-width: 400px;
+		position: static;
+	}
+	.wrap_foto_doctors:before {
+		bottom: 8px;
+	}
+	.doctors_item {
+		height: 625px;
+	}
+	.doctors_item .place_descript.center_2 {
+		padding-top: 120px;
+	}
+	.descript_doctors {
+		margin-top: 195px;
+		max-width: 100%;
+	}
+	.doctors_content .cardio_ul {
+		margin-left: 0;
+	}
+	.doctors_content .cardio_ul {
+		padding-right: 2%;
+	}
+	.margin_4 {
+		margin-left: 0;
+		margin-right: 2%;
+	}
+	/*========================== END doctors_item ==========================*/
 }
 
 @media only screen and (max-width: 699px) {
 	
-        
-        
-       
-/*	.main_menu.left {top: 40px; width: 100%;}*/
-	
-	
-	
+
 	/*========================== внутренние ==========================*/
 
 	.page_about_us  .h2:after {
@@ -3670,26 +3723,24 @@ footer {
 }
 
 @media only screen and (max-width: 465px) {
-     .departs_block ul:nth-child(2n + 1 ) {
-            clear:none;
-        }
-        .departs_block ul {
-            float:none;
-            width:80%;
-            margin:0 auto;
-        }
-        .departs_block ul {
-            text-align:center;
-        }
-        .departs_block ul:last-child  {
-           float:none;
-           width:80%;
-           margin:0 auto;
-        }
+	.departs_block ul:nth-child(2n + 1 ) {
+		clear:none;
+	}
+	.departs_block ul {
+		float:none;
+		width:80%;
+		margin:0 auto;
+	}
+	.departs_block ul {
+		text-align:center;
+	}
+	.departs_block ul:last-child  {
+	   float:none;
+	   width:80%;
+	   margin:0 auto;
+	}
 
-    }
-
-       
+}
 
 @media only screen and (max-width: 449px) {
 	.slide_descript {top:90px; }
@@ -3726,6 +3777,24 @@ footer {
          }
 	
 }
+
+@media only screen and (max-width: 400px) {
+	.wrap_foto_doctors {
+		margin-top: 50px;
+		width: 315px;
+	}
+	.wrap_foto_doctors:before {
+		-webkit-background-size: contain;
+		background-size: contain;
+		left: 50%;
+		margin-left: -157.5px;
+		width: 315px;
+	}
+	.descript_doctors {
+		margin-top: 130px;
+	}
+}
+
 @media only screen and (max-width: 370px) {
     .list_plus h3 {
         font-size:22px;
