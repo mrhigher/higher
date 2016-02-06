@@ -96,13 +96,15 @@
 
     }
 
-    .menu-button {
-      position: relative;
-      display: block;
-      padding: 1em;
-      color: #222222;
-      cursor: pointer;
-    }
+.menu-button {
+	position: relative;
+	display: block;
+	height: 61px;
+	padding: 16px;
+	color: #222222;
+	cursor: pointer;
+	width: 72px;
+}
 
   .menu-button.one-page {
     position: fixed;

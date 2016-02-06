@@ -2541,6 +2541,12 @@ footer {
 
 /*========================== END doctors_item ==========================*/
 
+/*========================== button close ==========================*/
+
+.opnav .menu-button span {display: none;}
+.opnav .menu-button {background: url(img/close_menu.png) no-repeat center center;}
+/*========================== END button close ==========================*/
+
 /*========================== media ==========================*/
 
 @media only screen and (min-width: 1440px) {
