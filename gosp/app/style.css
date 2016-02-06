@@ -111,6 +111,7 @@ body {
 	color: #2d3e50;
 	font-family: RobotoRegular;
 	font-size: 16px;
+	min-width: 320px;
 	overflow-x: hidden;
 }
 
@@ -3853,7 +3854,4 @@ footer {
 	.ul_6 > li:nth-child(2) {
 		width: auto;
 	}
-}
-@media only screen and (max-width: 319px) {
-	body {overflow-x: scroll;}
 }
