@@ -3235,6 +3235,9 @@ footer {
 	.menu-button {
 		top: 14px;
 	}
+        .opnav .menu-button {
+                top:8px;
+        }
 	.item-with-ul > .clearfix > ul > li {
 		width: 100%;
 	}
