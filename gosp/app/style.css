@@ -3839,6 +3839,10 @@ footer {
 }
 @media only screen and (max-width: 350px) {
     
+    .descript_doctors .btn_1 em {
+        display:block;
+    }
+    
      .select_main span {
          display:none;
       }
