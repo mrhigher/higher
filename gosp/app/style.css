@@ -2173,10 +2173,7 @@ footer {
     top:0; 
     color:#0a0a0a; 
       }
-      .workers_block {
-          
-
-      }
+      
       .workers_block .list {
            margin:0 auto;
       }
@@ -2528,7 +2525,7 @@ footer {
 }
 
 .doctors_content {
-	margin: 20px 0 0 10px;
+	margin: 20px 0 90px 10px;
 }
 
 .doctors_content .title_under_2 {
@@ -2665,6 +2662,15 @@ footer {
 	margin: 35px 0 8px 21px;
 }
 
+.style_4 a {
+	color: #e1d3b8;
+	text-decoration: underline;
+}
+
+.style_4 a span {
+	color: #c0a35f;
+}
+
 .box_shadow:after {
 	background: url("img/foto_descript_shadow.png") no-repeat scroll center top / contain ;
     bottom: -45px;
@@ -2712,7 +2718,7 @@ footer {
 
 .blue_bg {
 	background: #ebefee;
-	padding: 156px 0 0 0;
+	padding: 75px 0 100px 0;
 }
 
 .blue_bg .h3 {
@@ -2757,6 +2763,68 @@ footer {
 	font-family: RobotoRegular;
 }
 
+.special {
+	padding: 70px 0;
+}
+
+.ul_7 {
+	background: #fff;
+	margin: 44px 0 55px 0;
+	overflow: hidden;
+}
+
+.ul_7 > li {
+	float: left;
+	line-height: 1.5;
+	padding: 0 5px 32px 30px;
+	width: 480px;
+}
+
+.overline {
+	color: #c0a35f;
+	font: 21px/1.5 RobotoBold;
+	margin: 0 0 17px 0;
+}
+
+.overline:before {
+	background: #c0a35f;
+	content: "";
+	display: block;
+	height: 5px;
+	margin: 0 0 25px 0;	
+	width: 80px;
+}
+
+.ul_8 {
+	background: #fff;
+	margin: 41px 0 65px 0;
+	padding: 0 0 20px 0; 
+}
+
+.ul_8 > li {
+	float: left;
+	line-height: 1.5;
+	padding: 0 15px 0 30px;
+	width: 320px;
+}
+
+.btn_3 {
+	background: transparent;
+	border: 2px solid #c0a35f;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	color: #c0a35f;
+	display: table;
+	font-family: 'RobotoMedium';
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 25px;
+	text-transform: uppercase;
+}
 
 /*========================== END ginekolog page ==========================*/
 
