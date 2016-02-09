@@ -660,7 +660,7 @@ display:block;
 .etender {
     padding-top:32px;
     height:537px;
-    background:#d4dfe4 url(../../file/i_pic/tender_bg.png) no-repeat 0 0 ;
+    background:#d4dfe4 url(../../file/i_pic/tender_bg.png) no-repeat center 0;
 }
 .etender .rmore.st_1 {
     text-align:left;
