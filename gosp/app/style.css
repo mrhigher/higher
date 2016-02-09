@@ -2672,11 +2672,15 @@ footer {
 	color: #c0a35f;
 }
 
+.box_shadow {
+	position: relative;
+}
+
 .box_shadow:after {
-	background: url("img/foto_descript_shadow.png") no-repeat scroll center top / contain ;
-    bottom: -45px;
+	background: url("img/box_shadow_big.png") no-repeat scroll center top / contain ;
+    bottom: -69px;
     content: "";
-    height: 45px;
+    height: 69px;
     left: 0;
     position: absolute;
     right: 0;
@@ -2770,8 +2774,9 @@ footer {
 
 .ul_7 {
 	background: #fff;
+	min-height: 207px;
 	margin: 44px 0 55px 0;
-	overflow: hidden;
+	width: 100%;
 }
 
 .ul_7 > li {
@@ -2799,7 +2804,8 @@ footer {
 .ul_8 {
 	background: #fff;
 	margin: 41px 0 65px 0;
-	padding: 0 0 20px 0; 
+	min-height: 459px;
+	width: 100%;
 }
 
 .ul_8 > li {
@@ -3612,7 +3618,7 @@ footer {
 		max-width: 100%;
 	}
 	.content_item {margin-left: 2%; margin-right: 1%;}
-	.title_7, .descript_doctors, .ginekolog_photo .btn_1 {margin-left: 2%;}
+	.title_7, .descript_doctors {margin-left: 2%;}
 }
 
 @media only screen and (max-width: 739px) {
