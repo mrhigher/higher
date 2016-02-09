@@ -4,7 +4,8 @@ $(function(){
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true,
-		dots:false
+		dots:false,
+                autoplay: true,
 	});
 });
 

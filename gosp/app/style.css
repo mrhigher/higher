@@ -675,7 +675,8 @@ h4{font-size: 18px;}
 }
 
 .page_about_us .h2:before {
-	top: 243px;
+	
+       
 }
 
 .about_us {
@@ -2909,6 +2910,9 @@ footer {
 	.page_about_us .block_1 .h2 {
 		padding-top: 165px;
 	}
+        .page_about_us .h2:before {
+            top: 243px;
+        }
 	.descript_about_us {
 		max-width: 530px;
 	}
@@ -4065,7 +4069,7 @@ footer {
 		margin-bottom: 77px;
 	}
 	.history .h3 {
-		margin-bottom: 27px;
+                 margin-bottom:31px;
 	}
 	.history .btn_2 {
 		margin-left: 0;
@@ -4195,6 +4199,10 @@ footer {
     }
 }
 @media only screen and (max-width: 350px) {
+    
+    .descript_doctors .btn_1 em {
+        display:block;
+    }
     
      .select_main span {
          display:none;
