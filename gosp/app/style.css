@@ -2839,6 +2839,7 @@ footer {
 
 .special .workers_block {
 	border-bottom: none;
+	margin-bottom: 0;
 }
 
 /*========================== END ginekolog page ==========================*/
