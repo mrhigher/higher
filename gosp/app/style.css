@@ -2911,18 +2911,14 @@ footer {
             margin-bottom: 0;
     }
 
-
     .contacts_bg {
     background-image: url(img/ginekolog_bg.png);
     }
-    
     .contacts_bg .center_2 {
      margin-bottom: 0px; 
      padding-bottom: 56px; 
      padding-top: 155px; 
     }
-
-   
     .contpane  .phonebox h3 {
          margin:0px 10px 10px 10px;
     }
@@ -2998,7 +2994,7 @@ footer {
    .form5 label span {
     float: left;
     margin-left: 18px;
-}
+    }
 
 
 /*========================== END ginekolog page ==========================*/
