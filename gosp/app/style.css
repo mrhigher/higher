@@ -586,7 +586,7 @@ h4{font-size: 18px;}
 .ul_2 > li:nth-child(2) {
        
 	background: url(img/ico_2_mobile.png) no-repeat 5px 14px;
-        background-size:96px;
+	background-size:96px;
 	margin: 0 34px 0 0;
 	padding-left: 126px;
 	padding-top: 14px;
@@ -1199,6 +1199,38 @@ footer {
 
 .search input[type=submit] {
 	margin-top: 22px;
+}
+
+.popup.popup_otdel_item {
+	padding: 30px 0 45px 0;
+	max-width: 90%;
+	width: auto;
+}
+
+.popup_otdel_item {
+	line-height: 1.2;
+}
+
+.popup_otdel_item > div {
+	padding: 0 40px;
+}
+
+.popup_otdel_item img {
+	display: block;
+	margin: 0 auto 30px auto;
+}
+
+.popup_otdel_item p {
+	margin: 0 0 20px 0;
+}
+
+.popup_otdel_item h2:after {
+	background: #c0a35f;
+	content: "";
+	display: block;
+	height: 5px;
+	margin: 15px 0 0 0;
+	width: 107px;
 }
 
 /*preload yourtube start*/
@@ -3645,6 +3677,9 @@ footer {
 	}
 	.ginekolog_bg {
 /*		height: 380px;*/
+		-moz-background-size: 100% 380px;
+		-o-background-size: 100% 380px;
+		-webkit-background-size: 100% 380px;
 		background-size: 100% 380px;
 	}
 	.ginekolog_article {
@@ -3692,6 +3727,9 @@ footer {
 		background-position: -455px -115px;
 	}
 	.plus {
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-webkit-background-size: cover;
 		background-size: cover;
 		padding-top: 72px;
 	}
