@@ -3934,6 +3934,12 @@ footer {
 		padding-left: 2%;
 		padding-right: 2%;
 	}
+	.blue_bg__content .btn_3 {
+		border: 2px solid #c0a35f;
+		 height: 36px;
+    	line-height: 36px;
+		text-decoration: none;
+	}
 }
 
 @media only screen and (max-width: 658px) {
