@@ -449,7 +449,6 @@ display:block;
 .accompany .row .ava {
     float:left;
 }
-
 .accompany  .textL  .ava {
     margin:0px 34px 22px 32px;
 }
@@ -458,8 +457,8 @@ display:block;
     width:568px;
 }
 .accompany  .textR  .ava {
-    float:left;
-    margin:2px 0px 0px 0px;
+    float:right;
+    margin:2px 63px 0px 0px;
 }
 
 .accompany .textL  .text  .icon {
