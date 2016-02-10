@@ -226,6 +226,12 @@ h4{font-size: 18px;}
     opacity:.9
 }
 
+.btn_1.big {
+    font-size: 18px;
+    height: 48px;
+    padding: 0px 60px;
+}
+
 .btn_2 {
 	border: 2px solid #fff;
 	-moz-border-radius: 24px;
@@ -1202,6 +1208,7 @@ footer {
 }
 
 .popup.popup_otdel_item {
+        max-width:820px;
 	padding: 30px 0 45px 0;
 	width: 90%;
 }
@@ -2805,6 +2812,7 @@ footer {
 }
 
 .blue_bg__content img {
+        cursor: pointer;
 	display: block;
 	float: left;
 	margin: 0 50px 0 0;
@@ -2894,14 +2902,104 @@ footer {
 	text-transform: uppercase;
 }
 
-.padding_bottom {
-	padding-bottom: 65px;
+    .padding_bottom {
+            padding-bottom: 65px;
+    }
+
+    .special .workers_block {
+            border-bottom: none;
+            margin-bottom: 0;
+    }
+
+
+    .contacts_bg {
+    background-image: url(img/ginekolog_bg.png);
+    }
+    
+    .contacts_bg .center_2 {
+     margin-bottom: 0px; 
+     padding-bottom: 56px; 
+     padding-top: 155px; 
+    }
+
+   
+    .contpane  .phonebox h3 {
+         margin:0px 10px 10px 10px;
+    }
+    .contpane .contbox {
+        float:left;
+    }
+    .contpane  .fplace5 {
+        margin:0px 0px 0px 28px;
+    }
+    .contpane .fplace5 ul li {
+        margin:0px 0px 0px 0px;
+    }
+    .contpane  .fplace5 ul li span {
+     display:inline-block;    
+    }
+    .contpane  .fplace5 ul li .key {
+        margin:0px 4px 0px 0px;
+    }
+    .contpane .fplace5 ul:nth-child(2) .key {
+     min-width:81px;
+     background:red;
+    }
+    .contpane .contbox .fplace5 ul {
+        margin:0px 0px 20px 0px;
+    }
+
+    .contpane  .phonebox {
+        float:right;
+    }
+    .contpane .phonebox .form5 {
+        margin:0px 17px 0px 0px;
+    }
+    .form5 input[type=text] {
+        background: transparent;
+        border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+        font-family: 'robotobold';
+        font-size: 18px;
+        height: 48px;
+        margin: 0 0 9px 0;
+        padding: 0 12px 0 12px;
+        transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+      }
+      
+    .form5 ::-webkit-input-placeholder {color:#fff;}
+    .form5 ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+    .form5 :-moz-placeholder           {color:#fff;}/* Firefox 18- */
+    .form5 :-ms-input-placeholder      {color:#fff;}
+
+  .form5 input[type=submit] {
+     font-size:18px;
+     height:48px;
+     padding:0px 60px;
+    }
+    
+  .form5  label {
+     border: 2px solid #bbc5ce; 
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 47px;
+    line-height: 47px;
+    overflow: hidden;
+    margin:0px 0px 20px 0px;
+    }
+
+   .form5 label span {
+    float: left;
+    margin-left: 18px;
 }
 
-.special .workers_block {
-	border-bottom: none;
-	margin-bottom: 0;
-}
 
 /*========================== END ginekolog page ==========================*/
 
