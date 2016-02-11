@@ -4371,7 +4371,7 @@ footer {
         
         .contpane .contbox .fplace5 ul {
         width:100%;
-        margin:0px 2% 23px 2%;
+        margin:0px 2% 23px 0%;
         }
         .form5 label:nth-child(1) input[type=text] {
             width: 82%;
@@ -4383,7 +4383,7 @@ footer {
             width: 67%;
         }
         .contpane .contbox .fplace5 ul:nth-child(2n + 1) {
-             margin-left:2%;
+             margin-left:0%;
         }
         .contpane .phonebox .form5 {
             margin-right:0px;
