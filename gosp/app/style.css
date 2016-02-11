@@ -1705,10 +1705,10 @@ footer {
 	width: 100%;
 }
 
-.search_main ::-webkit-input-placeholder {color:#bbc5ce;}
-.search_main ::-moz-placeholder          {color:#bbc5ce;}/* Firefox 19+ */
-.search_main :-moz-placeholder           {color:#000000;}/* Firefox 18- */
-.search_main :-ms-input-placeholder      {color:#bbc5ce;}
+.search_main::-webkit-input-placeholder {color:#bbc5ce;}
+.search_main::-moz-placeholder          {color:#bbc5ce;}/* Firefox 19+ */
+.search_main:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+.search_main:-ms-input-placeholder      {color:#bbc5ce;}
 
 .search_main input[type=image] {
 	position: absolute;
@@ -2919,14 +2919,22 @@ footer {
      padding-bottom: 56px; 
      padding-top: 155px; 
     }
+    
+    .contpane .contbox .h2 {
+        margin-bottom:23px;
+    }
+    
     .contpane  .phonebox h3 {
-         margin:0px 10px 10px 10px;
+         margin:0px 10px 36px 10px;
     }
     .contpane .contbox {
+        width:45%;
         float:left;
     }
     .contpane  .fplace5 {
+        overflow:hidden;
         margin:0px 0px 0px 28px;
+        padding:10px 0px 0px 0px;
     }
     .contpane .fplace5 ul li {
         margin:0px 0px 0px 0px;
@@ -2937,33 +2945,48 @@ footer {
     .contpane  .fplace5 ul li .key {
         margin:0px 4px 0px 0px;
     }
-    .contpane .fplace5 ul:nth-child(2) .key {
+    .contpane .fplace5 ul:nth-child(1) .key {
      min-width:81px;
-     background:red;
     }
     .contpane .contbox .fplace5 ul {
-        margin:0px 0px 20px 0px;
+        margin:0px 0px 23px 0px;
     }
-
     .contpane  .phonebox {
+        margin:0px 0px 0px 0px;
+        width:490px;
         float:right;
     }
     .contpane .phonebox .form5 {
         margin:0px 17px 0px 0px;
     }
-    .form5 input[type=text] {
+    .form5 input[type=text], .form5 textarea {
+        border:0px;
         background: transparent;
-        border-radius: 5px;
+        border-radius: 24px;
         color: #fff;
         display: inline-block;
         font-family: 'robotobold';
         font-size: 18px;
         height: 48px;
-        margin: 0 0 9px 0;
-        padding: 0 12px 0 12px;
+        padding: 0 12px 2px 12px;
         transition: all 0.1s;
         -webkit-transition: all 0.1s;
         -moz-transition: all 0.1s;
+      }
+      
+      .form5 textarea {
+          height:80px;
+          padding: 0px 12px 2px 12px;
+          margin: 11px 0px 0px 0px;
+      }
+      .form5 label:nth-child(3) textarea {
+          width:74%;
+      }          
+      .form5 label:nth-child(1) input[type=text] {
+         width:87%;
+      }
+      .form5 label:nth-child(2) input[type=text] {
+         width:67%;
       }
       
     .form5 ::-webkit-input-placeholder {color:#fff;}
@@ -2975,6 +2998,7 @@ footer {
      font-size:18px;
      height:48px;
      padding:0px 60px;
+     margin:40px 0px 0px 0px;
     }
     
   .form5  label {
@@ -2990,9 +3014,13 @@ footer {
     overflow: hidden;
     margin:0px 0px 20px 0px;
     }
+    .form5  label.textarr {
+        height:96px;
+    }
 
    .form5 label span {
     float: left;
+    display:block;
     margin-left: 18px;
     }
 
@@ -3377,11 +3405,25 @@ footer {
 	.doctors_content .cardio_ul {
 		padding-right: 40px;
 	}
+        
+        .contpane .phonebox {
+            width:440px;
+        }
+        .form5 label:nth-child(1) input[type=text] {
+            width: 84%;
+        }
+        .form5 label:nth-child(2) input[type=text] {
+            width: 63%;
+        }
+        .form5 label:nth-child(3) textarea {
+            width: 70%;
+        }
 
 	/*========================== ginekolog page ==========================*/
 	.ginekolog_photo {
 		max-width: 350px;
 	}
+        
 }
 
 @media only screen and (max-width: 900px) {
@@ -3500,6 +3542,10 @@ footer {
 }
 
 @media only screen and (max-width: 820px) {
+    
+        .contpane .contbox {
+           width:40%;      
+        }
 
 	.block_6__1 {
 		width: 380px;
@@ -3783,6 +3829,30 @@ footer {
 	}
 	.content_item {margin-left: 2%; margin-right: 1%;}
 	.title_7, .descript_doctors {margin-left: 2%;}
+}
+
+@media only screen and (max-width: 760px) {
+    .contpane .contbox {
+        width:auto;
+        float:none;
+    }
+    .contpane .fplace5 {
+        overflow:hidden;
+    }
+    .contpane .contbox .fplace5 ul {
+        width:46%;
+        margin:0px 2% 23px 2%;
+        float:left;
+    }
+    .contpane .phonebox {
+     float:none;
+     margin-left:28px;
+    }
+    .contpane .contbox .fplace5 ul:nth-child(2n + 1) {
+        margin-left:0%;
+        clear:left;
+    }
+
 }
 
 @media only screen and (max-width: 739px) {
@@ -4292,6 +4362,32 @@ footer {
 	.list_plus {
 		width: 98%;
 	}
+        
+        .contpane .phonebox {
+            width:auto;
+            margin:0px 2%;
+            float:none;
+        }
+        
+        .contpane .contbox .fplace5 ul {
+        width:100%;
+        margin:0px 2% 23px 2%;
+        }
+        .form5 label:nth-child(1) input[type=text] {
+            width: 82%;
+        }
+        .form5 label:nth-child(2) input[type=text] {
+            width: 58%;
+        }
+        .form5 label:nth-child(3) textarea {
+            width: 67%;
+        }
+        .contpane .contbox .fplace5 ul:nth-child(2n + 1) {
+             margin-left:2%;
+        }
+        .contpane .phonebox .form5 {
+            margin-right:0px;
+        }
 	
 }
 
@@ -4352,6 +4448,34 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
+    
+    .form5 label {
+        border:0px;
+        overflow: visible;
+    }
+    .form5 label, .form5 label.textarr  {
+        height:auto;
+    }
+    .form5 label, .form5 label input[type=text], .form5 textarea, .form5 label span {
+        width:98% !important;
+    }
+    .form5 label input[type=text], .form5 label  textarea {
+       border:2px solid #bbc5ce; 
+       margin:0px;
+    }
+    .form5 label  textarea {
+        height:160px;
+    }
+    .form5 label  textarea {
+        padding:10px 12px 10px 12px;
+    }
+
+   
+   
+    
+    
+    
+    
 	.wrap_foto_doctors {
 		margin-top: 50px;
 		width: 315px;
