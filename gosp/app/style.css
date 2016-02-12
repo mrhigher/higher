@@ -3189,14 +3189,107 @@ footer {
 	padding: 0 10px;
 }
 
+/*========================== margin padding ==========================*/
+
 .pb {
 	padding-bottom: 55px;
 }
+
+.pt { padding-top: 10px;}
+
+.p0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pb_0 {padding-bottom: 0;}
 
 .mb {
 	margin-bottom: 54px;
 }
 
+.mb_2 {margin-bottom: 44px;}
+
+/*========================== END margin padding ==========================*/
+
+
+.program_white__accord {
+	margin-left: 0;
+	margin-top: 21px;
+	width: 480px;
+}
+
+.accord_item {
+	background: #fff;
+	border-bottom: 1px solid #d4d8d7;
+	border-right: 1px solid #d4d8d7;
+}
+
+.accord_item .program_item {
+	background-position: right 30px top 23px;
+	display: block;
+	height: 53px;
+	line-height: 53px;
+	padding: 0 0 0 30px;
+}
+
+
+.accord_item .program_answer > div {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.clear {clear: both;}
+
+.ml_2 {
+	margin-left: 50px;
+	margin-top: 18px;
+}
+
+.ml_2 > li {
+	margin-bottom: 26px;
+	padding-left: 28px;
+}
+
+.block_7 {
+	padding: 53px 10px 0 10px;
+}
+
+.services_list {
+	margin: 36px 0 0 0;
+}
+
+.services_list li {
+	background: #fff;
+	border-bottom: 1px solid #d4d8d7;
+	font-family: RobotoMedium;
+	font-size: 18px;
+	line-height: 1.3;
+	padding: 14px 0 15px 30px;
+	width: 540px;
+}
+
+.services_list li .procent {
+	color: #c0a35f;
+}
+
+.services_list li:first-child {
+	background: #c0a35f;
+	border-bottom: none;
+	color: #fff;
+	padding-bottom: 17px;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+
+.services_descript {
+	display: block;
+	font-size: 16px;
+}
+
+.width_1 li {
+	width: 380px;
+}
 
 /*========================== END program_white page ==========================*/
 
