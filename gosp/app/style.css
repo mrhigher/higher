@@ -2564,13 +2564,13 @@ footer {
 	margin: 58px 0 0 0;
 }
 
-.doctors_content .cardio_ul {
+.doctors_content .cardio_ul, .bg_top {
 	margin-left: 39px;
 	padding-bottom: 5px;
 	padding-right: 80px;
 }
 
-.doctors_content .cardio_ul > li {
+.doctors_content .cardio_ul > li, .bg_top > li {
 	background-position: left 3px;
 	font-size: 16px;
 	line-height: 1.6;
@@ -2588,6 +2588,19 @@ footer {
 
 .wrap_btn_1 {
 	display: block;
+}
+
+.pt {
+	padding-top: 60px!important;
+}
+
+.bg_top {
+	padding-top: 39px;
+}
+
+.bg_top > li {
+	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
 /*========================== END doctors_item ==========================*/
@@ -2903,7 +2916,93 @@ footer {
 	margin-bottom: 0;
 }
 
+
 /*========================== END ginekolog page ==========================*/
+
+/*========================== program_white page ==========================*/
+
+.program_white_bg {
+	background-image: url(img/program_white_bg.jpg);
+	margin-bottom: 60px;
+}
+
+.program_white__block {
+	padding-bottom: 62px ;
+	padding-top: 182px;
+	color: #fff;
+}
+
+.program_white__title {
+	padding: 43px 0 0 10px;
+	width: 570px;
+}
+
+.program_white__link {
+	width: 310px;
+}
+
+.program_white__link li {
+	line-height: 1.4;
+	margin: 0 0 12px 0;
+}
+
+.program_white__link li a {
+	color: #fff;
+	display: block;
+}
+
+.program_white__link li a span {
+	border-bottom: 2px solid #a6b1bf;
+}
+
+.style_title {
+	font: normal 24px/1.5 'robotolight';
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+.style_h1 {
+	color: #c0a35f;
+	font-size: 72px;
+	margin: 0 0 21px 0;
+}
+
+.style_h1 span {
+	color: #fff;
+}
+
+.program_white__price {
+	color: #fdfdfd;
+}
+
+.program_white__price span {
+	font-family: RobotoBold;
+	font-size: 28px;
+}
+
+.program_white__descript {
+	margin: 37px 20px 0 20px;
+}
+
+.program_white__descript p {
+	margin: 0 0 24px 0;
+}
+
+.program_white__content {
+	line-height: 1.5;
+	padding: 0 10px;
+}
+
+.pb {
+	padding-bottom: 55px;
+}
+
+.mb {
+	margin-bottom: 54px;
+}
+
+
+/*========================== END program_white page ==========================*/
 
 /*========================== media ==========================*/
 
