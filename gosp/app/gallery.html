@@ -16,6 +16,11 @@
 	<!-- bxslider -->
 	<link rel="stylesheet" href="libs/jquery.bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="style.css" type="text/css">
+        
+        <link rel="stylesheet" href="libs/fancyBox-master/source/jquery.fancybox.css" type="text/css" media="screen" />
+
+     
+
 </head>
 <body class="">
 <!-- wrapper -->
@@ -191,38 +196,33 @@
                 </ul>
             </div>
             <div class="picks">
-                <div class="item">
-                    <a href="#">
-                         
+                <div class="item"><!-- href="http://lorempixel.com/821/521/animals/" -->
+                    <a rel="group" class="fancybox" href="img/demo_otdelenia_item.jpg" >
                     <img src="img/tpick_1.png">
                     </a>
                 </div>
               
                 
                 <div class="item">
-                    <a href="#">
-                          
+                    <a rel="group" class="fancybox"  href="img/gal_pick2.jpg">
                     <img src="img/tpick_2.png">
                     </a>
                 </div>
                
                 <div class="item">
-                    <a href="#">
-                           
+                    <a rel="group" class="fancybox"  href="img/gal_pick3.jpg">       
                     <img src="img/tpick_3.png">
                     </a>
                 </div>
                 
                 
                 <div class="item">
-                    <a href="#">
-                           
+                    <a rel="group" class="fancybox"  href="img/gal_pick4.jpg">       
                     <img src="img/tpick_4.png">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#">
-                           
+                    <a rel="group" class="fancybox"  href="img/gal_pick5.jpg">       
                     <img src="img/tpick_5.png">
                     </a>
                 </div>
@@ -316,13 +316,31 @@
 <!-- load script menu -->
 <script src="libs/jquery.mask.js"></script>
 <script src="libs/menu/script_menu.js"></script>
-<!-- bxslider -->
+   <script src="libs/fancyBox-master/source/jquery.fancybox.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            maxWidth: 821,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(0,46,92, 0.9)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
+
+
 <script src="js/common.js"></script>
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
 <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
 	//	$.pixlayout({clip: true, src: "design/gallery.jpg", show:true, center:true, top:0, left:0, pervious: false});
+	//	$.pixlayout({clip: true, src: "design/gallery-popup.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>
