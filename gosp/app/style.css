@@ -642,7 +642,7 @@ h4{font-size: 18px;}
 	content: "";
 	height: 100%;
 	position: absolute;
-	right: 0;
+	right: -1px;
 	width: 6px;
 }
 
@@ -941,8 +941,8 @@ h4{font-size: 18px;}
 }
 
 .call::-webkit-input-placeholder {color:#002e5c;}
-.call::-moz-placeholder          {color:#002e5c;}/* Firefox 19+ */
-.call:-moz-placeholder           {color:#002e5c;}/* Firefox 18- */
+.call::-moz-placeholder          {color: #fc0b0b; font-family: Arial;}
+.call:-moz-placeholder           {color: #fc0b0b; font-family: Arial;}
 .call:-ms-input-placeholder      {color:#002e5c;}
 
 .call_submit {
@@ -4171,7 +4171,8 @@ footer {
 		padding-bottom: 17px;
 		text-align: center;
 	}
-	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 65px; }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 55px; }
+	.flexnav .advbox .tel a {padding: 0; }
 	.flexnav .advbox  .items a {
 		font-family: RobotoRegular;
 		border: 1px solid #c0a35f;
