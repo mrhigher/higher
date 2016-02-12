@@ -1616,7 +1616,64 @@ footer {
 .gallery.block_1 {
         background-image: url(img/bg_page_gallery.png);
 	color: #fff;
-} 
+}
+/*fancygal */
+.photo-fancy .fancybox-next span, .photo-fancy .fancybox-prev span {
+    visibility:visible;
+    width:8px;
+    height:14px;
+    background-image:url(img/fancy_arrows_1.png);
+    background-repeat: no-repeat;
+}
+.photo-fancy  .fancybox-nav span {
+    margin-top:-7px;
+}
+.photo-fancy  .fancybox-nav span:hover {
+    
+}
+.photo-fancy .fancybox-next span {
+    right:22px;
+    background-position:0px -14px;
+}
+.photo-fancy .fancybox-prev span {
+     left:22px;
+     background-position:0px -28px;
+}
+ .photo-fancy   .fancybox-nav.fancybox-next {
+     background-color:rgba(192,168,95,1);
+}
+ .photo-fancy  .fancybox-nav.fancybox-prev {
+    left:auto;
+    right:54px;
+    background-color:#fff;
+}
+.photo-fancy .fancybox-nav {
+     top:auto;
+     bottom:0px;
+     width:54px;
+     height:54px;
+}
+.photo-fancy .fancybox-close {
+    top:0px;
+    right:0px;
+    width:54px;
+    height:54px;
+    background-image: url(img/fancyclose_ic.png);
+    background-color:#fff;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.photo-fancy .fancybox-close:hover {
+    background-color:rgba(192,168,95,1);
+    background-image: url(img/fancyclose_ic_hov.png);
+}
+
+
+
+
+
+/*fancygal */
 .page_programs .block_1 .center_2 {
 	padding-bottom: 85px;
 	padding-top: 172px;	
@@ -3068,16 +3125,15 @@ footer {
         float:right;
     }
     .galpane .cats ul {
-        width:220px;
-        margin:0px 0px 25px 15px
+        margin:0px 0px 25px 0px
     }
     
     .galpane .cats ul li {
-        margin:10px 0px 14px 0px;
+        margin:10px 25px 17px 15px;
     }
     .galpane .cats ul li a {
         display:inline-block;
-        width:180px;
+        margin-right:22px;
         color:#002e5c;
         text-decoration:underline;
     }
@@ -3086,6 +3142,7 @@ footer {
         text-decoration:none;
     }
     .galpane .cats ul li .sum {
+        float:right;
         color:#bdc3c7;
         display:inline-block;
         font-size:16px;
@@ -3636,7 +3693,7 @@ footer {
   
 }
 
-@media only screen and (max-width: 955px) {
+@media only screen and (max-width: 957px) {
       .galpane .cats {
         float:none;
        }
@@ -3645,7 +3702,10 @@ footer {
        }
        .galpane .cats ul li {
            display:inline-block;
-           width:220px;
+          
+       }
+       .galpane .cats ul li a {
+         margin-right:6px; 
        }
        .galpane .picks {
            width:auto;
