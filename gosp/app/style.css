@@ -3252,14 +3252,30 @@ footer {
 	padding-bottom: 55px;
 }
 
+.pb_1 {
+	padding-bottom: 71px;
+}
+
 .pt { padding-top: 10px;}
+
+.pt_1 {
+	padding-bottom: 47px;
+	padding-top: 61px;
+}
 
 .p0 {
 	padding-left: 0;
 	padding-right: 0;
 }
 
+.p1 {
+	padding-bottom: 51px;
+	padding-top: 17px;
+}
+
 .pb_0 {padding-bottom: 0;}
+
+.pb_2 {padding-bottom: 45px;}
 
 .mb {
 	margin-bottom: 54px;
@@ -3346,6 +3362,51 @@ footer {
 
 .width_1 li {
 	width: 380px;
+}
+
+.ul_9 {
+	margin: 40px 0 38px 20px;
+	overflow: hidden;
+}
+
+.ul_9 > li {
+	float: left;
+	line-height: 1.5;
+	width: 440px;
+}
+
+.ul_9 > li a {
+	font-family: RobotoBold;
+	text-decoration: underline;
+}
+
+.ul_9 > li + li {
+	margin-left: 19px;
+}
+
+.style_5 {
+	padding: 60px 0 53px 0;
+}
+
+.phone_serv {
+	display: block;
+	font-family: RobotoBold;
+	font-size: 24px;
+	margin: 15px 0 0 0;
+}
+
+.adr_serv {
+	display: block;
+	margin: 23px 0 0 0;
+}
+
+.style_6 {
+	line-height: 1.5;
+	margin: 0 0 24px 20px;
+}
+
+.style_7 {
+	padding: 60px 0 0 0;
 }
 
 /*========================== END program_white page ==========================*/
