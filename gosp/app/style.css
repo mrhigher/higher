@@ -3409,6 +3409,21 @@ footer {
 	padding: 60px 0 0 0;
 }
 
+.box_shadow_mini {
+	position: relative;
+}
+
+.box_shadow_mini:before {
+	background: rgba(0, 0, 0, 0) url("img/box_shadow_mini.png") no-repeat scroll center top / contain ;
+    bottom: -45px;
+    content: "";
+    height: 45px;
+    left: 0;
+	opacity: .9;
+    position: absolute;
+    right: 0;
+}
+
 /*========================== END program_white page ==========================*/
 
 /*========================== media ==========================*/
