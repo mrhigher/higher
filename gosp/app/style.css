@@ -3556,7 +3556,7 @@ footer {
 	.style_4, .blue_bg .h3::after {
 		margin-left: 2%;
 	}
-	.blue_bg .title_under_2, .blue_bg .h3 {
+	.blue_bg .title_under_2, .blue_bg .h3, .pt_1 .title_under_2, .style_7 .title_under_2, .block_7 .title_under_2, .program_white__content .title_under_2 {
 		margin-left: 0;
 		padding-left: 2%;
 	}
@@ -3764,9 +3764,10 @@ footer {
 		margin-left: 10px;
 	}
 	.wrap_doctors_content {width: 520px;}
-        
-      
-  
+	.left.program_white__accord  {
+		float: none;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 957px) {
@@ -3851,7 +3852,18 @@ footer {
 	.ginekolog_photo {
 		max-width: 350px;
 	}
-        
+	.services_list.left, .services_list.right {
+		float: none;
+	}
+	.width_1 li, .services_list li {width: 100%;}
+	
+	.ul_9 > li {float: none; margin-right: 2%; width: 98%;}
+	
+	.ul_9 > li + li {margin-left: 0;}
+	
+	.style_6 {margin-right: 2%;}
+	.ul_9 > li {margin-bottom: 50px;}
+	.ul_9 > li:last-child {margin-bottom: 0;}
 }
 
 @media only screen and (max-width: 900px) {
@@ -3886,6 +3898,12 @@ footer {
 	/*========================== doctors_item ==========================*/
 	.descript_doctors {max-width: 400px;}
 	/*========================== END doctors_item ==========================*/
+	.program_white__title.left, .program_white__link.right {
+		float: none;
+	}
+	.program_white__title.left {margin-bottom: 50px;}
+	.program_white__link.right {margin-left: 2%; width: 98%;}
+	.program_white__block {padding-top: 100px;}
 }
 
 @media only screen and (max-width: 880px) {
@@ -4631,6 +4649,7 @@ footer {
 	.news_list > div:nth-child(3n) {margin-right: 0;}
 	.news_list {margin-top: 60px; margin-bottom: 75px;}
 	.blue_bg__content img {display: none;}
+	.program_white__title {width: 100%;}
 }
 
 @media only screen and (max-width: 550px) {
