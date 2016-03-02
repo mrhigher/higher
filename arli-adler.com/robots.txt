@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /wp-admin/ 
-Disallow: /wp-includes/ 
-Disallow: /wp-content/plugins/
-Disallow: */img_*
-Disallow: /услуги/u*
-Disallow: */qn3a*
-Host: arli-adler.com
